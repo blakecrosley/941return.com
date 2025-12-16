@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "components/hero.html" %}
+{% include "components/features.html" %}
+
+<!-- Final CTA Section -->
+<section class="cta-section" id="download">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title">Begin your practice.</h2>
+            <p class="cta-subtitle">Available on iPhone, Apple Watch, Mac, and Apple TV.</p>
+            <a href="https://apps.apple.com/app/return" class="app-store-badge" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                     alt="Download on the App Store"
+                     width="200">
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
