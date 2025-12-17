@@ -1,32 +1,30 @@
 <footer class="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <span class="brand-text">Return<span class="brand-dots">...</span></span>
-                <p class="footer-tagline">A meditation timer for moments of stillness.</p>
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="{{ url_for('static', path='images/941apps-light.svg') }}" alt="941apps" height="32" class="logo-light mb-3">
+                <img src="{{ url_for('static', path='images/941apps-dark.svg') }}" alt="941apps" height="32" class="logo-dark mb-3">
+                <p class="text-muted small">A meditation timer for moments of stillness.</p>
             </div>
-
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h6>App</h6>
-                    <a href="/#features">Features</a>
-                    <a href="/#download">Download</a>
-                </div>
-                <div class="footer-column">
-                    <h6>Support</h6>
-                    <a href="/support">FAQ</a>
-                    <a href="mailto:support@941apps.com">Contact</a>
-                </div>
-                <div class="footer-column">
-                    <h6>Legal</h6>
-                    <a href="/privacy">Privacy</a>
-                    <a href="/terms">Terms</a>
-                </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h6 class="mb-3">Links</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/#features">Features</a></li>
+                    <li class="mb-2"><a href="/support">Support</a></li>
+                    <li class="mb-2"><a href="https://apps.apple.com/app/return" target="_blank">Download</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="mb-3">Legal</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/privacy">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="/terms">Terms of Service</a></li>
+                </ul>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 941apps. All rights reserved.</p>
+        <hr class="my-4">
+        <div class="text-center text-muted small">
+            &copy; 2025 941apps. All rights reserved.
         </div>
     </div>
 </footer>

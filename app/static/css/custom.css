@@ -175,8 +175,9 @@ a:hover {
     font-family: var(--font-display);
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--return-text-primary);
+    color: #FFFFFF;
     letter-spacing: -0.02em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .brand-dots {
@@ -194,35 +195,40 @@ a:hover {
     display: inline-block;
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--return-text-secondary);
+    color: rgba(255, 255, 255, 0.85);
     transition: color var(--transition-fast);
     white-space: nowrap;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link:hover {
-    color: var(--return-text-primary);
+    color: #FFFFFF;
 }
 
 .theme-toggle {
     width: 40px;
     height: 40px;
     border-radius: var(--radius-full);
-    border: 1px solid var(--return-border);
-    background: var(--return-surface);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all var(--transition-fast);
+    color: #FFFFFF;
 }
 
 .theme-toggle:hover {
-    background: var(--return-surface-elevated);
+    background: rgba(0, 0, 0, 0.5);
     border-color: var(--return-primary);
 }
 
 .theme-icon {
     font-size: 1.1rem;
+    color: #FFFFFF;
 }
 
 /* -----------------------------------------------------------------------------
@@ -317,8 +323,8 @@ a:hover {
     line-height: 1.05;
     margin-bottom: 0;
     letter-spacing: -0.03em;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-    mix-blend-mode: normal;
+    color: #FFFFFF;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title-accent {
@@ -328,14 +334,10 @@ a:hover {
 
 .hero-subtitle {
     font-size: 1.15rem;
-    color: var(--return-text-secondary);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: var(--space-xl);
     line-height: 1.7;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
-}
-
-[data-theme="dark"] .hero-subtitle {
-    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta {
@@ -643,68 +645,60 @@ a:hover {
    Footer
    ----------------------------------------------------------------------------- */
 .footer {
-    background: var(--return-surface);
-    border-top: 1px solid var(--return-border);
-    padding: var(--space-4xl) 0 var(--space-xl);
+    background-color: var(--return-surface);
+    padding: 40px 0;
     margin-top: auto;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    gap: var(--space-4xl);
-    margin-bottom: var(--space-3xl);
-}
-
-.footer-brand .brand-text {
-    font-size: 1.25rem;
-    display: block;
-    margin-bottom: var(--space-sm);
-}
-
-.footer-tagline {
-    color: var(--return-text-secondary);
-    font-size: 0.9rem;
-    max-width: 250px;
-}
-
-.footer-links {
-    display: flex;
-    gap: var(--space-4xl);
-}
-
-.footer-column h6 {
-    font-family: var(--font-body);
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--return-text-secondary);
-    margin-bottom: var(--space-md);
-}
-
-.footer-column a {
-    display: block;
+.footer h6 {
     color: var(--return-text-primary);
-    font-size: 0.9rem;
-    margin-bottom: var(--space-sm);
-    transition: color var(--transition-fast);
+    font-weight: 600;
 }
 
-.footer-column a:hover {
+.footer p,
+.footer .text-muted {
+    color: var(--return-text-secondary) !important;
+}
+
+.footer a {
+    color: var(--return-text-primary);
+    text-decoration: none;
+}
+
+.footer a:hover {
     color: var(--return-primary);
 }
 
-.footer-bottom {
-    border-top: 1px solid var(--return-border);
-    padding-top: var(--space-xl);
-    text-align: center;
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-bottom p {
+.footer hr {
+    border-color: var(--return-border);
+    opacity: 1;
+}
+
+.footer .small {
     color: var(--return-text-secondary);
-    font-size: 0.85rem;
-    margin: 0;
+}
+
+/* Light/dark logo switching */
+.logo-light {
+    display: block;
+}
+
+.logo-dark {
+    display: none;
+}
+
+[data-theme="dark"] .logo-light {
+    display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+    display: block;
 }
 
 /* -----------------------------------------------------------------------------
