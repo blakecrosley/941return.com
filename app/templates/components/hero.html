@@ -1,18 +1,116 @@
-<section class="hero">
-    <!-- Animated water ripples background -->
-    <div class="hero-ripples">
-        <div class="ripple ripple-1"></div>
-        <div class="ripple ripple-2"></div>
-        <div class="ripple ripple-3"></div>
-        <div class="ripple ripple-4"></div>
+<section class="hero" x-data="{
+    currentTheme: 'water',
+    themes: ['water', 'fire', 'forest', 'silence'],
+    audioEnabled: false,
+    audioElement: null,
+    init() {
+        this.$watch('currentTheme', (theme) => this.updateAudio(theme));
+        this.$watch('audioEnabled', (enabled) => this.toggleAudio(enabled));
+    },
+    nextTheme() {
+        const idx = this.themes.indexOf(this.currentTheme);
+        this.currentTheme = this.themes[(idx + 1) % this.themes.length];
+    },
+    prevTheme() {
+        const idx = this.themes.indexOf(this.currentTheme);
+        this.currentTheme = this.themes[(idx - 1 + this.themes.length) % this.themes.length];
+    },
+    updateAudio(theme) {
+        if (this.audioElement) {
+            this.audioElement.pause();
+        }
+        const audioEl = document.getElementById('audio-' + theme);
+        if (audioEl && this.audioEnabled) {
+            audioEl.currentTime = 0;
+            audioEl.play();
+        }
+        this.audioElement = audioEl;
+    },
+    toggleAudio(enabled) {
+        const audioEl = document.getElementById('audio-' + this.currentTheme);
+        if (audioEl) {
+            if (enabled) {
+                audioEl.play();
+            } else {
+                audioEl.pause();
+            }
+        }
+        this.audioElement = audioEl;
+    }
+}">
+    <!-- Video backgrounds for each theme -->
+    <div class="hero-video-container">
+        <!-- Water theme -->
+        <video class="hero-video hero-video-desktop"
+               x-show="currentTheme === 'water'"
+               x-transition:enter="transition-opacity"
+               x-transition:leave="transition-opacity"
+               autoplay muted loop playsinline>
+            <source src="{{ url_for('static', path='videos/water-desktop.mp4') }}" type="video/mp4">
+        </video>
+        <video class="hero-video hero-video-mobile"
+               x-show="currentTheme === 'water'"
+               autoplay muted loop playsinline>
+            <source src="{{ url_for('static', path='videos/water-mobile.mp4') }}" type="video/mp4">
+        </video>
+
+        <!-- Fire theme -->
+        <video class="hero-video hero-video-desktop"
+               x-show="currentTheme === 'fire'"
+               x-transition:enter="transition-opacity"
+               x-transition:leave="transition-opacity"
+               autoplay muted loop playsinline>
+            <source src="{{ url_for('static', path='videos/fire-desktop.mp4') }}" type="video/mp4">
+        </video>
+        <video class="hero-video hero-video-mobile"
+               x-show="currentTheme === 'fire'"
+               autoplay muted loop playsinline>
+            <source src="{{ url_for('static', path='videos/fire-mobile.mp4') }}" type="video/mp4">
+        </video>
+
+        <!-- Forest theme -->
+        <video class="hero-video hero-video-desktop"
+               x-show="currentTheme === 'forest'"
+               x-transition:enter="transition-opacity"
+               x-transition:leave="transition-opacity"
+               autoplay muted loop playsinline>
+            <source src="{{ url_for('static', path='videos/forest-desktop.mp4') }}" type="video/mp4">
+        </video>
+        <video class="hero-video hero-video-mobile"
+               x-show="currentTheme === 'forest'"
+               autoplay muted loop playsinline>
+            <source src="{{ url_for('static', path='videos/forest-mobile.mp4') }}" type="video/mp4">
+        </video>
+
+        <!-- Silence theme (dark background) -->
+        <div class="hero-video silence-bg"
+             x-show="currentTheme === 'silence'"
+             x-transition:enter="transition-opacity"
+             x-transition:leave="transition-opacity"></div>
+
+        <div class="hero-video-overlay" :class="'overlay-' + currentTheme"></div>
     </div>
 
+    <!-- Audio elements (hidden) -->
+    <audio id="audio-water" loop preload="auto">
+        <source src="{{ url_for('static', path='audio/water.wav') }}" type="audio/wav">
+    </audio>
+    <audio id="audio-fire" loop preload="auto">
+        <source src="{{ url_for('static', path='audio/fire.wav') }}" type="audio/wav">
+    </audio>
+    <audio id="audio-forest" loop preload="auto">
+        <source src="{{ url_for('static', path='audio/forest.wav') }}" type="audio/wav">
+    </audio>
+
     <div class="container hero-container">
-        <div class="hero-content">
+        <div class="hero-left">
             <h1 class="hero-title">
                 Return to<br>
-                <span class="hero-title-accent">stillness.</span>
+                <span class="hero-title-accent" :style="{ color: currentTheme === 'fire' ? '#FF8033' : currentTheme === 'forest' ? '#66C059' : currentTheme === 'silence' ? '#8B8B9E' : '#59B2CC' }">stillness.</span>
             </h1>
+        </div>
+
+        <div class="hero-right">
             <p class="hero-subtitle">
                 A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV.
             </p>
@@ -24,17 +122,42 @@
                 </a>
             </div>
         </div>
+    </div>
 
-        <div class="hero-visual">
-            <!-- Water droplet with glow -->
-            <div class="droplet-container">
-                <div class="droplet-glow"></div>
-                <div class="droplet">
-                    <div class="droplet-highlight"></div>
-                </div>
-                <div class="droplet-reflection"></div>
+    <!-- Theme controls -->
+    <div class="hero-controls">
+        <button class="theme-nav-btn" @click="prevTheme()" title="Previous theme">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+
+        <div class="theme-indicator">
+            <span class="theme-name" x-text="currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)"></span>
+            <div class="theme-dots">
+                <template x-for="t in themes" :key="t">
+                    <span class="theme-dot" :class="{ 'active': currentTheme === t }"></span>
+                </template>
             </div>
         </div>
+
+        <button class="theme-nav-btn" @click="nextTheme()" title="Next theme">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+
+        <button class="audio-toggle" @click="audioEnabled = !audioEnabled" :title="audioEnabled ? 'Mute audio' : 'Play audio'">
+            <svg x-show="!audioEnabled" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+            <svg x-show="audioEnabled" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+        </button>
     </div>
 
     <!-- Subtle gradient overlay at bottom -->
