@@ -638,30 +638,11 @@ body:has(.hero) .theme-toggle:hover {
 .cta-section {
     padding: var(--space-4xl) 0;
     text-align: center;
-    position: relative;
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 48px;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        var(--return-primary),
-        transparent
-    );
-    opacity: 0.6;
 }
 
 .cta-content {
     max-width: 500px;
     margin: 0 auto;
-    padding-top: var(--space-2xl);
 }
 
 .cta-title {
