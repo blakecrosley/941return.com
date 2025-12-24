@@ -1,11 +1,69 @@
 <section class="hero" x-data="{
     currentTheme: 'water',
     themes: ['water', 'fire', 'forest', 'silence'],
+    loadedVideos: { water: true }, /* Only water loaded initially */
     audioEnabled: false,
-    audioElement: null,
+    /* Web Audio API seamless looping */
+    audioContext: null,
+    audioBuffers: {},
+    currentSource: null,
     init() {
-        this.$watch('currentTheme', (theme) => this.updateAudio(theme));
+        this.$watch('currentTheme', (theme) => {
+            this.loadVideo(theme);
+            this.updateAudio(theme);
+        });
         this.$watch('audioEnabled', (enabled) => this.toggleAudio(enabled));
+    },
+    async initAudioContext() {
+        if (this.audioContext) return;
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    },
+    async loadAudioBuffer(theme) {
+        if (this.audioBuffers[theme]) return this.audioBuffers[theme];
+        try {
+            const response = await fetch(`/static/audio/${theme}.wav`);
+            const arrayBuffer = await response.arrayBuffer();
+            this.audioBuffers[theme] = await this.audioContext.decodeAudioData(arrayBuffer);
+            return this.audioBuffers[theme];
+        } catch (e) {
+            console.error('Failed to load audio:', theme, e);
+            return null;
+        }
+    },
+    playLoop(theme) {
+        if (!this.audioContext || theme === 'silence') return;
+        const buffer = this.audioBuffers[theme];
+        if (!buffer) return;
+
+        this.stopAudio();
+
+        /* Create source with native loop - truly gapless */
+        this.currentSource = this.audioContext.createBufferSource();
+        this.currentSource.buffer = buffer;
+        this.currentSource.loop = true;
+        this.currentSource.connect(this.audioContext.destination);
+        this.currentSource.start(0);
+    },
+    stopAudio() {
+        if (this.currentSource) {
+            try { this.currentSource.stop(); } catch(e) {}
+            this.currentSource = null;
+        }
+    },
+    loadVideo(theme) {
+        /* Lazy load video when theme is first selected */
+        if (this.loadedVideos[theme] || theme === 'silence') return;
+
+        const videos = document.querySelectorAll(`[data-theme-video='${theme}']`);
+        videos.forEach(video => {
+            const source = video.querySelector('source');
+            if (source && source.dataset.src) {
+                source.src = source.dataset.src;
+                video.load();
+                video.play();
+            }
+        });
+        this.loadedVideos[theme] = true;
     },
     nextTheme() {
         const idx = this.themes.indexOf(this.currentTheme);
@@ -15,32 +73,28 @@
         const idx = this.themes.indexOf(this.currentTheme);
         this.currentTheme = this.themes[(idx - 1 + this.themes.length) % this.themes.length];
     },
-    updateAudio(theme) {
-        if (this.audioElement) {
-            this.audioElement.pause();
+    async updateAudio(theme) {
+        if (this.audioEnabled && theme !== 'silence') {
+            await this.initAudioContext();
+            await this.loadAudioBuffer(theme);
+            this.playLoop(theme);
+        } else {
+            this.stopAudio();
         }
-        const audioEl = document.getElementById('audio-' + theme);
-        if (audioEl && this.audioEnabled) {
-            audioEl.currentTime = 0;
-            audioEl.play();
-        }
-        this.audioElement = audioEl;
     },
-    toggleAudio(enabled) {
-        const audioEl = document.getElementById('audio-' + this.currentTheme);
-        if (audioEl) {
-            if (enabled) {
-                audioEl.play();
-            } else {
-                audioEl.pause();
-            }
+    async toggleAudio(enabled) {
+        if (enabled && this.currentTheme !== 'silence') {
+            await this.initAudioContext();
+            await this.loadAudioBuffer(this.currentTheme);
+            this.playLoop(this.currentTheme);
+        } else {
+            this.stopAudio();
         }
-        this.audioElement = audioEl;
     }
 }">
     <!-- Video backgrounds for each theme -->
     <div class="hero-video-container">
-        <!-- Water theme -->
+        <!-- Water theme (loaded immediately - default) -->
         <video class="hero-video hero-video-desktop"
                x-show="currentTheme === 'water'"
                x-transition:enter="transition-opacity"
@@ -54,35 +108,39 @@
             <source src="{{ url_for('static', path='videos/water-mobile.mp4') }}" type="video/mp4">
         </video>
 
-        <!-- Fire theme -->
+        <!-- Fire theme (lazy loaded) -->
         <video class="hero-video hero-video-desktop"
+               data-theme-video="fire"
                x-show="currentTheme === 'fire'"
                x-transition:enter="transition-opacity"
                x-transition:leave="transition-opacity"
-               autoplay muted loop playsinline>
-            <source src="{{ url_for('static', path='videos/fire-desktop.mp4') }}" type="video/mp4">
+               muted loop playsinline preload="none">
+            <source data-src="{{ url_for('static', path='videos/fire-desktop.mp4') }}" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
+               data-theme-video="fire"
                x-show="currentTheme === 'fire'"
-               autoplay muted loop playsinline>
-            <source src="{{ url_for('static', path='videos/fire-mobile.mp4') }}" type="video/mp4">
+               muted loop playsinline preload="none">
+            <source data-src="{{ url_for('static', path='videos/fire-mobile.mp4') }}" type="video/mp4">
         </video>
 
-        <!-- Forest theme -->
+        <!-- Forest theme (lazy loaded) -->
         <video class="hero-video hero-video-desktop"
+               data-theme-video="forest"
                x-show="currentTheme === 'forest'"
                x-transition:enter="transition-opacity"
                x-transition:leave="transition-opacity"
-               autoplay muted loop playsinline>
-            <source src="{{ url_for('static', path='videos/forest-desktop.mp4') }}" type="video/mp4">
+               muted loop playsinline preload="none">
+            <source data-src="{{ url_for('static', path='videos/forest-desktop.mp4') }}" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
+               data-theme-video="forest"
                x-show="currentTheme === 'forest'"
-               autoplay muted loop playsinline>
-            <source src="{{ url_for('static', path='videos/forest-mobile.mp4') }}" type="video/mp4">
+               muted loop playsinline preload="none">
+            <source data-src="{{ url_for('static', path='videos/forest-mobile.mp4') }}" type="video/mp4">
         </video>
 
-        <!-- Silence theme (dark background) -->
+        <!-- Silence theme (dark background, no video) -->
         <div class="hero-video silence-bg"
              x-show="currentTheme === 'silence'"
              x-transition:enter="transition-opacity"
@@ -91,16 +149,7 @@
         <div class="hero-video-overlay" :class="'overlay-' + currentTheme"></div>
     </div>
 
-    <!-- Audio elements (hidden) -->
-    <audio id="audio-water" loop preload="auto">
-        <source src="{{ url_for('static', path='audio/water.wav') }}" type="audio/wav">
-    </audio>
-    <audio id="audio-fire" loop preload="auto">
-        <source src="{{ url_for('static', path='audio/fire.wav') }}" type="audio/wav">
-    </audio>
-    <audio id="audio-forest" loop preload="auto">
-        <source src="{{ url_for('static', path='audio/forest.wav') }}" type="audio/wav">
-    </audio>
+    <!-- Audio handled via Web Audio API for seamless crossfade looping -->
 
     <div class="container hero-container">
         <div class="hero-left">

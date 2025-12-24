@@ -21,10 +21,11 @@
 
     /* Light mode (secondary) */
     --return-background: #F8FAFB;
+    --return-background-rgb: 248, 250, 251;
     --return-surface: #EDF2F4;
     --return-surface-elevated: #FFFFFF;
     --return-text-primary: #1A2B3C;
-    --return-text-secondary: #5A6B7C;
+    --return-text-secondary: #4A5568; /* Improved contrast: ~5.5:1 ratio (was #5A6B7C) */
     --return-border: rgba(26, 43, 60, 0.1);
 
     /* Typography */
@@ -58,6 +59,7 @@
 /* Dark mode (primary/default for this app) */
 [data-theme="dark"] {
     --return-background: #0A0D12;
+    --return-background-rgb: 10, 13, 18;
     --return-surface: #12161D;
     --return-surface-elevated: #1A1F29;
     --return-text-primary: #E8EDF3;
@@ -141,10 +143,20 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: var(--space-md) 0;
-    background: var(--return-background);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    padding: var(--space-lg) 0;
+    background: rgba(var(--return-background-rgb), 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background var(--transition-slow),
+                border-color var(--transition-slow),
+                backdrop-filter var(--transition-slow);
+}
+
+/* Scrolled state - glass effect appears */
+.navbar-scrolled {
+    background: rgba(var(--return-background-rgb), 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .navbar .container {
@@ -179,41 +191,57 @@ a:hover {
 
 .nav-link {
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--return-text-secondary);
+    text-decoration: none;
+    padding: var(--space-xs) 0;
+    position: relative;
     transition: color var(--transition-fast);
     white-space: nowrap;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--return-primary);
+    transition: width var(--transition-fast);
 }
 
 .nav-link:hover {
     color: var(--return-text-primary);
 }
 
+.nav-link:hover::after {
+    width: 100%;
+}
+
 .theme-toggle {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: var(--radius-full);
-    border: 1px solid var(--return-border);
-    background: var(--return-surface);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    border: none;
+    background: transparent;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all var(--transition-fast);
-    color: var(--return-text-primary);
+    color: var(--return-text-secondary);
+    opacity: 0.8;
 }
 
 .theme-toggle:hover {
-    border-color: var(--return-primary);
-    background: var(--return-surface-elevated);
+    color: var(--return-text-primary);
+    opacity: 1;
 }
 
 .theme-icon {
-    font-size: 1.1rem;
-    color: var(--return-text-primary);
+    font-size: 1.2rem;
 }
 
 /* -----------------------------------------------------------------------------
@@ -231,48 +259,41 @@ a:hover {
 
 /* Navbar overrides when hero video is present (homepage) */
 body:has(.hero) .navbar {
-    background: linear-gradient(
-        to bottom,
-        var(--return-background) 0%,
-        rgba(10, 13, 18, 0.8) 50%,
-        transparent 100%
-    );
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom-color: transparent;
 }
 
-html[data-theme="light"] body:has(.hero) .navbar {
-    background: linear-gradient(
-        to bottom,
-        var(--return-background) 0%,
-        rgba(248, 250, 251, 0.8) 50%,
-        transparent 100%
-    );
+/* Glass effect fades in on scroll for hero pages */
+body:has(.hero) .navbar-scrolled {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 body:has(.hero) .brand-text {
     color: #FFFFFF;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 body:has(.hero) .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 body:has(.hero) .nav-link:hover {
     color: #FFFFFF;
 }
 
+body:has(.hero) .nav-link::after {
+    background: rgba(255, 255, 255, 0.8);
+}
+
 body:has(.hero) .theme-toggle {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(0, 0, 0, 0.3);
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 body:has(.hero) .theme-toggle:hover {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-body:has(.hero) .theme-icon {
     color: #FFFFFF;
 }
 
@@ -374,6 +395,7 @@ body:has(.hero) .theme-icon {
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: var(--space-xl);
     line-height: 1.7;
+    max-width: 480px; /* Optimal reading width constraint */
 }
 
 .hero-cta {
@@ -384,12 +406,19 @@ body:has(.hero) .theme-icon {
 
 .app-store-badge {
     display: inline-block;
-    transition: transform var(--transition-fast), opacity var(--transition-fast);
+    transition: transform var(--transition-fast),
+                filter var(--transition-fast),
+                box-shadow var(--transition-fast);
+    border-radius: var(--radius-sm);
 }
 
 .app-store-badge:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.1);
+}
+
+.app-store-badge:hover img {
+    filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.15));
 }
 
 .hero-fade {
@@ -429,6 +458,12 @@ body:has(.hero) .theme-icon {
     -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-full);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.6;
+    transition: opacity var(--transition-base);
+}
+
+.hero-controls:hover {
+    opacity: 1;
 }
 
 .theme-nav-btn {
@@ -495,9 +530,7 @@ body:has(.hero) .theme-icon {
     cursor: pointer;
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
-    margin-left: var(--space-sm);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    padding-left: var(--space-md);
+    margin-left: var(--space-md);
 }
 
 .audio-toggle:hover {
@@ -538,33 +571,19 @@ body:has(.hero) .theme-icon {
     background: var(--return-surface);
     border: 1px solid var(--return-border);
     border-radius: var(--radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-2xl); /* Increased from space-xl for more breathing room */
     text-align: center;
-    transition: all var(--transition-base);
+    transition: transform var(--transition-fast),
+                border-color var(--transition-fast),
+                box-shadow var(--transition-fast);
     position: relative;
     overflow: hidden;
-}
-
-.feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--card-accent, var(--return-primary));
-    opacity: 0;
-    transition: opacity var(--transition-base);
 }
 
 .feature-card:hover {
     transform: translateY(-4px);
     border-color: var(--card-accent, var(--return-primary));
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.feature-card:hover::before {
-    opacity: 1;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
 .feature-icon {
@@ -575,18 +594,20 @@ body:has(.hero) .theme-icon {
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    background: linear-gradient(
-        135deg,
-        rgba(89, 178, 204, 0.1) 0%,
-        rgba(89, 178, 204, 0.05) 100%
-    );
+    background: color-mix(in srgb, var(--card-accent, var(--return-primary)) 12%, transparent);
     border-radius: var(--radius-md);
     color: var(--card-accent, var(--return-primary));
 }
 
+.sf-symbol {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
 .feature-title {
     font-family: var(--font-body);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: var(--space-sm);
 }
@@ -614,19 +635,20 @@ body:has(.hero) .theme-icon {
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
-    height: 80px;
+    height: 48px;
     background: linear-gradient(
         to bottom,
         transparent,
         var(--return-primary),
         transparent
     );
+    opacity: 0.6;
 }
 
 .cta-content {
     max-width: 500px;
     margin: 0 auto;
-    padding-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
 }
 
 .cta-title {
@@ -814,11 +836,20 @@ body:has(.hero) .theme-icon {
 
 @media (max-width: 768px) {
     .navbar-nav {
-        gap: var(--space-md);
+        gap: var(--space-sm);
     }
 
     .nav-link {
-        font-size: 0.85rem;
+        font-size: 0.875rem;
+    }
+
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+    }
+
+    .theme-icon {
+        font-size: 1rem;
     }
 
     .features-grid {
@@ -855,6 +886,89 @@ body:has(.hero) .theme-icon {
 
     .brand-text {
         font-size: 1.25rem;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+   Accessibility: Focus States
+   ----------------------------------------------------------------------------- */
+/* Global focus-visible outline for keyboard navigation */
+:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 3px;
+}
+
+/* Specific focus styles for interactive elements */
+.nav-link:focus-visible,
+.navbar-brand:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
+}
+
+.theme-toggle:focus-visible,
+.theme-nav-btn:focus-visible,
+.audio-toggle:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 2px;
+}
+
+.app-store-badge:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 4px;
+    border-radius: var(--radius-md);
+}
+
+.feature-card:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 4px;
+}
+
+/* Remove default focus outline only when focus-visible is supported */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Hero context - white focus rings on video background */
+body:has(.hero) .nav-link:focus-visible,
+body:has(.hero) .navbar-brand:focus-visible,
+body:has(.hero) .theme-toggle:focus-visible {
+    outline-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer links focus */
+.footer a:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* -----------------------------------------------------------------------------
+   Mobile Touch Targets (48px minimum)
+   ----------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .nav-link {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .theme-toggle {
+        min-width: 48px;
+        min-height: 48px;
+    }
+
+    .theme-nav-btn,
+    .audio-toggle {
+        min-width: 48px;
+        min-height: 48px;
+    }
+
+    .footer a {
+        display: inline-block;
+        min-height: 44px;
+        padding: var(--space-sm) 0;
     }
 }
 

@@ -1,4 +1,7 @@
-<nav class="navbar">
+<nav class="navbar"
+     x-data="{ scrolled: false }"
+     @scroll.window="scrolled = window.scrollY > 50"
+     :class="{ 'navbar-scrolled': scrolled }">
     <div class="container">
         <a class="navbar-brand" href="/">
             <span class="brand-text">Return<span class="brand-dots">...</span></span>
