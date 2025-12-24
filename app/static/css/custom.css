@@ -324,7 +324,13 @@ body:has(.hero) .theme-icon {
     left: 0;
     right: 0;
     bottom: 0;
-    transition: background var(--transition-slow);
+    background: radial-gradient(
+        circle at center,
+        transparent 0%,
+        transparent 15%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
 }
 
 .hero-container {
@@ -356,7 +362,6 @@ body:has(.hero) .theme-icon {
     margin-bottom: 0;
     letter-spacing: -0.03em;
     color: #FFFFFF;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title-accent {
@@ -369,7 +374,6 @@ body:has(.hero) .theme-icon {
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: var(--space-xl);
     line-height: 1.7;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta {
@@ -408,43 +412,6 @@ body:has(.hero) .theme-icon {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f1a 100%);
 }
 
-/* Vignette overlay - center transparent, edges dark */
-.overlay-fire,
-.overlay-forest,
-.overlay-silence {
-    background: radial-gradient(
-        circle at center,
-        transparent 0%,
-        transparent 30%,
-        rgba(0, 0, 0, 0.3) 70%,
-        rgba(0, 0, 0, 0.6) 100%
-    );
-}
-
-/* Water needs stronger vignette due to lighter video */
-.overlay-water {
-    background: radial-gradient(
-        circle at center,
-        rgba(0, 0, 0, 0.1) 0%,
-        rgba(0, 0, 0, 0.15) 30%,
-        rgba(0, 0, 0, 0.45) 70%,
-        rgba(0, 0, 0, 0.7) 100%
-    );
-}
-
-/* Light mode vignette - white edges */
-[data-theme="light"] .overlay-water,
-[data-theme="light"] .overlay-fire,
-[data-theme="light"] .overlay-forest,
-[data-theme="light"] .overlay-silence {
-    background: radial-gradient(
-        circle at center,
-        transparent 0%,
-        transparent 30%,
-        rgba(255, 255, 255, 0.4) 70%,
-        rgba(255, 255, 255, 0.7) 100%
-    );
-}
 
 /* Theme controls */
 .hero-controls {
