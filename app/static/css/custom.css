@@ -63,7 +63,7 @@
     --return-surface: #12161D;
     --return-surface-elevated: #1A1F29;
     --return-text-primary: #E8EDF3;
-    --return-text-secondary: #8B949E;
+    --return-text-secondary: #9BA3AD; /* Improved contrast: ~5.2:1 ratio (was #8B949E) */
     --return-border: rgba(255, 255, 255, 0.08);
 }
 
@@ -333,9 +333,9 @@ body:has(.hero) .theme-toggle:hover {
     }
 }
 
-/* Video transitions */
+/* Video transitions - slow, meditative feel */
 .transition-opacity {
-    transition: opacity 0.5s ease;
+    transition: opacity 0.8s ease-out;
 }
 
 /* Overlay for text readability */
@@ -373,7 +373,6 @@ body:has(.hero) .theme-toggle:hover {
     flex: 0 0 auto;
     max-width: 360px;
     text-align: left;
-    margin-top: 20px;
 }
 
 .hero-title {
@@ -391,8 +390,8 @@ body:has(.hero) .theme-toggle:hover {
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
     margin-bottom: var(--space-xl);
     line-height: 1.7;
     max-width: 480px; /* Optimal reading width constraint */
@@ -413,7 +412,7 @@ body:has(.hero) .theme-toggle:hover {
 }
 
 .app-store-badge:hover {
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-3px) scale(1.04);
     filter: brightness(1.1);
 }
 
@@ -466,7 +465,7 @@ body:has(.hero) .theme-toggle:hover {
     -webkit-backdrop-filter: blur(12px);
     border-radius: var(--radius-full);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    opacity: 0.6;
+    opacity: 0.75;
     transition: opacity var(--transition-base);
 }
 
@@ -522,8 +521,9 @@ body:has(.hero) .theme-toggle:hover {
 }
 
 .theme-dot.active {
-    background: rgba(255, 255, 255, 0.9);
-    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.95);
+    transform: scale(1.5);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 
 .audio-toggle {
@@ -636,7 +636,7 @@ body:has(.hero) .theme-toggle:hover {
    CTA Section
    ----------------------------------------------------------------------------- */
 .cta-section {
-    padding: var(--space-4xl) 0;
+    padding: 8rem 0 var(--space-4xl);
     text-align: center;
 }
 
