@@ -173,8 +173,19 @@
         </div>
     </div>
 
-    <!-- Theme controls -->
-    <div class="hero-controls">
+    <!-- Bottom controls wrapper -->
+    <div class="hero-bottom">
+        <!-- Mobile CTA (above theme controls) -->
+        <div class="hero-cta-mobile">
+            <a href="https://apps.apple.com/app/return" class="app-store-badge" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                     alt="Download on the App Store"
+                     width="180">
+            </a>
+        </div>
+
+        <!-- Theme controls -->
+        <div class="hero-controls">
         <button class="theme-nav-btn" @click="prevTheme()" title="Previous theme">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="15 18 9 12 15 6"></polyline>
@@ -207,6 +218,7 @@
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
             </svg>
         </button>
+        </div>
     </div>
 
     <!-- Subtle gradient overlay at bottom -->

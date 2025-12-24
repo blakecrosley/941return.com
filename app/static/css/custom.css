@@ -442,13 +442,21 @@ body:has(.hero) .theme-toggle:hover {
 }
 
 
-/* Theme controls */
-.hero-controls {
+/* Bottom wrapper for CTA + controls */
+.hero-bottom {
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Theme controls */
+.hero-controls {
     display: flex;
     align-items: center;
     gap: var(--space-md);
@@ -535,6 +543,11 @@ body:has(.hero) .theme-toggle:hover {
 
 .audio-toggle:hover {
     color: white;
+}
+
+/* Mobile CTA - hidden on desktop */
+.hero-cta-mobile {
+    display: none;
 }
 
 /* -----------------------------------------------------------------------------
@@ -816,21 +829,49 @@ body:has(.hero) .theme-toggle:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero-container {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: var(--space-3xl);
+    .hero {
+        align-items: flex-start;
+        padding-top: 80px;
     }
 
-    .hero-left,
-    .hero-right {
+    .hero-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        min-height: auto;
+        padding-top: var(--space-lg);
+    }
+
+    .hero-left {
         max-width: 500px;
         text-align: center;
     }
 
+    .hero-title {
+        margin-bottom: 0;
+    }
+
+    .hero-right {
+        max-width: 500px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .hero-subtitle {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* Hide CTA in hero-right on mobile */
     .hero-cta {
-        justify-content: center;
+        display: none;
+    }
+
+    /* Show mobile CTA in hero-bottom */
+    .hero-cta-mobile {
+        display: block;
     }
 }
 
@@ -866,12 +907,17 @@ body:has(.hero) .theme-toggle:hover {
         gap: var(--space-2xl);
     }
 
+    .hero-container {
+        gap: var(--space-lg);
+    }
+
     .hero-title {
         font-size: clamp(2.5rem, 10vw, 3.5rem);
     }
 
     .hero-subtitle {
         font-size: 1.1rem;
+        margin-bottom: var(--space-md);
     }
 }
 
