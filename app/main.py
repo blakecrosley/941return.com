@@ -34,7 +34,7 @@ app = FastAPI(
 app.add_middleware(SecurityHeadersMiddleware)
 app.add_middleware(
     TrustedHostMiddleware,
-    allowed_hosts=["941return.com", "*.941return.com", "localhost", "127.0.0.1"]
+    allowed_hosts=["*"]  # Allow all hosts for container deployments
 )
 
 # Mount static files
