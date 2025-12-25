@@ -1,9 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
+from fastapi.responses import HTMLResponse
 from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.requests import Request
+from starlette.exceptions import HTTPException as StarletteHTTPException
 from pathlib import Path
 
 from app.routes import pages
@@ -42,3 +43,19 @@ app.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
 
 # Include routes
 app.include_router(pages.router)
+
+# Templates for error pages
+templates = Jinja2Templates(directory=APP_DIR / "templates")
+
+
+# Custom 404 handler
+@app.exception_handler(StarletteHTTPException)
+async def custom_http_exception_handler(request: Request, exc: StarletteHTTPException):
+    if exc.status_code == 404:
+        return templates.TemplateResponse(
+            "404.html",
+            {"request": request, "cache_bust": pages.CACHE_BUST},
+            status_code=404
+        )
+    # For other HTTP errors, return a simple response
+    return HTMLResponse(content=str(exc.detail), status_code=exc.status_code)

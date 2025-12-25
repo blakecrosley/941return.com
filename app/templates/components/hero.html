@@ -21,7 +21,7 @@
     async loadAudioBuffer(theme) {
         if (this.audioBuffers[theme]) return this.audioBuffers[theme];
         try {
-            const response = await fetch(`/static/audio/${theme}.wav`);
+            const response = await fetch(`/static/audio/${theme}.mp3`);
             const arrayBuffer = await response.arrayBuffer();
             this.audioBuffers[theme] = await this.audioContext.decodeAudioData(arrayBuffer);
             return this.audioBuffers[theme];
