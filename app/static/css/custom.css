@@ -1000,6 +1000,32 @@ body:has(.hero) .theme-toggle:focus-visible {
 }
 
 /* -----------------------------------------------------------------------------
+   Buttons
+   ----------------------------------------------------------------------------- */
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--return-primary);
+    color: white;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform var(--transition-fast),
+                background-color var(--transition-fast);
+}
+
+.btn-primary:hover {
+    background: var(--return-primary-light);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-primary:focus-visible {
+    outline: 2px solid var(--return-primary);
+    outline-offset: 3px;
+}
+
+/* -----------------------------------------------------------------------------
    Utilities
    ----------------------------------------------------------------------------- */
 .sr-only {
