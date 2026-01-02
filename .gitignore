@@ -23,3 +23,9 @@ Thumbs.db
 # Local development
 .env
 *.log
+
+# Database (local SQLite)
+data/
+
+# Personal Claude config
+CLAUDE.md

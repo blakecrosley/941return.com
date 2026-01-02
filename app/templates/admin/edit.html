@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}{% if post %}Edit: {{ post.title }}{% else %}New Post{% endif %} - Admin{% endblock %}
+
+{% block content %}
+<section class="admin-page">
+    <div class="container">
+        <header class="admin-header">
+            <h1>{% if post %}Edit Post{% else %}New Post{% endif %}</h1>
+            <a href="/admin/posts" class="back-link">&larr; All Posts</a>
+        </header>
+
+        {% if error %}
+        <div class="alert alert-error">{{ error }}</div>
+        {% endif %}
+
+        {% if success %}
+        <div class="alert alert-success">{{ success }}</div>
+        {% endif %}
+
+        <form method="post" class="admin-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required
+                           value="{{ post.title if post else '' }}"
+                           placeholder="Post title">
+                </div>
+
+                <div class="form-group">
+                    <label for="slug">Slug</label>
+                    <input type="text" id="slug" name="slug" required
+                           value="{{ post.slug if post else '' }}"
+                           placeholder="post-slug"
+                           pattern="[a-z0-9]+(?:-[a-z0-9]+)*">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="excerpt">Excerpt</label>
+                <textarea id="excerpt" name="excerpt" rows="2"
+                          placeholder="Brief description for previews">{{ post.excerpt if post else '' }}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="content_md">Content (Markdown)</label>
+                <textarea id="content_md" name="content_md" rows="20" required
+                          placeholder="Write your post in markdown...">{{ post.content_md if post else '' }}</textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="featured_image">Featured Image URL</label>
+                    <input type="text" id="featured_image" name="featured_image"
+                           value="{{ post.featured_image if post else '' }}"
+                           placeholder="https://...">
+                </div>
+            </div>
+
+            <details class="seo-section">
+                <summary>SEO Settings</summary>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="seo_title">SEO Title</label>
+                        <input type="text" id="seo_title" name="seo_title"
+                               value="{{ post.seo_title if post else '' }}"
+                               placeholder="Custom title for search engines">
+                    </div>
+                    <div class="form-group">
+                        <label for="seo_description">SEO Description</label>
+                        <input type="text" id="seo_description" name="seo_description"
+                               value="{{ post.seo_description if post else '' }}"
+                               placeholder="Meta description">
+                    </div>
+                </div>
+            </details>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Save</button>
+
+                {% if post %}
+                <div class="action-buttons">
+                    {% if post.status == 'draft' %}
+                    <button type="submit" formaction="/admin/posts/{{ post.id }}/publish"
+                            class="btn-secondary">Publish</button>
+                    {% else %}
+                    <button type="submit" formaction="/admin/posts/{{ post.id }}/unpublish"
+                            class="btn-secondary">Unpublish</button>
+                    {% endif %}
+
+                    <button type="submit" formaction="/admin/posts/{{ post.id }}/delete"
+                            class="btn-danger"
+                            onclick="return confirm('Are you sure you want to delete this post?')">Delete</button>
+                </div>
+
+                <div class="post-info">
+                    <span class="status-badge status-{{ post.status }}">{{ post.status }}</span>
+                    {% if post.file_path %}
+                    <span class="file-path" title="{{ post.file_path }}">Synced</span>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,62 @@
+# Return App Company Facts
+# Use these facts when relevant, but sparingly
+
+company:
+  name: "Return"
+  tagline: "A minimal, zen-like meditation timer"
+  website: "https://941return.com"
+  app_store: "https://apps.apple.com/app/return-meditation-timer/id6738574063"
+
+product:
+  type: "Meditation timer app"
+  design: "Minimal, zen-inspired interface"
+  philosophy: "Less is more - focused on the practice, not the features"
+
+platforms:
+  - name: "iPhone"
+    notes: "Primary experience with all themes and features"
+  - name: "Apple Watch"
+    notes: "Standalone timer with haptic feedback"
+  - name: "Mac"
+    notes: "Native Mac app for desktop practice"
+  - name: "Apple TV"
+    notes: "Large-screen immersive meditation with ambient visuals"
+
+features:
+  themes:
+    - name: "Water"
+      color: "Teal (#59B2CC)"
+      mood: "Calm, flowing"
+    - name: "Fire"
+      color: "Orange (#FF8033)"
+      mood: "Energy, transformation"
+    - name: "Forest"
+      color: "Green (#66C059)"
+      mood: "Growth, grounding"
+    - name: "Silence"
+      color: "Gray (#8B8B9E)"
+      mood: "Stillness, clarity"
+    - name: "Health"
+      color: "Pink (#FF6B8A)"
+      mood: "Recovery, vitality"
+
+  timer:
+    - "Customizable duration"
+    - "Interval bells"
+    - "Ambient soundscapes"
+    - "Dark mode optimized"
+
+target_audience:
+  primary:
+    - "Athletes returning from injury"
+    - "Meditation practitioners seeking simplicity"
+    - "Apple ecosystem users"
+  secondary:
+    - "People new to meditation"
+    - "Mindfulness curious"
+    - "Wellness-focused professionals"
+
+author:
+  name: "Blake Crosley"
+  role: "Creator"
+  bio: "Twenty years of experience in product design, now focused on building tools for mindful living."

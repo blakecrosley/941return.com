@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.seo_title or post.title }} - Return...{% endblock %}
+{% block description %}{{ post.seo_description or post.excerpt or 'Read more on the Return blog.' }}{% endblock %}
+{% block og_title %}{{ post.title }} - Return...{% endblock %}
+{% block og_url %}/blog/{{ post.slug }}{% endblock %}
+
+{% block head %}
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ post.title }}",
+    "description": "{{ post.seo_description or post.excerpt or '' }}",
+    "author": {
+        "@type": "Person",
+        "name": "Blake Crosley"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Return",
+        "url": "https://941return.com"
+    },
+    "datePublished": "{{ post.published_at.isoformat() if post.published_at else '' }}",
+    "dateModified": "{{ post.updated_at.isoformat() if post.updated_at else '' }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://941return.com/blog/{{ post.slug }}"
+    }
+    {% if post.featured_image %}
+    ,"image": "{{ post.featured_image }}"
+    {% endif %}
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<article class="blog-post">
+    <div class="container">
+        <header class="post-header">
+            <a href="/blog" class="back-link">&larr; Back to Blog</a>
+            <h1>{{ post.title }}</h1>
+            <div class="post-meta">
+                <span class="post-author">Blake Crosley</span>
+                <span class="meta-separator">&middot;</span>
+                <time datetime="{{ post.published_at.isoformat() if post.published_at else '' }}">
+                    {{ post.published_at.strftime('%B %d, %Y') if post.published_at else 'Draft' }}
+                </time>
+            </div>
+        </header>
+
+        {% if post.featured_image %}
+        <figure class="post-featured-image">
+            <img src="{{ post.featured_image }}" alt="{{ post.title }}">
+        </figure>
+        {% endif %}
+
+        <div class="post-body prose">
+            {{ post.content_html | safe }}
+        </div>
+
+        <footer class="post-footer">
+            <a href="/blog" class="back-link">&larr; Back to Blog</a>
+        </footer>
+    </div>
+</article>
+{% endblock %}

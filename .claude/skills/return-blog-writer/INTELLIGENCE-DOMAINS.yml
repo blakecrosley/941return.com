@@ -1,0 +1,88 @@
+# Return Blog Intelligence Domains
+# Content areas we cover and their scope
+
+domains:
+  - name: "return-to-sport"
+    description: "The mental and physical journey of returning to athletic activity after injury or setback"
+    topics:
+      - "Psychology of injury recovery"
+      - "Mental blocks in returning athletes"
+      - "Role of meditation in physical healing"
+      - "Building confidence after injury"
+      - "Fear management in sport"
+      - "Mind-body connection in recovery"
+    research_areas:
+      - "Sports psychology studies"
+      - "Visualization and athletic performance"
+      - "Meditation and injury recovery research"
+    example_articles:
+      - "The Science of Returning to Sport"
+      - "Why Athletes Need Mental Recovery Too"
+      - "Meditation as Rehabilitation"
+
+  - name: "mindfulness-practice"
+    description: "Practical meditation techniques and mindfulness principles"
+    topics:
+      - "Meditation fundamentals"
+      - "Breathwork techniques"
+      - "Building a daily practice"
+      - "Meditation for beginners"
+      - "Different meditation styles"
+      - "Mindfulness in daily life"
+    research_areas:
+      - "Neuroscience of meditation"
+      - "Mindfulness-based interventions"
+      - "Breathing and nervous system"
+    example_articles:
+      - "A Complete Guide to Box Breathing"
+      - "Starting a Meditation Practice That Sticks"
+      - "The Breath as Bridge"
+
+  - name: "app-features"
+    description: "How Return supports meditation practice across devices"
+    topics:
+      - "Using Return on iPhone"
+      - "Apple Watch meditation sessions"
+      - "Mac desktop practice"
+      - "Apple TV ambient meditation"
+      - "Customizing your timer"
+      - "Choosing the right theme"
+    style_notes:
+      - "Focus on the benefit, not the button"
+      - "Explain the 'why' behind design choices"
+      - "Connect features to practice outcomes"
+    example_articles:
+      - "A Complete Guide to Return's Meditation Timer"
+      - "Why Return Works on Apple Watch"
+      - "Creating Your Meditation Space on Apple TV"
+
+  - name: "wellness-recovery"
+    description: "Broader wellness topics that connect to meditation practice"
+    topics:
+      - "Sleep and meditation"
+      - "Stress management techniques"
+      - "Recovery routines for athletes"
+      - "Focus and productivity"
+      - "Nervous system regulation"
+      - "Daily wellness rituals"
+    research_areas:
+      - "Sleep science"
+      - "Stress physiology"
+      - "Recovery optimization"
+    example_articles:
+      - "Evening Meditation for Better Sleep"
+      - "The Athlete's Recovery Toolkit"
+      - "Regulating Your Nervous System"
+
+content_priorities:
+  high:
+    - "Actionable techniques readers can use immediately"
+    - "Research-backed claims with citations"
+    - "Return-to-sport specific content (our niche)"
+  medium:
+    - "General meditation guidance"
+    - "App feature explanations"
+  low:
+    - "News commentary"
+    - "Trend pieces"
+    - "General wellness content without meditation angle"

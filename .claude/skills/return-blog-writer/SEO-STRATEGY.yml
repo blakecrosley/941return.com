@@ -1,0 +1,107 @@
+# Return Blog SEO Strategy
+# Keyword targets and optimization guidelines
+
+primary_keywords:
+  - keyword: "meditation timer app"
+    search_intent: "transactional"
+    difficulty: "medium"
+    priority: "high"
+    notes: "Core product term"
+
+  - keyword: "return to sport after injury"
+    search_intent: "informational"
+    difficulty: "low"
+    priority: "high"
+    notes: "Our unique niche - underserved by competitors"
+
+  - keyword: "meditation for athletes"
+    search_intent: "informational"
+    difficulty: "medium"
+    priority: "high"
+    notes: "Connects mindfulness to athletic recovery"
+
+  - keyword: "apple watch meditation"
+    search_intent: "mixed"
+    difficulty: "medium"
+    priority: "medium"
+    notes: "Platform-specific searches"
+
+secondary_keywords:
+  - "breathwork for recovery"
+  - "meditation for injury recovery"
+  - "mental training for athletes"
+  - "box breathing technique"
+  - "mindfulness timer"
+  - "meditation app iphone"
+  - "zen meditation timer"
+  - "minimal meditation app"
+  - "daily meditation practice"
+  - "meditation for beginners"
+
+long_tail_targets:
+  - "how to meditate after sports injury"
+  - "meditation for returning to sport"
+  - "best meditation app for apple watch"
+  - "simple meditation timer no subscription"
+  - "meditation app for athletes"
+  - "breathwork for athletic recovery"
+  - "building a meditation habit"
+
+content_optimization:
+  title_guidelines:
+    - "Include primary keyword naturally"
+    - "Front-load important terms"
+    - "Keep under 60 characters"
+    - "Make it compelling to click"
+
+  meta_description:
+    length: "150-160 characters"
+    include:
+      - "Primary keyword"
+      - "Clear value proposition"
+      - "Call to action or intrigue"
+
+  heading_structure:
+    h1: "One per page, includes primary keyword"
+    h2: "Section breaks, include secondary keywords"
+    h3: "Subsections, natural language"
+
+  internal_linking:
+    - "Link to related blog posts"
+    - "Link to app store when relevant"
+    - "2-3 internal links per 1000 words"
+
+schema_markup:
+  article:
+    - "@type: Article"
+    - "headline"
+    - "author (Blake Crosley)"
+    - "datePublished"
+    - "dateModified"
+    - "publisher (Return)"
+
+  how_to:
+    - "Use for technique articles"
+    - "Step-by-step structure"
+    - "Estimated time when applicable"
+
+competitor_gaps:
+  opportunities:
+    - "Return-to-sport meditation content is sparse"
+    - "Athletic recovery + mindfulness intersection"
+    - "Apple Watch meditation guides"
+    - "Minimal/zen meditation app positioning"
+
+  avoid:
+    - "Generic meditation benefits (saturated)"
+    - "Meditation vs other apps comparisons"
+    - "News/trends without unique angle"
+
+measurement:
+  track:
+    - "Organic traffic per post"
+    - "Keyword rankings for targets"
+    - "Time on page"
+    - "App Store clicks from blog"
+
+  review_cadence: "Monthly"

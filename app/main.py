@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -7,10 +8,20 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from pathlib import Path
 
-from app.routes import pages
+from app.routes import pages, blog, admin
+from app.db.database import init_db
 
 # Get the app directory
 APP_DIR = Path(__file__).parent
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Startup and shutdown events."""
+    # Startup: Initialize database
+    init_db()
+    yield
+    # Shutdown: nothing to clean up
 
 
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):
@@ -28,7 +39,8 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
 
 app = FastAPI(
     title="Return...",
-    description="A minimal, zen-like meditation timer"
+    description="A minimal, zen-like meditation timer",
+    lifespan=lifespan
 )
 
 # Security middleware
@@ -43,6 +55,8 @@ app.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
 
 # Include routes
 app.include_router(pages.router)
+app.include_router(blog.router)
+app.include_router(admin.router)
 
 # Templates for error pages
 templates = Jinja2Templates(directory=APP_DIR / "templates")
