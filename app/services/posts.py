@@ -11,6 +11,7 @@ from typing import Optional, Union
 import frontmatter
 import markdown
 from sqlalchemy.orm import Session
+from sqlalchemy import or_, and_
 
 
 def parse_date(value: Union[str, date, datetime, None]) -> Optional[datetime]:
@@ -73,9 +74,21 @@ def list_posts(
 
 
 def get_published_posts(db: Session, limit: int = 50) -> list[Post]:
-    """Get published posts ordered by publish date."""
+    """Get published posts ordered by publish date.
+
+    Returns posts that are either:
+    - status='published' (immediately published)
+    - status='scheduled' AND scheduled_at <= now (scheduled time has passed)
+    """
+    now = datetime.utcnow()
     return db.query(Post).filter(
-        Post.status == 'published'
+        or_(
+            Post.status == 'published',
+            and_(
+                Post.status == 'scheduled',
+                Post.scheduled_at <= now
+            )
+        )
     ).order_by(Post.published_at.desc()).limit(limit).all()
 
 
@@ -196,6 +209,22 @@ def publish_post(db: Session, post: Post) -> Post:
 def unpublish_post(db: Session, post: Post) -> Post:
     """Revert post to draft status."""
     post.status = 'draft'
+    post.updated_at = datetime.utcnow()
+
+    db.commit()
+    db.refresh(post)
+
+    sync_post_to_file(post)
+    db.commit()
+
+    return post
+
+
+def schedule_post(db: Session, post: Post, scheduled_at: datetime) -> Post:
+    """Schedule a post for future publication."""
+    post.status = 'scheduled'
+    post.scheduled_at = scheduled_at
+    post.published_at = scheduled_at  # Set published_at to scheduled time
     post.updated_at = datetime.utcnow()
 
     db.commit()

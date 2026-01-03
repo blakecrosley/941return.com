@@ -1,7 +1,13 @@
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Request, Depends
+from fastapi.responses import Response
 from fastapi.templating import Jinja2Templates
+from sqlalchemy.orm import Session
 from pathlib import Path
+from datetime import datetime
 import os
+
+from app.db.database import get_db
+from app.services import posts as posts_service
 
 router = APIRouter()
 
@@ -35,3 +41,48 @@ async def terms(request: Request):
 @router.get("/support")
 async def support(request: Request):
     return templates.TemplateResponse("support.html", {"request": request})
+
+
+@router.get("/sitemap.xml")
+async def sitemap(db: Session = Depends(get_db)):
+    """Generate dynamic sitemap including blog posts."""
+    base_url = "https://941return.com"
+
+    # Static pages
+    static_pages = [
+        {"loc": "/", "priority": "1.0"},
+        {"loc": "/blog", "priority": "0.9"},
+        {"loc": "/privacy", "priority": "0.5"},
+        {"loc": "/terms", "priority": "0.5"},
+        {"loc": "/support", "priority": "0.8"},
+    ]
+
+    # Get published blog posts
+    posts = posts_service.get_published_posts(db)
+
+    # Build XML
+    xml_parts = ['<?xml version="1.0" encoding="UTF-8"?>']
+    xml_parts.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+
+    # Add static pages
+    for page in static_pages:
+        xml_parts.append("  <url>")
+        xml_parts.append(f"    <loc>{base_url}{page['loc']}</loc>")
+        xml_parts.append(f"    <priority>{page['priority']}</priority>")
+        xml_parts.append("  </url>")
+
+    # Add blog posts
+    for post in posts:
+        xml_parts.append("  <url>")
+        xml_parts.append(f"    <loc>{base_url}/blog/{post.slug}</loc>")
+        if post.updated_at:
+            xml_parts.append(f"    <lastmod>{post.updated_at.strftime('%Y-%m-%d')}</lastmod>")
+        xml_parts.append("    <priority>0.7</priority>")
+        xml_parts.append("  </url>")
+
+    xml_parts.append("</urlset>")
+
+    return Response(
+        content="\n".join(xml_parts),
+        media_type="application/xml"
+    )

@@ -1392,6 +1392,39 @@ body:has(.hero) .theme-toggle:focus-visible {
     color: var(--theme-health);
 }
 
+.status-scheduled {
+    background: rgba(104, 169, 255, 0.2);
+    color: #68a9ff;
+}
+
+.schedule-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    padding: var(--space-md);
+    background: var(--return-surface);
+    border-radius: var(--radius-md);
+}
+
+.schedule-section label {
+    font-size: 0.875rem;
+    color: var(--return-text-secondary);
+}
+
+.schedule-section input[type="datetime-local"] {
+    padding: 0.5rem;
+    border: 1px solid var(--return-border);
+    border-radius: var(--radius-sm);
+    background: var(--return-bg);
+    color: var(--return-text-primary);
+}
+
+.scheduled-time {
+    font-size: 0.875rem;
+    color: #68a9ff;
+}
+
 /* Buttons */
 .btn-small {
     display: inline-block;

@@ -26,6 +26,7 @@ class Post(Base):
     seo_description = Column(String(500))
     status = Column(String(20), default='draft', nullable=False)
     published_at = Column(DateTime)
+    scheduled_at = Column(DateTime)  # If set with status='scheduled', auto-publish at this time
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     file_path = Column(String(500))  # For markdown sync
@@ -33,11 +34,12 @@ class Post(Base):
 
     __table_args__ = (
         CheckConstraint(
-            "status IN ('draft', 'published', 'archived')",
+            "status IN ('draft', 'published', 'scheduled', 'archived')",
             name='check_post_status'
         ),
         Index('idx_posts_status', 'status'),
         Index('idx_posts_published_at', 'published_at'),
+        Index('idx_posts_scheduled_at', 'scheduled_at'),
     )
 
     def __repr__(self):
