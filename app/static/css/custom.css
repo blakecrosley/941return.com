@@ -1075,6 +1075,7 @@ body:has(.hero) .theme-toggle:focus-visible {
     text-decoration: none;
     color: inherit;
     display: block;
+    height: 100%;
 }
 
 .post-card {
@@ -1085,6 +1086,9 @@ body:has(.hero) .theme-toggle:focus-visible {
     transition: transform var(--transition-fast),
                 border-color var(--transition-fast),
                 box-shadow var(--transition-fast);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-card-link:hover .post-card {
@@ -1111,6 +1115,9 @@ body:has(.hero) .theme-toggle:focus-visible {
 
 .post-content {
     padding: var(--space-xl);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-title {
@@ -1132,11 +1139,16 @@ body:has(.hero) .theme-toggle:focus-visible {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: var(--space-md);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .post-meta {
     color: var(--return-text-secondary);
     font-size: 0.875rem;
+    margin-top: auto;
 }
 
 .no-posts {
