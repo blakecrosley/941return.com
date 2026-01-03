@@ -3,17 +3,13 @@ Public blog routes for Return.
 """
 
 from fastapi import APIRouter, Request, Depends, HTTPException
-from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
-from pathlib import Path
 
 from app.db.database import get_db
 from app.services import posts as posts_service
+from app.routes.pages import templates
 
 router = APIRouter(prefix="/blog", tags=["blog"])
-
-# Templates
-templates = Jinja2Templates(directory=Path(__file__).parent.parent / "templates")
 
 
 @router.get("")

@@ -5,18 +5,14 @@ Protected by RETURN_ADMIN_ENABLED environment variable.
 
 import os
 from fastapi import APIRouter, Request, Depends, HTTPException, Form
-from fastapi.templating import Jinja2Templates
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
-from pathlib import Path
 
 from app.db.database import get_db
 from app.services import posts as posts_service
+from app.routes.pages import templates
 
 router = APIRouter(prefix="/admin", tags=["admin"])
-
-# Templates
-templates = Jinja2Templates(directory=Path(__file__).parent.parent / "templates")
 
 
 def require_admin():
