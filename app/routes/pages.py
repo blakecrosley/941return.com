@@ -1,21 +1,17 @@
 from fastapi import APIRouter, Request
 from fastapi.templating import Jinja2Templates
 from pathlib import Path
-import subprocess
+import os
 
 router = APIRouter()
 
 # Set up templates
-templates = Jinja2Templates(directory=Path(__file__).parent.parent / "templates")
+APP_DIR = Path(__file__).parent.parent
+templates = Jinja2Templates(directory=APP_DIR / "templates")
 
-# Cache bust using git commit hash (computed once at startup)
-try:
-    CACHE_BUST = subprocess.check_output(
-        ["git", "rev-parse", "--short", "HEAD"],
-        stderr=subprocess.DEVNULL
-    ).decode().strip()
-except Exception:
-    CACHE_BUST = "1"  # Fallback
+# Cache bust using CSS file modification time (works in containers)
+css_file = APP_DIR / "static" / "css" / "custom.css"
+CACHE_BUST = str(int(os.path.getmtime(css_file))) if css_file.exists() else "1"
 
 # Make cache_bust available in all templates
 templates.env.globals["cache_bust"] = CACHE_BUST
