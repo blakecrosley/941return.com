@@ -104,6 +104,63 @@ def get_published_posts(
     return posts, total
 
 
+def get_related_posts(
+    db: Session,
+    current_post_id: int,
+    limit: int = 3
+) -> list[Post]:
+    """Get related posts for display at end of article.
+
+    Returns recent published posts, excluding the current one.
+    """
+    now = datetime.utcnow()
+    return db.query(Post).filter(
+        Post.id != current_post_id,
+        or_(
+            Post.status == 'published',
+            and_(
+                Post.status == 'scheduled',
+                Post.scheduled_at <= now
+            )
+        )
+    ).order_by(Post.published_at.desc()).limit(limit).all()
+
+
+def search_published_posts(
+    db: Session,
+    query_text: str,
+    limit: int = 12,
+    offset: int = 0
+) -> tuple[list[Post], int]:
+    """Search published posts by title and content.
+
+    Returns:
+        Tuple of (posts, total_count)
+    """
+    now = datetime.utcnow()
+    search_pattern = f"%{query_text}%"
+
+    query = db.query(Post).filter(
+        or_(
+            Post.status == 'published',
+            and_(
+                Post.status == 'scheduled',
+                Post.scheduled_at <= now
+            )
+        ),
+        or_(
+            Post.title.ilike(search_pattern),
+            Post.content_md.ilike(search_pattern),
+            Post.excerpt.ilike(search_pattern)
+        )
+    )
+
+    total = query.count()
+    posts = query.order_by(Post.published_at.desc()).offset(offset).limit(limit).all()
+
+    return posts, total
+
+
 # =============================================================================
 # WRITE OPERATIONS
 # =============================================================================

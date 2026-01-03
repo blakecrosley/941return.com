@@ -24,8 +24,13 @@ templates.env.globals["cache_bust"] = CACHE_BUST
 
 
 @router.get("/")
-async def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+async def home(request: Request, db: Session = Depends(get_db)):
+    # Get 3 recent posts for homepage
+    recent_posts, _ = posts_service.get_published_posts(db, limit=3, offset=0)
+    return templates.TemplateResponse(
+        "index.html",
+        {"request": request, "recent_posts": recent_posts}
+    )
 
 
 @router.get("/privacy")
@@ -43,6 +48,17 @@ async def support(request: Request):
     return templates.TemplateResponse("support.html", {"request": request})
 
 
+@router.get("/robots.txt")
+async def robots():
+    """Serve robots.txt at root level for search engines."""
+    content = """User-agent: *
+Allow: /
+
+Sitemap: https://941return.com/sitemap.xml
+"""
+    return Response(content=content, media_type="text/plain")
+
+
 @router.get("/sitemap.xml")
 async def sitemap(db: Session = Depends(get_db)):
     """Generate dynamic sitemap including blog posts."""
@@ -57,8 +73,8 @@ async def sitemap(db: Session = Depends(get_db)):
         {"loc": "/support", "priority": "0.8"},
     ]
 
-    # Get published blog posts
-    posts = posts_service.get_published_posts(db)
+    # Get all published blog posts (already sorted by published_at DESC)
+    posts, _ = posts_service.get_published_posts(db, limit=1000, offset=0)
 
     # Build XML
     xml_parts = ['<?xml version="1.0" encoding="UTF-8"?>']
@@ -82,7 +98,10 @@ async def sitemap(db: Session = Depends(get_db)):
 
     xml_parts.append("</urlset>")
 
-    return Response(
+    response = Response(
         content="\n".join(xml_parts),
         media_type="application/xml"
     )
+    # Cache sitemap for 1 hour (3600 seconds)
+    response.headers["Cache-Control"] = "public, max-age=3600"
+    return response

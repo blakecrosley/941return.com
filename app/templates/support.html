@@ -3,6 +3,82 @@
 {% block title %}Support - Return...{% endblock %}
 {% block description %}Get help with Return..., the zen meditation timer app. FAQ and contact information.{% endblock %}
 
+{% block head %}
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do I change the timer duration?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tap or click on the duration display (e.g., \"20 min\") to open the duration picker. Choose from 5 to 60 minutes in 5-minute increments."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do themes work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Return... includes four immersive themes: Water, Fire, Forest, and Silence. Each features unique video backgrounds and ambient sounds. Swipe left or right on the main screen (when the timer is not running) to switch between themes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does HealthKit integration work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When enabled, Return... logs completed meditation sessions as \"Mindful Minutes\" in Apple Health. Go to Settings in the app to enable this feature. You'll be prompted to grant permission the first time. Sessions sync across all your Apple devices via iCloud."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use Return... on Apple Watch?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Return... includes a full-featured Apple Watch companion app. Start sessions directly from your watch, receive haptic feedback, and track your practice without needing your iPhone nearby."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use Return... on Apple TV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Return... is optimized for the big screen with large, easy-to-read timer display and Siri Remote support. Perfect for group meditation or creating an ambient atmosphere in your space."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What are the repeat modes?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Return... offers four repeat modes: Once (single session), Until Stopped (infinite cycles), Until Time (stops at a specific time), and Repeat N Times (fixed number of cycles). Access these in Settings."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What bell sounds are available?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Choose from three bell sounds: Singing Bowl (traditional and warm), Temple Bell (clear and resonant), and Soft Chime (gentle and subtle). You can also set the bell to ring 1, 2, or 3 times at the end of each session."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do my settings sync across devices?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Your preferences, settings, and session history sync automatically across all your Apple devices via iCloud. Start a practice on your iPhone and continue on your Mac or Apple TV."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <section class="legal-page">
     <div class="container">

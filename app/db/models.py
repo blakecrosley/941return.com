@@ -42,5 +42,14 @@ class Post(Base):
         Index('idx_posts_scheduled_at', 'scheduled_at'),
     )
 
+    @property
+    def reading_time(self) -> int:
+        """Calculate reading time in minutes (~200 words/min)."""
+        if not self.content_md:
+            return 1
+        word_count = len(self.content_md.split())
+        minutes = max(1, round(word_count / 200))
+        return minutes
+
     def __repr__(self):
         return f"<Post {self.slug}>"

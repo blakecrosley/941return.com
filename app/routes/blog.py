@@ -2,7 +2,10 @@
 Public blog routes for Return.
 """
 
+from typing import Optional
+
 from fastapi import APIRouter, Request, Depends, HTTPException
+from fastapi.responses import Response
 from sqlalchemy.orm import Session
 
 from app.db.database import get_db
@@ -19,27 +22,75 @@ POSTS_PER_PAGE = 12
 async def blog_index(
     request: Request,
     page: int = 1,
+    q: Optional[str] = None,
     db: Session = Depends(get_db)
 ):
-    """Blog index - list published posts with pagination."""
+    """Blog index - list published posts with pagination and search."""
     if page < 1:
         page = 1
 
     offset = (page - 1) * POSTS_PER_PAGE
-    posts, total = posts_service.get_published_posts(db, limit=POSTS_PER_PAGE, offset=offset)
+
+    if q and q.strip():
+        posts, total = posts_service.search_published_posts(
+            db, q.strip(), limit=POSTS_PER_PAGE, offset=offset
+        )
+    else:
+        posts, total = posts_service.get_published_posts(
+            db, limit=POSTS_PER_PAGE, offset=offset
+        )
 
     total_pages = (total + POSTS_PER_PAGE - 1) // POSTS_PER_PAGE
 
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         "blog/list.html",
         {
             "request": request,
             "posts": posts,
             "page": page,
             "total_pages": total_pages,
-            "total": total
+            "total": total,
+            "search_query": q or ""
         }
     )
+    # Cache blog index for 5 minutes (300 seconds)
+    response.headers["Cache-Control"] = "public, max-age=300"
+    return response
+
+
+@router.get("/feed.xml")
+async def blog_rss_feed(db: Session = Depends(get_db)):
+    """RSS 2.0 feed of published blog posts."""
+    posts, _ = posts_service.get_published_posts(db, limit=20, offset=0)
+
+    items = []
+    for post in posts:
+        pub_date = post.published_at.strftime("%a, %d %b %Y %H:%M:%S +0000") if post.published_at else ""
+        items.append(f"""
+        <item>
+            <title><![CDATA[{post.title}]]></title>
+            <link>https://941return.com/blog/{post.slug}</link>
+            <guid isPermaLink="true">https://941return.com/blog/{post.slug}</guid>
+            <description><![CDATA[{post.excerpt or ''}]]></description>
+            <pubDate>{pub_date}</pubDate>
+        </item>""")
+
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Return Blog</title>
+        <link>https://941return.com/blog</link>
+        <description>Thoughts on meditation, mindfulness, and returning to what matters.</description>
+        <language>en-us</language>
+        <atom:link href="https://941return.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+        {"".join(items)}
+    </channel>
+</rss>"""
+
+    response = Response(content=rss.strip(), media_type="application/rss+xml")
+    # Cache RSS feed for 1 hour (3600 seconds)
+    response.headers["Cache-Control"] = "public, max-age=3600"
+    return response
 
 
 @router.get("/{slug}")
@@ -50,7 +101,12 @@ async def blog_post(request: Request, slug: str, db: Session = Depends(get_db)):
     if not post or post.status != 'published':
         raise HTTPException(status_code=404, detail="Post not found")
 
-    return templates.TemplateResponse(
+    related_posts = posts_service.get_related_posts(db, post.id, limit=3)
+
+    response = templates.TemplateResponse(
         "blog/post.html",
-        {"request": request, "post": post}
+        {"request": request, "post": post, "related_posts": related_posts}
     )
+    # Cache blog posts for 5 minutes (300 seconds)
+    response.headers["Cache-Control"] = "public, max-age=300"
+    return response

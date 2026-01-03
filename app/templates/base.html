@@ -30,6 +30,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', path='images/favicon.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', path='images/apple-touch-icon.png') }}">
 
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Return Blog" href="/blog/feed.xml">
+
     <!-- Fonts: Cormorant Garamond (elegant serif) + DM Sans (clean body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,6 +46,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', path='css/custom.css') }}?v={{ cache_bust }}">
+
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>

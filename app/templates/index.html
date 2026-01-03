@@ -4,6 +4,29 @@
 {% include "components/hero.html" %}
 {% include "components/features.html" %}
 
+<!-- Latest from the Blog -->
+{% if recent_posts %}
+<section class="blog-preview-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Latest from the Blog</h2>
+            <a href="/blog" class="view-all-link">View all posts →</a>
+        </div>
+        <div class="blog-preview-grid">
+            {% for post in recent_posts %}
+            <a href="/blog/{{ post.slug }}" class="blog-preview-card">
+                <h3>{{ post.title }}</h3>
+                {% if post.excerpt %}
+                <p>{{ post.excerpt }}</p>
+                {% endif %}
+                <span class="preview-meta">{{ post.reading_time }} min read</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <!-- Final CTA Section -->
 <section class="cta-section" id="download">
     <div class="container">

@@ -3,6 +3,7 @@ from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import HTMLResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
@@ -59,6 +60,9 @@ app.add_middleware(
     TrustedHostMiddleware,
     allowed_hosts=["*"]  # Allow all hosts for container deployments
 )
+
+# Compression middleware (compress responses > 500 bytes)
+app.add_middleware(GZipMiddleware, minimum_size=500)
 
 # Mount static files
 app.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")

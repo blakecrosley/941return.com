@@ -5,12 +5,52 @@
 {% block og_title %}Blog - Return...{% endblock %}
 {% block og_url %}/blog{% endblock %}
 
+{% block head %}
+<!-- Blog Collection Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Return Blog",
+    "description": "Thoughts on meditation, mindfulness, and returning to what matters.",
+    "url": "https://941return.com/blog",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Return",
+        "url": "https://941return.com"
+    }
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <section class="blog-page">
     <div class="container">
         <header class="blog-header">
             <h1>Blog</h1>
             <p class="blog-intro">Thoughts on meditation, mindfulness, and returning to what matters.</p>
+
+            <form class="blog-search" action="/blog" method="get">
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="Search posts..."
+                    value="{{ search_query }}"
+                    class="search-input"
+                    hx-get="/blog"
+                    hx-trigger="input changed delay:300ms, search"
+                    hx-target=".posts-grid"
+                    hx-select=".posts-grid"
+                    hx-push-url="true"
+                >
+            </form>
+
+            {% if search_query %}
+            <div class="search-results-info">
+                <p>{{ total }} result{{ 's' if total != 1 else '' }} for "{{ search_query }}"</p>
+                <a href="/blog" class="clear-search">Clear search</a>
+            </div>
+            {% endif %}
         </header>
 
         {% if posts %}
@@ -32,6 +72,8 @@
                             <time datetime="{{ post.published_at.isoformat() if post.published_at else '' }}">
                                 {{ post.published_at.strftime('%B %d, %Y') if post.published_at else 'Draft' }}
                             </time>
+                            <span class="meta-separator">·</span>
+                            <span class="reading-time">{{ post.reading_time }} min read</span>
                         </div>
                     </div>
                 </article>
