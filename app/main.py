@@ -18,8 +18,18 @@ APP_DIR = Path(__file__).parent
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup and shutdown events."""
-    # Startup: Initialize database
+    # Startup: Initialize database and sync content
     init_db()
+
+    # Sync markdown files to database
+    from app.db.database import SessionLocal
+    from app.services.posts import sync_all_files
+    db = SessionLocal()
+    posts = sync_all_files(db)
+    db.close()
+    if posts:
+        print(f"Synced {len(posts)} blog posts from markdown files")
+
     yield
     # Shutdown: nothing to clean up
 
