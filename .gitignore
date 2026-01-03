@@ -29,3 +29,4 @@ data/
 
 # Personal Claude config
 CLAUDE.md
+*.db
