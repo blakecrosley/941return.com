@@ -1074,8 +1074,7 @@ body:has(.hero) .theme-toggle:focus-visible {
 .post-card-link {
     text-decoration: none;
     color: inherit;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 .post-card {
@@ -1086,7 +1085,7 @@ body:has(.hero) .theme-toggle:focus-visible {
     transition: transform var(--transition-fast),
                 border-color var(--transition-fast),
                 box-shadow var(--transition-fast);
-    flex: 1;
+    height: 280px;
     display: flex;
     flex-direction: column;
 }
@@ -1128,6 +1127,10 @@ body:has(.hero) .theme-toggle:focus-visible {
     line-height: 1.3;
     color: var(--return-text-primary);
     transition: color var(--transition-fast);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .post-card-link:hover .post-title {
