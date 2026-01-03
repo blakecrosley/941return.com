@@ -12,13 +12,33 @@ from app.routes.pages import templates
 router = APIRouter(prefix="/blog", tags=["blog"])
 
 
+POSTS_PER_PAGE = 12
+
+
 @router.get("")
-async def blog_index(request: Request, db: Session = Depends(get_db)):
-    """Blog index - list published posts."""
-    published_posts = posts_service.get_published_posts(db)
+async def blog_index(
+    request: Request,
+    page: int = 1,
+    db: Session = Depends(get_db)
+):
+    """Blog index - list published posts with pagination."""
+    if page < 1:
+        page = 1
+
+    offset = (page - 1) * POSTS_PER_PAGE
+    posts, total = posts_service.get_published_posts(db, limit=POSTS_PER_PAGE, offset=offset)
+
+    total_pages = (total + POSTS_PER_PAGE - 1) // POSTS_PER_PAGE
+
     return templates.TemplateResponse(
         "blog/list.html",
-        {"request": request, "posts": published_posts}
+        {
+            "request": request,
+            "posts": posts,
+            "page": page,
+            "total_pages": total_pages,
+            "total": total
+        }
     )
 
 

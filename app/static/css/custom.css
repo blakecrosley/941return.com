@@ -1607,3 +1607,98 @@ body:has(.hero) .theme-toggle:focus-visible {
     border: 1px solid rgba(102, 192, 89, 0.3);
     color: var(--theme-forest);
 }
+
+/* -----------------------------------------------------------------------------
+   Pagination
+   ----------------------------------------------------------------------------- */
+.pagination {
+    max-width: 720px;
+    margin: var(--space-3xl) auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.pagination-info {
+    font-size: 0.875rem;
+    color: var(--return-text-secondary);
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.pagination-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 var(--space-sm);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    color: var(--return-text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    background: var(--return-surface);
+    border: 1px solid var(--return-border);
+}
+
+.pagination-link:hover {
+    color: var(--return-text-primary);
+    border-color: var(--return-primary);
+    background: var(--return-surface-elevated);
+}
+
+.pagination-current {
+    background: var(--return-primary);
+    color: white;
+    border-color: var(--return-primary);
+}
+
+.pagination-current:hover {
+    background: var(--return-primary);
+    color: white;
+}
+
+.pagination-prev,
+.pagination-next {
+    padding: 0 var(--space-md);
+}
+
+.pagination-ellipsis {
+    min-width: 32px;
+    text-align: center;
+    color: var(--return-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .pagination-link {
+        min-width: 44px;
+        height: 44px;
+    }
+
+    .pagination-prev,
+    .pagination-next {
+        font-size: 0;
+    }
+
+    .pagination-prev::before {
+        content: '←';
+        font-size: 1rem;
+    }
+
+    .pagination-next::after {
+        content: '→';
+        font-size: 1rem;
+    }
+}

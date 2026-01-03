@@ -38,6 +38,40 @@
             </a>
             {% endfor %}
         </div>
+
+        {% if total_pages > 1 %}
+        <nav class="pagination" aria-label="Blog pagination">
+            <div class="pagination-info">
+                Page {{ page }} of {{ total_pages }}
+            </div>
+            <div class="pagination-controls">
+                {% if page > 1 %}
+                <a href="/blog?page={{ page - 1 }}" class="pagination-link pagination-prev">
+                    ← Previous
+                </a>
+                {% endif %}
+
+                <div class="pagination-numbers">
+                    {% for p in range(1, total_pages + 1) %}
+                        {% if p == page %}
+                        <span class="pagination-link pagination-current">{{ p }}</span>
+                        {% elif p == 1 or p == total_pages or (p >= page - 2 and p <= page + 2) %}
+                        <a href="/blog?page={{ p }}" class="pagination-link">{{ p }}</a>
+                        {% elif p == page - 3 or p == page + 3 %}
+                        <span class="pagination-ellipsis">…</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                {% if page < total_pages %}
+                <a href="/blog?page={{ page + 1 }}" class="pagination-link pagination-next">
+                    Next →
+                </a>
+                {% endif %}
+            </div>
+        </nav>
+        {% endif %}
+
         {% else %}
         <div class="no-posts">
             <p>No posts yet. Check back soon.</p>

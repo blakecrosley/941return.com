@@ -73,15 +73,22 @@ def list_posts(
     return query.order_by(Post.created_at.desc()).offset(offset).limit(limit).all()
 
 
-def get_published_posts(db: Session, limit: int = 50) -> list[Post]:
-    """Get published posts ordered by publish date.
+def get_published_posts(
+    db: Session,
+    limit: int = 12,
+    offset: int = 0
+) -> tuple[list[Post], int]:
+    """Get published posts ordered by publish date with pagination.
 
     Returns posts that are either:
     - status='published' (immediately published)
     - status='scheduled' AND scheduled_at <= now (scheduled time has passed)
+
+    Returns:
+        Tuple of (posts, total_count)
     """
     now = datetime.utcnow()
-    return db.query(Post).filter(
+    query = db.query(Post).filter(
         or_(
             Post.status == 'published',
             and_(
@@ -89,7 +96,12 @@ def get_published_posts(db: Session, limit: int = 50) -> list[Post]:
                 Post.scheduled_at <= now
             )
         )
-    ).order_by(Post.published_at.desc()).limit(limit).all()
+    )
+
+    total = query.count()
+    posts = query.order_by(Post.published_at.desc()).offset(offset).limit(limit).all()
+
+    return posts, total
 
 
 # =============================================================================
