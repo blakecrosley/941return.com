@@ -33,6 +33,41 @@
     <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="Return Blog" href="/blog/feed.xml">
 
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "941 Apps, LLC",
+        "url": "https://941return.com",
+        "logo": "https://941return.com/static/images/apple-touch-icon.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://941return.com/support"
+        }
+    }
+    </script>
+
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Return",
+        "alternateName": "Return Meditation Timer",
+        "url": "https://941return.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://941return.com/blog?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
     <!-- Fonts: Cormorant Garamond (elegant serif) + DM Sans (clean body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
