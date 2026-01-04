@@ -115,13 +115,13 @@
                x-transition:enter="transition-opacity"
                x-transition:leave="transition-opacity"
                muted loop playsinline preload="none">
-            <source data-src="{{ url_for('static', path='videos/fire-desktop.mp4') }}" type="video/mp4">
+            <source data-src="/static/videos/fire-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                data-theme-video="fire"
                x-show="currentTheme === 'fire'"
                muted loop playsinline preload="none">
-            <source data-src="{{ url_for('static', path='videos/fire-mobile.mp4') }}" type="video/mp4">
+            <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
         </video>
 
         <!-- Forest theme (lazy loaded) -->
@@ -131,13 +131,13 @@
                x-transition:enter="transition-opacity"
                x-transition:leave="transition-opacity"
                muted loop playsinline preload="none">
-            <source data-src="{{ url_for('static', path='videos/forest-desktop.mp4') }}" type="video/mp4">
+            <source data-src="/static/videos/forest-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                data-theme-video="forest"
                x-show="currentTheme === 'forest'"
                muted loop playsinline preload="none">
-            <source data-src="{{ url_for('static', path='videos/forest-mobile.mp4') }}" type="video/mp4">
+            <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
         </video>
 
         <!-- Silence theme (dark background, no video) -->
