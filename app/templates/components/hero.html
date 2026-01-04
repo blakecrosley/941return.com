@@ -113,13 +113,13 @@
         <!-- Water theme (loaded immediately - default) -->
         <video class="hero-video hero-video-desktop"
                x-show="currentTheme === 'water'"
-               x-transition:enter="transition-opacity"
-               x-transition:leave="transition-opacity"
+               x-transition.opacity.duration.800ms
                autoplay muted loop playsinline>
             <source src="{{ url_for('static', path='videos/water-desktop.mp4') }}" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                x-show="currentTheme === 'water'"
+               x-transition.opacity.duration.800ms
                autoplay muted loop playsinline>
             <source src="{{ url_for('static', path='videos/water-mobile.mp4') }}" type="video/mp4">
         </video>
@@ -128,14 +128,14 @@
         <video class="hero-video hero-video-desktop"
                data-theme-video="fire"
                x-show="currentTheme === 'fire'"
-               x-transition:enter="transition-opacity"
-               x-transition:leave="transition-opacity"
+               x-transition.opacity.duration.800ms
                muted loop playsinline preload="none">
             <source data-src="/static/videos/fire-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                data-theme-video="fire"
                x-show="currentTheme === 'fire'"
+               x-transition.opacity.duration.800ms
                muted loop playsinline preload="none">
             <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
         </video>
@@ -144,14 +144,14 @@
         <video class="hero-video hero-video-desktop"
                data-theme-video="forest"
                x-show="currentTheme === 'forest'"
-               x-transition:enter="transition-opacity"
-               x-transition:leave="transition-opacity"
+               x-transition.opacity.duration.800ms
                muted loop playsinline preload="none">
             <source data-src="/static/videos/forest-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                data-theme-video="forest"
                x-show="currentTheme === 'forest'"
+               x-transition.opacity.duration.800ms
                muted loop playsinline preload="none">
             <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
         </video>
@@ -159,8 +159,7 @@
         <!-- Silence theme (dark background, no video) -->
         <div class="hero-video silence-bg"
              x-show="currentTheme === 'silence'"
-             x-transition:enter="transition-opacity"
-             x-transition:leave="transition-opacity"></div>
+             x-transition.opacity.duration.800ms></div>
 
         <div class="hero-video-overlay" :class="'overlay-' + currentTheme"></div>
     </div>
