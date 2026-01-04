@@ -46,6 +46,9 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
         response.headers["X-XSS-Protection"] = "1; mode=block"
         response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+        # Safari requires Accept-Ranges for video streaming
+        if request.url.path.startswith("/static/") and request.url.path.endswith((".mp4", ".webm", ".mov")):
+            response.headers["Accept-Ranges"] = "bytes"
         return response
 
 
