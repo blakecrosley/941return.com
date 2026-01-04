@@ -115,13 +115,13 @@
                x-show="currentTheme === 'water'"
                x-transition.opacity.duration.800ms
                autoplay muted loop playsinline>
-            <source src="{{ url_for('static', path='videos/water-desktop.mp4') }}" type="video/mp4">
+            <source src="/static/videos/water-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                x-show="currentTheme === 'water'"
                x-transition.opacity.duration.800ms
                autoplay muted loop playsinline>
-            <source src="{{ url_for('static', path='videos/water-mobile.mp4') }}" type="video/mp4">
+            <source src="/static/videos/water-mobile.mp4" type="video/mp4">
         </video>
 
         <!-- Fire theme (lazy loaded) -->
