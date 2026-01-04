@@ -8,9 +8,25 @@
     audioBuffers: {},
     currentSource: null,
     init() {
+        /* Ensure water video plays on init (Safari fix) */
+        this.$nextTick(() => {
+            const waterVideos = document.querySelectorAll('.hero-video:not([data-theme-video])');
+            waterVideos.forEach(v => {
+                if (v.paused) v.play().catch(() => {});
+            });
+        });
         this.$watch('currentTheme', (theme) => {
             this.loadVideo(theme);
             this.updateAudio(theme);
+            /* Ensure visible video plays (Safari fix) */
+            this.$nextTick(() => {
+                const selector = theme === 'water'
+                    ? '.hero-video:not([data-theme-video])'
+                    : `[data-theme-video='${theme}']`;
+                document.querySelectorAll(selector).forEach(v => {
+                    if (v.paused && v.tagName === 'VIDEO') v.play().catch(() => {});
+                });
+            });
         });
         this.$watch('audioEnabled', (enabled) => this.toggleAudio(enabled));
     },
