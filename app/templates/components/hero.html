@@ -110,16 +110,14 @@
 }">
     <!-- Video backgrounds for each theme -->
     <div class="hero-video-container">
-        <!-- Water theme (loaded immediately - default) -->
+        <!-- Water theme (loaded immediately - default, no x-show for Safari) -->
         <video class="hero-video hero-video-desktop"
-               x-show="currentTheme === 'water'"
-               x-transition.opacity.duration.800ms
+               :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
                autoplay muted loop playsinline>
             <source src="/static/videos/water-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
-               x-show="currentTheme === 'water'"
-               x-transition.opacity.duration.800ms
+               :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
                autoplay muted loop playsinline>
             <source src="/static/videos/water-mobile.mp4" type="video/mp4">
         </video>
@@ -127,15 +125,13 @@
         <!-- Fire theme (lazy loaded) -->
         <video class="hero-video hero-video-desktop"
                data-theme-video="fire"
-               x-show="currentTheme === 'fire'"
-               x-transition.opacity.duration.800ms
+               :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/fire-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                data-theme-video="fire"
-               x-show="currentTheme === 'fire'"
-               x-transition.opacity.duration.800ms
+               :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
         </video>
@@ -143,23 +139,20 @@
         <!-- Forest theme (lazy loaded) -->
         <video class="hero-video hero-video-desktop"
                data-theme-video="forest"
-               x-show="currentTheme === 'forest'"
-               x-transition.opacity.duration.800ms
+               :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/forest-desktop.mp4" type="video/mp4">
         </video>
         <video class="hero-video hero-video-mobile"
                data-theme-video="forest"
-               x-show="currentTheme === 'forest'"
-               x-transition.opacity.duration.800ms
+               :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
         </video>
 
         <!-- Silence theme (dark background, no video) -->
         <div class="hero-video silence-bg"
-             x-show="currentTheme === 'silence'"
-             x-transition.opacity.duration.800ms></div>
+             :class="currentTheme === 'silence' ? 'video-visible' : 'video-hidden'"></div>
 
         <div class="hero-video-overlay" :class="'overlay-' + currentTheme"></div>
     </div>

@@ -319,6 +319,19 @@ body:has(.hero) .theme-toggle:hover {
     object-fit: cover;
 }
 
+/* Video visibility (using opacity instead of display:none for Safari) */
+.video-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.8s ease-out;
+}
+
+.video-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease-out;
+}
+
 /* Responsive video sources */
 .hero-video-mobile {
     display: none;
