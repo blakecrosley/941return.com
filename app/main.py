@@ -105,11 +105,14 @@ async def serve_video(filename: str, range: Optional[str] = Header(None)):
                 },
             )
 
-    # Full file response
+    # Full file response - bypass CDN caching for Safari compatibility
     return FileResponse(
         video_path,
         media_type="video/mp4",
-        headers={"Accept-Ranges": "bytes"}
+        headers={
+            "Accept-Ranges": "bytes",
+            "Cache-Control": "no-transform",
+        }
     )
 
 # Mount static files (videos handled by route above)
