@@ -81,7 +81,15 @@ async def serve_video(filename: str, range: Optional[str] = Header(None)):
 
     file_size = os.path.getsize(video_path)
 
-    # Handle range requests
+    # Common headers for Safari compatibility - bypass CDN cache
+    base_headers = {
+        "Accept-Ranges": "bytes",
+        "Content-Type": "video/mp4",
+        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+        "Pragma": "no-cache",
+    }
+
+    # Handle range requests (required for Safari video streaming)
     if range:
         range_match = re.match(r"bytes=(\d+)-(\d*)", range)
         if range_match:
@@ -98,20 +106,19 @@ async def serve_video(filename: str, range: Optional[str] = Header(None)):
                 content=data,
                 status_code=206,
                 headers={
+                    **base_headers,
                     "Content-Range": f"bytes {start}-{end}/{file_size}",
-                    "Accept-Ranges": "bytes",
                     "Content-Length": str(length),
-                    "Content-Type": "video/mp4",
                 },
             )
 
-    # Full file response - bypass CDN caching for Safari compatibility
+    # Full file response
     return FileResponse(
         video_path,
         media_type="video/mp4",
         headers={
-            "Accept-Ranges": "bytes",
-            "Cache-Control": "no-transform",
+            **base_headers,
+            "Content-Length": str(file_size),
         }
     )
 
