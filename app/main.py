@@ -73,7 +73,7 @@ app.add_middleware(GZipMiddleware, minimum_size=500)
 
 # Video route with proper range request support for Safari
 @app.get("/static/videos/{filename}")
-async def serve_video(filename: str, range: Optional[str] = Header(None)):
+async def serve_video(filename: str, range_header: Optional[str] = Header(None, alias="Range")):
     """Serve video files with Range request support for Safari."""
     video_path = APP_DIR / "static" / "videos" / filename
     if not video_path.exists() or not filename.endswith((".mp4", ".webm", ".mov")):
@@ -90,8 +90,8 @@ async def serve_video(filename: str, range: Optional[str] = Header(None)):
     }
 
     # Handle range requests (required for Safari video streaming)
-    if range:
-        range_match = re.match(r"bytes=(\d+)-(\d*)", range)
+    if range_header:
+        range_match = re.match(r"bytes=(\d+)-(\d*)", range_header)
         if range_match:
             start = int(range_match.group(1))
             end = int(range_match.group(2)) if range_match.group(2) else file_size - 1
