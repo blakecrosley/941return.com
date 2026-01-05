@@ -1,13 +1,16 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Header
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from pathlib import Path
+from typing import Optional
+import os
+import re
 
 from app.routes import pages, blog, admin
 from app.db.database import init_db
@@ -68,7 +71,48 @@ app.add_middleware(
 # Compression middleware (compress responses > 500 bytes)
 app.add_middleware(GZipMiddleware, minimum_size=500)
 
-# Mount static files
+# Video route with proper range request support for Safari
+@app.get("/static/videos/{filename}")
+async def serve_video(filename: str, range: Optional[str] = Header(None)):
+    """Serve video files with Range request support for Safari."""
+    video_path = APP_DIR / "static" / "videos" / filename
+    if not video_path.exists() or not filename.endswith((".mp4", ".webm", ".mov")):
+        return Response(status_code=404)
+
+    file_size = os.path.getsize(video_path)
+
+    # Handle range requests
+    if range:
+        range_match = re.match(r"bytes=(\d+)-(\d*)", range)
+        if range_match:
+            start = int(range_match.group(1))
+            end = int(range_match.group(2)) if range_match.group(2) else file_size - 1
+            end = min(end, file_size - 1)
+            length = end - start + 1
+
+            with open(video_path, "rb") as f:
+                f.seek(start)
+                data = f.read(length)
+
+            return Response(
+                content=data,
+                status_code=206,
+                headers={
+                    "Content-Range": f"bytes {start}-{end}/{file_size}",
+                    "Accept-Ranges": "bytes",
+                    "Content-Length": str(length),
+                    "Content-Type": "video/mp4",
+                },
+            )
+
+    # Full file response
+    return FileResponse(
+        video_path,
+        media_type="video/mp4",
+        headers={"Accept-Ranges": "bytes"}
+    )
+
+# Mount static files (videos handled by route above)
 app.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
 
 # Include routes
