@@ -41,13 +41,16 @@
             <h1>Blog</h1>
             <p class="blog-intro">Thoughts on meditation, mindfulness, and returning to what matters.</p>
 
-            <form class="blog-search" action="/blog" method="get">
+            <form class="blog-search" action="/blog" method="get" role="search">
+                <label for="blog-search-input" class="sr-only">Search blog posts</label>
                 <input
                     type="search"
+                    id="blog-search-input"
                     name="q"
                     placeholder="Search posts..."
                     value="{{ search_query }}"
                     class="search-input"
+                    aria-label="Search blog posts"
                     hx-get="/blog"
                     hx-trigger="input changed delay:300ms, search"
                     hx-target=".posts-grid"
