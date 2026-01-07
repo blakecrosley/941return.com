@@ -103,11 +103,8 @@ Allow: /
 
 Sitemap: https://941return.com/sitemap.xml
 
-# AI Context Files
-# llms.txt provides context for AI systems
+# AI Context Files (accessible at /llms.txt and /llms-full.txt)
 # See https://llmstxt.org for specification
-LLMs: https://941return.com/llms.txt
-LLMs-Full: https://941return.com/llms-full.txt
 """
     return Response(content=content, media_type="text/plain")
 
