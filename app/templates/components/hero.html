@@ -134,49 +134,56 @@
 }">
     <!-- Video backgrounds for each theme -->
     <div class="hero-video-container">
-        <!-- Water theme (loaded immediately - default, visible by default for Safari) -->
-        <video class="hero-video hero-video-desktop video-visible"
+        <!-- Water theme (loaded immediately - default) -->
+        <video class="hero-video hero-video-desktop"
                :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
+               style="opacity: 1;"
                autoplay muted loop playsinline>
             <source src="/static/videos/water-desktop.mp4" type="video/mp4">
         </video>
-        <video class="hero-video hero-video-mobile video-visible"
+        <video class="hero-video hero-video-mobile"
                :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
+               style="opacity: 1;"
                autoplay muted loop playsinline>
             <source src="/static/videos/water-mobile.mp4" type="video/mp4">
         </video>
 
-        <!-- Fire theme (lazy loaded, hidden by default) -->
-        <video class="hero-video hero-video-desktop video-hidden"
+        <!-- Fire theme (lazy loaded) -->
+        <video class="hero-video hero-video-desktop"
                data-theme-video="fire"
                :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
+               style="opacity: 0;"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/fire-desktop.mp4" type="video/mp4">
         </video>
-        <video class="hero-video hero-video-mobile video-hidden"
+        <video class="hero-video hero-video-mobile"
                data-theme-video="fire"
                :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
+               style="opacity: 0;"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
         </video>
 
-        <!-- Forest theme (lazy loaded, hidden by default) -->
-        <video class="hero-video hero-video-desktop video-hidden"
+        <!-- Forest theme (lazy loaded) -->
+        <video class="hero-video hero-video-desktop"
                data-theme-video="forest"
                :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
+               style="opacity: 0;"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/forest-desktop.mp4" type="video/mp4">
         </video>
-        <video class="hero-video hero-video-mobile video-hidden"
+        <video class="hero-video hero-video-mobile"
                data-theme-video="forest"
                :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
+               style="opacity: 0;"
                muted loop playsinline preload="none">
             <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
         </video>
 
-        <!-- Silence theme (dark background, no video, hidden by default) -->
-        <div class="hero-video silence-bg video-hidden"
-             :class="currentTheme === 'silence' ? 'video-visible' : 'video-hidden'"></div>
+        <!-- Silence theme (dark background, no video) -->
+        <div class="hero-video silence-bg"
+             :class="currentTheme === 'silence' ? 'video-visible' : 'video-hidden'"
+             style="opacity: 0;"></div>
 
         <div class="hero-video-overlay" :class="'overlay-' + currentTheme"></div>
     </div>
