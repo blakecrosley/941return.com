@@ -72,6 +72,10 @@
 
         const videos = document.querySelectorAll(`[data-theme-video='${theme}']`);
         videos.forEach(video => {
+            /* Skip videos that are display:none (mobile/desktop responsive) */
+            const style = window.getComputedStyle(video);
+            if (style.display === 'none') return;
+
             const source = video.querySelector('source');
             if (source && source.dataset.src) {
                 /* Safari requires autoplay attribute for programmatic play */
