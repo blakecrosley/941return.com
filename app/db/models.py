@@ -43,12 +43,18 @@ class Post(Base):
     )
 
     @property
+    def word_count(self) -> int:
+        """Calculate word count from markdown content."""
+        if not self.content_md:
+            return 0
+        return len(self.content_md.split())
+
+    @property
     def reading_time(self) -> int:
         """Calculate reading time in minutes (~200 words/min)."""
         if not self.content_md:
             return 1
-        word_count = len(self.content_md.split())
-        minutes = max(1, round(word_count / 200))
+        minutes = max(1, round(self.word_count / 200))
         return minutes
 
     def __repr__(self):

@@ -3,39 +3,58 @@
 {% block title %}{{ post.seo_title or post.title }} - Return...{% endblock %}
 {% block description %}{{ post.seo_description or post.excerpt or 'Read more on the Return blog.' }}{% endblock %}
 {% block og_title %}{{ post.title }} - Return...{% endblock %}
+{% block og_description %}{{ post.seo_description or post.excerpt or 'Read more on the Return blog.' }}{% endblock %}
 {% block og_url %}/blog/{{ post.slug }}{% endblock %}
+{% block og_type %}article{% endblock %}
 {% block canonical_url %}/blog/{{ post.slug }}{% endblock %}
+{% block twitter_title %}{{ post.title }} - Return...{% endblock %}
+{% block twitter_description %}{{ post.seo_description or post.excerpt or 'Read more on the Return blog.' }}{% endblock %}
 {% if post.featured_image %}
 {% block og_image %}{{ post.featured_image }}{% endblock %}
 {% block twitter_image %}{{ post.featured_image }}{% endblock %}
 {% endif %}
 
 {% block head %}
-<!-- Article Schema -->
+<!-- Article meta for OG -->
+<meta property="article:published_time" content="{{ post.published_at.isoformat() if post.published_at else '' }}">
+<meta property="article:modified_time" content="{{ post.updated_at.isoformat() if post.updated_at else '' }}">
+<meta property="article:author" content="Blake Crosley">
+<meta property="article:section" content="Meditation">
+
+<!-- BlogPosting Schema (enhanced Article) -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": "{{ post.title }}",
     "description": "{{ post.seo_description or post.excerpt or '' }}",
     "author": {
         "@type": "Person",
-        "name": "Blake Crosley"
+        "name": "Blake Crosley",
+        "url": "https://941return.com"
     },
     "publisher": {
         "@type": "Organization",
         "name": "Return",
-        "url": "https://941return.com"
+        "url": "https://941return.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://941return.com/static/images/apple-touch-icon.png",
+            "width": 180,
+            "height": 180
+        }
     },
     "datePublished": "{{ post.published_at.isoformat() if post.published_at else '' }}",
-    "dateModified": "{{ post.updated_at.isoformat() if post.updated_at else '' }}",
+    "dateModified": "{{ post.updated_at.isoformat() if post.updated_at else post.published_at.isoformat() if post.published_at else '' }}",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://941return.com/blog/{{ post.slug }}"
-    }
-    {% if post.featured_image %}
-    ,"image": "{{ post.featured_image }}"
-    {% endif %}
+    },
+    "url": "https://941return.com/blog/{{ post.slug }}",
+    "wordCount": {{ post.word_count }},
+    "inLanguage": "en-US",
+    "isAccessibleForFree": true,
+    "image": "{{ post.featured_image if post.featured_image else 'https://941return.com/static/images/og-default.png' }}"
 }
 </script>
 <!-- Breadcrumb Schema -->

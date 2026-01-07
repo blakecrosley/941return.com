@@ -119,6 +119,44 @@ async def well_known_llms_txt():
     return RedirectResponse(url="/llms.txt", status_code=301)
 
 
+@router.get("/humans.txt")
+async def humans_txt():
+    """Serve humans.txt for credit and site info."""
+    content = """/* TEAM */
+Developer: Blake Crosley
+Site: https://941return.com
+Location: Florida, USA
+
+/* THANKS */
+Built with FastAPI, HTMX, Alpine.js
+Meditation timer for people who know what they're doing
+
+/* SITE */
+Last update: 2026/01
+Language: English
+Standards: HTML5, CSS3, ES6+
+Components: FastAPI, Jinja2, Bootstrap 5, HTMX, Alpine.js
+Software: Return meditation timer app
+"""
+    return Response(content=content, media_type="text/plain")
+
+
+@router.get("/.well-known/security.txt")
+@router.get("/security.txt")
+async def security_txt():
+    """Serve security.txt for responsible disclosure."""
+    content = """# Security Policy for Return (941return.com)
+
+Contact: https://941return.com/support
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: en
+
+# This site is a marketing page for a meditation timer app.
+# We take security seriously but have a minimal attack surface.
+"""
+    return Response(content=content, media_type="text/plain")
+
+
 @router.get("/llms.txt")
 async def llms_txt():
     """Serve llms.txt for AI systems to understand site context."""
