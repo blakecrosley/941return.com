@@ -9,6 +9,10 @@
     <meta name="description" content="{% block description %}A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV.{% endblock %}">
     <meta name="theme-color" content="#0A0D12">
 
+    <!-- Preconnect to CDNs for faster loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://941return.com{% block canonical_url %}{{ request.url.path }}{% endblock %}">
 
