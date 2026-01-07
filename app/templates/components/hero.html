@@ -74,12 +74,20 @@
         videos.forEach(video => {
             const source = video.querySelector('source');
             if (source && source.dataset.src) {
-                source.src = source.dataset.src;
-                /* Safari needs to wait for video to be ready before playing */
-                video.oncanplay = () => {
+                /* Safari requires autoplay attribute for programmatic play */
+                video.autoplay = true;
+                video.preload = 'auto';
+
+                /* Set up event handlers before loading */
+                video.onloadeddata = () => {
                     video.play().catch(() => {});
                 };
-                video.load();
+                video.onerror = (e) => {
+                    console.error('Video load error:', theme, e);
+                };
+
+                /* Set src directly on video element (more reliable for Safari) */
+                video.src = source.dataset.src;
             }
         });
         this.loadedVideos[theme] = true;
