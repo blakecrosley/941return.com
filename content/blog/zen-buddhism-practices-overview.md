@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Zen Meditation Practices | Complete Guide to Zen Buddhism"
 seo_description: "Explore Zen Buddhism's meditation practices: zazen, koans, kinhin, and more. Learn about Rinzai and Soto schools and how Zen approaches awakening."
 status: published
-published_at: 2026-01-10T11:00:00
+published_at: 2026-01-06T17:00:00
 ---
 
 Zen's reputation precedes it. Enigmatic masters, paradoxical sayings, a seemingly anti-intellectual approach that somehow produces profound wisdom. For practitioners curious about Zen, the reality is both simpler and deeper than the mystique suggests.

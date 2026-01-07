@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Space for Athletes | Setup Guide"
 seo_description: "Create a meditation space that supports consistent practice. Simple environment design for athletes building mental training habits."
 status: published
-published_at: 2025-11-04T09:00:00
+published_at: 2025-11-20T09:00:00
 ---
 
 Where you practice matters. The right environment reduces friction, supports focus, and becomes associated with the calm states you're cultivating. Over time, simply entering your meditation space can begin shifting your state.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "MBSR Course | What to Expect from Mindfulness-Based Stress Reduction"
 seo_description: "Complete guide to MBSR (Mindfulness-Based Stress Reduction). What happens each week, the practices learned, and whether this evidence-based course is right for you."
 status: published
-published_at: 2026-01-10T04:00:00
+published_at: 2025-10-18T17:00:00
 ---
 
 Jon Kabat-Zinn created MBSR in 1979 at the University of Massachusetts Medical Center. His goal: bring meditation to people suffering from chronic pain and stress—people who would never set foot in a meditation center but might accept a hospital-based program. The result transformed Western medicine's relationship with meditation.

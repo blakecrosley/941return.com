@@ -6,7 +6,7 @@ featured_image:
 seo_title: "4-7-8 Breathing for Athletes | Sleep Guide"
 seo_description: "Master 4-7-8 breathing for better athletic sleep and recovery. Step-by-step guide to the technique designed for falling asleep faster."
 status: published
-published_at: 2025-01-21T09:00:00
+published_at: 2025-09-04T09:00:00
 ---
 
 You've trained hard. You've eaten well. You're lying in bed with hours before your alarm, and you can't fall asleep. Tomorrow's competition runs through your mind. Your body is tired but your brain won't stop.

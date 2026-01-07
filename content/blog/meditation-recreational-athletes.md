@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Recreational Athletes | Weekend Warrior Mental Training"
 seo_description: "Mental training for recreational athletes. Enhance enjoyment, manage stress, and get more from your training without professional-level time commitment."
 status: published
-published_at: 2025-04-23T09:00:00
+published_at: 2025-11-17T09:00:00
 ---
 
 You're not paid to play, but you train seriously. Maybe you run marathons, do triathlons, compete in age-group events, or simply push yourself in daily workouts. You're a recreational athlete—and you face unique mental challenges that meditation directly addresses.

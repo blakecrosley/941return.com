@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Post-Athletic Career Transition | Life After Sport"
 seo_description: "The transition from athlete to former athlete is one of life's most challenging passages. Learn mindfulness strategies for identity, purpose, and well-being after sport."
 status: published
-published_at: 2026-01-08T16:00:00
+published_at: 2025-12-09T17:00:00
 ---
 
 Every athletic career ends. For some, it's a planned retirement at the peak. For others, it's injury, cut, or gradual decline. But for all athletes, regardless of level, the transition from "athlete" to "former athlete" is one of life's most significant psychological passages.

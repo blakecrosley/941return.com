@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Concentration vs Insight Meditation | Samatha vs Vipassana"
 seo_description: "Understanding concentration (samatha) and insight (vipassana) meditation for athletes. When to use each approach for athletic performance."
 status: published
-published_at: 2025-12-03T09:00:00
+published_at: 2025-09-24T09:00:00
 ---
 
 The meditation world offers many techniques, but they largely fall into two categories: practices that stabilize attention and practices that investigate experience. In traditional terms: samatha (calm abiding) and vipassana (insight). Understanding these two approaches helps athletes choose practices that match their needs.

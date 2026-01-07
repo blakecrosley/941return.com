@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Daily Meditation Habit | How to Build a Practice That Sticks"
 seo_description: "Learn the science of habit formation applied to meditation. Build a daily practice that becomes automatic, not a constant struggle requiring willpower."
 status: published
-published_at: 2026-01-09T16:00:00
+published_at: 2025-09-27T09:00:00
 ---
 
 You've started meditation before. Maybe multiple times. It went well for a week, perhaps two. Then life intervened—a busy morning, a late night, travel—and the streak broke. Soon the cushion gathered dust while guilt accumulated.

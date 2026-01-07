@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Sleep and Meditation for Athletes | Recovery Science"
 seo_description: "How meditation improves sleep architecture and athletic recovery. The science of sleep stages and why meditating athletes recover better."
 status: published
-published_at: 2025-04-08T09:00:00
+published_at: 2025-12-19T09:00:00
 ---
 
 Athletes know sleep matters. What many don't know is that sleep has architecture—distinct stages that serve different functions. And the structure of your sleep affects recovery as much as the total hours.

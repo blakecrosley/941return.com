@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Falling Asleep During Meditation | Causes & Solutions"
 seo_description: "Keep falling asleep when meditating? Learn why drowsiness happens and practical solutions to maintain alertness while staying relaxed during practice."
 status: published
-published_at: 2026-01-09T17:00:00
+published_at: 2025-10-02T17:00:00
 ---
 
 You sit down to meditate. You settle in, focus on your breath, start to relax... and the next thing you know, your head is drooping or you're jolting awake wondering where you went. Again.

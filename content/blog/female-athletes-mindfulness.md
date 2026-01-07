@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mindfulness for Female Athletes | Mental Training for Women in Sport"
 seo_description: "Female athletes face unique mental challenges. Learn mindfulness techniques for cycle-aware training, body image, confidence, and performing under gender-specific pressures."
 status: published
-published_at: 2026-01-06T11:00:00
+published_at: 2025-10-04T09:00:00
 ---
 
 Female athletes navigate mental terrain that male athletes never encounter. Hormonal fluctuations affecting performance, body image pressures magnified by sport requirements, confidence gaps reinforced by systemic inequities—these challenges demand mindfulness approaches designed for women's specific experiences.

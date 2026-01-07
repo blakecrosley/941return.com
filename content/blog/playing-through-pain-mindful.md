@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Playing Through Pain | Mindful Athletic Discomfort"
 seo_description: "How to work with pain mindfully during athletic performance. Distinguishing productive discomfort from injury signals, and techniques for pain management."
 status: published
-published_at: 2025-10-15T09:00:00
+published_at: 2025-12-08T17:00:00
 ---
 
 Pain is part of athletics. Not injury—that requires different handling—but the discomfort inherent in pushing physical limits. The burn of lactic acid, the ache of sustained effort, the sensations that come with competitive intensity.

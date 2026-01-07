@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mental Training for Return to Sport | Injury Recovery Psychology"
 seo_description: "Discover how mental training accelerates return to sport after injury. Evidence-based psychological techniques for athletes rebuilding confidence and performance."
 status: published
-published_at: 2024-10-18T09:00:00
+published_at: 2025-11-25T17:00:00
 ---
 
 The moment an athlete hears the words "you're out for the season," something shifts beyond the physical. There's the immediate shock, then the slow realization that the body they've trained to trust has betrayed them. What follows is a psychological journey as demanding as any physical rehabilitation protocol.

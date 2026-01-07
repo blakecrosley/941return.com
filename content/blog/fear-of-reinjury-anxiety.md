@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Fear of Reinjury in Athletes | Breaking the Cycle"
 seo_description: "Overcome fear of reinjury with evidence-based psychological techniques. Why physical clearance isn't enough and how to rebuild confidence for return to sport."
 status: published
-published_at: 2024-11-26T09:00:00
+published_at: 2025-10-03T09:00:00
 ---
 
 The surgeon clears you. Physical therapy is complete. Strength tests show you're ready. You step back onto the field, and everything changes.

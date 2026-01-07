@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Tonglen Meditation | Tibetan Giving and Taking Practice"
 seo_description: "Learn tonglen meditation: the Tibetan practice of breathing in suffering and sending out relief. A powerful technique for developing compassion."
 status: published
-published_at: 2026-01-10T20:00:00
+published_at: 2025-12-28T17:00:00
 ---
 
 Every instinct says: push away what's unpleasant, grasp what's pleasant. Tonglen reverses this. You breathe in darkness, suffering, pain—and breathe out light, relief, healing. It's counterintuitive, even uncomfortable. And it's one of the most powerful compassion practices in any tradition.

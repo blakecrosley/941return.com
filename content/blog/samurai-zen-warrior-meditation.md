@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Samurai Zen Meditation | Warrior Mind Training for Athletes"
 seo_description: "Learn how Japanese samurai used Zen meditation to develop mushin (no-mind), fudoshin (immovable mind), and zanshin (remaining awareness)—concepts that transform modern athletic performance."
 status: published
-published_at: 2026-01-08T09:00:00
+published_at: 2025-12-15T17:00:00
 ---
 
 For centuries, Japanese samurai trained not just their bodies but their minds. Facing combat where a single mental lapse meant death, they developed sophisticated psychological techniques through Zen Buddhism. These warriors weren't monks seeking enlightenment—they were practitioners seeking performance. And their discoveries about the relationship between mind, focus, and action remain strikingly relevant to modern athletes.

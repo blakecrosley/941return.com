@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mental Rehearsal for Athletes | Visualization Science"
 seo_description: "Learn evidence-based mental rehearsal and visualization for athletic performance. The science behind why imagery works and how to practice it effectively."
 status: published
-published_at: 2025-06-17T09:00:00
+published_at: 2025-11-26T17:00:00
 ---
 
 When you vividly imagine performing a movement, your brain activates many of the same neural pathways as when you actually perform it. This isn't metaphor—it's measurable neuroscience. The motor cortex fires. Muscle fibers activate (slightly). Neural connections strengthen.

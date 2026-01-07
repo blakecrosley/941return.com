@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Autogenic Training for Athletes | Self-Suggestion Guide"
 seo_description: "How to use autogenic training for athletic performance. Verbal formulas for relaxation, recovery, and mental preparation through self-suggestion."
 status: published
-published_at: 2025-11-19T09:00:00
+published_at: 2025-09-09T17:00:00
 ---
 
 "My right arm is heavy." You repeat the phrase silently, and gradually your arm actually feels heavier. This isn't imagination—it's autogenic training, a technique that uses verbal self-suggestion to produce measurable physical changes.

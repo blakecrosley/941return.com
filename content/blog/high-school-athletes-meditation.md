@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for High School Athletes | Teen Athlete Mental Training"
 seo_description: "High school athletes face unique pressures. Learn age-appropriate meditation and mental training techniques that build foundations for lifelong athletic success."
 status: published
-published_at: 2026-01-08T18:00:00
+published_at: 2025-10-08T09:00:00
 ---
 
 You're sixteen, trying to balance AP classes with varsity practice, navigating friend drama while performing under the lights, and maybe thinking about college recruiting while just trying to figure out who you are. High school athletics is uniquely demanding—not harder than professional sport, but different in ways that deserve specific mental training.

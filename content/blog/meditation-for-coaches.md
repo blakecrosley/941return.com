@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Coaches | Coach Mental Training & Self-Care"
 seo_description: "Coaches face unique mental demands. Learn meditation and mindfulness techniques for managing stress, making better decisions, and modeling mental skills for athletes."
 status: published
-published_at: 2026-01-08T19:00:00
+published_at: 2025-10-29T09:00:00
 ---
 
 You spend your days teaching athletes mental toughness, focus, and emotional control. But when did you last train your own mental game? Coaching carries its own psychological demands—job security, athlete development, in-game decisions, parent management, administrative burden, and the weight of responsibility for others' development.

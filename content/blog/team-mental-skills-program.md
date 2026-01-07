@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Team Mental Skills Program | Complete Implementation Guide"
 seo_description: "How to build a comprehensive mental skills program for athletic teams. Program design, implementation strategy, and evaluation framework for coaches."
 status: published
-published_at: 2025-06-04T09:00:00
+published_at: 2025-12-25T09:00:00
 ---
 
 Occasional meditation sessions don't transform teams. Systematic mental skills programs do. The difference is the difference between suggesting athletes stretch sometimes and implementing a comprehensive flexibility program.

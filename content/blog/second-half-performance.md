@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Second-Half Performance | Maintaining Focus in Games"
 seo_description: "Mental strategies for second-half athletic performance. How to maintain focus, intensity, and execution throughout full games and competitions."
 status: published
-published_at: 2025-10-08T09:00:00
+published_at: 2025-12-16T17:00:00
 ---
 
 First-half performer. Hot starter. Fades late. If you've heard these labels, you know the frustration of performances that don't last. The second half of games, the back nine, the final set, the closing miles—where many athletes fade and some surge.

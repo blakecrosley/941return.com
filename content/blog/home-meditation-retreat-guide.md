@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Home Meditation Retreat Guide | DIY Retreat Instructions"
 seo_description: "Learn how to do a meditation retreat at home. Complete guide to planning, structure, and executing an intensive solo retreat in your own space."
 status: published
-published_at: 2026-01-12T07:00:00
+published_at: 2025-10-09T09:00:00
 ---
 
 Residential retreats offer profound depth—immersion in practice without daily life distractions. But retreats require time, money, and availability that not everyone has. The alternative: create retreat conditions at home.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Athlete Identity Crisis | When Sport Defines Everything"
 seo_description: "Athletic identity can become a trap when sport defines everything. Learn mindfulness approaches for building a broader sense of self while maintaining competitive commitment."
 status: published
-published_at: 2026-01-08T22:00:00
+published_at: 2025-09-08T09:00:00
 ---
 
 "I am a runner." "I am a basketball player." "I am an athlete." These statements seem like simple facts, but they reveal something deeper: the degree to which sport has become identity itself. Strong athletic identity drives extraordinary commitment and sacrifice. It also creates vulnerability—because when sport is everything, anything that threatens sport threatens existence.

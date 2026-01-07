@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Baseball | Mental Training for Hitters & Pitchers"
 seo_description: "Baseball is 90% mental. Learn meditation techniques for baseball players including pre-pitch routines, slump-breaking mindfulness, and in-game focus strategies."
 status: published
-published_at: 2026-01-06T10:00:00
+published_at: 2025-10-27T17:00:00
 ---
 
 "Baseball is 90% mental and the other half is physical." Yogi Berra's famous arithmetic captures something true—no sport places greater demands on mental skills than baseball. The game's pace, its statistical exposure, and its failure-embracing nature make meditation not just helpful but essential.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Open Awareness Meditation | Peripheral Attention Training"
 seo_description: "Train peripheral awareness and soft attention with open awareness meditation. Essential attention mode for athletic performance."
 status: published
-published_at: 2025-04-22T09:00:00
+published_at: 2025-12-04T17:00:00
 ---
 
 Most meditation emphasizes focused attention—concentrate on the breath, a mantra, body sensations. This trains valuable narrow attention. But athletic performance often requires something else: wide, open awareness that takes in the whole field at once.

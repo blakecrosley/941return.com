@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Posture Guide | Sitting Positions That Work"
 seo_description: "Find the right meditation posture for your body. Practical guidance on floor sitting, chair sitting, and what actually matters for effective practice."
 status: published
-published_at: 2026-01-10T02:00:00
+published_at: 2025-11-16T17:00:00
 ---
 
 Posture anxiety is common among new meditators. Can I use a chair? What if I can't sit cross-legged? What's the right position for my hands? These concerns, while understandable, often distract from what matters: actually practicing.

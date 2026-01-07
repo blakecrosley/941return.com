@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Amateur to Pro Transition | Professional Athlete Mental Training"
 seo_description: "Mental training for athletes transitioning to professional sport. Navigate the psychological challenges of becoming a professional athlete."
 status: published
-published_at: 2025-05-07T09:00:00
+published_at: 2025-09-05T17:00:00
 ---
 
 You've been an amateur your entire athletic life. Training was something you did alongside school, friendships, and other interests. Now you're about to go pro—and everything changes.

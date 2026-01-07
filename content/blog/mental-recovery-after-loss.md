@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mental Recovery After Loss | Processing Athletic Defeat"
 seo_description: "How to mentally recover from athletic losses. Processing defeat, learning from failure, and returning to competition stronger."
 status: published
-published_at: 2025-10-22T09:00:00
+published_at: 2025-11-26T09:00:00
 ---
 
 The final whistle. The scoreboard. The handshake. Then the silence—or the noise that might as well be silence because you're not really hearing it. You lost.

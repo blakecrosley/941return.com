@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Contract Year Performance | Managing Career Pressure"
 seo_description: "Mental training for contract year athletes. How to perform under career pressure when financial and professional futures depend on performance."
 status: published
-published_at: 2025-10-01T09:00:00
+published_at: 2025-09-25T09:00:00
 ---
 
 This season determines whether you get a new contract, the size of that contract, and perhaps whether your career continues at all. The games aren't just games—they're auditions, evaluations, data points that will shape your future for years.

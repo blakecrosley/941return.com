@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Track & Field | Event-Specific Mental Training"
 seo_description: "Track and field athletes need event-specific mental training. Learn meditation techniques for sprinters, distance runners, jumpers, throwers, and multi-event athletes."
 status: published
-published_at: 2026-01-06T13:00:00
+published_at: 2025-11-06T09:00:00
 ---
 
 Track and field is not one sport but many. A 100-meter sprinter and a marathon runner share almost nothing in their mental demands. A shot putter and a pole vaulter face completely different psychological challenges. Effective meditation for track and field must be event-specific.

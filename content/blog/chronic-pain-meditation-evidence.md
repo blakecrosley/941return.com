@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Chronic Pain and Meditation | Evidence-Based Guide"
 seo_description: "Evidence-based meditation approaches for chronic pain management. How mindfulness changes pain perception for athletes with persistent pain."
 status: published
-published_at: 2025-03-04T09:00:00
+published_at: 2025-09-19T17:00:00
 ---
 
 Chronic pain affects millions of athletes—old injuries that never fully resolved, conditions that persist despite treatment, pain that has become part of daily experience. Unlike acute pain that signals tissue damage, chronic pain often involves changes in how the nervous system processes signals. The pain is real, but its relationship to tissue damage has shifted.

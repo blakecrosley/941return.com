@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Esports | Gaming Mental Training"
 seo_description: "Mental training for competitive gamers. Develop focus, reaction time, and tilt resistance through meditation practices designed for esports performance."
 status: published
-published_at: 2025-03-26T09:00:00
+published_at: 2025-10-30T17:00:00
 ---
 
 Esports athletes face mental demands that mirror traditional sports: sustained concentration, pressure management, rapid decision-making, and performing when outcomes matter. Yet gaming culture often ignores mental training, assuming that more hours played equals better performance.

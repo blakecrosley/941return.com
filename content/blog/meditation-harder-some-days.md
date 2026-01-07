@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Why Is Meditation Harder Some Days? | Practice Inconsistency Explained"
 seo_description: "Understand why meditation difficulty varies day to day. What causes inconsistent sessions and how to practice when it feels harder."
 status: published
-published_at: 2026-01-10T10:00:00
+published_at: 2025-11-09T09:00:00
 ---
 
 Some days meditation flows. You sit, settle quickly, focus comes easily, time passes smoothly. Other days it's torture. Your mind won't settle, your body won't stay still, every minute drags. Same practice, same cushion, wildly different experience.

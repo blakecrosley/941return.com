@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Military & Veterans | Mental Resilience Training"
 seo_description: "Learn meditation strategies for active duty military and veterans. Manage combat stress, PTSD symptoms, hypervigilance, and transition challenges."
 status: published
-published_at: 2026-01-11T04:00:00
+published_at: 2025-11-14T09:00:00
 ---
 
 You were trained to be vigilant, to respond to threat, to operate under extreme conditions. That training worked. It kept you alive, helped you complete the mission. But the skills that served you in combat don't always serve you at home. The alertness that protected you now keeps you from sleeping. The emotional control that was necessary now feels like disconnection.

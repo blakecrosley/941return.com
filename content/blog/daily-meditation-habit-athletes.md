@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Daily Meditation for Athletes | Building the Habit"
 seo_description: "How to build a consistent meditation practice alongside your training. Practical strategies for athletes who want the benefits without the friction."
 status: published
-published_at: 2024-10-25T09:00:00
+published_at: 2025-09-26T17:00:00
 ---
 
 You know meditation helps. You've tried it a few times and felt the difference. But three days later, the habit has evaporated, replaced by training demands, schedule chaos, and the feeling that you'll "start again Monday."

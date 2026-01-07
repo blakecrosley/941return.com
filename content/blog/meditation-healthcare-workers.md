@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Nurses, Doctors & Healthcare Workers"
 seo_description: "Learn meditation strategies for healthcare professionals. Manage compassion fatigue, shift work stress, and maintain presence while caring for patients."
 status: published
-published_at: 2026-01-10T19:00:00
+published_at: 2025-11-10T09:00:00
 ---
 
 You spend your days caring for others—patients in pain, families in crisis, colleagues under pressure. You witness suffering, make critical decisions, and manage emotional intensity that most people never encounter. Then you go home and try to recover before doing it again.

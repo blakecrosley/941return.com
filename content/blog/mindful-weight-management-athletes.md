@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mindful Weight Management for Athletes | Healthy Body Composition"
 seo_description: "Weight management in sport can become harmful. Learn mindful approaches to body composition that optimize performance without risking disordered eating or psychological damage."
 status: published
-published_at: 2026-01-09T07:00:00
+published_at: 2025-11-29T09:00:00
 ---
 
 For many athletes, weight is a loaded topic. Whether it's making weight for wrestling, optimizing power-to-weight for cycling, or meeting aesthetic expectations in gymnastics, body composition can become an obsession that harms both performance and well-being.

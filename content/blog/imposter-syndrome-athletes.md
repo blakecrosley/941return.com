@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Imposter Syndrome in Athletes | Own Your Success"
 seo_description: "Imposter syndrome affects athletes at every level. Learn mindfulness strategies to recognize your achievements, overcome self-doubt, and perform with confidence."
 status: published
-published_at: 2026-01-07T16:00:00
+published_at: 2025-10-12T09:00:00
 ---
 
 You've earned your spot. Your stats prove it. Your coaches selected you. Yet there's a persistent voice: "You don't really belong here. You're not as good as they think. Soon everyone will realize you're a fraud."

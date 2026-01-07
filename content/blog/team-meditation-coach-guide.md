@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Team Meditation Coach Guide | How to Introduce Mental Training"
 seo_description: "A coach's complete guide to introducing meditation to athletic teams. From building buy-in to sustaining practice, learn how to implement mental training."
 status: published
-published_at: 2025-05-28T09:00:00
+published_at: 2025-12-24T09:00:00
 ---
 
 You've seen the research. You understand that mental training can differentiate your athletes. But there's a gap between knowing meditation works and successfully implementing it with your team.

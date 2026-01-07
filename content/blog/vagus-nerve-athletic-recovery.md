@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Vagus Nerve for Athletes | Recovery & Performance"
 seo_description: "How to train your vagus nerve for faster athletic recovery. Science-backed techniques to improve HRV, sleep, and performance under pressure."
 status: published
-published_at: 2024-10-29T09:00:00
+published_at: 2025-12-31T17:00:00
 ---
 
 There's a nerve running from your brainstem through your neck, chest, and abdomen that controls more of your athletic potential than most athletes realize. It regulates your heart rate, digestion, immune response, and inflammation. It determines how quickly you recover from training stress and how well you handle competitive pressure.

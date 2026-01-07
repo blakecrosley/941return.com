@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Buddhist Meditation Origins | Ancient Wisdom, Modern Science"
 seo_description: "Explore how Buddhist meditation traditions spanning 2,500 years laid the foundation for modern mindfulness, and how neuroscience validates ancient contemplative insights."
 status: published
-published_at: 2026-01-08T08:00:00
+published_at: 2025-09-17T09:00:00
 ---
 
 When you sit down to meditate—watching your breath, observing thoughts arise and pass, cultivating present-moment awareness—you're engaging in practices refined over 2,500 years. The Buddha didn't invent meditation, but his systematic approach to mental training created the foundation for nearly everything we call "mindfulness" today.

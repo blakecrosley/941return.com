@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Pre-Game Team Meditation | Competition Preparation Protocols"
 seo_description: "Effective pre-game meditation protocols for athletic teams. Practical scripts, timing, and implementation for collective mental preparation before competition."
 status: published
-published_at: 2025-06-11T09:00:00
+published_at: 2025-12-11T09:00:00
 ---
 
 The locker room before a big game: some athletes pace nervously, others sit silent, a few joke to manage anxiety. Energy is scattered, attention fragmented. Now imagine instead: a team settled into collective stillness, breathing together, focused on the same purpose. Same athletes, different preparation.

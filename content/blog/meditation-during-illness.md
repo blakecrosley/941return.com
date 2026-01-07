@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation During Illness | Cancer, Chronic Disease & Healing"
 seo_description: "Learn how meditation supports people facing serious illness. Coping with diagnosis, treatment, uncertainty, and living fully with health challenges."
 status: published
-published_at: 2026-01-11T17:00:00
+published_at: 2025-10-25T17:00:00
 ---
 
 The diagnosis changes everything. Suddenly your body is a stranger, your future uncertain, your days organized around appointments and treatments. You're navigating a medical world you never wanted to know while processing news you never wanted to receive.

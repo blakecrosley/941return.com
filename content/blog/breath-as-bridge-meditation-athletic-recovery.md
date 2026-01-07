@@ -3,7 +3,7 @@ title: "The Breath as Bridge: Meditation and Athletic Recovery"
 slug: breath-as-bridge-meditation-athletic-recovery
 excerpt: "Your breath is the fastest route to your nervous system. These breathwork techniques accelerate recovery and build resilience between training sessions."
 status: published
-published_at: 2026-01-02
+published_at: 2025-09-15T09:00:00
 seo_title: "Breathwork for Athletes: Meditation Techniques for Recovery"
 seo_description: "Learn breathwork techniques that accelerate athletic recovery. Box breathing, physiological sighs, and guided practices for post-workout relaxation."
 ---

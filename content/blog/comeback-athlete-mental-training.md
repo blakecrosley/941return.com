@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Comeback Mental Training | Returning to Sport Psychology"
 seo_description: "Mental training for athletes returning to sport after time away. Navigate the psychological challenges of injury comeback and athletic return."
 status: published
-published_at: 2025-09-17T09:00:00
+published_at: 2025-09-22T09:00:00
 ---
 
 You've been away. Injury, illness, personal circumstances, or time out for other reasons. Now you're coming back. The physical rehabilitation gets attention—the exercises, the protocols, the gradual return to activity. But the mental comeback? Often overlooked, always essential.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Pain Science for Athletes | Meditation and Pain Threshold"
 seo_description: "How meditation changes pain perception in athletes. The neuroscience of pain tolerance, central sensitization, and why mental training alters pain processing."
 status: published
-published_at: 2025-03-11T09:00:00
+published_at: 2025-12-05T09:00:00
 ---
 
 Every athlete has a relationship with pain. Training involves discomfort. Competition pushes limits. Injury forces confrontation with pain at levels most people avoid. What athletes often don't understand is that pain is far more complex than simple tissue damage—and that this complexity creates opportunities for changing pain experience through mental training.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Playoff Mentality | Mental Preparation for Championships"
 seo_description: "Mental training for playoff and championship performance. How to prepare psychologically when stakes are highest and pressure is greatest."
 status: published
-published_at: 2025-09-03T09:00:00
+published_at: 2025-12-09T09:00:00
 ---
 
 Regular season ends. Now it counts. The games that matter, the ones you'll remember, the performances that define careers. Playoffs demand everything you have—and the mental game often determines who has enough.

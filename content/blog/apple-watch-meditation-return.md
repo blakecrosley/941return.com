@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Apple Watch Meditation | Return App Guide"
 seo_description: "How Return uses Apple Watch data for meditation. Heart rate, HRV, and wearable insights that enhance your meditation practice."
 status: published
-published_at: 2025-01-28T09:00:00
+published_at: 2025-09-06T17:00:00
 ---
 
 Your Apple Watch measures what's happening in your body continuously—heart rate, heart rate variability, movement, and more. During meditation, these measurements become particularly meaningful. They reveal the physiological effects of your practice in real-time and over time.

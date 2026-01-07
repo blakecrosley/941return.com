@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Masters Athletes | Performance After 40"
 seo_description: "Mental training for masters athletes. How meditation supports performance, recovery, and continued athletic excellence as the body ages."
 status: published
-published_at: 2025-04-16T09:00:00
+published_at: 2025-11-13T17:00:00
 ---
 
 The body at 50 is not the body at 25. Recovery takes longer, peak output decreases, injury risk increases. Yet masters athletes around the world continue performing at levels that defy age-based expectations. What separates those who continue thriving from those who decline?

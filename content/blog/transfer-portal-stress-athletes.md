@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Transfer Portal Stress | Mental Health Guide for Athletes"
 seo_description: "Navigating the transfer portal creates unique mental challenges. Learn mindfulness strategies for handling uncertainty, making decisions, and transitioning to a new program."
 status: published
-published_at: 2026-01-07T19:00:00
+published_at: 2025-12-30T09:00:00
 ---
 
 The transfer portal has revolutionized college athletics—athletes have more mobility and choice than ever. But this freedom comes with significant mental health challenges: decision paralysis, uncertainty, leaving familiar environments, starting over, and the pressure of the portal timeline.

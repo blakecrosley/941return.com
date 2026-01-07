@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Golfers | Mental Game Guide"
 seo_description: "Improve your golf mental game with meditation. Build focus, calm under pressure, and shot-to-shot presence for lower scores."
 status: published
-published_at: 2025-06-24T09:00:00
+published_at: 2025-10-31T17:00:00
 ---
 
 Golf provides unlimited time to think—and that's often the problem. Between shots, minutes stretch. The mind fills that space with analysis, doubt, frustration, and fear. By the time you address the ball, you've played the shot mentally a dozen times, most of them badly.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Boredom in Meditation | What to Do When Practice Feels Boring"
 seo_description: "Understand boredom in meditation. Why it happens, what it means, and how to work with the experience rather than against it."
 status: published
-published_at: 2026-01-10T07:00:00
+published_at: 2025-09-13T09:00:00
 ---
 
 You're 10 minutes into your session. Nothing's happening. The breath is the breath. Thoughts come and go. It's all very... ordinary. Boring, actually. You wonder why you're doing this. You want to check the timer. You want to be anywhere but here, doing anything but this.

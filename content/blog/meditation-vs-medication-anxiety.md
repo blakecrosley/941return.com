@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation vs Medication for Anxiety | Research Comparison"
 seo_description: "Compare meditation and medication for anxiety treatment. What the research shows about effectiveness, when to use each, and how they work together."
 status: published
-published_at: 2026-01-11T21:00:00
+published_at: 2025-11-23T09:00:00
 ---
 
 If you're dealing with anxiety, you've probably wondered: meditation or medication? The wellness world pushes meditation as a cure-all; the medical world often goes straight to pills. The truth is more nuanced than either camp suggests.

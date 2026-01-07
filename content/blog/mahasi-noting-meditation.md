@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mahasi Noting Meditation | Vipassana Technique Guide"
 seo_description: "Learn the noting technique from Mahasi Sayadaw's Vipassana tradition. Mental labeling for insight meditation: how, what, and why to note."
 status: published
-published_at: 2026-01-10T19:00:00
+published_at: 2025-10-16T17:00:00
 ---
 
 You sit to meditate. A thought arises. Before you know it, you're five minutes into planning your week, completely lost in the content. Sound familiar?

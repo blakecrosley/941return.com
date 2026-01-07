@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Christian Meditation | Contemplative Prayer Practice Guide"
 seo_description: "Explore Christian contemplative practices: Centering Prayer, Lectio Divina, the Jesus Prayer, and more. Meditation within the Christian tradition."
 status: published
-published_at: 2026-01-10T08:00:00
+published_at: 2025-09-19T09:00:00
 ---
 
 Many Christians feel drawn to meditation but wonder if it conflicts with their faith. They may not know that Christianity has its own rich contemplative tradition stretching back to the earliest centuries of the church. The Desert Fathers and Mothers, medieval mystics like Meister Eckhart and The Cloud of Unknowing author, Teresa of Ávila and John of the Cross—all explored the depths of interior prayer.

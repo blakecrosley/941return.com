@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Progressive Muscle Relaxation for Athletes | Complete Guide"
 seo_description: "How to use progressive muscle relaxation for athletic performance and recovery. Step-by-step instructions, timing, and integration with training."
 status: published
-published_at: 2025-11-05T09:00:00
+published_at: 2025-12-11T17:00:00
 ---
 
 You're holding tension you don't feel. Shoulders slightly raised. Jaw subtly clenched. Core bracing that isn't necessary. This unconscious muscular tension wastes energy, limits range of motion, and interferes with fluid movement.

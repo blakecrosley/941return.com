@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Post-Surgery Meditation | Recovery Guide"
 seo_description: "Accelerate post-surgery recovery with meditation. Evidence-based approaches to support healing, manage pain, and return to sport after surgery."
 status: published
-published_at: 2025-04-15T09:00:00
+published_at: 2025-12-10T09:00:00
 ---
 
 The surgery went well. Now comes the harder part: recovery.

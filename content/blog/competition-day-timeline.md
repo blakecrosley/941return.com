@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Competition Day Mental Timeline | Morning to Performance Guide"
 seo_description: "Optimize your competition day with a complete mental timeline. Learn when and how to use meditation, visualization, and mindfulness from waking through performance."
 status: published
-published_at: 2026-01-06T19:00:00
+published_at: 2025-09-23T17:00:00
 ---
 
 The hours before competition are precious and often wasted. Athletes wake up anxious, scroll phones mindlessly, eat poorly timed meals, and arrive at venues mentally scattered. Then they wonder why performance suffers.

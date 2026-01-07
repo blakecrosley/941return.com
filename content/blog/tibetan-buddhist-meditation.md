@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Tibetan Buddhist Meditation | Vajrayana Practice Guide"
 seo_description: "Explore Tibetan Buddhist meditation practices: shamatha, deity yoga, tonglen, Dzogchen, and more. A comprehensive guide to Vajrayana meditation."
 status: published
-published_at: 2026-01-10T10:00:00
+published_at: 2025-12-27T09:00:00
 ---
 
 Tibetan Buddhism preserved and developed practices that were lost elsewhere. When Buddhism was destroyed in India, Tibet had already absorbed its tantric and meditative teachings. The result is a tradition of remarkable depth and variety—from simple calm abiding to elaborate deity practices to direct recognition of awareness itself.

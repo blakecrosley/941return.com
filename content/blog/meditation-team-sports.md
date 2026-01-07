@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Team Sports | Team Performance"
 seo_description: "How meditation benefits team sport performance. Build individual mental skills that enhance collective dynamics, communication, and team cohesion."
 status: published
-published_at: 2025-07-29T09:00:00
+published_at: 2025-11-21T17:00:00
 ---
 
 Team sports add complexity that individual sports don't have. You're not just managing your own mind—you're coordinating with others, responding to collective dynamics, and contributing to something larger than yourself. Does meditation, often practiced alone, apply?

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Clutch Free Throws | High-Pressure Performance Mental Training"
 seo_description: "Mental training for clutch free throws and high-pressure isolated skills. How to perform when the game is on the line."
 status: published
-published_at: 2025-09-24T09:00:00
+published_at: 2025-09-20T17:00:00
 ---
 
 The crowd goes silent—or erupts. Everyone watches. You step to the line. Everything you've practiced comes down to this single execution. The free throw, the penalty kick, the field goal, the crucial putt. High-pressure isolated skills: the specific mental challenge where there's nowhere to hide and no one else to rely on.

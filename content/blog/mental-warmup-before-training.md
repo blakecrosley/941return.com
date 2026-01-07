@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mental Warm-Up for Athletes | Training Prep"
 seo_description: "Mental warm-up techniques to improve training quality. Prepare your mind before practice for better skill acquisition and focus."
 status: published
-published_at: 2025-10-21T09:00:00
+published_at: 2025-11-27T17:00:00
 ---
 
 Before training, you elevate heart rate. You mobilize joints. You activate relevant muscles. Physical warm-up is automatic—you wouldn't consider training without it.

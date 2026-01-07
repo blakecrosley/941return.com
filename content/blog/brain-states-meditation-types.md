@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Brain States in Different Meditation Types | EEG & fMRI Research"
 seo_description: "Learn how different meditation types affect the brain differently. Focused attention vs open monitoring vs loving-kindness—what neuroscience shows."
 status: published
-published_at: 2026-01-12T00:00:00
+published_at: 2025-09-14T09:00:00
 ---
 
 When researchers first studied meditation, they often treated it as a single thing. But meditators know better—sitting in concentration on the breath feels different from open awareness, which feels different from generating compassion. Neuroscience has caught up, showing that different practices produce distinct brain states.

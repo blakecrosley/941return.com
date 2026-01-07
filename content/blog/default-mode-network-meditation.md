@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Default Mode Network & Meditation | Mind Wandering Science"
 seo_description: "Learn how meditation affects the default mode network. Understand mind wandering, self-referential thinking, and why quieting the DMN matters."
 status: published
-published_at: 2026-01-11T19:00:00
+published_at: 2025-09-28T17:00:00
 ---
 
 When you're not doing anything in particular, your brain is still busy. It's running the default mode network (DMN)—a set of brain regions that activate when you're not focused on the external world. This network generates mind-wandering, self-referential thinking, remembering the past, imagining the future, and worrying about what others think of you.

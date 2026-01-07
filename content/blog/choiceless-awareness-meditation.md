@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Open Awareness Meditation | Choiceless Awareness Practice"
 seo_description: "Learn open awareness meditation: resting in awareness itself without fixating on objects. Advanced practice for experienced meditators."
 status: published
-published_at: 2026-01-10T17:00:00
+published_at: 2025-09-18T09:00:00
 ---
 
 Most meditation involves focusing on something: the breath, a mantra, body sensations, loving-kindness phrases. These focused attention practices develop concentration and stability. But there's another approach—open awareness—that works differently.

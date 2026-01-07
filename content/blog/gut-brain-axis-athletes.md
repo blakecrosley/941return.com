@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Gut-Brain Axis for Athletes | Digestion and Performance"
 seo_description: "The gut-brain connection for athletes. How meditation affects digestion, stress, and athletic performance through the gut-brain axis."
 status: published
-published_at: 2025-08-13T09:00:00
+published_at: 2025-10-07T17:00:00
 ---
 
 Every athlete knows the feeling: pre-competition butterflies, nervous stomach, bathroom urgency before the start. Your gut knows you're about to compete even before your conscious mind fully processes it. This isn't weakness—it's the gut-brain axis in action, and understanding this bidirectional highway between your digestive system and brain can transform how you manage performance stress.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Psychology of Slumps in Sports | Breaking Performance Downturns"
 seo_description: "Slumps happen to every athlete. Learn the psychology behind performance downturns and mindfulness techniques for breaking free and building slump resilience."
 status: published
-published_at: 2026-01-08T20:00:00
+published_at: 2025-12-12T17:00:00
 ---
 
 The shots that used to fall aren't falling. The timing that was automatic feels off. The confidence that carried you has evaporated. Nothing has changed in your training, your technique, your preparation—but something has changed in your performance. You're in a slump.

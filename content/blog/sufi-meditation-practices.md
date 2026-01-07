@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Sufi Meditation | Dhikr and Islamic Contemplative Practice"
 seo_description: "Explore Sufi meditation practices: dhikr (remembrance), muraqaba (watchfulness), and movement practices. The contemplative heart of Islamic mysticism."
 status: published
-published_at: 2026-01-10T07:00:00
+published_at: 2025-12-22T09:00:00
 ---
 
 Sufism is the mystical dimension of Islam—the path of direct experience rather than mere doctrine. While all Muslims practice remembrance of God, Sufis have developed sophisticated methods for making that remembrance continuous and transformative. The goal is nothing less than polishing the heart until it reflects divine light.

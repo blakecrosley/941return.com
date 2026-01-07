@@ -6,7 +6,7 @@ featured_image:
 seo_title: "NIL Mental Health Guide | College Athletes & Brand Deals"
 seo_description: "NIL deals create new mental challenges for college athletes. Learn mindfulness strategies for handling money pressure, social comparison, and maintaining focus on performance."
 status: published
-published_at: 2026-01-07T18:00:00
+published_at: 2025-12-02T09:00:00
 ---
 
 Name, Image, and Likeness (NIL) has transformed college athletics. Athletes can now monetize their brand—something previously impossible. But this opportunity comes with new mental health challenges: financial pressure, social comparison, identity confusion, and distraction from athletic development.

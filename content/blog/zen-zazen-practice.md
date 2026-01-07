@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Zen Zazen Practice | How to Do Zazen Meditation"
 seo_description: "Learn Zen zazen meditation: posture, technique, and the distinctive approach of just sitting. Practical guidance for Zen sitting practice."
 status: published
-published_at: 2026-01-10T12:00:00
+published_at: 2026-01-07T17:00:00
 ---
 
 Zen meditation—zazen—appears simple. You sit down, face a wall, and do... nothing? Something? The instructions can seem maddeningly vague: "Just sit." "Think not-thinking." "Let thoughts come and go."

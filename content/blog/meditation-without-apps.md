@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Without Apps | Simple Meditation Timer"
 seo_description: "Learn to meditate without apps and guided sessions. The case for analog tools, simple timers, and developing independent practice."
 status: published
-published_at: 2026-01-10T04:00:00
+published_at: 2025-11-24T09:00:00
 ---
 
 The meditation app market has exploded. Headspace, Calm, Ten Percent Happier, Insight Timer—thousands of guided sessions, courses, music, sleep stories. For beginners, these can be helpful entry points. But for experienced practitioners, they often become obstacles.

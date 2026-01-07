@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Non-Dual Awareness Explained | Nature of Mind Meditation"
 seo_description: "Understand non-dual awareness in meditation. Learn what non-dual pointing out instructions are and how to recognize the nature of awareness itself."
 status: published
-published_at: 2026-01-12T08:00:00
+published_at: 2025-12-02T17:00:00
 ---
 
 Most meditation involves a meditator attending to something—breath, body, thoughts. There's a subject (you) observing an object (experience). Non-dual awareness points to something different: recognition of awareness itself, prior to the split between observer and observed.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Parents Guide to Youth Athlete Mental Training"
 seo_description: "How parents can support mental training for young athletes. Guide to meditation, mindfulness, and psychological skill development for youth sports."
 status: published
-published_at: 2025-04-30T09:00:00
+published_at: 2025-12-05T17:00:00
 ---
 
 Your child trains their body for hours each week. But what about their mind? The mental side of athletics often gets ignored until problems arise—anxiety, performance drops, burnout. By then, you're playing catch-up.

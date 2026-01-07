@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Cyclists | Mental Endurance Training"
 seo_description: "Mental training for cyclists. Learn meditation techniques for long rides, climbing, time trials, and the psychology of suffering on the bike."
 status: published
-published_at: 2025-12-16T09:00:00
+published_at: 2025-10-30T09:00:00
 ---
 
 Cycling is as much mental as physical. The long hours in the saddle, the suffering on climbs, the focused intensity of time trials—all demand psychological capacity that physical training alone doesn't develop.

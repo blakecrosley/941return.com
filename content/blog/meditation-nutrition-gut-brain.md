@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation and Nutrition | Gut-Brain Connection"
 seo_description: "How meditation affects nutrition and digestion for athletes. The gut-brain axis and its implications for athletic performance."
 status: published
-published_at: 2025-03-18T09:00:00
+published_at: 2025-11-15T17:00:00
 ---
 
 Your gut contains millions of neurons—sometimes called the "second brain." This enteric nervous system communicates bidirectionally with your central nervous system through the gut-brain axis.

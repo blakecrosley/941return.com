@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Working with Sports Psychologist | What Athletes Should Know"
 seo_description: "Complete guide to working with a sports psychologist. Finding the right fit, what to expect, and how to maximize mental performance work as an athlete."
 status: published
-published_at: 2025-06-25T09:00:00
+published_at: 2026-01-04T17:00:00
 ---
 
 You train your body with coaches. You develop skills through practice. But when it comes to your mind—the tool that ultimately determines how you perform under pressure—many athletes have never worked with a professional.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Depression | Benefits, Risks & Guidance"
 seo_description: "Learn how meditation helps with depression. Evidence-based benefits, important cautions, and when to seek professional help."
 status: published
-published_at: 2026-01-11T12:00:00
+published_at: 2025-10-24T17:00:00
 ---
 
 Getting out of bed is hard. Everything feels pointless. The inner voice speaks only criticism and hopelessness. Depression is not sadness—it's a heaviness that makes the simplest things exhausting.

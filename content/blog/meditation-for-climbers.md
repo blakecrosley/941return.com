@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Climbers | Mental Training for Climbing"
 seo_description: "Mental training for rock climbers and boulderers. Master fear management, route reading, and the focused presence that high-stakes climbing demands."
 status: published
-published_at: 2025-03-12T09:00:00
+published_at: 2025-10-28T17:00:00
 ---
 
 Climbing is meditation with consequences. The focus demanded by difficult moves, the fear that arises at heights, the complete absorption in body position and movement—climbing naturally cultivates meditative states. The question is whether climbers consciously develop these mental skills or leave them to chance.

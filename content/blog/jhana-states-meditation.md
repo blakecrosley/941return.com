@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Jhana Meditation States Explained | Meditative Absorption Guide"
 seo_description: "Learn about the jhana states of meditative absorption. Understand what jhanas are, how to access them, and their role in deep meditation practice."
 status: published
-published_at: 2026-01-12T04:00:00
+published_at: 2025-10-14T09:00:00
 ---
 
 The jhanas are states of deep meditative absorption that most meditators have heard of but few have experienced. Described in Buddhist texts for millennia, they represent profound concentration that goes beyond ordinary meditation into altered states of consciousness.

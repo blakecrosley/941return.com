@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Digital Detox for Athletes | Reclaim Focus"
 seo_description: "Strategic digital detox for athletes. Restore the focus and recovery that constant connectivity erodes. Practical approaches that work."
 status: published
-published_at: 2025-02-11T09:00:00
+published_at: 2025-09-29T17:00:00
 ---
 
 The average person touches their phone 2,617 times per day. Each touch is a context switch—attention pulled from whatever you were doing, fragmented, then slowly reassembled.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Cortisol & Stress for Athletes | Hormone Science"
 seo_description: "How cortisol affects athletic performance, recovery, and training adaptation. Science-based strategies for managing stress hormones as an athlete."
 status: published
-published_at: 2024-11-12T09:00:00
+published_at: 2025-09-25T17:00:00
 ---
 
 Cortisol has a bad reputation. Scan fitness media and you'll find articles warning about this "stress hormone" like it's a performance poison—something to eliminate, suppress, or fear.

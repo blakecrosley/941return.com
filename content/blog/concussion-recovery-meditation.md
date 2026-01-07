@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Concussion Recovery and Meditation | Brain Healing"
 seo_description: "Adapted meditation approaches for concussion recovery. Support brain healing and manage symptoms through gentle mental practices."
 status: published
-published_at: 2025-06-03T09:00:00
+published_at: 2025-09-24T17:00:00
 ---
 
 Concussion changes everything. The brain that you've relied on for performance, learning, and daily function is now injured and needs time to heal. Athletes often feel lost—unable to train, unable to study, unable to even watch screens. The identity crisis is real, and the symptoms are frustrating.

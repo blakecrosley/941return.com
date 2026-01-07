@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Soccer Players | Mental Training"
 seo_description: "Mental training for soccer players. Develop game awareness, penalty composure, and the focus to maintain performance for 90 minutes."
 status: published
-published_at: 2025-02-19T09:00:00
+published_at: 2025-11-03T17:00:00
 ---
 
 Ninety minutes of continuous play. No timeouts. No guaranteed breaks. Just you, teammates, opponents, and a ball, with game-defining moments arising unpredictably. Soccer demands mental endurance that physical fitness alone cannot provide.

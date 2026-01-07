@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Dark Night of the Soul in Meditation | Understanding Difficult Stages"
 seo_description: "Learn about the dark night phenomenon in meditation. What causes difficult stages, how to recognize them, and when you need support."
 status: published
-published_at: 2026-01-10T18:00:00
+published_at: 2025-09-27T17:00:00
 ---
 
 You've been meditating consistently, maybe intensively. Then something shifts—not toward peace but toward darkness. Anxiety that won't lift. Depression without obvious cause. Existential dread. A sense that something is fundamentally wrong. The practice that was supposed to help seems to have opened a door you can't close.

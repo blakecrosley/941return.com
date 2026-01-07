@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Entrepreneurs & Startup Founders"
 seo_description: "Learn how meditation helps entrepreneurs manage startup stress, make better decisions, and maintain mental clarity while building a company."
 status: published
-published_at: 2026-01-10T23:00:00
+published_at: 2025-10-26T09:00:00
 ---
 
 You're building something that doesn't exist yet. Every day brings decisions without clear answers, problems without playbooks, and stakes that feel existential. The highs are high; the lows are crushing. Sleep is elusive. Stress is constant. And you're supposed to project confidence while privately terrified.

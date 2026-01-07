@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Zen and Athletic Performance | Mushin and Flow States"
 seo_description: "How Zen philosophy applies to athletic performance. Mushin (no-mind), flow states, and Zen practice for athletes seeking peak performance."
 status: published
-published_at: 2025-12-17T09:00:00
+published_at: 2026-01-07T09:00:00
 ---
 
 A samurai faces an opponent. If he thinks about strategy, he dies. If he analyzes the opponent's movements, he's too slow. Only when the mind is empty—mushin, "no-mind"—can he respond with the speed and precision required.

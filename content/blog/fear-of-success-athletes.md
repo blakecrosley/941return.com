@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Fear of Success in Athletes | Break the Self-Sabotage Pattern"
 seo_description: "Fear of success is a hidden barrier that causes athletes to unconsciously sabotage their performance. Learn mindfulness strategies to recognize and overcome this pattern."
 status: published
-published_at: 2026-01-07T17:00:00
+published_at: 2025-10-03T17:00:00
 ---
 
 Fear of failure is obvious—who wants to lose? But many athletes carry a less visible fear: fear of success. This isn't about wanting to fail; it's about unconsciously fearing what success brings. Recognition, expectation, change, responsibility. Athletes who fear success often sabotage themselves in subtle ways they don't recognize until the pattern becomes undeniable.

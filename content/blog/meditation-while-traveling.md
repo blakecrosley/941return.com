@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation While Traveling | How to Practice on the Road"
 seo_description: "Keep your meditation practice consistent while traveling. Practical strategies for airports, hotels, and maintaining mindfulness away from home."
 status: published
-published_at: 2026-01-10T02:00:00
+published_at: 2025-11-23T17:00:00
 ---
 
 You've built a solid home practice. Then travel happens—business trip, vacation, visiting family—and suddenly your meditation routine vanishes. The cushion is at home. The quiet morning slot is gone. Everything that supported your practice no longer exists.

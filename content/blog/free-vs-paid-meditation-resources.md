@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Free vs Paid Meditation Resources | What's Worth Paying For?"
 seo_description: "Compare free and paid meditation resources. Learn what's worth paying for in your meditation journey and what you can get for free."
 status: published
-published_at: 2026-01-12T10:00:00
+published_at: 2025-10-06T09:00:00
 ---
 
 Meditation has been taught for free for millennia—teacher to student, dana-based retreat centers, freely offered instructions. Today, meditation is also a billion-dollar industry. Apps charge subscriptions, courses cost hundreds, and private teachers have hourly rates.

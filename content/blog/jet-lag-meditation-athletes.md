@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Jet Lag Protocols for Athletes | Travel Recovery Meditation"
 seo_description: "Jet lag impairs athletic performance. Learn meditation strategies for managing time zone changes, sleeping during travel, and arriving ready to compete."
 status: published
-published_at: 2026-01-07T09:00:00
+published_at: 2025-10-13T09:00:00
 ---
 
 International competition requires travel that disrupts the systems athletes depend on most: sleep, circadian rhythm, and recovery. The body that performed brilliantly at home arrives confused and underperforming in a new time zone.

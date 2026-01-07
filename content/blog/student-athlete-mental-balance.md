@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Student-Athlete Balance | Mental Training and Time Management"
 seo_description: "Mental training for balancing academics and athletics. Time management, stress reduction, and focus strategies for student-athletes."
 status: published
-published_at: 2025-05-14T09:00:00
+published_at: 2025-12-21T17:00:00
 ---
 
 The alarm goes off at 5:30 AM. Morning practice until 8:00. Classes until 3:00. Afternoon training until 6:00. Dinner. Study. Sleep. Repeat.

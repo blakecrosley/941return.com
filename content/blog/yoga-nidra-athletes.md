@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Yoga Nidra for Athletes | Ancient Recovery Practice Guide"
 seo_description: "Yoga Nidra provides athletes with deep relaxation and recovery benefits. Learn this ancient practice for better sleep, stress reduction, and enhanced athletic restoration."
 status: published
-published_at: 2026-01-06T16:00:00
+published_at: 2026-01-05T09:00:00
 ---
 
 Yoga Nidra—often called "yogic sleep"—is an ancient practice that's gained renewed attention through modern neuroscience. For athletes seeking every recovery advantage, Yoga Nidra offers a structured path to deep relaxation with measurable benefits.

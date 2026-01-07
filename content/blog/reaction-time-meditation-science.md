@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Reaction Time & Meditation Science | Faster Athletic Response"
 seo_description: "Learn the science behind reaction time in sports and how meditation training improves response speed through attention, mental clarity, and reduced neural noise."
 status: published
-published_at: 2026-01-08T23:00:00
+published_at: 2025-12-13T17:00:00
 ---
 
 In sprinting, 0.1 seconds separates medalists from also-rans. A baseball hitter has roughly 400 milliseconds from pitch release to bat-ball contact. A tennis player returning serve at 120 mph has even less. Reaction time—the interval between stimulus and response—often determines athletic outcomes.

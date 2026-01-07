@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Short Meditation Practice | How to Meditate When Busy"
 seo_description: "Learn how to maintain meditation practice when short on time. Practical strategies for busy people who want to keep practicing."
 status: published
-published_at: 2026-01-09T20:00:00
+published_at: 2025-11-19T17:00:00
 ---
 
 You want to meditate. You know it helps. But between work, family, and everything else, there's no time. The 20-minute session you used to do has become an impossible luxury.

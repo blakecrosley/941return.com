@@ -6,7 +6,7 @@ featured_image:
 seo_title: "ACT Therapy for Athletes | Injury Recovery"
 seo_description: "How Acceptance and Commitment Therapy helps injured athletes. Evidence-based psychological flexibility skills for sports injury recovery."
 status: published
-published_at: 2025-01-14T09:00:00
+published_at: 2025-09-04T17:00:00
 ---
 
 You've been fighting. Fighting the frustration of injury. Fighting the fear of reinjury. Fighting the thoughts that say you'll never be the same. Fighting the emotions that overwhelm you in quiet moments.

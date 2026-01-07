@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mantra Meditation Without a Guru | Choose Your Own Mantra"
 seo_description: "Learn mantra meditation without formal initiation. How to choose a mantra, practice technique, and develop effective meditation using sound."
 status: published
-published_at: 2026-01-10T15:00:00
+published_at: 2025-10-17T17:00:00
 ---
 
 In traditional practice, mantras are secret, received from teachers in ritual initiation. TM charges hundreds of dollars for a mantra. Tibetan Buddhism requires empowerment for certain mantras. This mystique suggests mantra meditation is inaccessible without a guru.

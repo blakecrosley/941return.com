@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Yogic Breath Science | Pranayama for Athletes"
 seo_description: "Ancient yogic breath practices (pranayama) align remarkably with modern respiratory physiology. Learn how yoga breathing techniques optimize athletic performance."
 status: published
-published_at: 2026-01-08T11:00:00
+published_at: 2026-01-06T09:00:00
 ---
 
 Thousands of years before scientists discovered the vagus nerve, before heart rate variability was measured, before the autonomic nervous system was mapped, yogis in India developed sophisticated breath control practices. They called it pranayama—literally "extension of life force"—and they discovered through direct experience what modern physiology now explains.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Late Bloomer Athlete Mindset | Mental Training"
 seo_description: "Mental training for athletes who started their sport later in life. Overcome comparison, accelerate development, and embrace the late bloomer advantage."
 status: published
-published_at: 2025-05-21T09:00:00
+published_at: 2025-10-14T17:00:00
 ---
 
 You didn't start at age 5 with a pushy parent. You discovered your sport at 25, or 35, or 45. You came to serious athletics long after most athletes had already accumulated years of development.

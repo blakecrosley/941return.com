@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Athlete Retirement and Meditation | Life After Sport"
 seo_description: "Navigate athletic retirement with meditation. How mental skills developed for performance support the transition to life after competitive sport."
 status: published
-published_at: 2025-09-09T09:00:00
+published_at: 2025-09-08T17:00:00
 ---
 
 Every athletic career ends. Some endings are chosen—the decision to retire, the accomplishment of goals. Others are imposed—injury, deselection, age. Regardless of how it comes, the end of competitive sport confronts athletes with profound transition.

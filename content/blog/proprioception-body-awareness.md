@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Proprioception and Body Awareness | Athlete Somatic Training"
 seo_description: "How meditation develops proprioception and body awareness for athletes. The science of somatic training, position sense, and movement quality."
 status: published
-published_at: 2025-07-30T09:00:00
+published_at: 2025-12-12T09:00:00
 ---
 
 You know exactly where your hand is without looking at it. You can balance on one foot with eyes closed. You sense when your running form deteriorates before anyone tells you. This is proprioception—your body's sixth sense—and it underlies every athletic movement you make.

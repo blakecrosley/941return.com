@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Immune System and Meditation | Athletic Immunity Research"
 seo_description: "How meditation affects immune function for athletes. Research on immunity, training load, illness prevention, and mental training's immunological effects."
 status: published
-published_at: 2025-07-23T09:00:00
+published_at: 2025-10-11T17:00:00
 ---
 
 The athletic immune paradox: moderate exercise strengthens immunity, but intensive training can suppress it. Athletes face higher rates of upper respiratory infections during heavy training and after competitions. Research increasingly shows that meditation affects immune function—offering athletes a potential tool for protecting against training-induced immune suppression.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Therapists & Counselors | Practitioner Self-Care"
 seo_description: "Learn meditation strategies for mental health professionals. Prevent burnout, manage vicarious trauma, and maintain therapeutic presence."
 status: published
-published_at: 2026-01-11T06:00:00
+published_at: 2025-11-22T09:00:00
 ---
 
 You know meditation works. You probably recommend it to clients. The irony is that you may not have a consistent practice yourself. Between sessions, documentation, continuing education, and life—your own wellbeing falls to the bottom of the list. The helper's paradox: everyone gets helped except the helper.

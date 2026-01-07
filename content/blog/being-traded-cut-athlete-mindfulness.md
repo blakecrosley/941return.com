@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Being Traded or Cut | Mindfulness for Professional Athletes"
 seo_description: "Being traded or cut is devastating for professional athletes. Learn mindfulness techniques for processing rejection, managing transitions, and maintaining perspective."
 status: published
-published_at: 2026-01-09T09:00:00
+published_at: 2025-09-10T17:00:00
 ---
 
 The call comes. You've been traded. Or worse—released. In one conversation, your professional home disappears. The teammates you saw every day, the city you called home, the role you understood—gone. Replaced by uncertainty, displacement, and the unmistakable sting of rejection.

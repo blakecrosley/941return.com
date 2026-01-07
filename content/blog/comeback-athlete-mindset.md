@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Comeback Athlete Mindset | Returning to Sport After Years Away"
 seo_description: "Returning to athletics after years away requires mental recalibration. Learn mindfulness strategies for managing expectations, rebuilding fitness, and rediscovering athletic identity."
 status: published
-published_at: 2026-01-07T11:00:00
+published_at: 2025-09-22T17:00:00
 ---
 
 You used to compete. Then life happened—career, family, injury, burnout, or simply time. Years passed. Now something pulls you back. The desire to move, compete, and be an athlete again has returned.

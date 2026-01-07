@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Periodizing Mental Training | Meditation Schedule"
 seo_description: "Structure mental training across your training cycle. When and how to adjust meditation practice through off-season, build, peak, and recovery phases."
 status: published
-published_at: 2025-09-23T09:00:00
+published_at: 2025-12-06T17:00:00
 ---
 
 Athletes don't train at the same intensity year-round. Periodization—varying training load across the season—produces better results than constant work. Physical training is structured into phases: off-season base building, pre-season intensity, competition peak, recovery.

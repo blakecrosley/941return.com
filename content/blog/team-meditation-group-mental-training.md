@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Team Meditation | Group Mental Training for Sports Teams"
 seo_description: "Team meditation builds collective mental strength and shared focus. Learn how to implement group mental training that creates synchronized, resilient team performance."
 status: published
-published_at: 2026-01-09T08:00:00
+published_at: 2025-12-24T17:00:00
 ---
 
 Individual meditation is powerful. Team meditation is transformative. When a group develops shared mental skills together, something happens beyond the sum of individual capacities—collective focus, synchronized presence, shared resilience emerge. The team becomes more than a collection of individuals; it becomes a unified mental entity.

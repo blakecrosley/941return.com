@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Shift Workers | Flexible Practice Strategies"
 seo_description: "Learn how to maintain meditation practice with irregular schedules. Strategies for night shift workers and rotating schedules."
 status: published
-published_at: 2026-01-11T01:00:00
+published_at: 2025-11-19T09:00:00
 ---
 
 Your schedule isn't your own. You work when others sleep, sleep when others work, and rotate through shifts that never let your body fully adjust. "Practice every morning at 6 AM" isn't helpful advice when some weeks 6 AM is when you're finally getting to bed.
