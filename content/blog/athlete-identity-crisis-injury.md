@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Athletic Identity and Injury | Who Are You?"
 seo_description: "Navigating identity crisis during athletic injury. How to maintain sense of self when sport is removed, and emerge with healthier identity."
 status: published
-published_at: 2025-09-07T17:00:00
+published_at: 2025-09-05T17:00:00
 ---
 
 "So, what do you do?"

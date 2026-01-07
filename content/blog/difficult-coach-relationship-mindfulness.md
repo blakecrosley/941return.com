@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Dealing with Difficult Coach | Mindfulness for Athletes"
 seo_description: "Difficult coach relationships are common in sport. Learn mindfulness techniques for managing frustration, maintaining performance, and protecting well-being."
 status: published
-published_at: 2025-09-29T09:00:00
+published_at: 2025-09-10T17:00:00
 ---
 
 The coach who tears you down instead of building you up. The one who plays favorites, communicates poorly, or seems to have it out for you specifically. The relationship that makes you dread practice instead of looking forward to it. Difficult coaches are a reality of sport—and learning to navigate these relationships is an essential skill.

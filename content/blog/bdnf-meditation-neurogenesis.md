@@ -6,7 +6,7 @@ featured_image:
 seo_title: "BDNF and Meditation | Neurogenesis for Athletes"
 seo_description: "How meditation increases BDNF and promotes athletic brain development. The science of neurogenesis, learning, and mental performance for athletes."
 status: published
-published_at: 2025-09-10T09:00:00
+published_at: 2025-10-23T09:00:00
 ---
 
 Your brain isn't fixed. It grows, changes, and adapts throughout your life. At the molecular level, one protein orchestrates much of this growth: brain-derived neurotrophic factor, or BDNF. Understanding BDNF—and how meditation affects it—reveals a powerful mechanism for athletic brain development.

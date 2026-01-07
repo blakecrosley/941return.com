@@ -6,7 +6,7 @@ featured_image:
 seo_title: "When Meditation Isn't Enough | Athletes and Mental Health"
 seo_description: "When athletes need more than meditation. Signs that professional mental health support is needed, what options exist, and how to access them."
 status: published
-published_at: 2026-01-03T09:00:00
+published_at: 2025-09-28T17:00:00
 ---
 
 Meditation is a powerful mental training tool. It builds focus, reduces anxiety, improves recovery, and supports performance. But meditation has limits. Some challenges require professional support that goes beyond what personal practice can provide.

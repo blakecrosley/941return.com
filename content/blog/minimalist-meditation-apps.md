@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Minimalist Meditation Apps | Simple Timer Comparison"
 seo_description: "Compare minimalist meditation timer apps for experienced practitioners. Find simple, focused tools without guided content, subscriptions, or feature bloat."
 status: published
-published_at: 2025-11-29T17:00:00
+published_at: 2025-11-27T09:00:00
 ---
 
 The meditation app market is dominated by content platforms—Headspace, Calm, Ten Percent Happier. They offer hundreds or thousands of guided sessions, subscriptions starting around $70/year, and interfaces designed to keep you exploring their libraries.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Neurodivergent Athletes | Adapted Approaches"
 seo_description: "Neurodivergent athletes need different meditation approaches. Learn adapted techniques for autism, ADHD, dyslexia, and other neurological differences in sport."
 status: published
-published_at: 2025-12-01T09:00:00
+published_at: 2025-09-24T17:00:00
 ---
 
 Neurodivergent athletes—those with ADHD, autism spectrum conditions, dyslexia, dyspraxia, and other neurological differences—often find standard meditation advice unhelpful or even frustrating. Instructions to "quiet your mind," "sit still," or "focus on nothing" assume a neurotypical brain that neurodivergent athletes don't have.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Am I Meditating Right? | Breaking the Self-Doubt Spiral"
 seo_description: "Learn to recognize and escape the self-doubt spiral in meditation. Why constant questioning undermines practice and how to trust the process."
 status: published
-published_at: 2025-09-05T09:00:00
+published_at: 2025-09-10T09:00:00
 ---
 
 You sit down. You start watching your breath. Then the questions begin: "Am I doing this right? Is this what it's supposed to feel like? Should I be more focused? Less focused? Am I trying too hard? Not hard enough? What if I'm wasting my time? What if I've been doing this wrong for months?"

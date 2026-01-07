@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation While Traveling | Athletes Guide"
 seo_description: "Maintain meditation practice during athletic travel and competition. Strategies for airports, hotels, and unfamiliar environments."
 status: published
-published_at: 2025-11-22T17:00:00
+published_at: 2025-12-31T17:00:00
 ---
 
 You've built consistent practice at home. The routine works. Then comes competition travel: airports, hotels, unfamiliar environments, disrupted schedules, time zone changes. The conditions that supported practice disappear.

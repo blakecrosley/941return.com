@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Trataka Meditation | Candle Gazing Concentration Practice"
 seo_description: "Learn trataka, the yogic practice of candle gazing for concentration. Step-by-step instructions, benefits, and how to progress with this ancient technique."
 status: published
-published_at: 2025-12-30T17:00:00
+published_at: 2025-11-19T17:00:00
 ---
 
 Most meditation works with internal objects—breath, sensations, thoughts. Trataka works differently. You fix your gaze on an external point, traditionally a candle flame, and hold it there without blinking until tears form. It sounds strange. It's remarkably effective.

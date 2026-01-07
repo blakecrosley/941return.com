@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Restart Meditation Practice | Coming Back After a Break"
 seo_description: "Learn how to restart your meditation practice after a break. Overcome the psychological barriers and rebuild your habit without guilt or struggle."
 status: published
-published_at: 2025-12-15T09:00:00
+published_at: 2026-01-02T09:00:00
 ---
 
 You used to meditate. Maybe for weeks, months, even years. Then life happened—stress, travel, illness, or just gradual drift—and you stopped. Now you want to come back, but something is in the way. The longer the break, the harder it seems to restart.

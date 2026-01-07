@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Athlete Burnout Syndrome | Prevention and Recovery Guide"
 seo_description: "Athlete burnout leads to exhaustion and dropout. Learn to recognize burnout warning signs, implement prevention strategies, and recover your passion for sport."
 status: published
-published_at: 2025-09-07T09:00:00
+published_at: 2025-09-18T09:00:00
 ---
 
 Burnout silently ends more athletic careers than injuries. The exhaustion, cynicism, and loss of passion that characterize burnout drive athletes away from sports they once loved. Yet burnout is preventable—and recoverable—when recognized and addressed.

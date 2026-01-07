@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Masters Athletes & Meditation | Aging Athlete Mindset"
 seo_description: "Aging athletes face unique mental challenges. Learn mindfulness strategies for masters competitors navigating physical changes while maintaining competitive excellence."
 status: published
-published_at: 2025-10-18T09:00:00
+published_at: 2025-12-16T17:00:00
 ---
 
 You're not as fast as you were at 25. Recovery takes longer. The body has new limitations. Yet the competitive fire burns just as hot—maybe hotter. You've found or returned to sport later in life, joining the growing community of masters athletes who refuse to stop competing.

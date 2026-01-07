@@ -6,7 +6,7 @@ featured_image:
 seo_title: "How to Build a Meditation Habit | Habit Science"
 seo_description: "Learn the science of building a meditation habit. Evidence-based strategies for making practice stick, from cue design to habit stacking."
 status: published
-published_at: 2025-11-08T17:00:00
+published_at: 2025-10-14T09:00:00
 ---
 
 Most people who try meditation don't continue. Not because meditation doesn't work—it does—but because building a new habit is hard. The deck is stacked against you: old patterns are strong, new behaviors take energy, and life constantly interferes.

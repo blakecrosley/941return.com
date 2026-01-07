@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for New Parents | Practice with No Time"
 seo_description: "Learn meditation strategies for new parents. Brief practices, sleep deprivation support, and maintaining sanity during the infant and toddler years."
 status: published
-published_at: 2025-11-15T09:00:00
+published_at: 2025-11-10T17:00:00
 ---
 
 You haven't slept more than three hours straight in months. Your body is no longer your own. Every moment is oriented around this tiny human who needs everything from you. Someone suggests meditation and you want to laugh—or cry—because when exactly would that happen?

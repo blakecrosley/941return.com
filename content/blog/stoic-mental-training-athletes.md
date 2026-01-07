@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Stoic Mental Training for Athletes | Ancient Philosophy, Modern Performance"
 seo_description: "Stoic philosophy offers powerful mental training for athletes. Learn practices from Marcus Aurelius, Seneca, and Epictetus for mental toughness, adversity, and performance."
 status: published
-published_at: 2025-12-20T17:00:00
+published_at: 2025-09-14T17:00:00
 ---
 
 Two thousand years ago, in the Roman Empire, a philosophy emerged that reads like a sports psychology textbook. The Stoics—Marcus Aurelius (emperor), Seneca (advisor to emperors), Epictetus (former slave)—developed practical mental training techniques for performing under pressure, handling adversity, and maintaining focus on what matters.

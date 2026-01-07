@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Tibetan Mind Training for Athletes | Lojong Warrior Practices"
 seo_description: "Tibetan lojong (mind training) transforms adversity into strength. Learn how ancient warrior-monk practices apply to modern athletic mental training."
 status: published
-published_at: 2025-12-27T17:00:00
+published_at: 2025-11-03T09:00:00
 ---
 
 In the harsh mountain plateaus of Tibet, a unique tradition of mental training developed—lojong, literally "mind training." These practices weren't created for comfortable monastery life but for the difficult path of the spiritual warrior: someone who faces suffering directly, transforms adversity into growth, and develops an unshakeable heart.

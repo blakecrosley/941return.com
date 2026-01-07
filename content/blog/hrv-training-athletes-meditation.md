@@ -6,7 +6,7 @@ featured_image:
 seo_title: "HRV Training for Athletes | Biofeedback & Meditation Guide"
 seo_description: "Heart rate variability training combines biofeedback with meditation for optimized athletic recovery and performance. Learn to use HRV for training decisions and mental skills."
 status: published
-published_at: 2025-10-11T09:00:00
+published_at: 2025-12-02T09:00:00
 ---
 
 Your heart doesn't beat like a metronome. The variation between heartbeats—heart rate variability or HRV—provides a window into your autonomic nervous system, revealing recovery status, stress load, and readiness to perform. When combined with meditation, HRV becomes both a metric for guiding training and a trainable capacity for improving performance.

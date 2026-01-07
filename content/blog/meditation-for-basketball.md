@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Basketball Players | Mental Training"
 seo_description: "Mental training for basketball. Develop court vision, free throw focus, and clutch performance through meditation and mindfulness practices."
 status: published
-published_at: 2025-10-28T09:00:00
+published_at: 2025-11-03T17:00:00
 ---
 
 Basketball moves faster than conscious thought. By the time you think about the pass, the window has closed. The game requires pattern recognition, instant decision-making, and action from a state of calm awareness—not frantic reaction.

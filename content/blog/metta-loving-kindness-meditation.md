@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Metta Meditation Guide | Loving-Kindness Practice"
 seo_description: "Learn loving-kindness (metta) meditation: the phrases, the progression, and practical guidance for cultivating genuine goodwill toward yourself and others."
 status: published
-published_at: 2025-11-28T17:00:00
+published_at: 2025-11-12T09:00:00
 ---
 
 Loving-kindness meditation—metta in Pali—is the systematic cultivation of goodwill. It's one of Buddhism's oldest practices, taught by the Buddha as both antidote to fear and foundation for spiritual development. Unlike some meditation that observes what is, metta actively cultivates a quality: the sincere wish for beings to be happy.

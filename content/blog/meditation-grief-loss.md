@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Grief & Loss | Practice Through Bereavement"
 seo_description: "Learn how meditation supports grieving. Not to avoid grief, but to be present with it. Practices for loss, bereavement, and finding your way forward."
 status: published
-published_at: 2025-11-08T09:00:00
+published_at: 2026-01-04T17:00:00
 ---
 
 Someone you loved is gone. The world continued without them, and you're supposed to continue too. But part of you is missing now. The grief comes in waves—sometimes manageable, sometimes drowning. And everyone around you seems to want you to "move on."

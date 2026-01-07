@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Causing Anxiety? | Why It Happens and What to Do"
 seo_description: "Learn why meditation sometimes increases anxiety. Understand the paradox and find approaches that work when stillness feels threatening."
 status: published
-published_at: 2025-10-21T17:00:00
+published_at: 2025-11-28T09:00:00
 ---
 
 You started meditating to reduce anxiety. Instead, you feel more anxious—heart racing, chest tight, mind spinning. Sitting still feels threatening. Paying attention to your body makes everything worse. This isn't what was supposed to happen.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Triathletes | Mental Training Guide"
 seo_description: "Mental training for triathletes. Develop mental endurance, transition focus, and the sustained presence that multi-hour racing demands."
 status: published
-published_at: 2025-11-06T17:00:00
+published_at: 2025-10-05T17:00:00
 ---
 
 Three sports, two transitions, hours of racing. Triathlon demands what few other sports require: sustained mental focus across multiple disciplines, each with its own physical and psychological demands.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Caregivers | Self-Care When Caring for Others"
 seo_description: "Learn meditation strategies for caregivers. Manage caregiver stress, prevent burnout, and maintain your wellbeing while caring for loved ones."
 status: published
-published_at: 2025-10-21T09:00:00
+published_at: 2025-09-06T17:00:00
 ---
 
 Your parent can no longer live alone. Your spouse has a chronic condition. Your child has needs that demand constant attention. You've become a caregiver—perhaps gradually, perhaps suddenly—and your life has reorganized around someone else's needs.

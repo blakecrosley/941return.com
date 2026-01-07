@@ -6,7 +6,7 @@ featured_image:
 seo_title: "PETTLEP Imagery Model | Sports Visualization"
 seo_description: "Master the PETTLEP model for sports imagery. Evidence-based framework for effective mental rehearsal in athletic performance."
 status: published
-published_at: 2025-12-07T09:00:00
+published_at: 2025-10-20T17:00:00
 ---
 
 Not all mental imagery is equally effective. Research shows that imagery matching actual performance conditions produces significantly better transfer to competition. This is the insight behind PETTLEP—a research-validated framework ensuring imagery mirrors reality as closely as possible.

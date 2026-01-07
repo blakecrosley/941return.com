@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mentally Tough Team Culture | Building Collective Resilience"
 seo_description: "How to build mental toughness at the team level. Create collective resilience, shared focus, and a culture that thrives under pressure."
 status: published
-published_at: 2025-11-28T09:00:00
+published_at: 2025-10-23T17:00:00
 ---
 
 You can have five mentally tough individuals and still have a mentally fragile team. Individual resilience doesn't automatically become collective resilience. Teams crumble under pressure not because athletes lack toughness, but because they lack connection. Building a mentally tough team requires intentional culture work that goes beyond individual mental training.

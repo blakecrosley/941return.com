@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Students | Exam Stress, Focus & Study"
 seo_description: "Learn meditation strategies for students. Manage test anxiety, improve concentration, and study more effectively with mindfulness techniques."
 status: published
-published_at: 2025-11-20T17:00:00
+published_at: 2025-12-14T17:00:00
 ---
 
 The exam is in three days. You've been studying for weeks, but your mind keeps blanking. The anxiety makes it hard to concentrate, which makes you more anxious about not concentrating. The cycle is exhausting.

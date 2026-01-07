@@ -6,7 +6,7 @@ featured_image:
 seo_title: "5-Minute Pre-Game Meditation | Quick Focus Routine for Athletes"
 seo_description: "Simple 5-minute meditation routine for athletes before competition. Reduce nerves, sharpen focus, and prime your mind for peak performance."
 status: published
-published_at: 2025-10-05T09:00:00
+published_at: 2025-10-25T17:00:00
 ---
 
 The locker room before a game is chaos. Teammates talking, music blaring, nervous energy bouncing off the walls. Meanwhile, your mind is everywhere except where it needs to be—on the field, on the court, on the task at hand.

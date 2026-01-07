@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Secular vs Buddhist Mindfulness | Understanding the Differences"
 seo_description: "Compare secular mindfulness (MBSR, apps) with traditional Buddhist practice. What was removed, what was kept, and what matters for your practice."
 status: published
-published_at: 2025-12-17T09:00:00
+published_at: 2025-12-12T17:00:00
 ---
 
 The mindfulness you encounter at your workplace wellness program or on a meditation app isn't quite the same as what's been practiced in Buddhist monasteries for millennia. Jon Kabat-Zinn designed MBSR (Mindfulness-Based Stress Reduction) in 1979 specifically to extract the technique from its religious context. The result transformed Western mental health—but also sparked debate about what gets lost in translation.

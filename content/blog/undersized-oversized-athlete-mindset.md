@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Undersized & Oversized Athlete Mindset | Body Size in Sport"
 seo_description: "Athletes outside typical size expectations face unique mental challenges. Learn mindfulness strategies for competing with confidence regardless of body size."
 status: published
-published_at: 2025-12-31T09:00:00
+published_at: 2025-10-05T09:00:00
 ---
 
 Every sport has a body type prototype. Basketball players are tall. Gymnasts are small. Offensive linemen are massive. Jockeys are tiny. Athletes who don't fit these prototypes—the short basketball player, the tall gymnast, the small football player, the large distance runner—face unique mental challenges that go beyond physical disadvantage.

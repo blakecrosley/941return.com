@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Tracking | What to Log and What to Ignore"
 seo_description: "Learn what's worth tracking in your meditation practice. The benefits and pitfalls of logs, streaks, and metrics for meditators."
 status: published
-published_at: 2025-12-29T09:00:00
+published_at: 2025-09-13T17:00:00
 ---
 
 You meditate. Should you track it? Some practitioners log every session meticulously. Others never record anything. Apps offer streaks, statistics, graphs. Journals invite reflection. What actually helps practice?

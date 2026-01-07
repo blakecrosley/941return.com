@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Anger Management for Athletes | Channeling Competitive Intensity"
 seo_description: "Anger in sport is inevitable. Learn mindfulness techniques for channeling anger productively, maintaining composure, and converting intensity into performance."
 status: published
-published_at: 2025-09-06T09:00:00
+published_at: 2025-11-05T09:00:00
 ---
 
 The referee makes a terrible call. Your opponent trash-talks or plays dirty. You make an obvious mistake at the worst possible moment. A teammate doesn't execute. The crowd is hostile. Anger rises—hot, immediate, compelling you toward action.

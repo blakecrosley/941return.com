@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Tennis | Between-Point Mental Training"
 seo_description: "Mental training for tennis players. Master between-point routines, manage match pressure, and develop the focus that elevates your game."
 status: published
-published_at: 2025-11-05T17:00:00
+published_at: 2025-10-08T09:00:00
 ---
 
 Tennis is uniquely mental among sports. Approximately 70% of match time is between points—time for the mind to work for or against you. Those 20-25 seconds between serves determine whether you execute with clarity or crumble under pressure.

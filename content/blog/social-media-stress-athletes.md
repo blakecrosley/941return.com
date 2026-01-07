@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Social Media Stress for Athletes | Mindful Digital Management"
 seo_description: "Social media affects athlete mental health and performance. Learn mindfulness strategies for managing comparison, criticism, and digital overwhelm while maintaining focus."
 status: published
-published_at: 2025-12-19T17:00:00
+published_at: 2025-11-18T09:00:00
 ---
 
 Social media has fundamentally changed the athlete experience. Opportunities for connection, sponsorship, and audience building come packaged with comparison traps, public criticism, and relentless connectivity. Managing this landscape has become an essential mental skill.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Myths Debunked | What Athletes Get Wrong"
 seo_description: "Common meditation myths that stop athletes from practicing. The truth about time requirements, mental clarity, personality fit, and athletic application."
 status: published
-published_at: 2025-11-14T17:00:00
+published_at: 2025-10-07T09:00:00
 ---
 
 You've heard the objections. Maybe you've made them yourself. "Meditation isn't for me." "I can't clear my mind." "I don't have time." "That's too woo-woo for sports."

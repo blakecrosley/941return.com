@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mental Skills Coach Certification | Career Paths Guide"
 seo_description: "Career guide for mental skills coaching. Certification requirements, education pathways, and professional options for sports mental performance."
 status: published
-published_at: 2025-11-27T09:00:00
+published_at: 2025-11-22T09:00:00
 ---
 
 You've seen how mental training transforms athletes. Maybe you've experienced it yourself. Now you're wondering: Could I help others develop these skills? What does a career in mental performance look like?

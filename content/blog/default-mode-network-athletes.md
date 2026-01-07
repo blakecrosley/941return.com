@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Default Mode Network for Athletes | Mental Rest"
 seo_description: "Understand the default mode network and why proper mental rest improves athletic performance. The neuroscience of productive downtime."
 status: published
-published_at: 2025-09-28T09:00:00
+published_at: 2025-11-21T17:00:00
 ---
 
 When you're not focused on a task—not training, not competing, not actively thinking about something—where does your mind go? This isn't idle curiosity. The answer involves a major brain network with significant implications for athletic performance and recovery.

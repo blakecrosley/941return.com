@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for MMA & Combat Sports | Mental Training"
 seo_description: "Meditation for fighters, boxers, and MMA athletes. Train the controlled aggression and calm intensity that combat sports require."
 status: published
-published_at: 2025-10-23T17:00:00
+published_at: 2025-10-12T17:00:00
 ---
 
 Fighting presents unique mental demands. You need aggression—but not rage that clouds judgment. You need calm—but not passivity that slows response. You need intensity—but not tension that impairs movement. The mental state combat requires seems contradictory.

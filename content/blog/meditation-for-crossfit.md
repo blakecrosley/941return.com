@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for CrossFit Athletes | Mental Training"
 seo_description: "Mental training for CrossFit athletes. Develop pain tolerance, competition focus, and the mental grit that separates good athletes from elite performers."
 status: published
-published_at: 2025-10-29T17:00:00
+published_at: 2025-09-20T09:00:00
 ---
 
 CrossFit is designed to find your limits and push past them. The constantly varied, high-intensity workouts demand not just physical capacity but mental fortitude—the ability to continue when everything says stop.

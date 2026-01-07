@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Mantra Meditation for Athletes | Focus Through Repetition"
 seo_description: "How to use mantra meditation for athletic performance. Choosing mantras, practice methods, and applying focused repetition to training and competition."
 status: published
-published_at: 2025-10-17T09:00:00
+published_at: 2025-12-25T17:00:00
 ---
 
 One word. Repeated again and again. The simplest meditation technique is also one of the most powerful. Mantra meditation—the practice of repeating a word or phrase—gives the mind something specific to do, creating focus through repetition.

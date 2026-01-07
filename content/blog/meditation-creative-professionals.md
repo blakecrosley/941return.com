@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Artists, Designers & Creatives"
 seo_description: "Learn how meditation enhances creativity. Overcome creative blocks, manage artistic anxiety, and access flow states more reliably."
 status: published
-published_at: 2025-10-24T09:00:00
+published_at: 2025-12-22T17:00:00
 ---
 
 Creative work is strange. You need focus to execute and openness to innovate. You need discipline to produce and freedom to imagine. You need thick skin for criticism and sensitivity to create. The internal contradictions make the work both exhilarating and exhausting.

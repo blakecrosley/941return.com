@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Transcendental Meditation Explained | What Is TM?"
 seo_description: "Understanding Transcendental Meditation: the technique, the research, the controversy. What TM is, how it works, and what to expect."
 status: published
-published_at: 2025-12-29T17:00:00
+published_at: 2025-10-31T09:00:00
 ---
 
 Transcendental Meditation—TM—occupies a unique space in the meditation landscape. It has more research behind it than almost any technique, celebrity practitioners from The Beatles to Jerry Seinfeld, and an organization that charges thousands of dollars to learn what is, at its core, a simple mantra practice.

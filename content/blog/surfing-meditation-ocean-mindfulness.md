@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Surfing & Meditation | Ocean Mindfulness for Surfers"
 seo_description: "Surfing and meditation are natural partners. Learn how to deepen presence in the water, manage fear, and let the ocean become your meditation teacher."
 status: published
-published_at: 2025-12-22T17:00:00
+published_at: 2025-10-01T17:00:00
 ---
 
 Surfers have always understood something about meditation, even without calling it that. The waiting between sets, the total presence required when riding, the humbling power of the ocean—surfing naturally cultivates meditative awareness. The ocean is perhaps the world's greatest meditation teacher.

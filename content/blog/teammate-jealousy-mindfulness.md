@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Teammate Jealousy | Mindfulness for Team Athletes"
 seo_description: "Jealousy of teammates is natural but destructive. Learn mindfulness techniques for transforming envy into motivation while protecting team relationships."
 status: published
-published_at: 2025-12-25T17:00:00
+published_at: 2025-10-13T17:00:00
 ---
 
 Your teammate gets the starting position you wanted. The media attention flows to someone else. They get the scholarship, the contract, the playing time, the recognition—and something in you burns. You want to be happy for them, but you're not. You feel jealous, and then you feel guilty about feeling jealous.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Loving-Kindness Meditation for Athletes | Team Building"
 seo_description: "Build team cohesion through loving-kindness meditation. Evidence-based practice for improving athletic team dynamics and collective performance."
 status: published
-published_at: 2025-10-16T09:00:00
+published_at: 2025-09-17T09:00:00
 ---
 
 Team sports present psychological challenges that individual sports don't: coordinating with others, managing relationship dynamics, communicating under pressure, maintaining unity through conflict. These challenges don't respond to strength training or tactical drills.

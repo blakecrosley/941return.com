@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Remote Workers | WFH Mindfulness"
 seo_description: "Learn meditation strategies for remote workers. Manage WFH stress, maintain boundaries, and stay focused when home is the office."
 status: published
-published_at: 2025-11-17T17:00:00
+published_at: 2025-10-12T09:00:00
 ---
 
 Your commute is 15 steps. Your office is your living room. Your coworkers are Slack avatars. You have flexibility but also boundarylessness. You have autonomy but also isolation. Working from home is both freedom and trap.

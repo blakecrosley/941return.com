@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Breath Counting Meditation Methods Compared"
 seo_description: "Compare breath counting techniques for meditation: counting to 10, to 4, inhales vs exhales. Find the method that works best for your practice."
 status: published
-published_at: 2025-09-15T17:00:00
+published_at: 2025-09-09T09:00:00
 ---
 
 You've heard the instruction a thousand times: "Count your breaths." But count what? How high? When you lose count, then what? The simplest meditation instruction turns out to have surprising variations, each with distinct advantages.

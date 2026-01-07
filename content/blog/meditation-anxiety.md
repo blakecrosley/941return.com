@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Anxiety | Evidence-Based Techniques"
 seo_description: "Learn how meditation helps with anxiety. Evidence-based techniques for managing worry, panic, and chronic anxiety. What works and what doesn't."
 status: published
-published_at: 2025-10-19T17:00:00
+published_at: 2025-10-03T09:00:00
 ---
 
 Your chest is tight. Your mind is racing through worst-case scenarios. You know, intellectually, that most of what you're worried about won't happen. But knowing doesn't stop the anxiety. It runs its own program, hijacking your body and mind regardless of logic.

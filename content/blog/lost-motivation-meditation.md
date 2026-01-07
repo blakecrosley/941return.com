@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Lost Motivation to Meditate | How to Restart Your Practice"
 seo_description: "Rediscover motivation for meditation when enthusiasm fades. Understand why motivation disappears and how to reconnect with your practice."
 status: published
-published_at: 2025-10-15T17:00:00
+published_at: 2025-09-22T09:00:00
 ---
 
 When you started meditating, you were eager. You read about benefits, felt initial results, built a routine. Now? The enthusiasm is gone. You skip sessions without caring. The cushion sits unused. Some days you wonder why you ever bothered.

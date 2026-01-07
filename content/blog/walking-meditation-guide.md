@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Walking Meditation Guide | Mindful Walking Practice"
 seo_description: "Learn walking meditation: techniques from Zen kinhin to Theravada practice. A complete guide to meditation in motion for any experience level."
 status: published
-published_at: 2026-01-02T09:00:00
+published_at: 2025-11-07T17:00:00
 ---
 
 Sitting meditation is foundational, but it's not the only way to practice. Walking meditation—mindful, deliberate movement with full awareness—has been part of contemplative traditions for millennia. For many practitioners, it's not just an alternative to sitting but an essential complement.

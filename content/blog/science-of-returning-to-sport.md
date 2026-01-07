@@ -3,7 +3,7 @@ title: "The Science of Returning to Sport"
 slug: science-of-returning-to-sport
 excerpt: "Physical healing is only half the recovery. Research reveals why athletes who train their minds return to sport faster—and stay there."
 status: published
-published_at: 2025-12-16T09:00:00
+published_at: 2025-11-14T09:00:00
 seo_title: "The Science of Returning to Sport: Mental Recovery for Athletes"
 seo_description: "Learn how meditation and mental training accelerate return-to-sport recovery. Research-backed strategies for athletes healing from injury."
 ---

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Breathwork for Athletes | Managing Competition Anxiety"
 seo_description: "Three evidence-based breathing techniques to manage competition anxiety. Learn how elite athletes use breathwork to stay calm under pressure."
 status: published
-published_at: 2025-09-16T17:00:00
+published_at: 2025-11-17T09:00:00
 ---
 
 Your hands are sweating. Your heart is pounding. Your mind keeps jumping to worst-case scenarios. The competition starts in fifteen minutes, and your body has decided this is a survival situation.

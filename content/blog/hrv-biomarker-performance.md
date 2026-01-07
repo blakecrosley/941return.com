@@ -6,7 +6,7 @@ featured_image:
 seo_title: "HRV for Athletes | Heart Rate Variability Guide"
 seo_description: "How to use heart rate variability (HRV) to optimize athletic training and recovery. Practical guide for measuring, interpreting, and improving HRV."
 status: published
-published_at: 2025-10-10T17:00:00
+published_at: 2025-09-26T17:00:00
 ---
 
 Every elite sports organization now monitors a biomarker that most athletes have never heard of. It's not VO2 max, lactate threshold, or hormone levels. It's the variation in time between your heartbeats—heart rate variability, or HRV.

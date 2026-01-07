@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Rowing | Mental Training for Rowers & Crews"
 seo_description: "Rowing requires unique mental skills—crew synchronization, pain tolerance, and race focus. Learn meditation techniques designed specifically for rowers."
 status: published
-published_at: 2025-11-02T17:00:00
+published_at: 2025-12-08T17:00:00
 ---
 
 Rowing occupies a unique space in sport. It combines the suffering of endurance events with the precision of technical sports and the interdependence of team events. Eight people must move as one, maintain perfect timing while oxygen-deprived, and sustain effort that pushes bodies to absolute limits.

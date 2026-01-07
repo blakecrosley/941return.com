@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for College Athletes | Student-Athlete Mental Training"
 seo_description: "Mental training for college athletes. Manage the unique pressures of balancing sport, academics, and life during your collegiate athletic career."
 status: published
-published_at: 2025-10-23T09:00:00
+published_at: 2025-12-30T17:00:00
 ---
 
 College athletics combines elite-level sport demands with full academic loads, social transitions, and the first real independence many young adults experience. The athlete who thrives isn't just talented—they've developed mental skills to manage competing demands and perform under multidirectional pressure.

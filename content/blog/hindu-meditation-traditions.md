@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Hindu Meditation Traditions | Yoga and Vedantic Practice"
 seo_description: "Explore Hindu meditation practices: Raja Yoga, mantra meditation, pranayama, Vedantic self-inquiry, and bhakti. The meditation traditions behind modern yoga."
 status: published
-published_at: 2025-10-08T17:00:00
+published_at: 2025-11-06T17:00:00
 ---
 
 In the West, yoga typically means physical postures—asana. But traditional yoga is primarily about meditation. The postures were originally preparation for sitting—keeping the body healthy enough to meditate for hours. The deeper practices of Hindu tradition remain largely unexplored by those who stop at the physical level.

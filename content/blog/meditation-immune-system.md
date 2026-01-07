@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Does Meditation Boost Immunity? | Immune System Research"
 seo_description: "Review the research on meditation and immune function. What studies show about inflammation, immune cells, and illness resistance."
 status: published
-published_at: 2025-11-10T17:00:00
+published_at: 2025-09-29T09:00:00
 ---
 
 The claim that meditation "boosts your immune system" has become common. Like many meditation claims, it contains truth but oversimplifies. Yes, research shows meditation affects immune function. No, it's not a simple boost, and it won't make you invincible against illness.

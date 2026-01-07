@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Focus Training for Athletes | Attention Skills"
 seo_description: "Train athletic focus in the age of distraction. How to build attention skills that resist modern attention fragmentation."
 status: published
-published_at: 2025-09-09T09:00:00
+published_at: 2025-12-17T09:00:00
 ---
 
 Every notification, every scroll, every context switch fragments attention. The modern environment is designed to capture and hold your focus—usually for someone else's benefit. For athletes, this creates a problem: the same attention you need for performance is being constantly extracted by everything else.

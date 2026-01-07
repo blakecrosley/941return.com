@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Why Meditation Makes You Feel Worse | Negative Effects Explained"
 seo_description: "Understand why meditation can temporarily make you feel worse. The difference between healing discomfort and harmful practice, and when to seek guidance."
 status: published
-published_at: 2025-11-13T09:00:00
+published_at: 2025-10-29T09:00:00
 ---
 
 You heard meditation reduces stress. You started practicing. But now you feel more stressed, not less. More anxious. More emotional. More aware of everything that's wrong. What happened?

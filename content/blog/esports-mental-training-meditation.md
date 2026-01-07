@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Esports Mental Training | Meditation for Competitive Gaming"
 seo_description: "Esports athletes face unique mental demands. Learn meditation techniques for reaction time, focus, tilt management, and performing under pressure in competitive gaming."
 status: published
-published_at: 2025-10-01T17:00:00
+published_at: 2025-10-19T17:00:00
 ---
 
 Esports athletes compete at the highest levels of human reaction time, decision-making, and sustained focus. A professional League of Legends player makes hundreds of meaningful decisions per game. A Counter-Strike pro's reaction time can mean the difference between elimination and clutch victory. A fighting game champion reads opponent patterns in milliseconds.

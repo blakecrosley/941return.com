@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Wu Wei for Athletes | Taoist Flow State & Effortless Action"
 seo_description: "Taoist philosophy of wu wei (effortless action) describes the flow state 2,500 years before modern psychology. Learn how ancient Chinese wisdom applies to athletic performance."
 status: published
-published_at: 2025-12-23T09:00:00
+published_at: 2025-09-07T17:00:00
 ---
 
 Long before Mihaly Csikszentmihalyi researched flow states, before sports psychologists studied peak performance, ancient Chinese philosophers were writing about wu wei—effortless action, doing without doing, moving with rather than against the nature of things.

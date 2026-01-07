@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Competing During Personal Crisis | Managing Life and Sport"
 seo_description: "Life crises don't pause for competition. Learn mindfulness strategies for athletes managing personal hardship while continuing to train and compete."
 status: published
-published_at: 2025-09-23T09:00:00
+published_at: 2025-11-09T17:00:00
 ---
 
 The competition is tomorrow. Your parent is in the hospital. Your relationship just ended. A family member passed away. Financial stress keeps you awake at night. The world doesn't stop for athletes—and often, neither does the competitive calendar.

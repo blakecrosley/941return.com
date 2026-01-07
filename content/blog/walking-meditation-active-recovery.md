@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Walking Meditation for Athletes | Active Recovery"
 seo_description: "Learn walking meditation for athletic recovery. Combine light movement with mindfulness practice on rest days for physical and mental restoration."
 status: published
-published_at: 2026-01-01T17:00:00
+published_at: 2025-10-30T09:00:00
 ---
 
 Active recovery days present a challenge: the body needs movement but not stress. Light activity promotes blood flow, maintains mobility, and supports recovery—without adding training load.

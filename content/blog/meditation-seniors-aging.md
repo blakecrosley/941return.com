@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Seniors | Mindfulness & Aging Well"
 seo_description: "Learn meditation strategies for older adults. Physical adaptations, cognitive benefits, and practices for aging with awareness and acceptance."
 status: published
-published_at: 2025-11-18T17:00:00
+published_at: 2025-12-06T09:00:00
 ---
 
 The body changes. Friends and partners die. The future shortens while the past lengthens. Aging is not for the faint of heart. But it's also an opportunity—for reflection, for wisdom, for being present with what remains rather than focusing on what's lost.

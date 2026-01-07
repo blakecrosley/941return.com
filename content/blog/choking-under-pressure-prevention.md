@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Prevent Choking Under Pressure | Mental Training"
 seo_description: "Understand why athletes choke and how to prevent it. Evidence-based mental training techniques to protect performance under pressure."
 status: published
-published_at: 2025-09-18T17:00:00
+published_at: 2025-12-25T09:00:00
 ---
 
 You've seen it happen. Maybe you've felt it happen. The moment matters, skills should be there, but execution falls apart. Free throws brick off the rim. The putt slides past. The routine movement becomes foreign. Something that should be automatic becomes impossible.

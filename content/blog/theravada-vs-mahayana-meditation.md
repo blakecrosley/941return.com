@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Theravada vs Mahayana Meditation | Buddhist Practice Differences"
 seo_description: "Compare Theravada and Mahayana meditation approaches. Understand how these Buddhist traditions differ in goals, methods, and views on practice."
 status: published
-published_at: 2025-12-26T17:00:00
+published_at: 2025-12-01T17:00:00
 ---
 
 Buddhism spread across Asia in two main streams. Theravada moved south to Sri Lanka, Myanmar, Thailand, Cambodia, and Laos. Mahayana moved north and east to China, Korea, Japan, Vietnam, and Tibet. Each developed distinct meditation traditions, philosophical frameworks, and views on the path.

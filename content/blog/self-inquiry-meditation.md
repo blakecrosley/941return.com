@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Self-Inquiry Meditation | Who Am I Practice Guide"
 seo_description: "Learn self-inquiry meditation from Ramana Maharshi's tradition. The practice of turning attention to the source of 'I' for direct self-knowledge."
 status: published
-published_at: 2025-12-17T17:00:00
+published_at: 2025-11-20T09:00:00
 ---
 
 Most meditation observes objects—breath, sensations, thoughts. Self-inquiry does something different: it turns attention toward the observer itself. Instead of watching what arises in consciousness, you investigate who is doing the watching. The question "Who am I?" becomes the practice.

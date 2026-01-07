@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Does Meditation Extend Lifespan? | Longevity Research"
 seo_description: "Learn what research shows about meditation and longevity. Telomeres, biological age, and what we actually know about living longer through practice."
 status: published
-published_at: 2025-11-12T17:00:00
+published_at: 2025-12-28T17:00:00
 ---
 
 The claim is enticing: meditation can help you live longer. Some research supports this; other research is less clear. If you're practicing partly for longevity, you should know what the evidence actually shows—and where it falls short.

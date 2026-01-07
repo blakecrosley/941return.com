@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Epigenetics and Meditation | Gene Expression for Athletes"
 seo_description: "How meditation affects gene expression in athletes. The science of epigenetics, lifestyle influence on genes, and implications for training and performance."
 status: published
-published_at: 2025-10-01T09:00:00
+published_at: 2025-12-13T09:00:00
 ---
 
 You inherited your genes and can't change them. But which genes are turned on or off—their expression—is influenced by how you live. This is epigenetics: the science of gene regulation that responds to environment, behavior, and experience. Research increasingly shows that meditation affects epigenetic markers, with implications for athletic development, health, and performance.

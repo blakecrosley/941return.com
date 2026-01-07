@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation Research for Athletes | 50 Studies Reviewed"
 seo_description: "Comprehensive review of meditation research for athletes. What 50 studies reveal about meditation's effects on focus, recovery, and performance."
 status: published
-published_at: 2025-11-18T09:00:00
+published_at: 2025-10-08T17:00:00
 ---
 
 Is meditation actually effective for athletes, or is it just wellness culture hype? The research is unambiguous: meditation produces measurable improvements in multiple performance-relevant domains. This isn't one study or anecdote—it's consistent findings across decades of research, different sports, and various meditation methods.

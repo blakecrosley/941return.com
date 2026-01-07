@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Elite Athlete Morning Routines | Daily Success"
 seo_description: "How elite athletes structure their mornings for success. Build a morning routine that supports athletic performance and mental clarity."
 status: published
-published_at: 2025-11-30T09:00:00
+published_at: 2025-12-26T17:00:00
 ---
 
 The first hour of your day sets the trajectory for everything that follows. Elite athletes know this—which is why their mornings rarely happen by accident.

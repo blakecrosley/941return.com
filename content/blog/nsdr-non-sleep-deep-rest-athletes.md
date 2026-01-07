@@ -6,7 +6,7 @@ featured_image:
 seo_title: "NSDR for Athletes | Non-Sleep Deep Rest Recovery Guide"
 seo_description: "Learn how Non-Sleep Deep Rest (NSDR) helps athletes recover faster, improve sleep quality, and enhance performance. Science-backed protocols for athletic recovery."
 status: published
-published_at: 2025-12-03T17:00:00
+published_at: 2025-11-01T17:00:00
 ---
 
 Non-Sleep Deep Rest has gained significant attention in performance circles, popularized by neuroscientist Andrew Huberman. For athletes seeking every recovery advantage, NSDR represents a trainable skill that accelerates restoration without requiring actual sleep.

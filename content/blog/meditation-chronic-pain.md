@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Chronic Pain | Mindfulness-Based Pain Management"
 seo_description: "Learn how meditation helps with chronic pain. Evidence-based techniques for changing your relationship with persistent pain."
 status: published
-published_at: 2025-10-22T17:00:00
+published_at: 2025-10-17T09:00:00
 ---
 
 The pain is always there. Some days worse, some days slightly less, but never gone. It colors everything—your mood, your relationships, your ability to work, to sleep, to live. You've tried treatments that worked partially or not at all. You've been told to "manage" something that feels unmanageable.

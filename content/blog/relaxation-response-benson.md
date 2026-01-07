@@ -6,7 +6,7 @@ featured_image:
 seo_title: "The Relaxation Response Explained | Herbert Benson Research"
 seo_description: "Understand the relaxation response discovered by Herbert Benson. Learn the physiology behind meditation's stress-reducing effects and how to elicit this response."
 status: published
-published_at: 2025-12-14T09:00:00
+published_at: 2025-12-07T17:00:00
 ---
 
 Before Herbert Benson's research in the 1970s, meditation was largely seen as mystical or religious in the West. Benson, a cardiologist at Harvard Medical School, changed that. He identified a measurable physiological state—the relaxation response—that occurs during meditation and provides the opposite of the stress response.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Racing Thoughts in Meditation | Practical Solutions"
 seo_description: "Can't stop thinking during meditation? Learn why racing thoughts happen and practical techniques that actually help you work with a busy mind."
 status: published
-published_at: 2025-12-13T09:00:00
+published_at: 2025-10-07T17:00:00
 ---
 
 You sit to meditate. Within seconds, your mind is off—planning tomorrow, analyzing yesterday, jumping between topics with startling speed. You try to focus on your breath but keep finding yourself three thoughts deep into something completely unrelated. The mind races, and you wonder if you're doing this wrong.

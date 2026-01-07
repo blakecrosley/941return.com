@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Gymnastics | Mental Training for Fear and Precision"
 seo_description: "Gymnasts face unique mental challenges—fear of skills, precision demands, and scoring pressure. Learn meditation techniques specifically designed for gymnastics."
 status: published
-published_at: 2025-11-01T09:00:00
+published_at: 2025-12-03T17:00:00
 ---
 
 Gymnastics asks athletes to do terrifying things with perfect execution. Launch yourself backward through the air. Release a bar and catch it blindly. Balance on four inches of beam while flipping. Then do it all while judges score every wobble.

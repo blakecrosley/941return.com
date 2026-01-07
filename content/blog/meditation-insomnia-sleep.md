@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Insomnia | Sleep Better Naturally"
 seo_description: "Learn how meditation helps with insomnia. Techniques for quieting the racing mind, reducing sleep anxiety, and improving sleep quality."
 status: published
-published_at: 2025-11-11T09:00:00
+published_at: 2025-12-29T09:00:00
 ---
 
 It's 3 AM. You've been lying here for two hours. The more you try to sleep, the more awake you become. Tomorrow you'll be exhausted, which makes you more anxious about sleeping, which makes sleeping harder. The cycle is vicious and exhausting.

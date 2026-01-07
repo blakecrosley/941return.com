@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Pre-Competition Routines | Elite Athlete Practices"
 seo_description: "Build an elite pre-competition routine that optimizes mental and physical readiness. Evidence-based practices from sport psychology research."
 status: published
-published_at: 2025-12-10T17:00:00
+published_at: 2025-11-13T09:00:00
 ---
 
 Watch elite athletes before competition and you'll notice something: their behavior isn't random. The same sequence, the same timing, the same rituals—repeated with precision that rivals their sport-specific skills.

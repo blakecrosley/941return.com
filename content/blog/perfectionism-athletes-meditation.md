@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Perfectionism in Athletes | When High Standards Hurt Performance"
 seo_description: "Athletic perfectionism has a dark side. Learn mindfulness strategies to maintain high standards without self-sabotage, performance anxiety, and burnout."
 status: published
-published_at: 2025-12-06T09:00:00
+published_at: 2025-11-23T17:00:00
 ---
 
 Elite athletics attracts perfectionists. The same drive for flawless execution that creates champions can also create anxious, burned-out athletes who can never enjoy their achievements. Understanding the difference between healthy striving and maladaptive perfectionism—and developing mindfulness tools to manage it—separates sustainable excellence from self-destruction.

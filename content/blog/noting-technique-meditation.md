@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Noting Technique Meditation | Labeling Thoughts for Athletes"
 seo_description: "How to use the noting technique in meditation. Labeling thoughts, emotions, and sensations to develop mental clarity for athletic performance."
 status: published
-published_at: 2025-12-03T09:00:00
+published_at: 2025-09-13T09:00:00
 ---
 
 A thought arises: "What if I lose tomorrow?" Instead of following it into a spiral of worry, you silently note: "Worrying." Then return your attention to the present. Another thought: "I should have trained harder." Note: "Judging." Return again.

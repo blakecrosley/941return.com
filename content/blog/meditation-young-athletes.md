@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Young Athletes | Youth Mental Training"
 seo_description: "Mental training for young athletes. Age-appropriate meditation and mindfulness that builds focus, emotional regulation, and performance skills early."
 status: published
-published_at: 2025-11-25T09:00:00
+published_at: 2025-09-07T09:00:00
 ---
 
 The athletes who reach elite levels often share something beyond physical talent: they developed mental skills early. Focus, emotional regulation, pressure management—these capacities grow like any skill, and earlier development means more time for growth.

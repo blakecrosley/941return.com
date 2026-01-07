@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Powerlifting | Mental Training for Maximum Strength"
 seo_description: "Powerlifting requires unique mental skills—maximum arousal, attempt focus, and recovery between lifts. Learn meditation techniques designed for strength athletes."
 status: published
-published_at: 2025-11-02T09:00:00
+published_at: 2025-12-05T09:00:00
 ---
 
 Powerlifting distills sport to its essence: you versus the weight, one attempt at a time. Three lifts, nine attempts, maximum effort each time. The mental demands are specific—not sustained endurance, not complex technique sequences, but pure focused power in singular moments.

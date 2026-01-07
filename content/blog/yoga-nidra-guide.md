@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Yoga Nidra Guide | Conscious Sleep Practice Without Recordings"
 seo_description: "Learn yoga nidra (NSDR) without guided recordings. The complete practice for deep relaxation, restoration, and consciousness exploration."
 status: published
-published_at: 2026-01-05T17:00:00
+published_at: 2025-12-11T09:00:00
 ---
 
 You lie down. You don't fall asleep, but you're not awake in the usual way either. You're in a liminal state—body deeply relaxed, mind clear and observant. This is yoga nidra, sometimes called "yogic sleep" or more recently "non-sleep deep rest" (NSDR).

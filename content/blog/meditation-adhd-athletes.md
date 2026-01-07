@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for ADHD Athletes | Focus Training That Works"
 seo_description: "ADHD athletes need different meditation approaches. Learn movement-based practices, short focused sessions, and engagement techniques designed for how ADHD brains actually work."
 status: published
-published_at: 2025-10-19T09:00:00
+published_at: 2025-11-16T09:00:00
 ---
 
 Standard meditation advice—sit still, quiet your mind, focus on breath—can feel impossible for athletes with ADHD. The instruction to "just observe your thoughts" when thoughts come machine-gun fast isn't helpful. The expectation of 20-minute sessions when attention spans in seconds seems unrealistic.

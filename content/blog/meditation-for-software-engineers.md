@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation for Software Engineers | Developer Mindfulness"
 seo_description: "Meditation benefits for programmers and developers. Improve focus, reduce burnout, debug your mind. Practical techniques for tech workers."
 status: published
-published_at: 2025-11-04T09:00:00
+published_at: 2025-10-26T17:00:00
 ---
 
 You're deep in a problem. The logic almost makes sense. You can feel the solution approaching—then Slack pings, someone walks by, or your mind simply wanders to something else. The thread is lost. You spend twenty minutes rebuilding context.

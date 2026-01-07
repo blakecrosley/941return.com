@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Endorphins and Runner's High | Neuroscience for Athletes"
 seo_description: "The science of endorphins and the runner's high. How meditation affects endogenous opioids and what that means for athletic performance and wellbeing."
 status: published
-published_at: 2025-09-30T17:00:00
+published_at: 2025-12-22T09:00:00
 ---
 
 Every athlete knows the experience: somewhere during sustained effort, suffering transforms into something almost euphoric. Pain fades, energy seems unlimited, and the body feels like it could continue forever. This is the legendary runner's high—and it's not imagination. It's neurochemistry you can learn to access more reliably.

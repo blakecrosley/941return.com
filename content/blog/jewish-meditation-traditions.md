@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Jewish Meditation | Kabbalah and Jewish Contemplative Practice"
 seo_description: "Explore Jewish meditation practices: hitbonenut, hitbodedut, Kabbalistic visualization, and mindfulness within Jewish tradition."
 status: published
-published_at: 2025-10-13T17:00:00
+published_at: 2025-11-24T09:00:00
 ---
 
 Many Jews are surprised to learn their tradition has rich contemplative practices. The prophets sought divine vision. The Kabbalists developed sophisticated meditations on divine names and the structure of reality. Hasidic masters emphasized joy, presence, and intimate connection with God. These practices—largely forgotten in mainstream Judaism—are being recovered today.

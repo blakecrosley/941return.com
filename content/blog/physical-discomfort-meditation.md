@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Physical Discomfort in Meditation | Practical Solutions"
 seo_description: "Legs hurt during meditation? Back pain while sitting? Learn practical fixes for physical discomfort that derails your practice."
 status: published
-published_at: 2025-12-07T17:00:00
+published_at: 2025-12-24T09:00:00
 ---
 
 You settle onto the cushion, determined to sit for twenty minutes. By minute five, your right knee is aching. By minute ten, your lower back has joined in. By minute fifteen, you're no longer meditating—you're just enduring, waiting for the timer, wondering why anyone does this voluntarily.

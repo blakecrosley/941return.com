@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Meditation and Dissociation | Understanding the Difference"
 seo_description: "Learn to distinguish healthy meditation states from problematic dissociation. When spacing out is fine and when it signals something needs attention."
 status: published
-published_at: 2025-10-25T09:00:00
+published_at: 2025-09-21T17:00:00
 ---
 
 You're meditating and feel yourself floating away. Disconnected from your body. Numb. Time becomes strange. You come back and aren't sure where you were. Is this deep meditation—or dissociation?

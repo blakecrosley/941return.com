@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Body Scan Meditation | Complete Practice Guide"
 seo_description: "Learn body scan meditation: systematic attention through the body for relaxation, awareness, and presence. Step-by-step technique and variations."
 status: published
-published_at: 2025-09-12T17:00:00
+published_at: 2025-10-06T17:00:00
 ---
 
 The body scan is elegant in its simplicity: move attention systematically through the body, observing sensations in each region. No mantras, no complex visualization, no philosophical frameworks. Just attention meeting body.

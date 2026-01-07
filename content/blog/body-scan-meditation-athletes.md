@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Body Scan Meditation for Athletes | Complete Guide"
 seo_description: "Master body scan meditation for athletic performance. Build body awareness, release tension, and enhance recovery through systematic attention."
 status: published
-published_at: 2025-09-12T09:00:00
+published_at: 2025-10-03T17:00:00
 ---
 
 You know your sport. You've trained your body for years. But how well do you actually know what your body is experiencing in any given moment?

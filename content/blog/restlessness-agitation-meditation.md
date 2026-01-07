@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Restlessness in Meditation | How to Sit Still When You Can't"
 seo_description: "Learn how to work with restlessness and agitation during meditation. Practical strategies for when you can't sit still or quiet your mind."
 status: published
-published_at: 2025-12-14T17:00:00
+published_at: 2025-10-06T09:00:00
 ---
 
 You sit down to meditate. Within seconds, your body wants to move. Shift position. Scratch that itch. Check the timer. Your mind races—planning, worrying, remembering, fantasizing. Everything in you screams: get up, do something, anything but this.

@@ -6,7 +6,7 @@ featured_image:
 seo_title: "Stoicism for Athletes | Ancient Philosophy for Sports"
 seo_description: "How Stoic philosophy applies to athletic performance. Control, acceptance, virtue, and mental toughness from ancient wisdom."
 status: published
-published_at: 2025-12-21T09:00:00
+published_at: 2025-10-04T17:00:00
 ---
 
 Two thousand years ago, Roman emperors, enslaved philosophers, and Greek teachers developed a philosophy for handling difficulty with grace. Today, the highest-performing athletes draw on these same ideas. Stoicism—the ancient philosophy of control, acceptance, and virtue—offers a framework for athletic mental strength that has stood the test of centuries.

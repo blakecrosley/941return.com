@@ -3,7 +3,7 @@ title: "A Complete Guide to Return's Meditation Timer"
 slug: guide-to-return-meditation-timer
 excerpt: "Return works across iPhone, Apple Watch, Mac, and Apple TV. Here's how to use each platform to build a meditation practice that fits your life."
 status: published
-published_at: 2025-10-06T17:00:00
+published_at: 2025-12-08T09:00:00
 seo_title: "Guide to Return Meditation Timer: iPhone, Apple Watch, Mac, Apple TV"
 seo_description: "Learn how to use Return meditation timer across all Apple devices. Setup tips, themes, and strategies for building a daily practice."
 ---

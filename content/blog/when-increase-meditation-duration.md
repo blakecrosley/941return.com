@@ -6,7 +6,7 @@ featured_image:
 seo_title: "When to Increase Meditation Time | Extending Your Practice"
 seo_description: "Learn when to increase your meditation duration. Signs you're ready for longer sessions and how to extend practice without sabotaging consistency."
 status: published
-published_at: 2026-01-02T17:00:00
+published_at: 2025-09-30T09:00:00
 ---
 
 You started with 10 minutes. Then you moved to 15 or 20. Now you're wondering: Should I be sitting longer? Is more always better? When is the right time to extend practice?
