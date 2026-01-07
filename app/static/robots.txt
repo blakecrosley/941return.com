@@ -1,4 +1,57 @@
+# Search Engine Crawlers
 User-agent: *
 Allow: /
 
+# AI Training and Research Bots - Welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 Sitemap: https://941return.com/sitemap.xml
+
+# AI Context Files
+# llms.txt provides context for AI systems
+# See https://llmstxt.org for specification
+LLMs: https://941return.com/llms.txt
+LLMs-Full: https://941return.com/llms-full.txt
