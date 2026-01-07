@@ -75,8 +75,11 @@
             const source = video.querySelector('source');
             if (source && source.dataset.src) {
                 source.src = source.dataset.src;
+                /* Safari needs to wait for video to be ready before playing */
+                video.oncanplay = () => {
+                    video.play().catch(() => {});
+                };
                 video.load();
-                video.play();
             }
         });
         this.loadedVideos[theme] = true;
