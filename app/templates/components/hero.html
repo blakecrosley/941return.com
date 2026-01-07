@@ -71,27 +71,35 @@
         if (this.loadedVideos[theme] || theme === 'silence') return;
 
         const videos = document.querySelectorAll(`[data-theme-video='${theme}']`);
-        videos.forEach(video => {
+        console.log(`[Video] Loading theme: ${theme}, found ${videos.length} videos`);
+        videos.forEach((video, idx) => {
             /* Skip videos that are display:none (mobile/desktop responsive) */
             const style = window.getComputedStyle(video);
-            if (style.display === 'none') return;
+            if (style.display === 'none') {
+                console.log(`[Video] ${theme}[${idx}] skipped (display:none)`);
+                return;
+            }
 
             const source = video.querySelector('source');
             if (source && source.dataset.src) {
+                const srcUrl = source.dataset.src;
+                console.log(`[Video] ${theme}[${idx}] loading: ${srcUrl}`);
+
                 /* Safari requires autoplay attribute for programmatic play */
                 video.autoplay = true;
                 video.preload = 'auto';
 
                 /* Set up event handlers before loading */
                 video.onloadeddata = () => {
-                    video.play().catch(() => {});
+                    console.log(`[Video] ${theme}[${idx}] loadeddata - playing`);
+                    video.play().catch(e => console.error(`[Video] ${theme}[${idx}] play failed:`, e));
                 };
                 video.onerror = (e) => {
-                    console.error('Video load error:', theme, e);
+                    console.error(`[Video] ${theme}[${idx}] error:`, video.error, e);
                 };
 
                 /* Set src directly on video element (more reliable for Safari) */
-                video.src = source.dataset.src;
+                video.src = srcUrl;
                 video.load(); /* Explicitly trigger load for Safari */
             }
         });
