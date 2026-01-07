@@ -320,14 +320,15 @@ body:has(.hero) .theme-toggle:hover {
 }
 
 /* Video visibility (using opacity instead of display:none for Safari) */
+/* !important overrides inline styles used for pre-Alpine initial state */
 .video-visible {
-    opacity: 1;
+    opacity: 1 !important;
     pointer-events: auto;
     transition: opacity 0.8s ease-out;
 }
 
 .video-hidden {
-    opacity: 0;
+    opacity: 0 !important;
     pointer-events: none;
     transition: opacity 0.8s ease-out;
 }
