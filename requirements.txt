@@ -10,3 +10,7 @@ markdown==3.5.2
 
 # Email
 resend>=2.0.0
+
+# Analytics
+httpx>=0.24.0
+git+https://github.com/blakecrosley/941analytics.git

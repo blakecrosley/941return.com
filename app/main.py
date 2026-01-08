@@ -15,6 +15,26 @@ import re
 from app.routes import pages, blog, admin, api
 from app.db.database import init_db
 
+# Analytics (optional - only loads if configured)
+analytics = None
+ANALYTICS_WORKER_URL = os.getenv("ANALYTICS_WORKER_URL", "")
+ANALYTICS_D1_DATABASE_ID = os.getenv("ANALYTICS_D1_DATABASE_ID", "")
+ANALYTICS_CF_ACCOUNT_ID = os.getenv("ANALYTICS_CF_ACCOUNT_ID", "")
+ANALYTICS_CF_API_TOKEN = os.getenv("ANALYTICS_CF_API_TOKEN", "")
+
+if all([ANALYTICS_WORKER_URL, ANALYTICS_D1_DATABASE_ID, ANALYTICS_CF_ACCOUNT_ID, ANALYTICS_CF_API_TOKEN]):
+    try:
+        from analytics_941 import setup_analytics
+        analytics = setup_analytics(
+            site_name="941return.com",
+            worker_url=ANALYTICS_WORKER_URL,
+            d1_database_id=ANALYTICS_D1_DATABASE_ID,
+            cf_account_id=ANALYTICS_CF_ACCOUNT_ID,
+            cf_api_token=ANALYTICS_CF_API_TOKEN,
+        )
+    except ImportError:
+        pass  # analytics_941 not installed
+
 # Get the app directory
 APP_DIR = Path(__file__).parent
 
@@ -130,6 +150,16 @@ app.include_router(pages.router)
 app.include_router(blog.router)
 app.include_router(admin.router)
 app.include_router(api.router)
+
+# Analytics dashboard (if configured)
+if analytics:
+    app.include_router(analytics.dashboard_router, prefix="/admin/analytics")
+    # Make tracking script available in all templates
+    from app.routes.pages import templates as page_templates
+    page_templates.env.globals["analytics_script"] = analytics.tracking_script()
+else:
+    from app.routes.pages import templates as page_templates
+    page_templates.env.globals["analytics_script"] = ""
 
 # Templates for error pages
 templates = Jinja2Templates(directory=APP_DIR / "templates")

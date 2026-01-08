@@ -159,5 +159,8 @@
     <script src="{{ url_for('static', path='js/theme.js') }}"></script>
 
     {% block scripts %}{% endblock %}
+
+    {# Privacy-first analytics (no cookies, no tracking) #}
+    {{ analytics_script | safe }}
 </body>
 </html>
