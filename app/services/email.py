@@ -7,7 +7,7 @@ import os
 import hmac
 import hashlib
 from typing import Optional
-from pathlib import Path
+from urllib.parse import quote
 
 import resend
 
@@ -39,7 +39,8 @@ def verify_unsubscribe_token(email: str, token: str) -> bool:
 def get_unsubscribe_url(email: str) -> str:
     """Generate a secure unsubscribe URL."""
     token = generate_unsubscribe_token(email)
-    return f"{BASE_URL}/api/unsubscribe?email={email}&token={token}"
+    encoded_email = quote(email, safe='')
+    return f"{BASE_URL}/api/unsubscribe?email={encoded_email}&token={token}"
 
 
 def create_contact(email: str) -> Optional[str]:
@@ -140,10 +141,15 @@ def send_welcome_email(email: str) -> bool:
                             <p style="margin: 0; font-size: 12px; color: #5A6B7C;">
                                 <a href="{unsubscribe_url}" style="color: #5A6B7C; text-decoration: underline;">Unsubscribe</a>
                                 &nbsp;&nbsp;·&nbsp;&nbsp;
-                                <a href="{BASE_URL}" style="color: #5A6B7C; text-decoration: underline;">941return.com</a>
+                                <a href="{BASE_URL}/privacy" style="color: #5A6B7C; text-decoration: underline;">Privacy</a>
+                                &nbsp;&nbsp;·&nbsp;&nbsp;
+                                <a href="{BASE_URL}/terms" style="color: #5A6B7C; text-decoration: underline;">Terms</a>
                             </p>
-                            <p style="margin: 8px 0 0 0; font-size: 12px; color: #4A5568;">
-                                941 Apps, LLC
+                            <p style="margin: 8px 0 0 0; font-size: 11px; color: #4A5568;">
+                                &copy; 2025 941 Apps, LLC
+                            </p>
+                            <p style="margin: 4px 0 0 0; font-size: 11px; color: #3D4654;">
+                                41 Wheeler Avenue, Unit 661807 · Arcadia, CA 91066 · USA
                             </p>
                         </td>
                     </tr>
@@ -164,7 +170,12 @@ We respect your inbox. No spam, ever.
 — The Return Team
 
 ---
+941 Apps, LLC
+41 Wheeler Avenue, Unit 661807, Arcadia, CA 91066, USA
+
 Unsubscribe: {unsubscribe_url}
+Privacy: {BASE_URL}/privacy
+Terms: {BASE_URL}/terms
 """
 
     try:
@@ -174,6 +185,11 @@ Unsubscribe: {unsubscribe_url}
             "subject": "Welcome to Return...",
             "html": html_content,
             "text": text_content,
+            # RFC 8058: List-Unsubscribe headers for one-click unsubscribe
+            "headers": {
+                "List-Unsubscribe": f"<{unsubscribe_url}>",
+                "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+            },
         })
         return True
     except Exception as e:
