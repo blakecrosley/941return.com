@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Unsubscribe - Return{% endblock %}
+{% block description %}Unsubscribe from the Return newsletter.{% endblock %}
+
+{% block content %}
+<section class="unsubscribe-page">
+    <div class="container">
+        <div class="unsubscribe-card">
+            {% if success %}
+            <div class="unsubscribe-icon success">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+            </div>
+            <h1 class="unsubscribe-title">Unsubscribed</h1>
+            <p class="unsubscribe-message">{{ message }}</p>
+            <p class="unsubscribe-note">We're sorry to see you go. You can always resubscribe from our homepage.</p>
+            {% else %}
+            <div class="unsubscribe-icon error">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            </div>
+            <h1 class="unsubscribe-title">Oops!</h1>
+            <p class="unsubscribe-message">{{ error }}</p>
+            {% endif %}
+            <a href="/" class="unsubscribe-home-link">Return to homepage</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

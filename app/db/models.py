@@ -8,6 +8,31 @@ from sqlalchemy import Column, Integer, String, Text, DateTime, CheckConstraint,
 from app.db.database import Base
 
 
+class Subscriber(Base):
+    """Newsletter subscriber with Resend sync."""
+    __tablename__ = "subscribers"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    email = Column(String(320), unique=True, nullable=False, index=True)
+    resend_contact_id = Column(String(100))  # From Resend API
+    subscribed_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    unsubscribed_at = Column(DateTime)
+    source = Column(String(50), default="website")
+    ip_address = Column(String(45))  # IPv6 max length
+
+    __table_args__ = (
+        Index('idx_subscribers_email', 'email'),
+        Index('idx_subscribers_subscribed_at', 'subscribed_at'),
+    )
+
+    @property
+    def is_subscribed(self) -> bool:
+        return self.unsubscribed_at is None
+
+    def __repr__(self):
+        return f"<Subscriber {self.email}>"
+
+
 class Post(Base):
     """
     Blog post with inline content (no translation table).

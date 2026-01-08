@@ -12,7 +12,7 @@ from typing import Optional
 import os
 import re
 
-from app.routes import pages, blog, admin
+from app.routes import pages, blog, admin, api
 from app.db.database import init_db
 
 # Get the app directory
@@ -129,6 +129,7 @@ app.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
 app.include_router(pages.router)
 app.include_router(blog.router)
 app.include_router(admin.router)
+app.include_router(api.router)
 
 # Templates for error pages
 templates = Jinja2Templates(directory=APP_DIR / "templates")
