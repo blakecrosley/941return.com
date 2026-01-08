@@ -17,6 +17,7 @@ resend.api_key = os.getenv("RESEND_API_KEY", "")
 # Configuration
 FROM_EMAIL = os.getenv("RESEND_FROM_EMAIL", "hello@941return.com")
 UNSUBSCRIBE_SECRET = os.getenv("UNSUBSCRIBE_SECRET", "change-me-in-production")
+RESEND_AUDIENCE_ID = os.getenv("RESEND_AUDIENCE_ID", "9bb6a9a2-8103-45ee-8926-31af8f74a747")
 BASE_URL = "https://941return.com"
 
 
@@ -52,6 +53,7 @@ def create_contact(email: str) -> Optional[str]:
 
     try:
         result = resend.Contacts.create({
+            "audience_id": RESEND_AUDIENCE_ID,
             "email": email,
             "unsubscribed": False,
         })
@@ -73,6 +75,7 @@ def unsubscribe_contact(email: str) -> bool:
     try:
         # Update contact to unsubscribed
         resend.Contacts.update({
+            "audience_id": RESEND_AUDIENCE_ID,
             "email": email,
             "unsubscribed": True,
         })
