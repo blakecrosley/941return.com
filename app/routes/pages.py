@@ -48,6 +48,11 @@ async def support(request: Request):
     return templates.TemplateResponse("support.html", {"request": request})
 
 
+@router.get("/faq")
+async def faq(request: Request):
+    return templates.TemplateResponse("faq.html", {"request": request})
+
+
 @router.get("/robots.txt")
 async def robots():
     """Serve robots.txt at root level for search engines and AI bots."""
@@ -260,6 +265,7 @@ async def sitemap(db: Session = Depends(get_db)):
     static_pages = [
         {"loc": "/", "priority": "1.0", "changefreq": "daily"},
         {"loc": "/blog", "priority": "0.9", "changefreq": "daily"},
+        {"loc": "/faq", "priority": "0.7", "changefreq": "monthly"},
         {"loc": "/privacy", "priority": "0.3", "changefreq": "yearly"},
         {"loc": "/terms", "priority": "0.3", "changefreq": "yearly"},
         {"loc": "/support", "priority": "0.6", "changefreq": "monthly"},

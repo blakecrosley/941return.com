@@ -1,0 +1,33 @@
+<!-- Email Capture / Newsletter Signup -->
+<section class="email-capture-section" id="newsletter">
+    <div class="container">
+        <div class="email-capture-card">
+            <div class="email-capture-content">
+                <h2 class="email-capture-title">Stay grounded.</h2>
+                <p class="email-capture-subtitle">Occasional updates on new features, meditation insights, and practice tips. No spam, ever.</p>
+            </div>
+            <form class="email-capture-form" action="/api/subscribe" method="post"
+                  hx-post="/api/subscribe"
+                  hx-target="#email-response"
+                  hx-swap="innerHTML"
+                  x-data="{ email: '', submitted: false }">
+                <div class="email-input-group">
+                    <label for="email-input" class="visually-hidden">Email address</label>
+                    <input type="email"
+                           id="email-input"
+                           name="email"
+                           x-model="email"
+                           placeholder="your@email.com"
+                           required
+                           autocomplete="email"
+                           class="email-input">
+                    <button type="submit" class="email-submit" :disabled="!email">
+                        Subscribe
+                    </button>
+                </div>
+                <div id="email-response" class="email-response"></div>
+                <p class="email-privacy">We respect your privacy. Unsubscribe anytime.</p>
+            </form>
+        </div>
+    </div>
+</section>

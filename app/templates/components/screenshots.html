@@ -1,0 +1,133 @@
+<!-- App Screenshots Gallery - shows app on different devices -->
+<section class="screenshots-section" id="screenshots">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Beautiful on every device.</h2>
+            <p class="section-subtitle">From your wrist to your living room.</p>
+        </div>
+
+        <div class="device-showcase" x-data="{ activeDevice: 'iphone' }">
+            <!-- Device selector tabs -->
+            <div class="device-tabs">
+                <button class="device-tab"
+                        :class="{ 'active': activeDevice === 'iphone' }"
+                        @click="activeDevice = 'iphone'">
+                    <svg viewBox="0 0 15.2344 22.3633" class="device-icon" aria-hidden="true">
+                        <path d="M2.63672 22.3633L12.5977 22.3633C14.1992 22.3633 15.2344 21.3379 15.2344 19.6875L15.2344 2.67578C15.2344 1.02539 14.1992 0 12.5977 0L2.63672 0C1.03516 0 0 1.02539 0 2.67578L0 19.6875C0 21.3379 1.03516 22.3633 2.63672 22.3633ZM1.46484 19.5898L1.46484 2.77344C1.46484 2.05078 1.91406 1.61133 2.66602 1.61133L3.76953 1.61133L3.76953 1.69922C3.76953 2.10938 4.08203 2.41211 4.50195 2.41211L10.7324 2.41211C11.1523 2.41211 11.4648 2.10938 11.4648 1.69922L11.4648 1.61133L12.5684 1.61133C13.3203 1.61133 13.7695 2.05078 13.7695 2.77344L13.7695 19.5898C13.7695 20.3125 13.3203 20.752 12.5684 20.752L2.66602 20.752C1.91406 20.752 1.46484 20.3125 1.46484 19.5898Z" fill="currentColor"/>
+                    </svg>
+                    iPhone
+                </button>
+                <button class="device-tab"
+                        :class="{ 'active': activeDevice === 'watch' }"
+                        @click="activeDevice = 'watch'">
+                    <svg viewBox="0 0 14.4629 22.832" class="device-icon" aria-hidden="true">
+                        <path d="M3.07617 22.832L11.3867 22.832C12.7051 22.832 13.4473 22.0996 13.5742 20.8105L14.1016 15.8789C14.3262 13.7012 14.4629 12.5488 14.4629 11.416C14.4629 10.2832 14.3262 9.13086 14.1016 6.95312L13.5742 2.02148C13.4473 0.732422 12.7051 0 11.3867 0L3.07617 0C1.75781 0 1.01562 0.732422 0.888672 2.02148L0.361328 6.95312C0.136719 9.13086 0 10.2832 0 11.416C0 12.5488 0.136719 13.7012 0.361328 15.8789L0.888672 20.8105C1.01562 22.0996 1.75781 22.832 3.07617 22.832ZM3.19336 21.1816C2.65625 21.1816 2.35352 20.8496 2.30469 20.3223L1.77734 15.4004C1.5625 13.291 1.42578 12.1777 1.42578 11.416C1.42578 10.6543 1.5625 9.54102 1.77734 7.43164L2.30469 2.50977C2.35352 1.98242 2.65625 1.65039 3.19336 1.65039L11.2695 1.65039C11.8066 1.65039 12.1094 1.98242 12.1582 2.50977L12.6855 7.43164C12.9004 9.54102 13.0371 10.6543 13.0371 11.416C13.0371 12.1777 12.9004 13.291 12.6855 15.4004L12.1582 20.3223C12.1094 20.8496 11.8066 21.1816 11.2695 21.1816Z" fill="currentColor"/>
+                    </svg>
+                    Watch
+                </button>
+                <button class="device-tab"
+                        :class="{ 'active': activeDevice === 'mac' }"
+                        @click="activeDevice = 'mac'">
+                    <svg viewBox="0 0 22.9395 18.6816" class="device-icon" aria-hidden="true">
+                        <path d="M2.08008 15.4297L20.8594 15.4297C21.9434 15.4297 22.5781 14.8047 22.5781 13.7012L22.5781 2.08008C22.5781 0.976562 21.9434 0.351562 20.8594 0.351562L2.08008 0.351562C0.996094 0.351562 0.361328 0.976562 0.361328 2.08008L0.361328 13.7012C0.361328 14.8047 0.996094 15.4297 2.08008 15.4297ZM2.14844 14.0625C1.85547 14.0625 1.72852 13.9355 1.72852 13.6328L1.72852 2.14844C1.72852 1.8457 1.85547 1.71875 2.14844 1.71875L20.791 1.71875C21.084 1.71875 21.2109 1.8457 21.2109 2.14844L21.2109 13.6328C21.2109 13.9355 21.084 14.0625 20.791 14.0625ZM0 18.3301L22.9395 18.3301C22.9395 17.9395 22.6367 17.6367 22.2461 17.6367L0.693359 17.6367C0.302734 17.6367 0 17.9395 0 18.3301Z" fill="currentColor"/>
+                    </svg>
+                    Mac
+                </button>
+                <button class="device-tab"
+                        :class="{ 'active': activeDevice === 'tv' }"
+                        @click="activeDevice = 'tv'">
+                    <svg viewBox="0 0 26.5332 18.0371" class="device-icon" aria-hidden="true">
+                        <path d="M2.51953 17.6855L24.0137 17.6855C25.5176 17.6855 26.5332 16.6699 26.5332 15.166L26.5332 2.51953C26.5332 1.01562 25.5176 0 24.0137 0L2.51953 0C1.01562 0 0 1.01562 0 2.51953L0 15.166C0 16.6699 1.01562 17.6855 2.51953 17.6855ZM2.59766 16.2207C1.99219 16.2207 1.46484 15.7031 1.46484 15.0879L1.46484 2.59766C1.46484 1.98242 1.99219 1.46484 2.59766 1.46484L23.9355 1.46484C24.541 1.46484 25.0684 1.98242 25.0684 2.59766L25.0684 15.0879C25.0684 15.7031 24.541 16.2207 23.9355 16.2207Z" fill="currentColor"/>
+                    </svg>
+                    TV
+                </button>
+            </div>
+
+            <!-- Device displays -->
+            <div class="device-display">
+                <!-- iPhone mockup -->
+                <div class="device-frame iphone-frame" x-show="activeDevice === 'iphone'" x-transition:enter.duration.300ms>
+                    <div class="device-screen">
+                        <img src="{{ url_for('static', path='images/posters/water-mobile-poster.jpg') }}"
+                             alt="Return meditation timer on iPhone showing the Water theme with a serene timer interface"
+                             class="device-screenshot"
+                             width="390"
+                             height="844"
+                             loading="lazy">
+                        <div class="screenshot-overlay">
+                            <span class="screenshot-badge">Water Theme</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apple Watch mockup -->
+                <div class="device-frame watch-frame" x-show="activeDevice === 'watch'" x-transition:enter.duration.300ms>
+                    <div class="device-screen">
+                        <div class="watch-face">
+                            <div class="watch-timer">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-label">Water</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mac mockup -->
+                <div class="device-frame mac-frame" x-show="activeDevice === 'mac'" x-transition:enter.duration.300ms>
+                    <div class="device-screen">
+                        <img src="{{ url_for('static', path='images/posters/water-desktop-poster.jpg') }}"
+                             alt="Return meditation timer on Mac showing the full-screen Water theme experience"
+                             class="device-screenshot"
+                             width="1920"
+                             height="1080"
+                             loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Apple TV mockup -->
+                <div class="device-frame tv-frame" x-show="activeDevice === 'tv'" x-transition:enter.duration.300ms>
+                    <div class="device-screen">
+                        <img src="{{ url_for('static', path='images/posters/forest-desktop-poster.jpg') }}"
+                             alt="Return meditation timer on Apple TV with the immersive Forest theme on the big screen"
+                             class="device-screenshot"
+                             width="1920"
+                             height="1080"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Device-specific features -->
+            <div class="device-features">
+                <template x-if="activeDevice === 'iphone'">
+                    <ul class="feature-list">
+                        <li>Live Activities on Lock Screen</li>
+                        <li>Dynamic Island integration</li>
+                        <li>Haptic feedback for session end</li>
+                    </ul>
+                </template>
+                <template x-if="activeDevice === 'watch'">
+                    <ul class="feature-list">
+                        <li>Start sessions from your wrist</li>
+                        <li>Silent haptic notifications</li>
+                        <li>Complications for quick access</li>
+                    </ul>
+                </template>
+                <template x-if="activeDevice === 'mac'">
+                    <ul class="feature-list">
+                        <li>Full-screen immersive mode</li>
+                        <li>Menu bar quick access</li>
+                        <li>Keyboard shortcuts</li>
+                    </ul>
+                </template>
+                <template x-if="activeDevice === 'tv'">
+                    <ul class="feature-list">
+                        <li>Living room meditation</li>
+                        <li>4K ambient backgrounds</li>
+                        <li>Siri Remote control</li>
+                    </ul>
+                </template>
+            </div>
+        </div>
+    </div>
+</section>

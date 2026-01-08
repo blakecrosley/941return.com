@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+
+{% block title %}FAQ - Return Meditation Timer{% endblock %}
+{% block description %}Frequently asked questions about Return, the minimal meditation timer app for iPhone, Apple Watch, Mac, and Apple TV.{% endblock %}
+
+{% block og_title %}FAQ - Return Meditation Timer{% endblock %}
+{% block og_description %}Get answers to common questions about Return's features, pricing, and platform support.{% endblock %}
+{% block og_url %}/faq{% endblock %}
+
+{% block head %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is Return free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Return is a one-time purchase with no subscriptions. The basic timer is free, with an optional upgrade to unlock all themes, sounds, and features."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Which devices does Return support?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Return works on iPhone, Apple Watch, Mac, and Apple TV. All your settings and session history sync automatically via iCloud."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does Return track my meditation sessions?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Return logs your Mindful Minutes to Apple Health and tracks your streak. All data stays on your devices—we don't collect any personal information."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is there guided meditation content?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Return is designed for practitioners who already know how to meditate. It's a pure timer with beautiful ambient themes—no voices, no guided content."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="faq-hero">
+    <div class="container">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        <p class="faq-subtitle">Everything you need to know about Return.</p>
+    </div>
+</section>
+
+<section class="faq-content">
+    <div class="container">
+        <div class="faq-list" x-data="{ open: null }">
+            <!-- Getting Started -->
+            <div class="faq-category">
+                <h2 class="faq-category-title">Getting Started</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 1 ? null : 1"
+                            :aria-expanded="open === 1"
+                            aria-controls="faq-1">
+                        <span>Is Return free?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 1 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-1" class="faq-answer" x-show="open === 1" x-collapse>
+                        <p>Return offers a free tier with basic timer functionality. A one-time purchase unlocks all themes (Water, Fire, Forest, Silence), premium bell sounds, and advanced features like repeat modes. <strong>No subscriptions, ever.</strong></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 2 ? null : 2"
+                            :aria-expanded="open === 2"
+                            aria-controls="faq-2">
+                        <span>Which devices does Return support?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 2 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-2" class="faq-answer" x-show="open === 2" x-collapse>
+                        <p>Return works across the entire Apple ecosystem:</p>
+                        <ul>
+                            <li><strong>iPhone</strong> — Full experience with Live Activities and Dynamic Island</li>
+                            <li><strong>Apple Watch</strong> — Start sessions from your wrist with haptic notifications</li>
+                            <li><strong>Mac</strong> — Full-screen immersive mode for desktop meditation</li>
+                            <li><strong>Apple TV</strong> — Living room meditation with 4K ambient backgrounds</li>
+                        </ul>
+                        <p>All settings and session history sync via iCloud.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 3 ? null : 3"
+                            :aria-expanded="open === 3"
+                            aria-controls="faq-3">
+                        <span>Do I need to create an account?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 3 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-3" class="faq-answer" x-show="open === 3" x-collapse>
+                        <p><strong>No.</strong> Return requires no account, no sign-up, and no email. Just download and start meditating. Your data stays on your devices and syncs via your Apple ID.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="faq-category">
+                <h2 class="faq-category-title">Features</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 4 ? null : 4"
+                            :aria-expanded="open === 4"
+                            aria-controls="faq-4">
+                        <span>What are the ambient themes?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 4 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-4" class="faq-answer" x-show="open === 4" x-collapse>
+                        <p>Return includes four immersive themes, each with video backgrounds and ambient sounds:</p>
+                        <ul>
+                            <li><strong>Water</strong> — Gentle waves and flowing streams</li>
+                            <li><strong>Fire</strong> — Warm, flickering flames</li>
+                            <li><strong>Forest</strong> — Peaceful woodland ambiance</li>
+                            <li><strong>Silence</strong> — Pure, distraction-free meditation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 5 ? null : 5"
+                            :aria-expanded="open === 5"
+                            aria-controls="faq-5">
+                        <span>Is there guided meditation content?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 5 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-5" class="faq-answer" x-show="open === 5" x-collapse>
+                        <p><strong>No, and that's intentional.</strong> Return is designed for people who already have a meditation practice—whether from Vipassana retreats, Zen centers, MBSR courses, or years of self-study. We don't add voices, instructions, or guided content. Just a beautiful timer that stays out of your way.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 6 ? null : 6"
+                            :aria-expanded="open === 6"
+                            aria-controls="faq-6">
+                        <span>Does Return track my meditation sessions?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 6 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-6" class="faq-answer" x-show="open === 6" x-collapse>
+                        <p>Yes, Return logs your Mindful Minutes to Apple Health and tracks your meditation streak. You can view your session history and see your practice grow over time. All data stays on your devices—we don't have access to any of it.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 7 ? null : 7"
+                            :aria-expanded="open === 7"
+                            aria-controls="faq-7">
+                        <span>What bell sounds are available?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 7 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-7" class="faq-answer" x-show="open === 7" x-collapse>
+                        <p>Return includes three bell sounds:</p>
+                        <ul>
+                            <li><strong>Singing Bowl</strong> — Traditional Tibetan singing bowl</li>
+                            <li><strong>Temple Bell</strong> — Deep, resonant temple bell</li>
+                            <li><strong>Soft Chime</strong> — Gentle, minimal chime</li>
+                        </ul>
+                        <p>You can configure 1, 2, or 3 rings at session end.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Data -->
+            <div class="faq-category">
+                <h2 class="faq-category-title">Privacy & Data</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 8 ? null : 8"
+                            :aria-expanded="open === 8"
+                            aria-controls="faq-8">
+                        <span>What data does Return collect?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 8 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-8" class="faq-answer" x-show="open === 8" x-collapse>
+                        <p><strong>Nothing.</strong> Return collects zero personal data. No analytics, no tracking, no third-party SDKs. Your meditation practice is private—we don't know who you are or how often you meditate.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 9 ? null : 9"
+                            :aria-expanded="open === 9"
+                            aria-controls="faq-9">
+                        <span>How does iCloud sync work?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 9 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-9" class="faq-answer" x-show="open === 9" x-collapse>
+                        <p>Your settings and session history sync automatically via iCloud. This means your preferred theme, duration, and streak carry across all your Apple devices. The sync happens directly through Apple's infrastructure—we never see your data.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="faq-category">
+                <h2 class="faq-category-title">Support</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 10 ? null : 10"
+                            :aria-expanded="open === 10"
+                            aria-controls="faq-10">
+                        <span>How do I get help or report a bug?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 10 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-10" class="faq-answer" x-show="open === 10" x-collapse>
+                        <p>Visit our <a href="/support">support page</a> to get in touch. We read every message and respond as quickly as possible.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"
+                            @click="open = open === 11 ? null : 11"
+                            :aria-expanded="open === 11"
+                            aria-controls="faq-11">
+                        <span>Can I request a feature?</span>
+                        <svg class="faq-icon" :class="{ 'rotated': open === 11 }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div id="faq-11" class="faq-answer" x-show="open === 11" x-collapse>
+                        <p>Absolutely. We love hearing from our users. Send feature requests through our <a href="/support">support page</a>. We consider all suggestions, especially those that align with Return's philosophy of simplicity and focus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <p>Still have questions?</p>
+            <a href="/support" class="btn-support">Contact Support</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+{% endblock %}

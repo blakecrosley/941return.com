@@ -2,7 +2,9 @@
 
 {% block content %}
 {% include "components/hero.html" %}
+{% include "components/screenshots.html" %}
 {% include "components/features.html" %}
+{% include "components/testimonials.html" %}
 
 <!-- Latest from the Blog -->
 {% if recent_posts %}
@@ -26,6 +28,8 @@
     </div>
 </section>
 {% endif %}
+
+{% include "components/email-capture.html" %}
 
 <!-- Final CTA Section -->
 <section class="cta-section" id="download">
