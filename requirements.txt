@@ -1,12 +1,12 @@
-fastapi==0.115.6
-uvicorn==0.34.0
-jinja2==3.1.4
-python-multipart==0.0.17
+fastapi==0.128.0
+uvicorn==0.40.0
+jinja2==3.1.6
+python-multipart==0.0.21
 
 # Blog system
-sqlalchemy==2.0.25
+sqlalchemy==2.0.45
 python-frontmatter==1.1.0
-markdown==3.5.2
+markdown==3.10
 nh3>=0.2.14  # HTML sanitization to prevent XSS
 
 # Email
