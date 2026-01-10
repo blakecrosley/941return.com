@@ -7,7 +7,12 @@
     <div class="container">
         <header class="admin-header">
             <h1>Posts</h1>
-            <a href="/admin/posts/new" class="btn-primary">New Post</a>
+            <div class="admin-actions">
+                <a href="/admin/posts/new" class="btn-primary">New Post</a>
+                <form method="POST" action="/admin/logout" style="display: inline;">
+                    <button type="submit" class="btn-small btn-outline">Logout</button>
+                </form>
+            </div>
         </header>
 
         <div class="admin-table-wrapper">

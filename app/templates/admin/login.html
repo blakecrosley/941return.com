@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Login{% endblock %}
+
+{% block content %}
+<section class="admin-page">
+    <div class="container">
+        <div class="login-form-wrapper">
+            <h1>Admin Login</h1>
+
+            {% if error %}
+            <div class="error-message">{{ error }}</div>
+            {% endif %}
+
+            <form method="POST" action="/admin/login" class="login-form">
+                <div class="form-group">
+                    <label for="token">Admin Token</label>
+                    <input
+                        type="password"
+                        id="token"
+                        name="token"
+                        required
+                        autocomplete="current-password"
+                        placeholder="Enter admin token"
+                    >
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style>
+.login-form-wrapper {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: var(--color-surface, #f8f8f8);
+    border-radius: 8px;
+}
+
+.login-form-wrapper h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border, #ddd);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.error-message {
+    background: #fee;
+    color: #c00;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+</style>
+{% endblock %}

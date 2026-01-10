@@ -10,8 +10,35 @@ from typing import Optional, Union
 
 import frontmatter
 import markdown
+import nh3
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, and_
+
+# Allowed HTML tags and attributes for blog content (safe subset)
+ALLOWED_TAGS = {
+    "a", "abbr", "acronym", "address", "article", "aside", "b", "blockquote",
+    "br", "caption", "cite", "code", "col", "colgroup", "dd", "del", "details",
+    "div", "dl", "dt", "em", "figcaption", "figure", "h1", "h2", "h3", "h4",
+    "h5", "h6", "header", "hr", "i", "img", "ins", "kbd", "li", "mark", "nav",
+    "ol", "p", "pre", "q", "rp", "rt", "ruby", "s", "samp", "section", "small",
+    "span", "strong", "sub", "summary", "sup", "table", "tbody", "td", "tfoot",
+    "th", "thead", "time", "tr", "u", "ul", "var", "wbr",
+}
+
+ALLOWED_ATTRIBUTES = {
+    "a": {"href", "title", "rel", "target"},
+    "abbr": {"title"},
+    "acronym": {"title"},
+    "col": {"span"},
+    "colgroup": {"span"},
+    "img": {"src", "alt", "title", "width", "height", "loading"},
+    "ol": {"start", "type"},
+    "q": {"cite"},
+    "td": {"colspan", "rowspan"},
+    "th": {"colspan", "rowspan", "scope"},
+    "time": {"datetime"},
+    "*": {"class", "id"},  # Allow class and id on all elements
+}
 
 
 def parse_date(value: Union[str, date, datetime, None]) -> Optional[datetime]:
@@ -34,9 +61,22 @@ CONTENT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def render_markdown(content: str) -> str:
-    """Convert markdown to HTML."""
+    """Convert markdown to HTML with XSS sanitization.
+
+    Uses nh3 to sanitize HTML output, allowing only safe tags and attributes.
+    This prevents script injection and other XSS attacks.
+    """
     md = markdown.Markdown(extensions=['extra', 'codehilite', 'toc'])
-    return md.convert(content)
+    html = md.convert(content)
+
+    # Sanitize HTML to prevent XSS
+    sanitized = nh3.clean(
+        html,
+        tags=ALLOWED_TAGS,
+        attributes=ALLOWED_ATTRIBUTES,
+        link_rel="noopener noreferrer",  # Add rel to links for security
+    )
+    return sanitized
 
 
 def compute_checksum(content: str) -> str:

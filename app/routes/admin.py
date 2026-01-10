@@ -1,13 +1,16 @@
 """
 Admin routes for Return blog.
-Protected by RETURN_ADMIN_ENABLED environment variable.
+Protected by session-based authentication with ADMIN_SECRET_TOKEN.
 """
 
+import hashlib
 import os
+import secrets
 from datetime import datetime
-from fastapi import APIRouter, Request, Depends, HTTPException, Form
+from fastapi import APIRouter, Request, Depends, HTTPException, Form, Cookie
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
+from typing import Optional
 
 from app.db.database import get_db
 from app.services import posts as posts_service
@@ -15,16 +18,116 @@ from app.routes.pages import templates
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
+# Admin authentication settings
+ADMIN_SECRET_TOKEN = os.getenv("ADMIN_SECRET_TOKEN")
+ADMIN_SESSION_COOKIE = "admin_session"
+ADMIN_COOKIE_MAX_AGE = 86400  # 24 hours
+IS_PRODUCTION = os.getenv("RAILWAY_ENVIRONMENT") == "production"
 
-def require_admin():
-    """Dependency that checks if admin is enabled."""
-    if os.getenv("RETURN_ADMIN_ENABLED", "").lower() != "true":
+# In-memory session store (valid for server lifetime)
+_admin_sessions: set[str] = set()
+
+
+def _generate_session_token() -> str:
+    """Generate a secure session token."""
+    return secrets.token_urlsafe(32)
+
+
+def _hash_token(token: str) -> str:
+    """Hash a token for secure comparison."""
+    return hashlib.sha256(token.encode()).hexdigest()
+
+
+def require_admin(request: Request, admin_session: Optional[str] = Cookie(None)):
+    """Dependency that checks admin authentication.
+
+    Requires:
+    1. ADMIN_SECRET_TOKEN environment variable to be set
+    2. Valid session cookie from successful login
+    """
+    # Admin feature must be enabled via env var
+    if not ADMIN_SECRET_TOKEN:
         raise HTTPException(status_code=404, detail="Not found")
+
+    # Check for valid session
+    if not admin_session or _hash_token(admin_session) not in _admin_sessions:
+        # Redirect to login page
+        raise HTTPException(
+            status_code=303,
+            detail="Authentication required",
+            headers={"Location": "/admin/login"}
+        )
+
+
+# =============================================================================
+# AUTHENTICATION
+# =============================================================================
+
+
+@router.get("/login")
+async def admin_login_page(request: Request):
+    """Admin login page."""
+    # If admin not configured, return 404
+    if not ADMIN_SECRET_TOKEN:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    return templates.TemplateResponse(
+        "admin/login.html",
+        {"request": request, "error": None}
+    )
+
+
+@router.post("/login")
+async def admin_login(request: Request, token: str = Form(...)):
+    """Process admin login."""
+    if not ADMIN_SECRET_TOKEN:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    # Constant-time comparison to prevent timing attacks
+    if not secrets.compare_digest(token, ADMIN_SECRET_TOKEN):
+        return templates.TemplateResponse(
+            "admin/login.html",
+            {"request": request, "error": "Invalid token"},
+            status_code=401
+        )
+
+    # Create session
+    session_token = _generate_session_token()
+    _admin_sessions.add(_hash_token(session_token))
+
+    response = RedirectResponse("/admin/posts", status_code=303)
+    response.set_cookie(
+        key=ADMIN_SESSION_COOKIE,
+        value=session_token,
+        max_age=ADMIN_COOKIE_MAX_AGE,
+        httponly=True,
+        secure=IS_PRODUCTION,
+        samesite="lax"
+    )
+    return response
+
+
+@router.post("/logout")
+async def admin_logout(admin_session: Optional[str] = Cookie(None)):
+    """Admin logout."""
+    # Invalidate session
+    if admin_session:
+        _admin_sessions.discard(_hash_token(admin_session))
+
+    response = RedirectResponse("/admin/login", status_code=303)
+    response.delete_cookie(
+        key=ADMIN_SESSION_COOKIE,
+        httponly=True,
+        secure=IS_PRODUCTION,
+        samesite="lax"
+    )
+    return response
 
 
 # =============================================================================
 # POST MANAGEMENT
 # =============================================================================
+
 
 @router.get("/posts", dependencies=[Depends(require_admin)])
 async def admin_posts(request: Request, db: Session = Depends(get_db)):

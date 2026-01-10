@@ -87,6 +87,26 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
         response.headers["X-XSS-Protection"] = "1; mode=block"
         response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+
+        # Content-Security-Policy
+        # - default-src 'self': Only allow resources from same origin by default
+        # - script-src 'self' 'unsafe-inline': Allow inline scripts (needed for Alpine.js x-data)
+        # - style-src 'self' 'unsafe-inline': Allow inline styles
+        # - img-src 'self' data: https:: Allow images from self, data URIs, and HTTPS sources
+        # - media-src 'self': Only allow video/audio from same origin
+        # - font-src 'self': Only allow fonts from same origin
+        # - frame-ancestors 'none': Prevent embedding in iframes (same as X-Frame-Options)
+        csp = (
+            "default-src 'self'; "
+            "script-src 'self' 'unsafe-inline'; "
+            "style-src 'self' 'unsafe-inline'; "
+            "img-src 'self' data: https:; "
+            "media-src 'self'; "
+            "font-src 'self'; "
+            "frame-ancestors 'none'"
+        )
+        response.headers["Content-Security-Policy"] = csp
+
         # Safari requires Accept-Ranges for video streaming
         if request.url.path.startswith("/static/") and request.url.path.endswith((".mp4", ".webm", ".mov")):
             response.headers["Accept-Ranges"] = "bytes"
@@ -102,9 +122,16 @@ app = FastAPI(
 # Middleware
 app.add_middleware(HeadRequestMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
+# Configure allowed hosts from environment
+# In production, set ALLOWED_HOSTS to your actual domains
+# For local dev, localhost is included by default
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",") if os.getenv("ALLOWED_HOSTS") else []
+DEFAULT_HOSTS = ["941return.com", "www.941return.com", "localhost", "127.0.0.1"]
+all_allowed_hosts = list(set(ALLOWED_HOSTS + DEFAULT_HOSTS)) if ALLOWED_HOSTS else DEFAULT_HOSTS
+
 app.add_middleware(
     TrustedHostMiddleware,
-    allowed_hosts=["*"]  # Allow all hosts for container deployments
+    allowed_hosts=all_allowed_hosts
 )
 
 # Compression middleware (compress responses > 500 bytes)
@@ -114,8 +141,25 @@ app.add_middleware(GZipMiddleware, minimum_size=500)
 @app.get("/static/videos/{filename}")
 async def serve_video(filename: str, range_header: Optional[str] = Header(None, alias="Range")):
     """Serve video files with Range request support for Safari."""
-    video_path = APP_DIR / "static" / "videos" / filename
-    if not video_path.exists() or not filename.endswith((".mp4", ".webm", ".mov")):
+    # Security: Sanitize filename to prevent path traversal
+    # Only allow the basename (no directories) and validate extension
+    safe_filename = os.path.basename(filename)
+    if not safe_filename or safe_filename != filename:
+        return Response(status_code=404)
+
+    # Only allow specific video extensions
+    if not safe_filename.endswith((".mp4", ".webm", ".mov")):
+        return Response(status_code=404)
+
+    # Build path and verify it's within the videos directory
+    videos_dir = (APP_DIR / "static" / "videos").resolve()
+    video_path = (videos_dir / safe_filename).resolve()
+
+    # Security: Ensure the resolved path is within videos directory
+    if not str(video_path).startswith(str(videos_dir)):
+        return Response(status_code=404)
+
+    if not video_path.exists():
         return Response(status_code=404)
 
     file_size = os.path.getsize(video_path)

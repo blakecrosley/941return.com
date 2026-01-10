@@ -16,13 +16,22 @@ resend.api_key = os.getenv("RESEND_API_KEY", "")
 
 # Configuration
 FROM_EMAIL = os.getenv("RESEND_FROM_EMAIL", "hello@941return.com")
-UNSUBSCRIBE_SECRET = os.getenv("UNSUBSCRIBE_SECRET", "change-me-in-production")
-RESEND_AUDIENCE_ID = os.getenv("RESEND_AUDIENCE_ID", "9bb6a9a2-8103-45ee-8926-31af8f74a747")
-BASE_URL = "https://941return.com"
+BASE_URL = os.getenv("BASE_URL", "https://941return.com")
+
+# Security: These must be set via environment variables (no defaults)
+# UNSUBSCRIBE_SECRET: Used for HMAC signing of unsubscribe tokens
+# RESEND_AUDIENCE_ID: Resend audience ID for contact management
+UNSUBSCRIBE_SECRET = os.getenv("UNSUBSCRIBE_SECRET")
+RESEND_AUDIENCE_ID = os.getenv("RESEND_AUDIENCE_ID")
 
 
-def generate_unsubscribe_token(email: str) -> str:
-    """Generate HMAC token for secure unsubscribe links."""
+def generate_unsubscribe_token(email: str) -> Optional[str]:
+    """Generate HMAC token for secure unsubscribe links.
+
+    Returns None if UNSUBSCRIBE_SECRET is not configured.
+    """
+    if not UNSUBSCRIBE_SECRET:
+        return None
     return hmac.new(
         UNSUBSCRIBE_SECRET.encode(),
         email.lower().encode(),
@@ -31,14 +40,24 @@ def generate_unsubscribe_token(email: str) -> str:
 
 
 def verify_unsubscribe_token(email: str, token: str) -> bool:
-    """Verify an unsubscribe token is valid."""
+    """Verify an unsubscribe token is valid.
+
+    Returns False if UNSUBSCRIBE_SECRET is not configured.
+    """
     expected = generate_unsubscribe_token(email)
+    if expected is None:
+        return False
     return hmac.compare_digest(expected, token)
 
 
-def get_unsubscribe_url(email: str) -> str:
-    """Generate a secure unsubscribe URL."""
+def get_unsubscribe_url(email: str) -> Optional[str]:
+    """Generate a secure unsubscribe URL.
+
+    Returns None if UNSUBSCRIBE_SECRET is not configured.
+    """
     token = generate_unsubscribe_token(email)
+    if token is None:
+        return None
     encoded_email = quote(email, safe='')
     return f"{BASE_URL}/api/unsubscribe?email={encoded_email}&token={token}"
 
@@ -50,6 +69,10 @@ def create_contact(email: str) -> Optional[str]:
     """
     if not resend.api_key:
         print("Warning: RESEND_API_KEY not set, skipping contact creation")
+        return None
+
+    if not RESEND_AUDIENCE_ID:
+        print("Warning: RESEND_AUDIENCE_ID not set, skipping contact creation")
         return None
 
     try:
@@ -71,6 +94,10 @@ def unsubscribe_contact(email: str) -> bool:
     """
     if not resend.api_key:
         print("Warning: RESEND_API_KEY not set, skipping unsubscribe")
+        return True  # Return True so local unsubscribe still works
+
+    if not RESEND_AUDIENCE_ID:
+        print("Warning: RESEND_AUDIENCE_ID not set, skipping unsubscribe")
         return True  # Return True so local unsubscribe still works
 
     try:
@@ -95,7 +122,14 @@ def send_welcome_email(email: str) -> bool:
         print("Warning: RESEND_API_KEY not set, skipping welcome email")
         return False
 
+    if not UNSUBSCRIBE_SECRET:
+        print("Warning: UNSUBSCRIBE_SECRET not set, skipping welcome email (cannot generate unsubscribe link)")
+        return False
+
     unsubscribe_url = get_unsubscribe_url(email)
+    if not unsubscribe_url:
+        print("Warning: Could not generate unsubscribe URL, skipping welcome email")
+        return False
 
     html_content = f"""
 <!DOCTYPE html>

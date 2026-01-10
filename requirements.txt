@@ -7,6 +7,7 @@ python-multipart==0.0.17
 sqlalchemy==2.0.25
 python-frontmatter==1.1.0
 markdown==3.5.2
+nh3>=0.2.14  # HTML sanitization to prevent XSS
 
 # Email
 resend>=2.0.0
