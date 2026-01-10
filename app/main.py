@@ -14,6 +14,7 @@ import re
 
 from app.routes import pages, blog, admin, api
 from app.db.database import init_db
+from app.security.headers import SecurityHeadersMiddleware
 
 # Analytics (optional - only loads if configured)
 analytics = None
@@ -74,43 +75,6 @@ class HeadRequestMiddleware(BaseHTTPMiddleware):
             response.body = b""
             return response
         return await call_next(request)
-
-
-class SecurityHeadersMiddleware(BaseHTTPMiddleware):
-    """Add security headers to all responses."""
-
-    async def dispatch(self, request: Request, call_next):
-        response = await call_next(request)
-        response.headers["X-Content-Type-Options"] = "nosniff"
-        response.headers["X-Frame-Options"] = "DENY"
-        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
-        response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
-        response.headers["X-XSS-Protection"] = "1; mode=block"
-        response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
-
-        # Content-Security-Policy
-        # - default-src 'self': Only allow resources from same origin by default
-        # - script-src 'self' 'unsafe-inline': Allow inline scripts (needed for Alpine.js x-data)
-        # - style-src 'self' 'unsafe-inline': Allow inline styles
-        # - img-src 'self' data: https:: Allow images from self, data URIs, and HTTPS sources
-        # - media-src 'self': Only allow video/audio from same origin
-        # - font-src 'self': Only allow fonts from same origin
-        # - frame-ancestors 'none': Prevent embedding in iframes (same as X-Frame-Options)
-        csp = (
-            "default-src 'self'; "
-            "script-src 'self' 'unsafe-inline'; "
-            "style-src 'self' 'unsafe-inline'; "
-            "img-src 'self' data: https:; "
-            "media-src 'self'; "
-            "font-src 'self'; "
-            "frame-ancestors 'none'"
-        )
-        response.headers["Content-Security-Policy"] = csp
-
-        # Safari requires Accept-Ranges for video streaming
-        if request.url.path.startswith("/static/") and request.url.path.endswith((".mp4", ".webm", ".mov")):
-            response.headers["Accept-Ranges"] = "bytes"
-        return response
 
 
 app = FastAPI(
