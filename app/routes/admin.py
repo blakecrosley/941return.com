@@ -15,7 +15,7 @@ from typing import Optional
 from app.db.database import get_db
 from app.services import posts as posts_service
 from app.routes.pages import templates
-from app.security.rate_limit import rate_limit_auth
+from app.security.kv_rate_limit import rate_limit_auth_kv
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -79,7 +79,7 @@ async def admin_login_page(request: Request):
 
 
 @router.post("/login")
-@rate_limit_auth
+@rate_limit_auth_kv
 async def admin_login(request: Request, token: str = Form(...)):
     """Process admin login."""
     if not ADMIN_SECRET_TOKEN:
