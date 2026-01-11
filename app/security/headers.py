@@ -61,6 +61,7 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
     ])
 
     # Content Security Policy - 941return.com uses self-hosted resources
+    # Note: upgrade-insecure-requests is added dynamically (not on localhost)
     CSP_DIRECTIVES = {
         "default-src": "'self'",
         "script-src": "'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com",
@@ -72,7 +73,6 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         "frame-ancestors": "'none'",
         "base-uri": "'self'",
         "form-action": "'self'",
-        "upgrade-insecure-requests": "",
     }
 
     def __init__(self, app, csp_overrides: dict | None = None):
@@ -83,18 +83,28 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
             csp_overrides: Optional dict to override default CSP directives
         """
         super().__init__(app)
-        self.csp_directives = {**self.CSP_DIRECTIVES}
-        if csp_overrides:
-            self.csp_directives.update(csp_overrides)
+        self.csp_overrides = csp_overrides or {}
 
-        # Build CSP string
-        self.csp = "; ".join(
+    def _build_csp(self, is_localhost: bool) -> str:
+        """Build CSP string, optionally including upgrade-insecure-requests."""
+        directives = {**self.CSP_DIRECTIVES, **self.csp_overrides}
+
+        # Only upgrade to HTTPS in production (not localhost)
+        if not is_localhost:
+            directives["upgrade-insecure-requests"] = ""
+
+        return "; ".join(
             f"{key} {value}".strip() if value else key
-            for key, value in self.csp_directives.items()
+            for key, value in directives.items()
         )
 
     async def dispatch(self, request: Request, call_next) -> Response:
         response = await call_next(request)
+
+        # Check if localhost (skip certain security headers for local dev)
+        # Also treat .local domains as local development (for Caddy reverse proxy)
+        hostname = request.url.hostname or ""
+        is_localhost = hostname in ("localhost", "127.0.0.1") or hostname.endswith(".local")
 
         # === Core Security Headers ===
 
@@ -112,8 +122,9 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
 
         # === Transport Security ===
 
-        # Enforce HTTPS for 1 year, include subdomains
-        response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+        # Enforce HTTPS for 1 year, include subdomains (production only)
+        if not is_localhost:
+            response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
 
         # === Cross-Origin Policies ===
 
@@ -125,7 +136,7 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         # most CDNs (jsdelivr, unpkg, etc.) don't provide.
 
         # === Content Security Policy ===
-        response.headers["Content-Security-Policy"] = self.csp
+        response.headers["Content-Security-Policy"] = self._build_csp(is_localhost)
 
         # === Feature/Permissions Policy ===
         # Comprehensive deny list for browser features we don't use
