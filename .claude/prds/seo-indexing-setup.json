@@ -1,0 +1,131 @@
+{
+  "project": {
+    "name": "SEO Indexing & Webmaster Tools Setup",
+    "description": "Set up Google Search Console, Bing Webmaster Tools, and IndexNow for faster crawling and indexing of Return blog content"
+  },
+  "context": {
+    "background": "941return.com has blog content that needs to be indexed by search engines. IndexNow code is implemented but needs key configuration. Webmaster tools need manual verification.",
+    "current_status": {
+      "already_implemented": [
+        "llms.txt and llms-full.txt (AI context)",
+        "robots.txt with AI crawler directives",
+        "sitemap.xml (dynamic)",
+        "RSS feed at /blog/feed.xml",
+        "Organization, WebSite, SoftwareApplication schema",
+        "BlogPosting and BreadcrumbList schema on posts",
+        "FAQPage schema on FAQ page",
+        "Open Graph and Twitter Cards",
+        "Canonical URLs",
+        "Accessibility skip link"
+      ],
+      "code_ready_needs_config": [
+        "IndexNow service (app/services/indexnow.py)",
+        "IndexNow key endpoint (/{key}.txt)"
+      ],
+      "needs_manual_setup": [
+        "Google Search Console verification",
+        "Bing Webmaster Tools verification",
+        "IndexNow key generation and env var"
+      ]
+    }
+  },
+  "stories": [
+    {
+      "id": "seo-1",
+      "title": "Google Search Console Verification",
+      "description": "Verify site ownership in Google Search Console using DNS TXT record or HTML file method",
+      "acceptance_criteria": [
+        "Site verified in Google Search Console",
+        "Domain property added (941return.com)",
+        "Sitemap submitted at /sitemap.xml",
+        "Initial crawl data visible in dashboard"
+      ],
+      "priority": 1,
+      "manual": true,
+      "passes": false,
+      "attempts": 0,
+      "notes": "Requires access to DNS settings or ability to upload HTML file to Railway deployment"
+    },
+    {
+      "id": "seo-2",
+      "title": "Bing Webmaster Tools Verification",
+      "description": "Verify site ownership in Bing Webmaster Tools for Microsoft search coverage",
+      "acceptance_criteria": [
+        "Site verified in Bing Webmaster Tools",
+        "Can import settings from Google Search Console (faster)",
+        "Sitemap submitted",
+        "IndexNow API key obtained for story seo-3"
+      ],
+      "priority": 1,
+      "manual": true,
+      "passes": false,
+      "attempts": 0,
+      "notes": "Bing offers GSC import feature for quick setup. Generate IndexNow key here."
+    },
+    {
+      "id": "seo-3",
+      "title": "IndexNow Key Configuration",
+      "description": "Configure IndexNow API key in Railway environment variables",
+      "acceptance_criteria": [
+        "Generate IndexNow key from Bing Webmaster Tools",
+        "Add INDEXNOW_KEY environment variable in Railway",
+        "Verify key file accessible at /{key}.txt",
+        "Test URL submission works"
+      ],
+      "priority": 2,
+      "manual": true,
+      "passes": false,
+      "attempts": 0,
+      "implementation": {
+        "env_var": "INDEXNOW_KEY",
+        "endpoint": "GET /{key}.txt",
+        "service": "app/services/indexnow.py"
+      },
+      "notes": "Key should be 8+ alphanumeric characters. Code is already deployed, just needs env var."
+    },
+    {
+      "id": "seo-4",
+      "title": "HowTo Schema for Technique Posts",
+      "description": "Add HowTo schema to meditation technique blog posts that have step-by-step instructions",
+      "acceptance_criteria": [
+        "Add how_to_steps field to post frontmatter",
+        "Update blog/post.html template with conditional HowTo schema",
+        "Tag existing technique posts with how-to metadata",
+        "Test schema validation with Google Rich Results Test"
+      ],
+      "priority": 3,
+      "manual": false,
+      "passes": false,
+      "attempts": 0,
+      "notes": "Candidates: noting-technique-meditation, vipassana-meditation-home-practice, breath-hold-training-athletes"
+    },
+    {
+      "id": "seo-5",
+      "title": "Search Console Performance Monitoring",
+      "description": "Set up weekly review of Search Console data to identify opportunities and issues",
+      "acceptance_criteria": [
+        "Weekly task to review GSC performance report",
+        "Monitor for crawl errors and coverage issues",
+        "Track top queries and click-through rates",
+        "Identify low-CTR high-impression opportunities"
+      ],
+      "priority": 3,
+      "manual": true,
+      "passes": false,
+      "attempts": 0,
+      "notes": "This is an ongoing task, not a one-time setup"
+    }
+  ],
+  "resources": {
+    "google_search_console": "https://search.google.com/search-console",
+    "bing_webmaster_tools": "https://www.bing.com/webmasters",
+    "indexnow_docs": "https://www.indexnow.org/documentation",
+    "sitemap_location": "https://941return.com/sitemap.xml",
+    "rich_results_test": "https://search.google.com/test/rich-results"
+  },
+  "estimated_impact": {
+    "indexing_speed": "IndexNow can reduce indexing time from days to minutes",
+    "visibility": "GSC provides data on impressions, clicks, and ranking positions",
+    "crawl_budget": "Better sitemap structure helps search engines find all content"
+  }
+}

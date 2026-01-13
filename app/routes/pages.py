@@ -8,6 +8,7 @@ import os
 
 from app.db.database import get_db
 from app.services import posts as posts_service
+from app.services import indexnow as indexnow_service
 
 router = APIRouter()
 
@@ -110,6 +111,9 @@ Sitemap: https://941return.com/sitemap.xml
 
 # AI Context Files (accessible at /llms.txt and /llms-full.txt)
 # See https://llmstxt.org for specification
+
+# IndexNow supported for instant URL submissions
+# See https://www.indexnow.org
 """
     return Response(content=content, media_type="text/plain")
 
@@ -308,3 +312,24 @@ async def sitemap(db: Session = Depends(get_db)):
     # Cache sitemap for 1 hour (3600 seconds)
     response.headers["Cache-Control"] = "public, max-age=3600"
     return response
+
+
+# IndexNow key verification - MUST be last to avoid matching other *.txt routes
+@router.get("/{key}.txt")
+async def indexnow_key_verification(key: str):
+    """Serve IndexNow key file for verification.
+
+    IndexNow requires the key to be served at /{key}.txt for ownership verification.
+    This route MUST be defined last in pages.py to avoid matching other *.txt routes.
+    See: https://www.indexnow.org/documentation
+    """
+    from fastapi import HTTPException
+
+    if not indexnow_service.is_configured():
+        raise HTTPException(status_code=404, detail="Not found")
+
+    configured_key = indexnow_service.get_key()
+    if key != configured_key:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    return Response(content=configured_key, media_type="text/plain")
