@@ -102,9 +102,9 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response = await call_next(request)
 
         # Check if localhost (skip certain security headers for local dev)
-        # Also treat .local domains as local development (for Caddy reverse proxy)
+        # Also treat .local/.test domains as local development (for Caddy reverse proxy)
         hostname = request.url.hostname or ""
-        is_localhost = hostname in ("localhost", "127.0.0.1") or hostname.endswith(".local")
+        is_localhost = hostname in ("localhost", "127.0.0.1") or hostname.endswith(".local") or hostname.endswith(".test")
 
         # === Core Security Headers ===
 

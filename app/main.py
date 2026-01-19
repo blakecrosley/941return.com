@@ -15,6 +15,7 @@ import re
 from app.routes import pages, blog, admin, api
 from app.db.database import init_db
 from app.security.headers import SecurityHeadersMiddleware
+from app.security.logging import SecurityLogMiddleware
 
 # Analytics (optional - only loads if configured)
 analytics = None
@@ -86,11 +87,12 @@ app = FastAPI(
 # Middleware
 app.add_middleware(HeadRequestMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(SecurityLogMiddleware, site_name="941return.com")
 # Configure allowed hosts from environment
 # In production, set ALLOWED_HOSTS to your actual domains
 # For local dev, localhost is included by default
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",") if os.getenv("ALLOWED_HOSTS") else []
-DEFAULT_HOSTS = ["941return.com", "www.941return.com", "localhost", "127.0.0.1"]
+DEFAULT_HOSTS = ["941return.com", "www.941return.com", "941return.com.local", "941return.test", "localhost", "127.0.0.1"]
 all_allowed_hosts = list(set(ALLOWED_HOSTS + DEFAULT_HOSTS)) if ALLOWED_HOSTS else DEFAULT_HOSTS
 
 app.add_middleware(
