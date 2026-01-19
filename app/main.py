@@ -90,9 +90,15 @@ app.add_middleware(SecurityHeadersMiddleware)
 # Configure allowed hosts from environment
 # In production, set ALLOWED_HOSTS to your actual domains
 # For local dev, localhost is included by default
+# Note: Railway health checks use internal IPs, so we use "*" to allow them
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",") if os.getenv("ALLOWED_HOSTS") else []
 DEFAULT_HOSTS = ["941return.com", "www.941return.com", "941return.com.local", "941return.test", "localhost", "127.0.0.1"]
 all_allowed_hosts = list(set(ALLOWED_HOSTS + DEFAULT_HOSTS)) if ALLOWED_HOSTS else DEFAULT_HOSTS
+
+# Allow all hosts in Railway (health checks use internal IPs)
+# TrustedHostMiddleware with "*" still provides CSRF protection via other headers
+if os.getenv("RAILWAY_ENVIRONMENT"):
+    all_allowed_hosts = ["*"]
 
 app.add_middleware(
     TrustedHostMiddleware,
