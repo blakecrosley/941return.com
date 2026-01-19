@@ -14,7 +14,7 @@ A meditation timer should disappear into the practice. Return exists to start yo
 
 - Return works on iPhone, Apple Watch, Mac, and Apple TV with synced settings
 - Each platform suits different moments—phone for morning practice, watch for movement, TV for immersion
-- Five themes match different moods and intentions
+- Four themes match different moods and intentions
 - Simplicity is the design goal—fewer features means less friction
 
 ## The Design Philosophy
@@ -44,7 +44,7 @@ Interval bells provide optional checkpoints during longer sessions. Set them to 
 
 ### Choosing a Theme
 
-Five themes create different visual and audio environments:
+Four themes create different visual and audio environments:
 
 **Water** — Teal tones with flowing ambient sound. Calming and fluid. Good for general practice and stress reduction.
 
@@ -53,8 +53,6 @@ Five themes create different visual and audio environments:
 **Forest** — Green palette with nature sounds. Grounding and stable. Works well for anxiety or feeling scattered.
 
 **Silence** — Muted gray with minimal audio. Pure stillness. For practitioners who prefer no sensory input.
-
-**Health** — Soft pink with gentle tones. Recovery-focused. Designed for post-workout or healing-related meditation.
 
 No theme is better than another. Choose based on what you need in this moment.
 

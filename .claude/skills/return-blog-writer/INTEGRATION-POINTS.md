@@ -40,7 +40,7 @@ Use when the app is tangentially relevant:
 ### The Direct Mention
 Use when discussing specific app features:
 
-> Return's Health theme pairs pink visuals with a calming soundscape designed specifically for recovery sessions. The combination supports the physiological shift from stress to rest.
+> Return's Water theme pairs teal visuals with a gentle water soundscape designed to promote calm. The combination supports the physiological shift from stress to rest.
 
 ### The CTA Close
 Use at article end, once per piece maximum:

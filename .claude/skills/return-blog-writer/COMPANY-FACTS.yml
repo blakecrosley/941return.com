@@ -36,9 +36,6 @@ features:
     - name: "Silence"
       color: "Gray (#8B8B9E)"
       mood: "Stillness, clarity"
-    - name: "Health"
-      color: "Pink (#FF6B8A)"
-      mood: "Recovery, vitality"
 
   timer:
     - "Customizable duration"
