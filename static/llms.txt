@@ -1,0 +1,37 @@
+# Return - Meditation Timer
+
+> Minimal, zen-like meditation timer for Apple devices
+
+## Overview
+
+Return is a beautiful meditation timer app featuring immersive themes, Apple Health integration, and cross-device sync. Available for iPhone, iPad, Apple Watch, Mac, and Apple TV.
+
+## Key Features
+
+- 4 Immersive Themes: Water, Fire, Forest, Silence
+- Apple Health Integration: Heart rate, HRV, respiratory tracking
+- Flexible Timing: 5-60 minute sessions
+- 3 Bell Sounds: Gentle session markers
+- Live Activities: Timer on Lock Screen and Dynamic Island
+- iCloud Sync: Seamless across all devices
+
+## Platforms
+
+- iPhone and iPad
+- Apple Watch (standalone)
+- Mac (native)
+- Apple TV
+
+## Pricing
+
+One-time purchase (no subscription). Basic timer free, unlock all themes and sounds with optional in-app purchase.
+
+## Blog Content
+
+250+ articles covering meditation techniques, mindfulness for athletes, sleep optimization, stress management, and health science.
+
+## Contact
+
+- Website: https://941return.com
+- Developer: 941 Apps
+- Email: blake@941apps.com

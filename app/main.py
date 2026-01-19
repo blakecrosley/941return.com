@@ -87,7 +87,6 @@ app = FastAPI(
 # Middleware
 app.add_middleware(HeadRequestMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
-app.add_middleware(SecurityLogMiddleware, site_name="941return.com")
 # Configure allowed hosts from environment
 # In production, set ALLOWED_HOSTS to your actual domains
 # For local dev, localhost is included by default
@@ -102,6 +101,9 @@ app.add_middleware(
 
 # Compression middleware (compress responses > 500 bytes)
 app.add_middleware(GZipMiddleware, minimum_size=500)
+
+# Security logging (registered last so it runs first on request, last on response)
+app.add_middleware(SecurityLogMiddleware, site_name="941return.com")
 
 # Video route with proper range request support for Safari
 @app.get("/static/videos/{filename}")

@@ -1,0 +1,146 @@
+# Return - Meditation Timer (Complete Documentation)
+
+> A minimal, zen-like meditation timer designed for deep focus and Apple ecosystem integration
+
+## Product Overview
+
+Return is a beautifully minimal meditation timer app that helps users build consistent meditation practices. With immersive video themes, ambient soundscapes, and deep Apple Health integration, Return transforms any device into a serene meditation space.
+
+## Core Features
+
+### Immersive Themes (4 Total)
+- **Water**: Flowing streams and gentle water sounds
+- **Fire**: Warm flames with crackling ambience
+- **Forest**: Natural woodland with bird songs
+- **Silence**: Pure minimalism for focused practice
+
+Each theme includes:
+- Full-screen video backgrounds
+- Ambient audio loops
+- Matched visual aesthetics
+
+### Meditation Timer
+- Duration: 5-60 minutes in 5-minute increments
+- Bell sounds: 3 customizable options
+- Repeat modes: Once, Until Stopped, Until Time, Specific Count
+- Gentle fade-in/fade-out transitions
+
+### Apple Health Integration
+**Reads during sessions**:
+- Heart rate
+- Heart rate variability (HRV)
+- Respiratory rate
+
+**Logs after sessions**:
+- Mindful minutes
+- Session duration
+- Timestamp and duration
+
+### Cross-Device Experience
+- **iPhone/iPad**: Full immersive experience with video themes
+- **Apple Watch**: Standalone app, haptic bells, heart rate during session
+- **Mac**: Native app with all features
+- **Apple TV**: Big-screen meditation for living room practice
+- **iCloud Sync**: Settings and history across all devices
+
+### Live Activities
+- Lock Screen timer display
+- Dynamic Island integration
+- Real-time countdown without opening app
+
+## Pricing Model
+
+- **Free**: Basic timer with Water theme
+- **In-App Purchase** (one-time): Unlocks all 4 themes, all bell sounds, and advanced features
+- **No Subscription**: Buy once, own forever
+
+## Blog Content (252 Posts)
+
+### Categories
+
+**For Athletes**:
+- Pre-game mental preparation
+- Recovery and restoration
+- Burnout prevention
+- Sports performance enhancement
+- Mental training techniques
+
+**Health & Science**:
+- Sleep architecture optimization
+- HRV and nervous system
+- Breathing techniques
+- BDNF and brain health
+- Stress physiology
+
+**Meditation Techniques**:
+- Vipassana practice
+- Noting technique
+- Body scan meditation
+- Breath counting
+- Chakra meditation
+- Loving-kindness (Metta)
+
+**Life Situations**:
+- Grief and loss
+- Career transitions
+- Financial stress
+- Identity exploration
+- Relationship challenges
+
+**For Professionals**:
+- Coaches and trainers
+- Therapists and counselors
+- Healthcare workers
+- Financial professionals
+- Creative professionals
+
+## Technical Details
+
+### iOS App
+- SwiftUI native interface
+- SwiftData for local storage
+- HealthKit integration
+- AVFoundation for audio/video
+- WatchConnectivity for Apple Watch
+
+### Marketing Website
+- FastAPI backend
+- HTMX + Alpine.js frontend
+- Bootstrap 5 styling
+- Markdown blog with SQLite storage
+- Resend email integration
+- 941analytics custom analytics
+
+### Performance
+- Optimized video loading
+- Web Audio API for seamless loops
+- Lazy-loaded images
+- Critical CSS inlining
+
+## Target Audience
+
+- Meditation beginners seeking guided structure
+- Experienced practitioners wanting minimal distraction
+- Athletes using meditation for performance
+- Health-conscious individuals tracking biometrics
+- Apple ecosystem users wanting cross-device sync
+
+## App Store
+
+- Available on iOS App Store
+- Requires iOS 17.0+, watchOS 10.0+, macOS 14.0+, tvOS 17.0+
+
+## Contact Information
+
+- Website: https://941return.com
+- Blog: https://941return.com/blog
+- Developer: 941 Apps (https://941apps.com)
+- Email: blake@941apps.com
+- Support: https://941return.com/support
+
+## Related Resources
+
+- Download: https://941return.com/download
+- Features: https://941return.com/features
+- Blog: https://941return.com/blog
+- Privacy: https://941return.com/privacy

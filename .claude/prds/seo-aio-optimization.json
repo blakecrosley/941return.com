@@ -1,0 +1,110 @@
+{
+  "project": {
+    "name": "Return (941) SEO/AIO Optimization",
+    "description": "SEO and AI Optimization improvements for 941return.com meditation timer app"
+  },
+  "stories": [
+    {
+      "id": "aio-1",
+      "title": "Create llms.txt and llms-full.txt files",
+      "description": "Implement llms.txt files for AI discoverability per llmstxt.org specification",
+      "acceptance_criteria": [
+        "Create /llms.txt with app summary and key features",
+        "Create /llms-full.txt with detailed documentation",
+        "Include: meditation features, timer modes, HealthKit integration",
+        "Add blog content summary and topics",
+        "Serve with text/plain content type",
+        "Add routes in FastAPI"
+      ],
+      "priority": 1,
+      "passes": false,
+      "attempts": 0
+    },
+    {
+      "id": "seo-1",
+      "title": "Add featured images to blog posts",
+      "description": "Create and add featured/OG images for all 250 blog posts to improve social sharing",
+      "acceptance_criteria": [
+        "Create template for generating blog OG images",
+        "Generate images for top 50 highest-traffic posts first",
+        "Add og:image meta tags to blog post template",
+        "Ensure images are 1200x630 for optimal social display",
+        "Add twitter:image meta tags"
+      ],
+      "priority": 1,
+      "passes": false,
+      "attempts": 0
+    },
+    {
+      "id": "seo-2",
+      "title": "Implement HowTo schema for meditation guides",
+      "description": "Add HowTo structured data to meditation technique posts",
+      "acceptance_criteria": [
+        "Identify blog posts with step-by-step instructions",
+        "Add HowTo JSON-LD schema to those posts",
+        "Include estimated time and difficulty level",
+        "Validate with Rich Results Test",
+        "Target 'how to meditate' type queries"
+      ],
+      "priority": 2,
+      "passes": false,
+      "attempts": 0
+    },
+    {
+      "id": "seo-3",
+      "title": "Add FAQPage schema to support/FAQ page",
+      "description": "Implement FAQPage structured data for common questions",
+      "acceptance_criteria": [
+        "Create or enhance FAQ section on site",
+        "Add FAQPage JSON-LD schema",
+        "Include questions about: HealthKit sync, timer features, Apple Watch",
+        "Validate schema with Rich Results Test"
+      ],
+      "priority": 2,
+      "passes": false,
+      "attempts": 0
+    },
+    {
+      "id": "aio-2",
+      "title": "Add Key Takeaways to all blog posts",
+      "description": "Add TL;DR/Key Takeaways sections to blog posts for AI parsing",
+      "acceptance_criteria": [
+        "Update blog post template with Key Takeaways section",
+        "Add takeaways to top 25 posts first",
+        "Use structured semantic HTML (ul/li)",
+        "Include 3-5 actionable takeaways per post"
+      ],
+      "priority": 2,
+      "passes": false,
+      "attempts": 0
+    },
+    {
+      "id": "seo-4",
+      "title": "Optimize video content for SEO",
+      "description": "Add VideoObject schema and optimize video embeds",
+      "acceptance_criteria": [
+        "Identify pages with embedded videos",
+        "Add VideoObject JSON-LD schema",
+        "Include thumbnail, duration, upload date",
+        "Add video sitemap entries"
+      ],
+      "priority": 3,
+      "passes": false,
+      "attempts": 0
+    },
+    {
+      "id": "seo-5",
+      "title": "Implement author schema for blog posts",
+      "description": "Add Person schema for blog authors to establish expertise",
+      "acceptance_criteria": [
+        "Add author information to blog posts",
+        "Implement Person JSON-LD schema",
+        "Link to author social profiles",
+        "Add author bio sections"
+      ],
+      "priority": 3,
+      "passes": false,
+      "attempts": 0
+    }
+  ]
+}
