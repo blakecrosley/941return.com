@@ -16,6 +16,7 @@ from app.routes import pages, blog, admin, api
 from app.db.database import init_db
 from app.security.headers import SecurityHeadersMiddleware
 from app.security.logging import SecurityLogMiddleware
+from app.security.rate_limit import RateLimitMiddleware
 
 # Analytics (optional - only loads if configured)
 analytics = None
@@ -87,6 +88,7 @@ app = FastAPI(
 # Middleware
 app.add_middleware(HeadRequestMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(RateLimitMiddleware)
 # Configure allowed hosts from environment
 # In production, set ALLOWED_HOSTS to your actual domains
 # For local dev, localhost is included by default
