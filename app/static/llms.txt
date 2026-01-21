@@ -1,0 +1,47 @@
+# Return by 941
+
+> iOS health tracking app that helps you maintain consistent wellness habits through beautiful daily metrics and insights.
+
+For comprehensive information, see: [llms-full.txt](https://941return.com/llms-full.txt)
+
+## About
+
+Return is an iOS app designed to help you track daily health metrics and build lasting wellness habits. Track sleep, water intake, exercise, and more with a clean, intuitive interface.
+
+## Key Features
+
+- Daily health metric tracking
+- Beautiful progress visualizations
+- HealthKit integration for automatic data sync
+- Customizable tracking categories
+- Trend analysis and insights
+- Widget support for quick logging
+- Dark mode support
+
+## App Details
+
+- **Platform**: iOS / iPadOS
+- **Developer**: 941 Apps, LLC
+- **Website**: https://941return.com
+
+## Privacy
+
+Return prioritizes your privacy:
+- Health data stored locally on device
+- Optional HealthKit sync (your choice)
+- No data sold to third parties
+
+## Blog
+
+Health and wellness content:
+- [Blog](https://941return.com/blog)
+
+## Contact
+
+- Website: https://941return.com
+- Support: https://941return.com/support
+- Developer: 941 Apps, LLC
+
+---
+
+*Last updated: 2026-01-20*
