@@ -30,6 +30,9 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Amazonbot
+Allow: /
+
 User-agent: Applebot
 Allow: /
 
