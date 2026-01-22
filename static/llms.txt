@@ -2,6 +2,8 @@
 
 > Minimal, zen-like meditation timer for Apple devices
 
+For comprehensive documentation, see: [llms-full.txt](https://941return.com/llms-full.txt)
+
 ## Overview
 
 Return is a beautiful meditation timer app featuring immersive themes, Apple Health integration, and cross-device sync. Available for iPhone, iPad, Apple Watch, Mac, and Apple TV.
@@ -35,3 +37,7 @@ One-time purchase (no subscription). Basic timer free, unlock all themes and sou
 - Website: https://941return.com
 - Developer: 941 Apps
 - Email: blake@941apps.com
+
+---
+
+Last updated: January 2026

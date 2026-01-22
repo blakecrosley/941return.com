@@ -2,6 +2,8 @@
 
 > A minimal, zen-like meditation timer designed for deep focus and Apple ecosystem integration
 
+For summary version, see: [llms.txt](https://941return.com/llms.txt)
+
 ## Product Overview
 
 Return is a beautifully minimal meditation timer app that helps users build consistent meditation practices. With immersive video themes, ambient soundscapes, and deep Apple Health integration, Return transforms any device into a serene meditation space.
