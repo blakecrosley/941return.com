@@ -83,10 +83,13 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
-User-agent: Anthropic-ai
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
 Allow: /
 
 User-agent: Applebot
