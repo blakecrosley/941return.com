@@ -1,15 +1,20 @@
 """
-Rate limiting middleware with bot classification.
+Rate limiting middleware with verified bot classification.
 
-Bot Tiers:
-- TRUSTED: Search engines & AI crawlers - UNLIMITED access
-- ALLOWED: SEO tools, social previews - Very high limits (1000/min)
+Bot Tiers (with verification):
+- VERIFIED_SEARCH: FCrDNS verified search engines - UNLIMITED access
+- VERIFIED_AI: IP range verified AI crawlers - UNLIMITED access
+- ALLOWED: Legitimate bots without verification method - High limits (1000/min)
+- UNVERIFIED_CLAIM: Claims to be a bot but failed verification - SUSPICIOUS
 - BLOCKED: Known attack tools - 403 Forbidden
-- Everyone else: Regular anonymous limits (100/min)
+- ANONYMOUS: No bot claim - Regular limits (30/min)
+
+Security Note:
+    Bot identity is now verified cryptographically (FCrDNS for search engines,
+    IP range for AI crawlers) to prevent UA spoofing attacks on rate limiting.
 """
 
 import logging
-import re
 import time
 from collections import defaultdict
 from functools import wraps
@@ -18,6 +23,13 @@ from typing import Callable, Optional
 from fastapi import HTTPException, Request, Response
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
+
+from app.security.bot_verification import (
+    BotTier,
+    BotVerificationResult,
+    get_bot_verifier,
+    verify_bot,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -30,113 +42,31 @@ RATE_LIMITS = {
     "authenticated": "1000/minute",
     "form": "10/minute",
     "auth": "20/minute",
+    # Verified bots - unlimited (cryptographically verified identity)
+    "verified_search": "unlimited",
+    "verified_ai": "unlimited",
+    # Allowed bots - high limits (trusted but unverifiable)
+    "allowed": "1000/minute",
+    # Unverified claims - treat as suspicious, lower than anonymous
+    "unverified_claim": "10/minute",
+    # Legacy keys (backwards compatibility)
     "trusted_bot": "unlimited",
     "allowed_bot": "1000/minute",
 }
 
 # =============================================================================
-# BOT CLASSIFICATION
+# BOT TIER TO RATE LIMIT MAPPING
 # =============================================================================
 
-# TRUSTED BOTS - Unlimited access (we WANT these crawling)
-TRUSTED_BOTS = {
-    # Search engines
-    "googlebot",
-    "bingbot",
-    "applebot",
-    "applebot-extended",
-    "duckduckbot",
-    "yandexbot",
-    "baiduspider",
-    "slurp",
-    "seznambot",
-    "qwantify",
-    # AI crawlers - Major companies
-    "gptbot",
-    "chatgpt-user",
-    "oai-searchbot",
-    "claudebot",
-    "claude-web",
-    "anthropic-ai",
-    "perplexitybot",
-    "google-extended",
-    "gemini",
-    "meta-externalagent",
-    "meta-externalfetcher",
-    "xai",
-    "grok",
-    # AI crawlers - Other players
-    "ccbot",
-    "bytespider",
-    "cohere-ai",
-    "amazonbot",
-    "ai2bot",
-    "diffbot",
-    "youbot",
-    "mistral",
-    "deepmind",
-    "huggingface",
-    "ai21",
-    "fireworksai",
-    "togetherai",
-    "inflection",
-    "replicatebot",
-    "runwayml",
-    "stabilityai",
+# Map BotTier enum to rate limit categories
+BOT_TIER_RATE_LIMITS: dict[BotTier, str] = {
+    BotTier.VERIFIED_SEARCH: "verified_search",
+    BotTier.VERIFIED_AI: "verified_ai",
+    BotTier.ALLOWED: "allowed",
+    BotTier.UNVERIFIED_CLAIM: "unverified_claim",
+    BotTier.BLOCKED: "blocked",
+    BotTier.ANONYMOUS: "anonymous",
 }
-
-# ALLOWED BOTS - High limits (1000/min)
-ALLOWED_BOTS = {
-    # Social media link previews
-    "facebookexternalhit",
-    "facebookbot",
-    "twitterbot",
-    "linkedinbot",
-    "discordbot",
-    "slackbot",
-    "telegrambot",
-    "whatsapp",
-    "pinterestbot",
-    "redditbot",
-    # SEO tools
-    "ahrefsbot",
-    "semrushbot",
-    "mj12bot",
-    "dotbot",
-    "seranking",
-    "dataforseobot",
-    "serpstatbot",
-    "rogerbot",
-    "screaming frog",
-    # Monitoring tools
-    "uptimerobot",
-    "pingdom",
-    "gtmetrix",
-    "lighthouse",
-    "pagespeedonline",
-    # Other legitimate
-    "neevabot",
-    "img2dataset",
-}
-
-# BLOCKED - Known attack tools (return 403 immediately)
-BLOCKED_PATTERNS = [
-    r"nikto",
-    r"sqlmap",
-    r"masscan",
-    r"nmap",
-    r"wp-scan",
-    r"wpscan",
-    r"havij",
-    r"acunetix",
-    r"nessus",
-    r"openvas",
-    r"burpsuite",
-    r"dirbuster",
-    r"gobuster",
-    r"nuclei",
-    r"zgrab",
-]
 
 # Parse rate limits
 RATE_LIMIT_VALUES = {}
@@ -147,30 +77,58 @@ for key, value in RATE_LIMITS.items():
         RATE_LIMIT_VALUES[key] = int(value.split("/")[0])
 
 
-def classify_bot(user_agent: str) -> Optional[str]:
-    """Classify request based on user agent."""
-    if not user_agent:
-        return None  # Empty UA = anonymous user, gets normal limits
+async def classify_bot_verified(
+    user_agent: str,
+    client_ip: str,
+) -> tuple[str, Optional[BotVerificationResult]]:
+    """
+    Classify request with cryptographic bot verification.
 
-    ua_lower = user_agent.lower()
+    Args:
+        user_agent: The User-Agent header
+        client_ip: The client's IP address
 
-    # Check for blocked attack tools first
-    for pattern in BLOCKED_PATTERNS:
-        if re.search(pattern, ua_lower):
-            return "blocked"
+    Returns:
+        Tuple of (rate_limit_category, verification_result)
 
-    # Trusted bots - unlimited
-    for bot in TRUSTED_BOTS:
-        if bot in ua_lower:
-            return "trusted_bot"
+    Security Note:
+        This function verifies bot identity using FCrDNS for search engines
+        and IP range matching for AI crawlers. Unverified claims are flagged
+        as suspicious and get reduced rate limits.
+    """
+    result = await verify_bot(user_agent, client_ip)
+    category = BOT_TIER_RATE_LIMITS.get(result.tier, "anonymous")
 
-    # Allowed bots - high limits
-    for bot in ALLOWED_BOTS:
-        if bot in ua_lower:
-            return "allowed_bot"
+    # Log verification results for security monitoring
+    if result.is_suspicious:
+        logger.warning(
+            f"Unverified bot claim: claimed={result.claimed_bot} "
+            f"ip={client_ip} method={result.verification_method} "
+            f"details={result.details}"
+        )
+    elif result.is_verified:
+        logger.debug(
+            f"Verified bot: {result.verified_as} ip={client_ip} "
+            f"method={result.verification_method}"
+        )
 
-    # Everything else (curl, python-requests, browsers, etc.) = anonymous
-    return None
+    return category, result
+
+
+def classify_bot_sync(
+    user_agent: str,
+    client_ip: str,
+) -> tuple[str, Optional[BotVerificationResult]]:
+    """
+    Synchronous bot classification (limited verification).
+
+    Note: This skips FCrDNS verification for search bots.
+    Use classify_bot_verified() async version when possible.
+    """
+    verifier = get_bot_verifier()
+    result = verifier.verify_sync(user_agent, client_ip)
+    category = BOT_TIER_RATE_LIMITS.get(result.tier, "anonymous")
+    return category, result
 
 
 def get_client_ip(request: Request) -> str:
@@ -230,21 +188,23 @@ _rate_limiter = InMemoryRateLimiter()
 # =============================================================================
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
-    """Rate limiting middleware with bot classification."""
+    """Rate limiting middleware with verified bot classification."""
 
     async def dispatch(self, request: Request, call_next) -> Response:
         path = request.url.path
 
-        # Skip for health checks and static files
-        if path.startswith("/health") or path.startswith("/static"):
+        # Skip for health checks, static files, and authenticated API endpoints
+        if path.startswith("/health") or path.startswith("/static") or path.startswith("/storage") or path.startswith("/api/"):
             return await call_next(request)
 
         user_agent = request.headers.get("user-agent", "")
-        bot_type = classify_bot(user_agent)
         client_ip = get_client_ip(request)
 
+        # Verify bot identity (FCrDNS for search engines, IP for AI crawlers)
+        category, verification = await classify_bot_verified(user_agent, client_ip)
+
         # BLOCKED: Known attack tools - reject immediately
-        if bot_type == "blocked":
+        if category == "blocked":
             logger.warning(
                 f"Blocked attack tool: ip={client_ip} path={path} "
                 f"user_agent={user_agent[:100]}"
@@ -254,29 +214,34 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
                 content={"error": "Forbidden"},
             )
 
-        # TRUSTED BOTS: Skip rate limiting entirely
-        if bot_type == "trusted_bot":
+        # VERIFIED BOTS: Skip rate limiting entirely (cryptographically verified)
+        if category in ("verified_search", "verified_ai"):
             response = await call_next(request)
-            response.headers["X-RateLimit-Category"] = "trusted_bot"
+            response.headers["X-RateLimit-Category"] = category
+            if verification:
+                response.headers["X-Bot-Verified"] = verification.verified_as or ""
             return response
 
-        # ALLOWED BOTS: High limits
-        if bot_type == "allowed_bot":
-            limit = RATE_LIMIT_VALUES["allowed_bot"]
-            category = "allowed_bot"
-        else:
-            # Everyone else: anonymous limits
-            limit = RATE_LIMIT_VALUES["anonymous"]
-            category = "anonymous"
+        # Get rate limit for this category
+        limit = RATE_LIMIT_VALUES.get(category)
+        if limit is None:
+            # Unlimited (shouldn't happen for non-verified, but handle gracefully)
+            response = await call_next(request)
+            response.headers["X-RateLimit-Category"] = category
+            return response
 
         # Check rate limit
         rate_key = f"{client_ip}:{category}"
         allowed, remaining, reset = _rate_limiter.check(rate_key, limit)
 
         if not allowed:
+            # Log with verification context for security analysis
+            log_extra = ""
+            if verification and verification.is_suspicious:
+                log_extra = f" claimed_bot={verification.claimed_bot}"
             logger.warning(
                 f"Rate limit exceeded: ip={client_ip} category={category} "
-                f"path={path} user_agent={user_agent[:100]}"
+                f"path={path}{log_extra} user_agent={user_agent[:100]}"
             )
             return JSONResponse(
                 status_code=429,
