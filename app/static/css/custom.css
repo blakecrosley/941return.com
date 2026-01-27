@@ -2581,71 +2581,29 @@ body:has(.hero) .theme-toggle:focus-visible {
 }
 
 .faq-item {
-    margin-bottom: var(--space-sm);
-}
-
-.faq-question {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
     background: var(--return-surface);
     border: 1px solid var(--return-border);
     border-radius: var(--radius-md);
-    color: var(--return-text-primary);
+    padding: var(--space-lg);
+}
+
+.faq-question {
     font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 500;
-    text-align: left;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    min-height: 56px;
-}
-
-.faq-question:hover {
-    border-color: var(--return-primary);
-}
-
-.faq-question span {
-    flex: 1;
-    padding-right: var(--space-md);
-}
-
-.faq-icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    transition: transform var(--transition-fast);
-}
-
-.faq-icon.rotated {
-    transform: rotate(180deg);
-}
-
-.faq-answer {
-    overflow: hidden;
-    padding: 0 var(--space-lg);
-    margin-top: -1px;
-    background: var(--return-surface);
-    border: 1px solid var(--return-border);
-    border-top: none;
-    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    color: var(--return-text-primary);
+    margin: 0 0 var(--space-sm) 0;
 }
 
 .faq-answer p {
-    padding: var(--space-lg) 0;
     margin: 0;
     color: var(--return-text-secondary);
     line-height: 1.7;
 }
 
-.faq-answer p:first-child {
-    padding-top: var(--space-lg);
-}
-
-.faq-answer p:last-child {
-    padding-bottom: var(--space-lg);
+.faq-answer p + p {
+    margin-top: var(--space-md);
 }
 
 .faq-answer ul {
@@ -2705,13 +2663,12 @@ body:has(.hero) .theme-toggle:focus-visible {
         font-size: 2rem;
     }
 
-    .faq-question {
+    .faq-item {
         padding: var(--space-md);
-        font-size: 0.95rem;
     }
 
-    .faq-answer {
-        padding: 0 var(--space-md);
+    .faq-question {
+        font-size: 0.95rem;
     }
 }
 
