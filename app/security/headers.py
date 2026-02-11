@@ -154,6 +154,19 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         if request.url.path.startswith("/static/") and request.url.path.endswith((".mp4", ".webm", ".mov")):
             response.headers["Accept-Ranges"] = "bytes"
 
+        # === Early Hints: Link preload for critical resources ===
+        content_type = response.headers.get("content-type", "")
+        if "text/html" in content_type:
+            preload_links = getattr(request.app.state, "preload_links", [])
+            if preload_links:
+                response.headers["Link"] = ", ".join(preload_links)
+
+        # === CDN Cache Safety ===
+
+        # Mutation methods must never be cached at the edge
+        if request.method in ("POST", "PUT", "DELETE", "PATCH"):
+            response.headers["Cache-Control"] = "no-store"
+
         return response
 
 

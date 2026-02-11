@@ -200,8 +200,16 @@ else:
     from app.routes.pages import templates as page_templates
     page_templates.env.globals["analytics_script"] = ""
 
-# Templates for error pages
+# Templates for error pages (needs asset() global for base.html)
+from app.cache_assets import build_asset_map, make_asset_url
+_asset_map = build_asset_map(APP_DIR / "static")
 templates = Jinja2Templates(directory=APP_DIR / "templates")
+templates.env.globals["asset"] = lambda path: make_asset_url(_asset_map, path)
+
+# Early Hints: preload Link header for critical CSS
+app.state.preload_links = [
+    f'<{make_asset_url(_asset_map, "css/custom.css")}>; rel=preload; as=style',
+]
 
 
 # Custom 404 handler
@@ -210,7 +218,7 @@ async def custom_http_exception_handler(request: Request, exc: StarletteHTTPExce
     if exc.status_code == 404:
         return templates.TemplateResponse(
             "404.html",
-            {"request": request, "cache_bust": pages.CACHE_BUST},
+            {"request": request},
             status_code=404
         )
     # For other HTTP errors, return a simple response

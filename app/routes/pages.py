@@ -4,11 +4,11 @@ from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
 from pathlib import Path
 from datetime import datetime
-import os
 
 from app.db.database import get_db
 from app.services import posts as posts_service
 from app.services import indexnow as indexnow_service
+from app.cache_assets import build_asset_map, make_asset_url
 
 router = APIRouter()
 
@@ -16,12 +16,10 @@ router = APIRouter()
 APP_DIR = Path(__file__).parent.parent
 templates = Jinja2Templates(directory=APP_DIR / "templates")
 
-# Cache bust using CSS file modification time (works in containers)
-css_file = APP_DIR / "static" / "css" / "custom.css"
-CACHE_BUST = str(int(os.path.getmtime(css_file))) if css_file.exists() else "1"
-
-# Make cache_bust available in all templates
-templates.env.globals["cache_bust"] = CACHE_BUST
+# Content-hash asset versioning (replaces old mtime-based cache_bust)
+_static_dir = APP_DIR / "static"
+_asset_map = build_asset_map(_static_dir)
+templates.env.globals["asset"] = lambda path: make_asset_url(_asset_map, path)
 
 
 @router.get("/")

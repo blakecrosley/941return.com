@@ -20,6 +20,11 @@ router = APIRouter(prefix="/api", tags=["api"])
 APP_DIR = Path(__file__).parent.parent
 templates = Jinja2Templates(directory=APP_DIR / "templates")
 
+# Content-hash asset versioning (needed for unsubscribe.html which extends base.html)
+from app.cache_assets import build_asset_map, make_asset_url
+_asset_map = build_asset_map(APP_DIR / "static")
+templates.env.globals["asset"] = lambda path: make_asset_url(_asset_map, path)
+
 # Simple in-memory rate limiting (resets on deploy)
 # Format: {ip_address: [timestamp1, timestamp2, ...]}
 rate_limit_store: dict[str, list[datetime]] = defaultdict(list)
