@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Blog - Return...{% endblock %}
+{% block canonical_url %}/blog{% if page and page > 1 %}?page={{ page }}{% endif %}{% endblock %}
 {% block description %}Meditation guides, techniques, and recovery insights. Research-backed content for experienced practitioners.{% endblock %}
 {% block og_title %}Return Blog - Meditation Guides & Recovery{% endblock %}
 {% block og_description %}Meditation guides, techniques, and recovery insights. Research-backed content for experienced practitioners.{% endblock %}

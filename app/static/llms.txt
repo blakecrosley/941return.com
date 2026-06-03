@@ -1,47 +1,48 @@
-# Return by 941
+# Return by 941 Apps
 
-> iOS health tracking app that helps you maintain consistent wellness habits through beautiful daily metrics and insights.
+> A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV. No subscriptions, no guided content — just a beautiful timer for people who know how to meditate.
 
 For comprehensive information, see: [llms-full.txt](https://941return.com/llms-full.txt)
 
 ## About
 
-Return is an iOS app designed to help you track daily health metrics and build lasting wellness habits. Track sleep, water intake, exercise, and more with a clean, intuitive interface.
+Return is a deliberately minimal meditation timer. Set your interval, choose an ambient theme, and sit — no streaks to maintain, no social feed, no subscription, and no guided narration. It is built for experienced practitioners who want a clean, calm timer rather than a content library. Available on iPhone, Apple Watch, Mac, and Apple TV.
 
 ## Key Features
 
-- Daily health metric tracking
-- Beautiful progress visualizations
-- HealthKit integration for automatic data sync
-- Customizable tracking categories
-- Trend analysis and insights
-- Widget support for quick logging
-- Dark mode support
+- Clean interval timer with optional interval and ending bells
+- Ambient themes for a calm, focused session
+- Session tracking and history across Apple devices
+- Apple Watch, Mac, and Apple TV apps alongside iPhone
+- No subscriptions, no ads, no guided content
 
 ## App Details
 
-- **Platform**: iOS / iPadOS
-- **Developer**: 941 Apps, LLC
-- **Website**: https://941return.com
+- Platforms: iOS, watchOS, macOS, tvOS
+- Developer: 941 Apps
+- App Store: https://apps.apple.com/app/return/id6756242021
+- Website: https://941return.com
 
-## Privacy
+## Blog — Meditation & Mental Training
 
-Return prioritizes your privacy:
-- Health data stored locally on device
-- Optional HealthKit sync (your choice)
-- No data sold to third parties
+A library of 250+ research-backed articles on meditation, mental training, and athletic recovery for experienced practitioners. Browse by topic:
 
-## Blog
+- [All topics](https://941return.com/blog/topics)
+- [The Science](https://941return.com/blog/topics/science)
+- [Meditation by Sport](https://941return.com/blog/topics/by-sport)
+- [Techniques & Practices](https://941return.com/blog/topics/techniques)
+- [Traditions & Philosophy](https://941return.com/blog/topics/traditions)
+- [Recovery & Injury](https://941return.com/blog/topics/recovery-injury)
+- [Getting Started](https://941return.com/blog/topics/getting-started)
+- [Blog index](https://941return.com/blog)
 
-Health and wellness content:
-- [Blog](https://941return.com/blog)
+## Studio
+
+- [941 Apps](https://941apps.com) — the studio behind Return
+- [Blake Crosley](https://blakecrosley.com) — designer & developer
 
 ## Contact
 
-- Website: https://941return.com
 - Support: https://941return.com/support
-- Developer: 941 Apps, LLC
 
----
-
-*Last updated: 2026-01-20*
+Last updated: 2026-06-03
