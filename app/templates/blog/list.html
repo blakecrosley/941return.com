@@ -65,6 +65,13 @@
                 <a href="/blog" class="clear-search">Clear search</a>
             </div>
             {% endif %}
+
+            <nav class="blog-topics-nav" aria-label="Browse by topic">
+                <span class="blog-topics-nav__label">Browse by topic:</span>
+                {% for topic in blog_topics() %}
+                <a href="/blog/topics/{{ topic.key }}" class="blog-topic-chip">{{ topic.title }}</a>
+                {% endfor %}
+            </nav>
         </header>
 
         {% if posts %}

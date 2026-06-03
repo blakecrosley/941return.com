@@ -21,6 +21,11 @@ _static_dir = APP_DIR / "static"
 _asset_map = build_asset_map(_static_dir)
 templates.env.globals["asset"] = lambda path: make_asset_url(_asset_map, path)
 
+# Blog topic taxonomy, available to every template for the "Browse by topic" nav.
+from app.services.taxonomy import all_topics as _all_topics  # noqa: E402
+
+templates.env.globals["blog_topics"] = _all_topics
+
 
 @router.get("/")
 async def home(request: Request, db: Session = Depends(get_db)):
@@ -224,6 +229,7 @@ async def sitemap(db: Session = Depends(get_db)):
     static_pages = [
         {"loc": "/", "priority": "1.0", "changefreq": "daily"},
         {"loc": "/blog", "priority": "0.9", "changefreq": "daily"},
+        {"loc": "/blog/topics", "priority": "0.8", "changefreq": "weekly"},
         {"loc": "/faq", "priority": "0.7", "changefreq": "monthly"},
         {"loc": "/privacy", "priority": "0.3", "changefreq": "yearly"},
         {"loc": "/terms", "priority": "0.3", "changefreq": "yearly"},
@@ -244,6 +250,15 @@ async def sitemap(db: Session = Depends(get_db)):
         xml_parts.append(f"    <lastmod>{today}</lastmod>")
         xml_parts.append(f"    <changefreq>{page['changefreq']}</changefreq>")
         xml_parts.append(f"    <priority>{page['priority']}</priority>")
+        xml_parts.append("  </url>")
+
+    # Add topic hub pages
+    for topic in _all_topics():
+        xml_parts.append("  <url>")
+        xml_parts.append(f"    <loc>{base_url}/blog/topics/{topic.key}</loc>")
+        xml_parts.append(f"    <lastmod>{today}</lastmod>")
+        xml_parts.append("    <changefreq>weekly</changefreq>")
+        xml_parts.append("    <priority>0.8</priority>")
         xml_parts.append("  </url>")
 
     # Add blog posts

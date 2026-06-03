@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}{{ topic.title }} - Return Blog{% endblock %}
+{% block description %}{{ topic.blurb }}{% endblock %}
+{% block og_title %}{{ topic.title }} - Return Blog{% endblock %}
+{% block og_description %}{{ topic.blurb }}{% endblock %}
+{% block og_url %}/blog/topics/{{ topic.key }}{% endblock %}
+{% block canonical_url %}/blog/topics/{{ topic.key }}{% endblock %}
+{% block twitter_title %}{{ topic.title }} - Return Blog{% endblock %}
+{% block twitter_description %}{{ topic.blurb }}{% endblock %}
+
+{% block head %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{ topic.title }} — Return Blog",
+    "description": "{{ topic.blurb }}",
+    "url": "https://941return.com/blog/topics/{{ topic.key }}",
+    "isPartOf": {"@type": "Blog", "name": "Return Blog", "url": "https://941return.com/blog"},
+    "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": {{ posts | length }},
+        "itemListElement": [
+            {% for post in posts %}{
+                "@type": "ListItem",
+                "position": {{ loop.index }},
+                "url": "https://941return.com/blog/{{ post.slug }}",
+                "name": "{{ post.title | replace('"', '\\"') }}"
+            }{{ "," if not loop.last }}{% endfor %}
+        ]
+    }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="blog-page">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/blog">Blog</a> <span aria-hidden="true">/</span>
+            <a href="/blog/topics">Topics</a> <span aria-hidden="true">/</span>
+            <span>{{ topic.title }}</span>
+        </nav>
+
+        <header class="blog-header">
+            <h1>{{ topic.title }}</h1>
+            <p class="blog-intro">{{ topic.blurb }}</p>
+            <p class="topic-count">{{ posts | length }} article{{ 's' if posts | length != 1 else '' }}</p>
+        </header>
+
+        <div class="posts-grid">
+            {% for post in posts %}
+            <a href="/blog/{{ post.slug }}" class="post-card-link">
+                <article class="post-card">
+                    {% if post.featured_image %}
+                    <div class="post-image">
+                        <img src="{{ post.featured_image }}" alt="{{ post.title }}" loading="lazy">
+                    </div>
+                    {% endif %}
+                    <div class="post-content">
+                        <h2 class="post-title">{{ post.title }}</h2>
+                        {% if post.excerpt %}
+                        <p class="post-excerpt">{{ post.excerpt }}</p>
+                        {% endif %}
+                        <div class="post-meta">
+                            <time datetime="{{ post.published_at.isoformat() if post.published_at else '' }}">
+                                {{ post.published_at.strftime('%B %d, %Y') if post.published_at else 'Draft' }}
+                            </time>
+                            <span class="meta-separator">·</span>
+                            <span class="reading-time">{{ post.reading_time }} min read</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            {% endfor %}
+        </div>
+
+        <nav class="blog-topics-nav blog-topics-nav--footer" aria-label="Other topics">
+            <span class="blog-topics-nav__label">Other topics:</span>
+            {% for t in all_topics %}
+                {% if t.key != topic.key %}
+                <a href="/blog/topics/{{ t.key }}" class="blog-topic-chip">{{ t.title }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
+    </div>
+</section>
+{% endblock %}

@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from app.db.database import get_db
 from app.services import posts as posts_service
+from app.services.taxonomy import all_topics, get_topic, topic_for
 from app.routes.pages import templates
 
 router = APIRouter(prefix="/blog", tags=["blog"])
@@ -93,6 +94,41 @@ async def blog_rss_feed(db: Session = Depends(get_db)):
     return response
 
 
+@router.get("/topics")
+async def blog_topics(request: Request, db: Session = Depends(get_db)):
+    """Topic hub index — groups the full corpus so every post is reachable."""
+    posts, _ = posts_service.get_published_posts(db, limit=2000, offset=0)
+    counts: dict[str, int] = {t.key: 0 for t in all_topics()}
+    for p in posts:
+        counts[topic_for(p.slug, p.title)] += 1
+    topics = [(t, counts[t.key]) for t in all_topics() if counts[t.key]]
+
+    response = templates.TemplateResponse(
+        "blog/topics.html",
+        {"request": request, "topics": topics, "total": len(posts)},
+    )
+    response.headers["Cache-Control"] = "public, max-age=300"
+    return response
+
+
+@router.get("/topics/{key}")
+async def blog_topic(request: Request, key: str, db: Session = Depends(get_db)):
+    """Single topic hub — lists every post in one topic (no pagination)."""
+    topic = get_topic(key)
+    if topic is None:
+        raise HTTPException(status_code=404, detail="Topic not found")
+
+    posts, _ = posts_service.get_published_posts(db, limit=2000, offset=0)
+    in_topic = [p for p in posts if topic_for(p.slug, p.title) == key]
+
+    response = templates.TemplateResponse(
+        "blog/topic.html",
+        {"request": request, "topic": topic, "posts": in_topic, "all_topics": all_topics()},
+    )
+    response.headers["Cache-Control"] = "public, max-age=300"
+    return response
+
+
 @router.get("/{slug}")
 async def blog_post(request: Request, slug: str, db: Session = Depends(get_db)):
     """Single blog post view."""
@@ -102,10 +138,11 @@ async def blog_post(request: Request, slug: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Post not found")
 
     related_posts = posts_service.get_related_posts(db, post.id, limit=3)
+    topic = get_topic(topic_for(post.slug, post.title))
 
     response = templates.TemplateResponse(
         "blog/post.html",
-        {"request": request, "post": post, "related_posts": related_posts}
+        {"request": request, "post": post, "related_posts": related_posts, "topic": topic}
     )
     # Cache blog posts for 5 minutes (300 seconds)
     response.headers["Cache-Control"] = "public, max-age=300"
