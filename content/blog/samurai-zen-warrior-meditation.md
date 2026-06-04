@@ -320,4 +320,4 @@ Train like this could be your last practice. Bring full presence because opportu
 
 ---
 
-*Return is a meditation timer for athletes seeking the mental training that warriors have refined for centuries. Build mushin, fudoshin, and zanshin for your own performance challenges. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes seeking the mental training that warriors have refined for centuries. Build mushin, fudoshin, and zanshin for your own performance challenges. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

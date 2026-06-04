@@ -195,4 +195,4 @@ These aren't mystical qualities. They're trained capacities, developed through s
 
 ---
 
-*Return is a meditation timer designed for athletes who train completely. Build the mental discipline that serves your combat. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who train completely. Build the mental discipline that serves your combat. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

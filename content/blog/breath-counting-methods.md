@@ -355,4 +355,4 @@ The breath is always here. Counting is a way to stay with it.
 
 ---
 
-*Return is a meditation timer for practitioners using any counting method—or none. Set your session, practice your way, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners using any counting method—or none. Set your session, practice your way, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

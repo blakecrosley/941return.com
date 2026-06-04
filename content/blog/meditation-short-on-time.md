@@ -323,4 +323,4 @@ Five minutes. Daily. That's enough to keep the thread alive.
 
 ---
 
-*Return is a meditation timer designed for sessions of any length—including very short ones. Set your timer for 5 minutes, practice completely, and let the minimal interface support your busy-life practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for sessions of any length—including very short ones. Set your timer for 5 minutes, practice completely, and let the minimal interface support your busy-life practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

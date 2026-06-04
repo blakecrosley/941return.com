@@ -480,4 +480,4 @@ The question isn't just "how long should I meditate?" but "how long will I actua
 
 ---
 
-*Return is a meditation timer for any session length. Set 5 minutes or 60 minutes, track your practice, and build the habit that fits your life. Simple timer, no judgment about duration. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for any session length. Set 5 minutes or 60 minutes, track your practice, and build the habit that fits your life. Simple timer, no judgment about duration. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

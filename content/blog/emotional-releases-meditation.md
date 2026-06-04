@@ -410,4 +410,4 @@ What surfaces wants to heal.
 
 ---
 
-*Return is a meditation timer that holds space for whatever arises—including intense emotions. No guidance telling you what you should feel, just a simple timer supporting your practice through all experiences. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that holds space for whatever arises—including intense emotions. No guidance telling you what you should feel, just a simple timer supporting your practice through all experiences. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

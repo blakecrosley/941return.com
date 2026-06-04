@@ -453,4 +453,4 @@ See [managing competition anxiety](/blog/breathwork-competition-anxiety) for det
 
 ---
 
-*Return is a meditation timer for athletes who need to recover quickly and stay present through rapid competition. Build the reset skills that keep you in every point. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who need to recover quickly and stay present through rapid competition. Build the reset skills that keep you in every point. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

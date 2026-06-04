@@ -273,4 +273,4 @@ Practice regularly. Extend to others. Let the capacity grow.
 
 ---
 
-*Return is a meditation timer for practitioners exploring any depth of practice—including the transformative work of tonglen. Set your session and let the minimal interface support your compassion training. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners exploring any depth of practice—including the transformative work of tonglen. Set your session and let the minimal interface support your compassion training. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

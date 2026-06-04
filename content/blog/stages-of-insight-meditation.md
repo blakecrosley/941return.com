@@ -513,4 +513,4 @@ Understanding this map helps navigate difficult territory and recognize that cha
 
 ---
 
-*Return is a meditation timer for practitioners navigating the stages of insight. Track your sessions through whatever territory you're in. Simple, reliable, no distractions. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners navigating the stages of insight. Track your sessions through whatever territory you're in. Simple, reliable, no distractions. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

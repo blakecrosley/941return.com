@@ -335,4 +335,4 @@ Sit down. Start practicing. Adjust as needed. The rest sorts itself out.
 
 ---
 
-*Return is a meditation timer for practitioners in any posture. No judgment about how you sit—just the minimal timer you need to practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners in any posture. No judgment about how you sit—just the minimal timer you need to practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

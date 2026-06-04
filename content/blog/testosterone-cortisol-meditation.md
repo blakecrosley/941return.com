@@ -362,4 +362,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the meditation
 
 ---
 
-*Return is a meditation timer for athletes serious about hormonal optimization. Build the stress management foundation for peak performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes serious about hormonal optimization. Build the stress management foundation for peak performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

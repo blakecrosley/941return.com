@@ -374,4 +374,4 @@ Many undersized athletes use doubt as fuel:
 
 ---
 
-*Return is a meditation timer for athletes of all shapes and sizes. Build the mental skills that let you compete with confidence regardless of whether you fit the prototype. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes of all shapes and sizes. Build the mental skills that let you compete with confidence regardless of whether you fit the prototype. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

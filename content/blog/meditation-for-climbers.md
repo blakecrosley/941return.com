@@ -264,4 +264,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the daily medi
 
 ---
 
-*Return is a meditation timer for athletes who understand that the hardest moves require the clearest minds. Build the mental game that elevates your climbing. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who understand that the hardest moves require the clearest minds. Build the mental game that elevates your climbing. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

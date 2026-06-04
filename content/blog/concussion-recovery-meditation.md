@@ -268,4 +268,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) provides simple timing 
 
 ---
 
-*Return is a meditation timer designed for athletes navigating recovery. Build gentle practice that supports your healing. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes navigating recovery. Build gentle practice that supports your healing. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

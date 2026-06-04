@@ -397,4 +397,4 @@ Reduced physical training increases mental training opportunity:
 
 ---
 
-*Return is a meditation timer for track and field athletes pursuing excellence in their specific events. Build the mental practice that matches your event's unique demands. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for track and field athletes pursuing excellence in their specific events. Build the mental practice that matches your event's unique demands. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

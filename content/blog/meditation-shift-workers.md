@@ -396,4 +396,4 @@ Your schedule is unusual. Your practice will be too. That's okay. What matters i
 
 ---
 
-*Return is a meditation timer that doesn't care what time it is. No morning reminders at the wrong time. No streaks based on conventional schedules. Just a timer ready whenever you are—whether that's 6 AM or 3 AM. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that doesn't care what time it is. No morning reminders at the wrong time. No streaks based on conventional schedules. Just a timer ready whenever you are—whether that's 6 AM or 3 AM. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

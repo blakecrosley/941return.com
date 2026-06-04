@@ -334,4 +334,4 @@ For athletes, this translates to higher tolerance for training discomfort, bette
 
 ---
 
-*Return is a meditation timer designed for athletes developing pain resilience alongside physical capacity. Build the mental skills that change your relationship with pain. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes developing pain resilience alongside physical capacity. Build the mental skills that change your relationship with pain. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

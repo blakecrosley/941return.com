@@ -327,4 +327,4 @@ What you're doing is waking up to your own experience, moment after moment. The 
 
 ---
 
-*Return is a meditation timer for practitioners using any technique—including the precision of noting practice. Set your session, develop your awareness, and let the minimal interface support your insight. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners using any technique—including the precision of noting practice. Set your session, develop your awareness, and let the minimal interface support your insight. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

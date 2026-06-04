@@ -287,4 +287,4 @@ This is the Sufi path—not a set of techniques but a journey of the heart.
 
 ---
 
-*Return is a meditation timer for practitioners of any tradition, including the remembrance practices of Sufism. Set your dhikr session, turn to the heart, and let the minimal interface support your remembrance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any tradition, including the remembrance practices of Sufism. Set your dhikr session, turn to the heart, and let the minimal interface support your remembrance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

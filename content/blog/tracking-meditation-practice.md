@@ -453,4 +453,4 @@ What gets measured tends to get managed. Make sure you're measuring what matters
 
 ---
 
-*Return is a meditation timer with simple session logging—duration and date, no complexity. Track your practice without obsession. See your consistency over time. Keep it minimal. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer with simple session logging—duration and date, no complexity. Track your practice without obsession. See your consistency over time. Keep it minimal. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

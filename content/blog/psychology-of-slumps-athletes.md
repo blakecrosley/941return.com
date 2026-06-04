@@ -289,4 +289,4 @@ Intervene early. Increase mental training. Recommit to fundamentals. Address bef
 
 ---
 
-*Return is a meditation timer for athletes navigating every phase—including the difficult periods when performance mysteriously drops. Build the mental skills that accelerate slump recovery and prevent future spirals. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating every phase—including the difficult periods when performance mysteriously drops. Build the mental skills that accelerate slump recovery and prevent future spirals. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

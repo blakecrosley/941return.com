@@ -178,4 +178,4 @@ The work, as always, is in the practice itself.
 
 ---
 
-*Return is a meditation timer designed for athletes who take mental training seriously. Build the consistent practice that drives neuroplastic change with an interface designed to stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who take mental training seriously. Build the consistent practice that drives neuroplastic change with an interface designed to stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

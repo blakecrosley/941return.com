@@ -358,4 +358,4 @@ Take care of yourself so you can take care of others. You deserve the same compa
 
 ---
 
-*Return is a meditation timer for busy healthcare professionals. No time for elaborate practice? Set a 3-minute timer between shifts. Recovering on days off? Set a longer session. Simple, flexible, supporting you as you support others. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for busy healthcare professionals. No time for elaborate practice? Set a 3-minute timer between shifts. Recovering on days off? Set a longer session. Simple, flexible, supporting you as you support others. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

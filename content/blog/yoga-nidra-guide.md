@@ -384,4 +384,4 @@ Twenty minutes is enough to start. The state will deepen with practice.
 
 ---
 
-*Return is a meditation timer for practitioners exploring any depth of practice—including the deep rest of yoga nidra. Set your session, lie down, and let the minimal interface support your conscious sleep. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners exploring any depth of practice—including the deep rest of yoga nidra. Set your session, lie down, and let the minimal interface support your conscious sleep. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

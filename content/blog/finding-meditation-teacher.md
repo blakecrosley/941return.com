@@ -506,4 +506,4 @@ Finding one takes time and discernment. Trust your experience, be patient, and r
 
 ---
 
-*Return is a meditation timer for practitioners at every stage—from self-teaching beginners to those working with advanced guides. Whatever your path, track your practice with a simple, reliable timer. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners at every stage—from self-teaching beginners to those working with advanced guides. Whatever your path, track your practice with a simple, reliable timer. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

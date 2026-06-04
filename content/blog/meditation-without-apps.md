@@ -384,4 +384,4 @@ The goal isn't to use an app forever. The goal is to practice, develop, and even
 
 ---
 
-*Return is a minimal meditation timer for people who know how to meditate. No guided content, no subscriptions, no feature creep—just a clean interface to set your session and practice. For meditators who want less, not more. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a minimal meditation timer for people who know how to meditate. No guided content, no subscriptions, no feature creep—just a clean interface to set your session and practice. For meditators who want less, not more. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

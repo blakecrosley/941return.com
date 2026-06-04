@@ -462,4 +462,4 @@ You don't need a lot of time. You don't need special equipment. You just need to
 
 ---
 
-*Return is a meditation timer for the student who doesn't want another complicated app. Set the timer for 5 minutes before you study. Set it for 3 minutes before an exam. No accounts, no subscriptions, no friction. Just a timer that helps you practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for the student who doesn't want another complicated app. Set the timer for 5 minutes before you study. Set it for 3 minutes before an exam. No accounts, no subscriptions, no friction. Just a timer that helps you practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

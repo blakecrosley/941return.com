@@ -327,4 +327,4 @@ Before sessions, during rest between attempts, preparing for projects.
 
 ---
 
-*Return is a meditation timer for athletes who practice vertical. Build the mental skills that climbing demands and life requires. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who practice vertical. Build the mental skills that climbing demands and life requires. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -303,4 +303,4 @@ This isn't a project to complete. It's a practice to maintain.
 
 ---
 
-*Return is a meditation timer for practitioners in any tradition. Whether you sit for 20 minutes or two hours, the minimal interface supports your practice without distraction. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners in any tradition. Whether you sit for 20 minutes or two hours, the minimal interface supports your practice without distraction. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

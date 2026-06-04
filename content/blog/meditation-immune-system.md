@@ -303,4 +303,4 @@ Meditation probably supports immune function through stress and inflammation red
 
 ---
 
-*Return is a meditation timer for people who care about evidence, not hype. The research on immunity is promising but incomplete. Practice for the proven benefits; let the immune effects be a possible bonus. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people who care about evidence, not hype. The research on immunity is promising but incomplete. Practice for the proven benefits; let the immune effects be a possible bonus. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

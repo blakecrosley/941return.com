@@ -288,4 +288,4 @@ That's zazen.
 
 ---
 
-*Return is a meditation timer for practitioners in any tradition—Zen included. The minimal interface reflects Zen aesthetics: nothing extra, just what's needed. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners in any tradition—Zen included. The minimal interface reflects Zen aesthetics: nothing extra, just what's needed. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

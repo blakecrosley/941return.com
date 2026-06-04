@@ -283,4 +283,4 @@ That's the Taoist path: not going anywhere but recognizing where you've always b
 
 ---
 
-*Return is a meditation timer for practitioners following any path, including the natural way of Taoism. Set your session, sit in stillness, and let the minimal interface support your non-doing. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners following any path, including the natural way of Taoism. Set your session, sit in stillness, and let the minimal interface support your non-doing. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

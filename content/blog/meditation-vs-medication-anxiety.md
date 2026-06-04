@@ -404,4 +404,4 @@ For many people, the combination is more effective than either alone. The goal i
 
 ---
 
-*Return is a meditation timer for people who care about evidence, not ideology. Track your practice, build the habit, and let the research-backed benefits develop. Whatever else you're doing for anxiety, meditation can help. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people who care about evidence, not ideology. Track your practice, build the habit, and let the research-backed benefits develop. Whatever else you're doing for anxiety, meditation can help. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

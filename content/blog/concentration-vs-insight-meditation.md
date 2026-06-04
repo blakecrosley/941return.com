@@ -373,4 +373,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports both concentra
 
 ---
 
-*Return is a meditation timer for athletes developing comprehensive mental skills. Train both focus and awareness for complete performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes developing comprehensive mental skills. Train both focus and awareness for complete performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

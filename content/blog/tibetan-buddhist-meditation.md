@@ -315,4 +315,4 @@ The practices are methods—skillful means developed over centuries. Take what s
 
 ---
 
-*Return is a meditation timer for practitioners of any tradition, including the rich practices of Tibetan Buddhism. Set your session, do your practice, and let the minimal interface support your path to recognition. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any tradition, including the rich practices of Tibetan Buddhism. Set your session, do your practice, and let the minimal interface support your path to recognition. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

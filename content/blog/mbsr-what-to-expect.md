@@ -347,4 +347,4 @@ The program has helped hundreds of thousands of people develop skills for living
 
 ---
 
-*Return is a meditation timer for practitioners who've completed MBSR and want to continue independently. No guided sessions—just the timer you need to maintain your practice. Set your session and keep going. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners who've completed MBSR and want to continue independently. No guided sessions—just the timer you need to maintain your practice. Set your session and keep going. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

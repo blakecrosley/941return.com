@@ -336,4 +336,4 @@ The difference isn't that thinking stops. The difference is you're no longer so 
 
 ---
 
-*Return is a meditation timer for practitioners working with whatever arises—including the racing mind. Set your session, work with your thoughts, and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners working with whatever arises—including the racing mind. Set your session, work with your thoughts, and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

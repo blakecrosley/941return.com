@@ -293,4 +293,4 @@ You'll know when it's time. The practice itself teaches you. Follow that guidanc
 
 ---
 
-*Return is a meditation timer for sessions of any length. Set your duration, practice, and let the minimal interface support your development—whether you're at 10 minutes or 60. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for sessions of any length. Set your duration, practice, and let the minimal interface support your development—whether you're at 10 minutes or 60. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

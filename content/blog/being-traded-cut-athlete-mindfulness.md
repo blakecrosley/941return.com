@@ -309,4 +309,4 @@ This is a significant life event with psychological weight. It deserves appropri
 
 ---
 
-*Return is a meditation timer for athletes navigating every phase—including the difficult passages that test resilience. Build the practice that supports you through uncertainty and transition. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating every phase—including the difficult passages that test resilience. Build the practice that supports you through uncertainty and transition. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

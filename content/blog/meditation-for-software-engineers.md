@@ -250,4 +250,4 @@ Consistent practice produces consistent results. By month 6, you may notice you'
 
 ---
 
-*Return is a meditation timer built for people who appreciate simple, focused tools. No gamification, no subscriptions, no feature bloat—just a clean timer for your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer built for people who appreciate simple, focused tools. No gamification, no subscriptions, no feature bloat—just a clean timer for your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

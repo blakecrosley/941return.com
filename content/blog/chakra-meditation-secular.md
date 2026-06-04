@@ -419,4 +419,4 @@ No beliefs required. Just attention and curiosity.
 
 ---
 
-*Return is a meditation timer for practitioners exploring any technique—whether rooted in tradition or adapted for secular use. Set your session, move through the body, and let the minimal interface support your exploration. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners exploring any technique—whether rooted in tradition or adapted for secular use. Set your session, move through the body, and let the minimal interface support your exploration. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

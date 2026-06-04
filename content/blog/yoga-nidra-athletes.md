@@ -339,4 +339,4 @@ Yoga Nidra supports:
 
 ---
 
-*Return is a meditation timer for athletes pursuing complete recovery—mental and physical. Build the Yoga Nidra practice that accelerates your restoration. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes pursuing complete recovery—mental and physical. Build the Yoga Nidra practice that accelerates your restoration. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

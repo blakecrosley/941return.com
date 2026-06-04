@@ -223,4 +223,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the daily medi
 
 ---
 
-*Return is a meditation timer for athletes who understand that physical training is only half the equation. Build the mental endurance that makes the difference on the bike. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who understand that physical training is only half the equation. Build the mental endurance that makes the difference on the bike. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

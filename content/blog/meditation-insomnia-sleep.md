@@ -456,4 +456,4 @@ Sleep can't be forced. But you can create conditions where sleep becomes possibl
 
 ---
 
-*Return is a meditation timer for the person who's tried everything. No guided content keeping you awake longer. No decisions when your brain is foggy. Just set the timer for whatever practice you're doing and let the simple bell end it. Maybe tonight is the night. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for the person who's tried everything. No guided content keeping you awake longer. No decisions when your brain is foggy. Just set the timer for whatever practice you're doing and let the simple bell end it. Maybe tonight is the night. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

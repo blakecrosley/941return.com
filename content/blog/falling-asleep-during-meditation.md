@@ -266,4 +266,4 @@ With appropriate adjustments, most practitioners find a sustainable approach. Ex
 
 ---
 
-*Return is a meditation timer for practitioners working through every challenge. Set your session, work with whatever arises, and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners working through every challenge. Set your session, work with whatever arises, and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

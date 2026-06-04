@@ -510,4 +510,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) provides tools for team
 
 ---
 
-*Return is a meditation timer designed for athletes and teams. Implement systematic mental training with tools built for competitive athletics. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes and teams. Implement systematic mental training with tools built for competitive athletics. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -336,4 +336,4 @@ The awakening of great sages throughout history wasn't determined by their eye p
 
 ---
 
-*Return is a meditation timer for practitioners of any style—eyes open or closed, any tradition, any technique. Set your session, position your eyes however works, and practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any style—eyes open or closed, any tradition, any technique. Set your session, position your eyes however works, and practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

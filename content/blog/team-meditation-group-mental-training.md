@@ -385,4 +385,4 @@ Builds connection and goodwill. Reduces interpersonal friction. Creates collecti
 
 ---
 
-*Return is a meditation timer for athletes building both individual and collective mental strength. Develop the practice that unifies your team. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes building both individual and collective mental strength. Develop the practice that unifies your team. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

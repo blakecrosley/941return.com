@@ -302,4 +302,4 @@ The techniques work. Whether you wrap them in Buddhist philosophy or secular psy
 
 ---
 
-*Return is a meditation timer for practitioners at any point on the spectrum—secular, traditional, or somewhere between. Set your session, practice your way, and let the minimal interface support whatever path you're walking. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners at any point on the spectrum—secular, traditional, or somewhere between. Set your session, practice your way, and let the minimal interface support whatever path you're walking. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

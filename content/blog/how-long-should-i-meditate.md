@@ -206,4 +206,4 @@ The best duration is the one that fits your life well enough that you'll maintai
 
 ---
 
-*Return is a meditation timer for practitioners who know what they're doing. Set your duration, sit, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners who know what they're doing. Set your duration, sit, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

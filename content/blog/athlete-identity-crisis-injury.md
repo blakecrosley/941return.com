@@ -222,4 +222,4 @@ The crisis is real. But so is the growth possible through it.
 
 ---
 
-*Return is a meditation timer designed for athletes navigating challenges. Build the practice that supports you through difficulty and beyond. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes navigating challenges. Build the practice that supports you through difficulty and beyond. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

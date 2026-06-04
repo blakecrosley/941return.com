@@ -347,4 +347,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the meditation
 
 ---
 
-*Return is a meditation timer for athletes managing all aspects of performance. Support your gut-brain axis with consistent mental practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes managing all aspects of performance. Support your gut-brain axis with consistent mental practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

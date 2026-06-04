@@ -229,4 +229,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the land-based
 
 ---
 
-*Return is a meditation timer designed for athletes developing mental skills alongside physical ones. Build the practice that enhances your time in the water. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes developing mental skills alongside physical ones. Build the practice that enhances your time in the water. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

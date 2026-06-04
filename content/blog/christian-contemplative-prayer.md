@@ -287,4 +287,4 @@ That's all. The practice is simple. The depth unfolds over years of faithful pra
 
 ---
 
-*Return is a meditation timer for practitioners of any tradition, including Christian contemplatives. Set your prayer time, rest in God's presence, and let the minimal interface support your consent. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any tradition, including Christian contemplatives. Set your prayer time, rest in God's presence, and let the minimal interface support your consent. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -284,4 +284,4 @@ Managing a difficult coach is real-world skill development. The ability to maint
 
 ---
 
-*Return is a meditation timer for athletes navigating every challenge—including the difficult relationships that test resilience. Build the mental skills that protect well-being while maintaining performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating every challenge—including the difficult relationships that test resilience. Build the mental skills that protect well-being while maintaining performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

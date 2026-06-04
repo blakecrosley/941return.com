@@ -180,4 +180,4 @@ The athletes who benefit from meditation aren't the ones who try the hardest. Th
 
 ---
 
-*Return is a minimal meditation timer for athletes. Its simple interface removes friction from daily practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612) and start building your habit.*
+*Return is a minimal meditation timer for athletes. Its simple interface removes friction from daily practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021) and start building your habit.*

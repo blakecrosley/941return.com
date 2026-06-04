@@ -399,4 +399,4 @@ That learning is the practice.
 
 ---
 
-*Return is a meditation timer for all the sessions—the still ones and the restless ones. Simple interface, no judgment, just a timer to mark your practice, whatever it includes today. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for all the sessions—the still ones and the restless ones. Simple interface, no judgment, just a timer to mark your practice, whatever it includes today. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -457,4 +457,4 @@ This isn't about becoming soft. It's about regaining control of your own nervous
 
 ---
 
-*Return is a meditation timer with no complexity—no guided content, no subscriptions, no apps trying to be your therapist. Just a clean timer for the practice you do yourself. Mental PT on your terms. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer with no complexity—no guided content, no subscriptions, no apps trying to be your therapist. Just a clean timer for the practice you do yourself. Mental PT on your terms. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

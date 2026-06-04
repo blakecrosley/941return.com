@@ -473,4 +473,4 @@ Working from home can be freedom or trap. Meditation is one tool for making it f
 
 ---
 
-*Return is a meditation timer designed for minimal friction—perfect for the remote worker who needs quick practice between calls. No content to navigate, no decisions to make. Set the timer, practice, return to work. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for minimal friction—perfect for the remote worker who needs quick practice between calls. No content to navigate, no decisions to make. Set the timer, practice, return to work. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

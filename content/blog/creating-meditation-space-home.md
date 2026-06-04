@@ -285,4 +285,4 @@ The best meditation space is the one you actually use.
 
 ---
 
-*Return is a meditation timer for practitioners creating home practice. Minimal interface, no clutter—just the timer you need to sit in your space and practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners creating home practice. Minimal interface, no clutter—just the timer you need to sit in your space and practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

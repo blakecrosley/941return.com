@@ -366,4 +366,4 @@ Pickleball courts can get contentious:
 
 ---
 
-*Return is a meditation timer for athletes in every sport—including the fastest-growing one. Build the mental skills that make pickleball more enjoyable and successful. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes in every sport—including the fastest-growing one. Build the mental skills that make pickleball more enjoyable and successful. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

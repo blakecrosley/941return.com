@@ -397,4 +397,4 @@ Choose deliberately.
 
 ---
 
-*Return is a minimal meditation timer for practitioners who know what they're doing. Set your duration, hear the bells, practice in silence. No guided content, no distractions—just you and your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a minimal meditation timer for practitioners who know what they're doing. Set your duration, hear the bells, practice in silence. No guided content, no distractions—just you and your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

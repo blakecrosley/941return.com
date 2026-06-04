@@ -342,4 +342,4 @@ Anger at teammates affects relationships and team function beyond immediate mome
 
 ---
 
-*Return is a meditation timer for athletes learning to channel intensity without losing control. Build the capacity that keeps you composed when stakes are highest. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes learning to channel intensity without losing control. Build the capacity that keeps you composed when stakes are highest. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

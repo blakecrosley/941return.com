@@ -511,4 +511,4 @@ There is no timeline. There is no fixing. There is only being present with what 
 
 ---
 
-*Return is a meditation timer that holds space simply. No guided words when words don't help. No expectations, no achievements. Just the bell at the beginning, the bell at the end, and whatever happens in between. Your grief is your own. Your practice is your own. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that holds space simply. No guided words when words don't help. No expectations, no achievements. Just the bell at the beginning, the bell at the end, and whatever happens in between. Your grief is your own. Your practice is your own. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

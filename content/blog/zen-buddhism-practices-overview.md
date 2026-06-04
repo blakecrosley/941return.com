@@ -294,4 +294,4 @@ That's Zen. It's exactly what it looks like—and nothing like what you think.
 
 ---
 
-*Return is a meditation timer for practitioners of any tradition, including Zen. Minimalism is built into its design—just a timer, just practice, nothing extra. Set your zazen, face the wall, and let the minimal interface support your sitting. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any tradition, including Zen. Minimalism is built into its design—just a timer, just practice, nothing extra. Set your zazen, face the wall, and let the minimal interface support your sitting. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

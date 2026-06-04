@@ -331,4 +331,4 @@ Once the habit is solid (2-3 months), you can focus on quality improvement. But 
 
 ---
 
-*Return is a meditation timer for practitioners building lasting habits. Track your practice, maintain your streak, and let the minimal interface support your consistency. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners building lasting habits. Track your practice, maintain your streak, and let the minimal interface support your consistency. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

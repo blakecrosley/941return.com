@@ -223,4 +223,4 @@ The payoff is better recovery, more consistent adaptation, and more reliable per
 
 ---
 
-*Return is a meditation timer designed for athletes who understand that recovery is where adaptation happens. Build the consistent practice that supports healthy cortisol rhythms. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who understand that recovery is where adaptation happens. Build the consistent practice that supports healthy cortisol rhythms. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -478,4 +478,4 @@ Meditation won't eliminate anxiety. But it can change your relationship with itâ
 
 ---
 
-*Return is a meditation timer for anxious minds. No overwhelming choices, no subscription decisions, no feature anxiety. Just set the timer, practice, and hear the bell. Simple tools for managing complicated inner weather. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for anxious minds. No overwhelming choices, no subscription decisions, no feature anxiety. Just set the timer, practice, and hear the bell. Simple tools for managing complicated inner weather. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

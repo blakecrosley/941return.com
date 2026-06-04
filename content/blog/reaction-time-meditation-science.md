@@ -330,4 +330,4 @@ Objective measurement provides feedback on whether training is producing improve
 
 ---
 
-*Return is a meditation timer for athletes training every aspect of performance—including the milliseconds that determine outcomes. Build the mental clarity that produces faster, more accurate response. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes training every aspect of performance—including the milliseconds that determine outcomes. Build the mental clarity that produces faster, more accurate response. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

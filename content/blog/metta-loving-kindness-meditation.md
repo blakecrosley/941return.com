@@ -324,4 +324,4 @@ The capacity to love without condition is trainable. This is how you train it.
 
 ---
 
-*Return is a meditation timer for practitioners cultivating any quality—focus, insight, or loving-kindness. Set your duration and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners cultivating any quality—focus, insight, or loving-kindness. Set your duration and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

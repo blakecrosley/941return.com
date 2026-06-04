@@ -348,4 +348,4 @@ Practice because it makes life better. Any longevity benefit is a bonus.
 
 ---
 
-*Return is a meditation timer for people who want to live well. Track your practice, build the habit, and let the benefits—immediate and long-term—accumulate. Quality life now, possibly more of it later. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people who want to live well. Track your practice, build the habit, and let the benefits—immediate and long-term—accumulate. Quality life now, possibly more of it later. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

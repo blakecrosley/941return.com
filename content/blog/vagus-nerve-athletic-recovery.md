@@ -204,4 +204,4 @@ The vagus nerve is trainable. The question is whether you'll train it intentiona
 
 ---
 
-*Return is a meditation timer designed for athletes who understand that recovery is training. Build the consistent practice that strengthens vagal function. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who understand that recovery is training. Build the consistent practice that strengthens vagal function. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

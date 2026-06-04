@@ -252,4 +252,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) helps you build the dai
 
 ---
 
-*Return is a meditation timer for athletes who understand that tennis is won between the ears. Build the mental game that matches your physical skills. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who understand that tennis is won between the ears. Build the mental game that matches your physical skills. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

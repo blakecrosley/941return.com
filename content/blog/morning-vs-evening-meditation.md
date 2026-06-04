@@ -470,4 +470,4 @@ If morning works for your schedule and chronotype, it has traditional and practi
 
 ---
 
-*Return is a meditation timer that works whenever you practice. Set your timer, track your sessions, build your habit—morning, evening, or whenever you can. The simple interface supports any schedule. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that works whenever you practice. Set your timer, track your sessions, build your habit—morning, evening, or whenever you can. The simple interface supports any schedule. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

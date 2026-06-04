@@ -389,4 +389,4 @@ The sharpest legal minds are clear minds. Meditation trains clarity.
 
 ---
 
-*Return is a meditation timer for professionals with no time to waste. No subscriptions, no content, no complexity—just a clean timer for efficient practice. Five minutes between meetings is enough. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for professionals with no time to waste. No subscriptions, no content, no complexity—just a clean timer for efficient practice. Five minutes between meetings is enough. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

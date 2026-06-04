@@ -274,4 +274,4 @@ Low scores indicate improvement opportunities. Work on weak components.
 
 ---
 
-*Return is a meditation timer designed for athletes committed to evidence-based mental training. Structure your PETTLEP imagery practice with focused timing. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes committed to evidence-based mental training. Structure your PETTLEP imagery practice with focused timing. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

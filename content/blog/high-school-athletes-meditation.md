@@ -329,4 +329,4 @@ Athletes who begin mental training early have years of practice by the time they
 
 ---
 
-*Return is a meditation timer for athletes at every stage—including the formative high school years when mental habits take shape. Build the foundation that serves you for life. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes at every stage—including the formative high school years when mental habits take shape. Build the foundation that serves you for life. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

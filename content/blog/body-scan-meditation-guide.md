@@ -328,4 +328,4 @@ Ten minutes is enough to begin. Build from there.
 
 ---
 
-*Return is a meditation timer for practitioners using any technique—body scan, breath, or awareness. Set your session, move through your body, and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners using any technique—body scan, breath, or awareness. Set your session, move through your body, and let the minimal interface support your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

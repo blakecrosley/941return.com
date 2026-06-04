@@ -505,4 +505,4 @@ Start shorter, learn what works, and extend as you develop skill in self-guided 
 
 ---
 
-*Return is a meditation timer for retreat practice. Set long durations, track your sessions, and let the simple interface support intensive practice—whether at home or away. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for retreat practice. Set long durations, track your sessions, and let the simple interface support intensive practice—whether at home or away. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

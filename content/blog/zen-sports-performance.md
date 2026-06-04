@@ -363,4 +363,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports Zen practice w
 
 ---
 
-*Return is a meditation timer for athletes seeking the stillness beneath action. Train the empty mind of peak performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes seeking the stillness beneath action. Train the empty mind of peak performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

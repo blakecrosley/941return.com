@@ -431,4 +431,4 @@ Signs athlete may be neurodivergent:
 
 ---
 
-*Return is a meditation timer for all athletes—including those whose brains work differently. Build a practice that works with your neurology, not against it. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for all athletes—including those whose brains work differently. Build a practice that works with your neurology, not against it. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -416,4 +416,4 @@ The practice will be here when you're ready. And often, readiness comes from sim
 
 ---
 
-*Return is a meditation timer for practitioners through all phases—including the unmotivated ones. Minimal design means less friction when motivation is low. Just set a short timer and sit. That's enough. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners through all phases—including the unmotivated ones. Minimal design means less friction when motivation is low. Just set a short timer and sit. That's enough. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

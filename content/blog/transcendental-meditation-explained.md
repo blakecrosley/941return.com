@@ -269,4 +269,4 @@ What matters most is consistent practice over time, not the particular brand or 
 
 ---
 
-*Return is a meditation timer for practitioners using any technique—mantra or otherwise. Set your 20 minutes, practice your method, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners using any technique—mantra or otherwise. Set your 20 minutes, practice your method, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

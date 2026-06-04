@@ -406,4 +406,4 @@ And remember: not everyone needs to go through this. Gentler paths exist. The go
 
 ---
 
-*Return is a meditation timer for practitioners at all stages. If you're in difficult territory, simpler is often better—no content, no complexity, just a quiet timer for whatever practice serves you now. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners at all stages. If you're in difficult territory, simpler is often better—no content, no complexity, just a quiet timer for whatever practice serves you now. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

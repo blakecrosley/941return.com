@@ -412,4 +412,4 @@ Signs in athletes:
 
 ---
 
-*Return is a meditation timer for athletes learning to own their success and compete with authentic confidence. Build the mindfulness skills that counter self-doubt. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes learning to own their success and compete with authentic confidence. Build the mindfulness skills that counter self-doubt. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

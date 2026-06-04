@@ -154,4 +154,4 @@ The athletes who perform best under pressure aren't the ones with the least anxi
 
 ---
 
-*Return is a minimal meditation timer for athletes. Set your time, focus, and let the simple interface fade into the background. [Download Return on the App Store](https://apps.apple.com/app/id6744890612) and start building your pre-game routine.*
+*Return is a minimal meditation timer for athletes. Set your time, focus, and let the simple interface fade into the background. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021) and start building your pre-game routine.*

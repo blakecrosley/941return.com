@@ -307,4 +307,4 @@ That's walking meditation.
 
 ---
 
-*Return is a meditation timer for practitioners using any technique—sitting, walking, or both. Set your session, practice your way, and let the minimal interface support your movement. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners using any technique—sitting, walking, or both. Set your session, practice your way, and let the minimal interface support your movement. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -343,4 +343,4 @@ Ten minutes to start. See what happens.
 
 ---
 
-*Return is a meditation timer for practitioners exploring any depth of practice—from focused attention to open awareness. The minimal interface reflects the simplicity you're cultivating. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners exploring any depth of practice—from focused attention to open awareness. The minimal interface reflects the simplicity you're cultivating. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

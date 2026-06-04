@@ -414,4 +414,4 @@ Where this leads:
 
 ---
 
-*Return is a meditation timer for athletes at every phase—including those finding their way back to sport. Build the mental practice that supports sustainable athletic life. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes at every phase—including those finding their way back to sport. Build the mental practice that supports sustainable athletic life. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -380,4 +380,4 @@ Understanding Buddhist meditation origins helps athletes:
 
 ---
 
-*Return is a meditation timer connecting you to practices refined over millennia. Build your mental training on foundations that have supported countless practitioners. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer connecting you to practices refined over millennia. Build your mental training on foundations that have supported countless practitioners. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

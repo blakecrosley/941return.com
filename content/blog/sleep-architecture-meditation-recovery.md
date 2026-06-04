@@ -226,4 +226,4 @@ Morning HRV reflects overnight recovery. Consistently low or declining HRV may i
 
 ---
 
-*Return is a meditation timer designed for athletes who understand recovery. Build the practice that enhances your sleep. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who understand recovery. Build the practice that enhances your sleep. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

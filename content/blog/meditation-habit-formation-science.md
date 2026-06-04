@@ -434,4 +434,4 @@ Understanding habit science gives you control over what seemed like willpower pr
 
 ---
 
-*Return is a meditation timer designed to support habit formation. Track your sessions, see your consistency, and build the practice that becomes part of who you are. Because the best meditation practice is the one you actually do. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed to support habit formation. Track your sessions, see your consistency, and build the practice that becomes part of who you are. Because the best meditation practice is the one you actually do. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

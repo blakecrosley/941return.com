@@ -415,4 +415,4 @@ Your body has been your instrument. Abandoning it entirely creates additional lo
 
 ---
 
-*Return is a meditation timer for athletes in every phase—including the one after active competition ends. Build the mental practice that supports you through every transition. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes in every phase—including the one after active competition ends. Build the mental practice that supports you through every transition. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

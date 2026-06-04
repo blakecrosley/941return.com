@@ -375,4 +375,4 @@ Meditation is supposed to relieve tension, not create it. If your head hurts, so
 
 ---
 
-*Return is a meditation timer that lets you focus on practice, not features. If headaches are your challenge, perhaps a simpler approach helps—just you, a timer, and natural, relaxed attention. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that lets you focus on practice, not features. If headaches are your challenge, perhaps a simpler approach helps—just you, a timer, and natural, relaxed attention. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

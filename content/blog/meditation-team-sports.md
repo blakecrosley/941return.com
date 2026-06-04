@@ -190,4 +190,4 @@ These advantages compound with time as practice deepens and collective culture s
 
 ---
 
-*Return is a meditation timer designed for athletes committed to complete training. Build the mental skills that serve your team. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes committed to complete training. Build the mental skills that serve your team. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

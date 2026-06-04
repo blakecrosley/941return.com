@@ -329,4 +329,4 @@ The physical yoga popular in the West is a tiny fraction of this vast tradition.
 
 ---
 
-*Return is a meditation timer for practitioners of any tradition, including the profound practices of Hindu yoga. Set your session, practice your path, and let the minimal interface support your journey to moksha. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any tradition, including the profound practices of Hindu yoga. Set your session, practice your path, and let the minimal interface support your journey to moksha. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

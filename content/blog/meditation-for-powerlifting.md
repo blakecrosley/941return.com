@@ -449,4 +449,4 @@ After meets:
 
 ---
 
-*Return is a meditation timer for strength athletes who understand that mental preparation underlies physical performance. Build the practice that lets you lift to your full potential. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for strength athletes who understand that mental preparation underlies physical performance. Build the practice that lets you lift to your full potential. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

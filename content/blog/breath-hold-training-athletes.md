@@ -357,4 +357,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) provides timing for bre
 
 ---
 
-*Return is a meditation timer for athletes developing complete mental and physical skills. Train the breath control that powers performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes developing complete mental and physical skills. Train the breath control that powers performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -438,4 +438,4 @@ The pain may still be there. But you can be different with it. That difference m
 
 ---
 
-*Return is a meditation timer designed for simplicity. When pain makes everything harder, your timer should be easy. No decisions, no complexity—just start the timer and practice. One component of a life with pain that's still worth living. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for simplicity. When pain makes everything harder, your timer should be easy. No decisions, no complexity—just start the timer and practice. One component of a life with pain that's still worth living. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

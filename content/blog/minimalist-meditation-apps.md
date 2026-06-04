@@ -298,4 +298,4 @@ The meditation itself is what matters. The app is just a timer.
 
 ---
 
-*Return is a minimal meditation timer for practitioners who know what they're doing. No guided content. No subscription. Just a clean, elegant timer and tracking for your practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a minimal meditation timer for practitioners who know what they're doing. No guided content. No subscription. Just a clean, elegant timer and tracking for your practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

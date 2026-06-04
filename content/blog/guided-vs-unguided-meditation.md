@@ -328,4 +328,4 @@ Eventually, you want to be able to sit anywhere—on a cushion, in a waiting roo
 
 ---
 
-*Return is a meditation timer for practitioners who know what they're doing. No guided content, no subscription to voices you don't need. Just a clean timer and tracking for your independent practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners who know what they're doing. No guided content, no subscription to voices you don't need. Just a clean timer and tracking for your independent practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

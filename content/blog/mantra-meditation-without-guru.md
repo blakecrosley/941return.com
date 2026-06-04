@@ -299,4 +299,4 @@ The traditions add richness and specificity. But the core practice is accessible
 
 ---
 
-*Return is a meditation timer for practitioners using any technique—mantra, breath, or open awareness. Set your session, repeat your mantra, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners using any technique—mantra, breath, or open awareness. Set your session, repeat your mantra, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

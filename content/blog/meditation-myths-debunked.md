@@ -389,4 +389,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) is designed for athlete
 
 ---
 
-*Return is a meditation timer for athletes ready to drop the myths and start practice. Built for competitors, not for monks. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes ready to drop the myths and start practice. Built for competitors, not for monks. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

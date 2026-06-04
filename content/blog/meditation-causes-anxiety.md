@@ -352,4 +352,4 @@ Your nervous system isn't wrong. It's telling you something. Listen.
 
 ---
 
-*Return is a minimal meditation timer—no content telling you how you should feel, no tracking that adds pressure. If you're working with anxiety, sometimes simpler is better. Just a timer, just your practice, whatever that looks like today. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a minimal meditation timer—no content telling you how you should feel, no tracking that adds pressure. If you're working with anxiety, sometimes simpler is better. Just a timer, just your practice, whatever that looks like today. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

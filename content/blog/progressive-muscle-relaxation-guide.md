@@ -382,4 +382,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) provides interval timin
 
 ---
 
-*Return is a meditation timer for athletes developing complete mental skills. Train the relaxation that powers performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes developing complete mental skills. Train the relaxation that powers performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

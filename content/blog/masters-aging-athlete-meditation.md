@@ -311,4 +311,4 @@ Every race, every training session, every moment of performance has weight. Pres
 
 ---
 
-*Return is a meditation timer for athletes at every age—including those who've discovered that the best is still ahead, just differently than before. Build the practice that supports a lifetime of athletic engagement. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes at every age—including those who've discovered that the best is still ahead, just differently than before. Build the practice that supports a lifetime of athletic engagement. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -161,4 +161,4 @@ The nights before competition are too important to leave to chance.
 
 ---
 
-*Return is a meditation timer designed for athletes who understand that recovery happens during sleep. Build the practices that support your rest. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who understand that recovery happens during sleep. Build the practices that support your rest. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -155,4 +155,4 @@ This is good news. It means the practice is yours. The skill belongs to you, not
 
 Return is available on iPhone, Apple Watch, Mac, and Apple TV.
 
-[Download on the App Store](https://apps.apple.com/app/id6744890612)
+[Download on the App Store](https://apps.apple.com/app/return/id6756242021)

@@ -376,4 +376,4 @@ You can't teach well when you're depleted. Meditation is one way to keep the wel
 
 ---
 
-*Return is a meditation timer for busy educators. Five minutes before school? Set the timer. Brief reset at lunch? Set the timer. Simple tool for demanding work. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for busy educators. Five minutes before school? Set the timer. Brief reset at lunch? Set the timer. Simple tool for demanding work. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

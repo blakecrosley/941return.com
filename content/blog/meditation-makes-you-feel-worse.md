@@ -376,4 +376,4 @@ Meditation isn't always peaceful. But it should, over time, lead toward greater 
 
 ---
 
-*Return is a meditation timer for all phases of practice—including the difficult ones. Simple timer, no judgment, no content telling you how you should feel. Practice your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for all phases of practice—including the difficult ones. Simple timer, no judgment, no content telling you how you should feel. Practice your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

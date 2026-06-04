@@ -336,4 +336,4 @@ Connection supports practice:
 
 ---
 
-*Return is a meditation timer for athletes navigating the full complexity of sport—including experiences unique to women. Build a practice that honors your complete athletic identity. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating the full complexity of sport—including experiences unique to women. Build a practice that honors your complete athletic identity. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

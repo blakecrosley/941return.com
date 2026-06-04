@@ -354,4 +354,4 @@ For regular practitioners, this research offers encouragement: the brain changes
 
 ---
 
-*Return is a meditation timer that tracks your lifetime practice. Every hour contributes to brain changes that accumulate over years. The monks didn't get there overnight. Neither will you—but you're moving in the right direction. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that tracks your lifetime practice. Every hour contributes to brain changes that accumulate over years. The monks didn't get there overnight. Neither will you—but you're moving in the right direction. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

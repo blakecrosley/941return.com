@@ -493,4 +493,4 @@ It's never too late to start. And if you've been practicing, now is when it bear
 
 ---
 
-*Return is a meditation timer designed for simplicity. No complex interfaces, no unnecessary features. Just a clean timer for your practice, whether that's your 5,000th sit or your first. Aging well, one breath at a time. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for simplicity. No complex interfaces, no unnecessary features. Just a clean timer for your practice, whether that's your 5,000th sit or your first. Aging well, one breath at a time. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

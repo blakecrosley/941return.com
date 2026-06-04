@@ -382,4 +382,4 @@ Meditation is powerful but not sufficient for all mental challenges.
 
 ---
 
-*Return is a meditation timer for athletes facing the intense mental demands of their sport. Build the mental foundation that allows your gymnastics skills to shine. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes facing the intense mental demands of their sport. Build the mental foundation that allows your gymnastics skills to shine. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

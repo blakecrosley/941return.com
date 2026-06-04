@@ -298,4 +298,4 @@ The question "Who am I?" has been asked by seekers for millennia. Not to find an
 
 ---
 
-*Return is a meditation timer for practitioners exploring any depth of inquiry. Set your session, turn attention to its source, and let the minimal interface support your investigation. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners exploring any depth of inquiry. Set your session, turn attention to its source, and let the minimal interface support your investigation. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

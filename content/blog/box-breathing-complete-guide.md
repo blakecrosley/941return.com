@@ -215,4 +215,4 @@ Athletes who invest in box breathing have a tool that works when it matters most
 
 ---
 
-*Return is a meditation timer designed for athletes building mental skills. Structure your box breathing practice with clean timer support. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes building mental skills. Structure your box breathing practice with clean timer support. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

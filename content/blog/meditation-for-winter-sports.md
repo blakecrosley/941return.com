@@ -272,4 +272,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports year-round men
 
 ---
 
-*Return is a meditation timer for athletes who understand that clear minds enable peak performance at high speeds. Train your mind for the mountain. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who understand that clear minds enable peak performance at high speeds. Train your mind for the mountain. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -395,4 +395,4 @@ For creatives, meditation isn't separate from the work—it's part of the work. 
 
 ---
 
-*Return is a meditation timer with minimal design—made for people who appreciate simplicity. No visual clutter, no feature bloat, just a clean timer supporting your practice and your creative work. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer with minimal design—made for people who appreciate simplicity. No visual clutter, no feature bloat, just a clean timer supporting your practice and your creative work. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

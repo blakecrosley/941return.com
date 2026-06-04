@@ -343,4 +343,4 @@ Sit today, whatever kind of day it is.
 
 ---
 
-*Return is a meditation timer for every kind of session—the easy ones and the hard ones. No judgment, no tracking of "good" versus "bad" sits. Just a timer to support your practice, whatever today brings. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for every kind of session—the easy ones and the hard ones. No judgment, no tracking of "good" versus "bad" sits. Just a timer to support your practice, whatever today brings. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

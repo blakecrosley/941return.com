@@ -145,4 +145,4 @@ But this is what separates athletes who truly return from those who only come ba
 
 ---
 
-*Return is a meditation timer designed for athletes. Its minimal interface supports focused practice without distraction, helping you build the mental skills that training alone can't develop. [Download Return on the App Store](https://apps.apple.com/app/id6744890612) and start building your mental game today.*
+*Return is a meditation timer designed for athletes. Its minimal interface supports focused practice without distraction, helping you build the mental skills that training alone can't develop. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021) and start building your mental game today.*

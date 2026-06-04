@@ -413,4 +413,4 @@ After committing to new program:
 
 ---
 
-*Return is a meditation timer for athletes navigating the complexities of modern college athletics. Build the mental skills that support good decisions and successful transitions. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating the complexities of modern college athletics. Build the mental skills that support good decisions and successful transitions. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

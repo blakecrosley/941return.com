@@ -420,4 +420,4 @@ You're building something hard. Build the mental infrastructure to sustain the w
 
 ---
 
-*Return is a meditation timer for people with no patience for complexity. No guided content, no subscription—just a clean timer. Set it and practice. Build the mental foundation that builds the company. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people with no patience for complexity. No guided content, no subscription—just a clean timer. Set it and practice. Build the mental foundation that builds the company. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

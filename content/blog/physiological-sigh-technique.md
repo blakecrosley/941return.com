@@ -168,4 +168,4 @@ This is the tool to reach for when time is short and stakes are high.
 
 ---
 
-*Return is a meditation timer designed for athletes who need tools that work under pressure. Build your mental skills with clean, focused practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who need tools that work under pressure. Build your mental skills with clean, focused practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

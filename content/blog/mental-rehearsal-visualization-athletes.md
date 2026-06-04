@@ -233,4 +233,4 @@ The combination of physical and mental practice produces better results than eit
 
 ---
 
-*Return is a meditation timer designed for athletes training both mind and body. Structure your mental rehearsal practice with focused timing. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes training both mind and body. Structure your mental rehearsal practice with focused timing. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

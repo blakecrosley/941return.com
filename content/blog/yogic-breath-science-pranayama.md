@@ -412,4 +412,4 @@ Practices targeting these areas affect the physiological systems they correspond
 
 ---
 
-*Return is a meditation timer connecting ancient breath wisdom with modern athletic needs. Build your pranayama practice with guidance from both tradition and science. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer connecting ancient breath wisdom with modern athletic needs. Build your pranayama practice with guidance from both tradition and science. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

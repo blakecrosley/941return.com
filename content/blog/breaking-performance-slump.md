@@ -381,4 +381,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the meditation
 
 ---
 
-*Return is a meditation timer for athletes navigating the mental challenges of sport. Build the practice that helps you break through when performance stalls. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating the mental challenges of sport. Build the practice that helps you break through when performance stalls. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

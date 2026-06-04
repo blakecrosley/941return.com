@@ -232,4 +232,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports building consi
 
 ---
 
-*Return is a meditation timer designed for athletes navigating challenges. Build the practice that supports your return. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes navigating challenges. Build the practice that supports your return. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

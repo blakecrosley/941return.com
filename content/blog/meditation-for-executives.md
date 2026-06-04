@@ -272,4 +272,4 @@ This becomes part of how you operate—like exercise, like rest, like the practi
 
 ---
 
-*Return is a meditation timer for people who value their time. No subscriptions, no guided content, no feature bloat. Just a clean timer for leaders who know what they're doing. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people who value their time. No subscriptions, no guided content, no feature bloat. Just a clean timer for leaders who know what they're doing. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

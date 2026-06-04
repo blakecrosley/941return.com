@@ -159,4 +159,4 @@ Your nervous system isn't your enemy—it's trying to help. It just needs better
 
 ---
 
-*Return is a minimal meditation timer for athletes. Its clean interface supports breathwork practice without distraction. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a minimal meditation timer for athletes. Its clean interface supports breathwork practice without distraction. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

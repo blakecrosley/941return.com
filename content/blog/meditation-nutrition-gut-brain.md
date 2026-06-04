@@ -272,4 +272,4 @@ Anxiety impairs both. Managing mental state supports eating; appropriate eating 
 
 ---
 
-*Return is a meditation timer designed for athletes integrating mind and body. Build the practice that supports complete athletic function. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes integrating mind and body. Build the practice that supports complete athletic function. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

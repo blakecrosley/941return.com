@@ -534,4 +534,4 @@ Whether you pursue jhana or not, knowing about these states helps you understand
 
 ---
 
-*Return is a meditation timer for practitioners exploring deep concentration. Set longer durations, track your practice, and let the timer support whatever depth you're developing. Simple interface for serious practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners exploring deep concentration. Set longer durations, track your practice, and let the timer support whatever depth you're developing. Simple interface for serious practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

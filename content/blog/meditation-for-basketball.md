@@ -246,4 +246,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports the daily medi
 
 ---
 
-*Return is a meditation timer for athletes who know the game is won between possessions. Build the mental game that elevates your basketball. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who know the game is won between possessions. Build the mental game that elevates your basketball. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

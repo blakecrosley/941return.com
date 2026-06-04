@@ -196,4 +196,4 @@ Athletes who invest each off-season develop differently than those who let month
 
 ---
 
-*Return is a meditation timer designed for athletes building consistent practice. Invest your off-season in the mental skills that elevate performance. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes building consistent practice. Invest your off-season in the mental skills that elevate performance. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -419,4 +419,4 @@ You will get through this transition. You will find new ground. Practice helps y
 
 ---
 
-*Return is a meditation timer that travels with you. Same simple interface whether you're in your old house or your new one, your old life or the next one. When everything else changes, your practice stays constant. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that travels with you. Same simple interface whether you're in your old house or your new one, your old life or the next one. When everything else changes, your practice stays constant. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

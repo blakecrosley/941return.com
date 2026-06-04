@@ -225,4 +225,4 @@ That's not positive thinking. That's psychological flexibility in action.
 
 ---
 
-*Return is a meditation timer designed for athletes navigating challenges. Build present moment awareness and psychological flexibility. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes navigating challenges. Build present moment awareness and psychological flexibility. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

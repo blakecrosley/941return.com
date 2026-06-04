@@ -344,4 +344,4 @@ Your practice isn't at home on your cushion. It's in you. Take it wherever you g
 
 ---
 
-*Return is a meditation timer designed for practice anywhere—minimal interface, no internet required, works on planes and in airports. Whether you're at home or traveling, set your timer and practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for practice anywhere—minimal interface, no internet required, works on planes and in airports. Whether you're at home or traveling, set your timer and practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

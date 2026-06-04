@@ -200,4 +200,4 @@ Use data as a tool, not a scorecard. The real measure of practice is how you liv
 
 ---
 
-*Return is a meditation timer designed for athletes who value both practice and insight. See what meditation does for your body while building the skills that enhance your mind. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who value both practice and insight. See what meditation does for your body while building the skills that enhance your mind. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

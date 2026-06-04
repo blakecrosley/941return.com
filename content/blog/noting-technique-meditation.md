@@ -375,4 +375,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports noting practic
 
 ---
 
-*Return is a meditation timer for athletes developing awareness skills. See your mind clearly, perform at your best. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes developing awareness skills. See your mind clearly, perform at your best. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

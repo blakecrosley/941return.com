@@ -471,4 +471,4 @@ The blank page is terrifying. Meditation won't fill it. But it can make you capa
 
 ---
 
-*Return is a meditation timer designed with the writer's aesthetic in mind—minimal, clean, zero distraction. No guided content cluttering your mental space. Just set the timer before you write, practice, and begin. Simple tools for the simple work of putting words on the page. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed with the writer's aesthetic in mind—minimal, clean, zero distraction. No guided content cluttering your mental space. Just set the timer before you write, practice, and begin. Simple tools for the simple work of putting words on the page. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

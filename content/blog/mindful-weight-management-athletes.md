@@ -336,4 +336,4 @@ Don't wait until "bad enough." Early intervention is more effective. If you're w
 
 ---
 
-*Return is a meditation timer for athletes building healthy relationships with body and mind. Develop the awareness that supports performance without obsession. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes building healthy relationships with body and mind. Develop the awareness that supports performance without obsession. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

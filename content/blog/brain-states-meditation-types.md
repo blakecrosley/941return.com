@@ -373,4 +373,4 @@ Understanding these differences helps you practice more intentionally. You're no
 
 ---
 
-*Return is a meditation timer that supports any practice type. Set your timer for focused attention one day, open monitoring the next. The same simple interface for whatever you're training. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that supports any practice type. Set your timer for focused attention one day, open monitoring the next. The same simple interface for whatever you're training. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

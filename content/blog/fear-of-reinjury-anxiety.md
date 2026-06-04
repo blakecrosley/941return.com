@@ -172,4 +172,4 @@ The goal isn't the absence of fear. It's fear that's proportionate to actual ris
 
 ---
 
-*Return is a meditation timer designed for athletes navigating the mental game of recovery. Build the focus and awareness that support your comeback. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes navigating the mental game of recovery. Build the focus and awareness that support your comeback. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

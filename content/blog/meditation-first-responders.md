@@ -527,4 +527,4 @@ This isn't about being soft. It's about maintaining the mental edge that lets yo
 
 ---
 
-*Return is a meditation timer built for minimal distraction. No guided content, no accounts, no complexity. Just a timer for your practice—before shift, after shift, whenever you have three minutes. Because mental fitness doesn't require a meditation instructor. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer built for minimal distraction. No guided content, no accounts, no complexity. Just a timer for your practice—before shift, after shift, whenever you have three minutes. Because mental fitness doesn't require a meditation instructor. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

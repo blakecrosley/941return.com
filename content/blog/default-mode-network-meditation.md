@@ -402,4 +402,4 @@ Understanding this can motivate practice: every time you notice mind-wandering a
 
 ---
 
-*Return is a meditation timer for training your brain. The neuroscience is clear—practice changes the default mode network. Track your sessions, build the habit, and watch what happens when the wandering mind quiets. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for training your brain. The neuroscience is clear—practice changes the default mode network. Track your sessions, build the habit, and watch what happens when the wandering mind quiets. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

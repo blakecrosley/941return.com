@@ -311,4 +311,4 @@ Rather than imposing breath patterns, return to natural breathing. Let the breat
 
 ---
 
-*Return is a meditation timer for athletes seeking the ancient flow that Taoists called wu wei. Train your mind to move with rather than against, and watch performance become effortless. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes seeking the ancient flow that Taoists called wu wei. Train your mind to move with rather than against, and watch performance become effortless. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

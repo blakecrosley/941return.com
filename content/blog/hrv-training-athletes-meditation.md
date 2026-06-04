@@ -340,4 +340,4 @@ Chronic HRV improvements take weeks to months of consistent practice. Trust the 
 
 ---
 
-*Return is a meditation timer for athletes optimizing every aspect of performance—including the nervous system regulation that HRV reveals. Build the practice that produces measurable physiological change. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes optimizing every aspect of performance—including the nervous system regulation that HRV reveals. Build the practice that produces measurable physiological change. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

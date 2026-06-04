@@ -262,4 +262,4 @@ Notice what changes with strategic disconnection.
 
 ---
 
-*Return is a meditation timer designed for athletes building focused practice. Replace fragmented scrolling with centered presence. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes building focused practice. Replace fragmented scrolling with centered presence. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

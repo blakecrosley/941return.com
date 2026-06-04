@@ -471,4 +471,4 @@ Meditation was taught for free for millennia. It still can be learned that way. 
 
 ---
 
-*Return is a meditation timer with no subscription. One-time purchase, permanent access, no ongoing fees. For practitioners who don't need another voice—just a clean timer and simple tracking. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer with no subscription. One-time purchase, permanent access, no ongoing fees. For practitioners who don't need another voice—just a clean timer and simple tracking. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

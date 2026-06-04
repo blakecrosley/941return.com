@@ -281,4 +281,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) can support age-appropr
 
 ---
 
-*Return is a meditation timer that supports athletes at every stage. Help your young athlete build the mental foundation that compounds across their athletic journey. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that supports athletes at every stage. Help your young athlete build the mental foundation that compounds across their athletic journey. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

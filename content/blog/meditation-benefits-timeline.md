@@ -303,4 +303,4 @@ Meditation works. Research confirms it. But it works like any skill development:
 
 ---
 
-*Return is a meditation timer for practitioners committed to the long game. Track your practice, build your habit, and trust the process. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners committed to the long game. Track your practice, build your habit, and trust the process. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

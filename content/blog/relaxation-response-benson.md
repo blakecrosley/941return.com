@@ -449,4 +449,4 @@ The relaxation response is the body's built-in counterbalance to stress. Meditat
 
 ---
 
-*Return is a meditation timer for eliciting the relaxation response. No guided content, no subscriptions—just a timer to support your daily practice. Herbert Benson would approve of the simplicity. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for eliciting the relaxation response. No guided content, no subscriptions—just a timer to support your daily practice. Herbert Benson would approve of the simplicity. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

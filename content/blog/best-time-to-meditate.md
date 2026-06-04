@@ -250,4 +250,4 @@ If you have flexibility and want guidance:
 
 ---
 
-*Return is a meditation timer for practitioners who value simplicity. Whatever time you sit, the minimal interface stays out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners who value simplicity. Whatever time you sit, the minimal interface stays out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

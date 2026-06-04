@@ -411,4 +411,4 @@ The brain you have is not the brain you're stuck with. Practice shapes it.
 
 ---
 
-*Return is a meditation timer for people who want results, not mysticism. The neuroscience is clear: consistent practice changes the brain. Track your sessions, build the habit, and let the practice do its work. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people who want results, not mysticism. The neuroscience is clear: consistent practice changes the brain. Track your sessions, build the habit, and let the practice do its work. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -409,4 +409,4 @@ Wind down without screens:
 
 ---
 
-*Return is a meditation timer for athletes navigating the demands of modern sport—including the digital ones. Build the mental practice that keeps you grounded in what matters. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating the demands of modern sport—including the digital ones. Build the mental practice that keeps you grounded in what matters. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

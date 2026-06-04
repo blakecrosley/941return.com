@@ -320,4 +320,4 @@ These aren't weakness—they're signals. Increase recovery practices. Seek profe
 
 ---
 
-*Return is a meditation timer for everyone in sport—including the coaches whose mental state shapes entire programs. Build the practice that makes you the coach your athletes need. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for everyone in sport—including the coaches whose mental state shapes entire programs. Build the practice that makes you the coach your athletes need. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

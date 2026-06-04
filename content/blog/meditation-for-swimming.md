@@ -387,4 +387,4 @@ Whatever the result:
 
 ---
 
-*Return is a meditation timer for athletes who train in every environment—including the water. Build the mental skills that make thousands of laps into thousands of opportunities for growth. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who train in every environment—including the water. Build the mental skills that make thousands of laps into thousands of opportunities for growth. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

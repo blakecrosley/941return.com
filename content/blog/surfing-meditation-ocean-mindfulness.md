@@ -282,4 +282,4 @@ Surfing can be approached as lifetime practice—not just sport or recreation, b
 
 ---
 
-*Return is a meditation timer for athletes who practice in every environment—including the ocean. Build the awareness that serves you in the water and carries onto land. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who practice in every environment—including the ocean. Build the awareness that serves you in the water and carries onto land. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

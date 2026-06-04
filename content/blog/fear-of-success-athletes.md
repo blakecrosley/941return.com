@@ -401,4 +401,4 @@ Consider professional help if:
 
 ---
 
-*Return is a meditation timer for athletes ready to pursue success without unconscious barriers. Build the awareness and resilience that allows you to achieve your full potential. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes ready to pursue success without unconscious barriers. Build the awareness and resilience that allows you to achieve your full potential. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

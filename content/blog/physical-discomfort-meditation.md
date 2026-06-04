@@ -348,4 +348,4 @@ Find what works for your body, then focus on what meditation is actually about.
 
 ---
 
-*Return is a meditation timer for practitioners sitting however they sit. Set your duration, find your position, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners sitting however they sit. Set your duration, find your position, and let the minimal interface stay out of your way. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

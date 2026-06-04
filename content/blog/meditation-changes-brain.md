@@ -305,4 +305,4 @@ The good news: you don't need to become a monk. Regular practice—20-30 minutes
 
 ---
 
-*Return is a meditation timer for practitioners committed to practice. Track your sessions, build the habit, and let your brain do what brains do: adapt to what you repeatedly practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners committed to practice. Track your sessions, build the habit, and let your brain do what brains do: adapt to what you repeatedly practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

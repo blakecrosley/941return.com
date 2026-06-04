@@ -458,4 +458,4 @@ The edge in finance is increasingly mental. Those who train their minds have adv
 
 ---
 
-*Return is a meditation timer for people who value efficiency. No guided content, no subscription—just a clean timer. Set it before market open, set it after close. Mental training with zero friction. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for people who value efficiency. No guided content, no subscription—just a clean timer. Set it before market open, set it after close. Mental training with zero friction. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

@@ -338,4 +338,4 @@ Align NSDR with training phases:
 
 ---
 
-*Return is a meditation timer designed for athletes who understand that recovery is training. Build the NSDR practice that accelerates your restoration. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who understand that recovery is training. Build the NSDR practice that accelerates your restoration. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

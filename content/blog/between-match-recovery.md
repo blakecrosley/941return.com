@@ -411,4 +411,4 @@ Create your template:
 
 ---
 
-*Return is a meditation timer for athletes who compete in tournament formats demanding repeated performance. Build the between-match recovery practice that keeps you sharp all day. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes who compete in tournament formats demanding repeated performance. Build the between-match recovery practice that keeps you sharp all day. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

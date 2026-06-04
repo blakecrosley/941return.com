@@ -453,4 +453,4 @@ You can't think your way there. You have to look.
 
 ---
 
-*Return is a meditation timer that supports whatever practice you're doing—from basic breath awareness to advanced non-dual recognition. Simple, reliable, no distractions. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that supports whatever practice you're doing—from basic breath awareness to advanced non-dual recognition. Simple, reliable, no distractions. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

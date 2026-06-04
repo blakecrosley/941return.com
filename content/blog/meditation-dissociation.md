@@ -356,4 +356,4 @@ Presence is the goal. Make sure your practice is taking you there.
 
 ---
 
-*Return is a minimal meditation timer—simple, grounded, present. No elaborate features to get lost in, just a timer to support practice that keeps you here. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a minimal meditation timer—simple, grounded, present. No elaborate features to get lost in, just a timer to support practice that keeps you here. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

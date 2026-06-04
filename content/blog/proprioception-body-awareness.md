@@ -368,4 +368,4 @@ The [Return app](/blog/guide-to-return-meditation-timer) supports body awareness
 
 ---
 
-*Return is a meditation timer for athletes developing body awareness. Train proprioception through systematic body attention. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes developing body awareness. Train proprioception through systematic body attention. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

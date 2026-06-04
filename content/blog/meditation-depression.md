@@ -486,4 +486,4 @@ You deserve support. Meditation is one tool. Use it wisely, alongside whatever e
 
 ---
 
-*Return is a meditation timer that asks nothing of you. When depression makes everything hard, your timer should be simple. No decisions, no complexity, no guilt about the practice you're not doing. Just start when you can. Every session counts. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer that asks nothing of you. When depression makes everything hard, your timer should be simple. No decisions, no complexity, no guilt about the practice you're not doing. Just start when you can. Every session counts. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

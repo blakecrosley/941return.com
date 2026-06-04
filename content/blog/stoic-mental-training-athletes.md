@@ -367,4 +367,4 @@ The Stoics repeatedly emphasized that outcomes are not in our control, but our e
 
 ---
 
-*Return is a meditation timer for athletes building mental toughness on foundations 2,000 years deep. Train your mind with the wisdom of Marcus Aurelius, Seneca, and Epictetus. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes building mental toughness on foundations 2,000 years deep. Train your mind with the wisdom of Marcus Aurelius, Seneca, and Epictetus. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

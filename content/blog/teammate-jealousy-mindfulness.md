@@ -291,4 +291,4 @@ The situation won't change, and you must decide whether to accept it or leave.
 
 ---
 
-*Return is a meditation timer for athletes navigating every challenge—including the difficult emotions that team sport creates. Build the awareness that transforms jealousy into growth. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes navigating every challenge—including the difficult emotions that team sport creates. Build the awareness that transforms jealousy into growth. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

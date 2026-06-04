@@ -247,4 +247,4 @@ Routines aren't "set and forget." They require ongoing attention:
 
 ---
 
-*Return is a meditation timer designed for athletes who take mental preparation seriously. Build the focus that supports your pre-competition routine. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who take mental preparation seriously. Build the focus that supports your pre-competition routine. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

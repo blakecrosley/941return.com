@@ -211,4 +211,4 @@ The athlete who structures mornings for 365 days develops differently than one w
 
 ---
 
-*Return is a meditation timer designed for athletes building consistent practice. Make meditation part of your morning routine. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes building consistent practice. Make meditation part of your morning routine. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

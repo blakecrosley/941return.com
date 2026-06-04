@@ -298,4 +298,4 @@ The contemplative dimension of Judaism has always existed. It's not something im
 
 ---
 
-*Return is a meditation timer for practitioners of any tradition, including the rich contemplative practices of Judaism. Set your session, seek devekut, and let the minimal interface support your spiritual practice. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for practitioners of any tradition, including the rich contemplative practices of Judaism. Set your session, seek devekut, and let the minimal interface support your spiritual practice. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

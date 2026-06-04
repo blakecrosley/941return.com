@@ -225,4 +225,4 @@ Walking meditation builds skills that transfer beyond the practice:
 
 ---
 
-*Return is a meditation timer designed for athletes integrating mindfulness with training. Time your walking meditation practice while you focus on movement. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes integrating mindfulness with training. Time your walking meditation practice while you focus on movement. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

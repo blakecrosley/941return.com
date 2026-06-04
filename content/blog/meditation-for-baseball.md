@@ -328,4 +328,4 @@ Winter allows deeper mental development:
 
 ---
 
-*Return is a meditation timer designed for athletes who understand that the mental game is the game. Build the practice that sharpens your focus between pitches. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer designed for athletes who understand that the mental game is the game. Build the practice that sharpens your focus between pitches. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*

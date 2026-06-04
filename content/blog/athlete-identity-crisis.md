@@ -331,4 +331,4 @@ Redirects attention toward non-athletic sources of meaning and satisfaction.
 
 ---
 
-*Return is a meditation timer for athletes building both performance capacity and psychological resilience. Develop the practice that supports you through every phase—competition, transition, and everything between. [Download Return on the App Store](https://apps.apple.com/app/id6744890612).*
+*Return is a meditation timer for athletes building both performance capacity and psychological resilience. Develop the practice that supports you through every phase—competition, transition, and everything between. [Download Return on the App Store](https://apps.apple.com/app/return/id6756242021).*
