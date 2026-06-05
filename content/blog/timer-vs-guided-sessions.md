@@ -11,7 +11,7 @@ published_at: 2025-09-08T09:00:00
 
 When you sit down to meditate, you have options. A simple timer lets you practice in silence. A guided session provides structure and instruction. Many apps offer both. How do you decide what to use?
 
-The answer depends on where you are in practice, what you're working on, and what serves your development. Here's a clear comparison.
+The answer depends on where you are in practice, what you're working on, and what serves your development. Here's a clear comparison. (For the broader question—whether to practice with a voice at all—see [guided vs unguided meditation](/blog/guided-vs-unguided-meditation).)
 
 ## Simple Timer: What It Is
 

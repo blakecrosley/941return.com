@@ -178,7 +178,7 @@ If it takes more than 10 seconds to start a session, it's too complicated.
 ### The Transition
 
 **From guided:**
-If you've been using guided meditation, the transition to unguided may feel strange.
+If you've been using guided meditation, the transition to unguided may feel strange. [Guided vs unguided meditation](/blog/guided-vs-unguided-meditation) covers when each serves—and how to make the shift.
 
 **The method:**
 Start with partial guidance—a beginning instruction, then silence. Gradually reduce the guidance.

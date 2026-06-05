@@ -166,7 +166,7 @@ Teacher has legitimate training.
 ### Apps
 
 **The free case:**
-Basic timers are free. You don't need guided content.
+Basic timers are free. You don't need guided content—[guided vs unguided meditation](/blog/guided-vs-unguided-meditation) covers why.
 
 **Worth paying for:**
 Quality guided content if you use it. Good interfaces. Reliable tracking.
