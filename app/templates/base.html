@@ -173,6 +173,9 @@
         {% block content %}{% endblock %}
     </main>
 
+    <style>.family-strip { --fs-maxw: 1400px; }</style>  <!-- match this site's container width -->
+    {% include "components/family.html" %}
+
     {% include "components/footer.html" %}
 
     <!-- Theme persistence script -->
