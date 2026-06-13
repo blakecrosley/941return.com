@@ -3003,7 +3003,7 @@ body:has(.hero) .theme-toggle:focus-visible {
 }
 /* Screen: positioned exactly inside the PNG's transparent cutout */
 .rcs-phone {
-    position: absolute; top: 4.06%; bottom: 4.06%; left: 5.33%; right: 5.33%;
+    position: absolute; top: 2.2%; bottom: 2.2%; left: 5.33%; right: 5.33%;
     border-radius: 9% / 4.4%; background: #000; overflow: hidden; z-index: 1;
 }
 .rcs-phone__stage { position: absolute; inset: 0; background: #000; overflow: hidden; }
