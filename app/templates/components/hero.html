@@ -22,7 +22,7 @@
                     <div class="rcs-phone__stage">
                         <video class="rcs-hero__video" :class="{ 'rcs-hero__video--active': currentTheme === 'water' }"
                                poster="/static/images/posters/water-mobile-poster.jpg" loop playsinline disablepictureinpicture
-                               preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" x-ref="videoWater">
+                               preload="auto" controlslist="nodownload nofullscreen noremoteplayback" x-ref="videoWater">
                             <source src="/static/videos/water-mobile.webm" type="video/webm">
                             <source src="/static/videos/water-mobile.mp4" type="video/mp4">
                         </video>
@@ -87,16 +87,24 @@ function returnCaseStudy() {
         if (this.audioContext && this.audioEnabled) { await this.playAmbient(theme); }
       }
     },
-    async togglePlayOnly() {
+    togglePlayOnly() {
       const v = this.currentVideo();
       if (!v) return;
       if (v.paused) {
-        if (!this.audioContext) { this.audioContext = new (window.AudioContext || window.webkitAudioContext)(); }
-        if (this.audioContext.state === 'suspended') { await this.audioContext.resume(); }
-        this.audioEnabled = true;
-        await this.playAmbient(this.currentTheme);
-        v.play().catch(() => {});
+        // Start the video and flip the UI immediately — never wait on the
+        // audio fetch/decode first (that caused the delay + double-press).
         this.isPlaying = true;
+        const p = v.play();
+        if (p && p.catch) p.catch(() => {});
+        // Ambient audio loads in the background; it's best-effort.
+        (async () => {
+          try {
+            if (!this.audioContext) { this.audioContext = new (window.AudioContext || window.webkitAudioContext)(); }
+            if (this.audioContext.state === 'suspended') { await this.audioContext.resume(); }
+            this.audioEnabled = true;
+            await this.playAmbient(this.currentTheme);
+          } catch (e) { /* audio is optional; the scene still plays */ }
+        })();
       } else {
         v.pause();
         this.stopAmbient();
