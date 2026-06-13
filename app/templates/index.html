@@ -4,6 +4,7 @@
 {% include "components/hero.html" %}
 {# {% include "components/screenshots.html" %} #}
 {% include "components/features.html" %}
+{% include "components/how.html" %}
 {% include "components/testimonials.html" %}
 
 <!-- Latest from the Blog -->
@@ -46,4 +47,27 @@
         </div>
     </div>
 </section>
+
+<script>
+(function () {
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var scrolly = document.querySelector('.how-scrolly');
+    document.querySelectorAll('[data-how-reveal]').forEach(function (el) {
+        if (reduced || !('IntersectionObserver' in window)) { el.classList.add('in-view'); }
+    });
+    if ('IntersectionObserver' in window) {
+        var rio = new IntersectionObserver(function (es) {
+            es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in-view'); rio.unobserve(e.target); } });
+        }, { threshold: 0.2 });
+        document.querySelectorAll('[data-how-reveal]').forEach(function (el) { rio.observe(el); });
+        if (scrolly) {
+            var steps = scrolly.querySelectorAll('.how-step');
+            var sio = new IntersectionObserver(function (es) {
+                es.forEach(function (e) { if (e.isIntersecting) scrolly.setAttribute('data-step', e.target.dataset.index); });
+            }, { rootMargin: '-45% 0px -45% 0px' });
+            steps.forEach(function (s) { sio.observe(s); });
+        }
+    }
+})();
+</script>
 {% endblock %}

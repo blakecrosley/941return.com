@@ -1,0 +1,61 @@
+<section id="how" class="how-section" :class="'hero-theme-' + (typeof currentTheme !== 'undefined' ? currentTheme : 'water')">
+    <div class="container">
+        <p class="how-kicker" data-how-reveal>How it works</p>
+        <h2 class="how-title" data-how-reveal style="--d:.08s">Three breaths to begin</h2>
+
+        <div class="how-scrolly" data-step="1">
+            <div class="how-grid">
+                <div class="how-stage" aria-hidden="true">
+                    <!-- 1: choose a scene -->
+                    <div class="how-layer how-s1">
+                        <div class="scene-swatches">
+                            <span class="scene-sw scene-sw--water is-on"></span>
+                            <span class="scene-sw scene-sw--fire"></span>
+                            <span class="scene-sw scene-sw--forest"></span>
+                            <span class="scene-sw scene-sw--silence"></span>
+                        </div>
+                        <span class="how-stage__cap">Water · Fire · Forest · Silence</span>
+                    </div>
+                    <!-- 2: set the time -->
+                    <div class="how-layer how-s2">
+                        <div class="how-dial">
+                            <svg viewBox="0 0 120 120" width="170" height="170">
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="var(--return-border)" stroke-width="4"></circle>
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="var(--theme-water)" stroke-width="4" stroke-linecap="round" stroke-dasharray="339" stroke-dashoffset="110" transform="rotate(-90 60 60)"></circle>
+                            </svg>
+                            <span class="how-dial__time">12:00</span>
+                        </div>
+                    </div>
+                    <!-- 3: return to stillness -->
+                    <div class="how-layer how-s3">
+                        <div class="how-breathe">
+                            <span class="how-breathe__ring"></span>
+                            <span class="how-breathe__check">
+                                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13l5 5L20 6"></path></svg>
+                            </span>
+                        </div>
+                        <span class="how-stage__cap">Well done. Same time tomorrow.</span>
+                    </div>
+                </div>
+
+                <div class="how-steps">
+                    <div class="how-step" data-index="1">
+                        <span class="how-num">01</span>
+                        <h3>Choose your scene</h3>
+                        <p>Water, fire, forest, or pure silence — pick the living backdrop that settles you, with ambient sound to match.</p>
+                    </div>
+                    <div class="how-step" data-index="2">
+                        <span class="how-num">02</span>
+                        <h3>Set your time</h3>
+                        <p>One gentle dial. No streaks, no badges, no guided chatter — just the minutes you choose to sit.</p>
+                    </div>
+                    <div class="how-step" data-index="3">
+                        <span class="how-num">03</span>
+                        <h3>Return to stillness</h3>
+                        <p>Breathe with the scene until the timer fades out. On iPhone, Apple Watch, Mac, and Apple TV — wherever you land.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
