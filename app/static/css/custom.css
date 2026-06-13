@@ -2980,3 +2980,82 @@ body:has(.hero) .theme-toggle:focus-visible {
     .hero-phone { width: 260px; height: 530px; }
 }
 
+/* ============================================================
+   Exact phone+video+sound+theme component ported from
+   blakecrosley.com/work/return, wrapped in a real iPhone frame.
+   ============================================================ */
+
+.hero-tip { color: var(--return-text-secondary); font-size: .85rem; margin: 1.1rem 0 0; }
+
+/* Real iPhone frame (the "one addition") */
+.rcs-iphone {
+    position: relative;
+    width: clamp(258px, 30vw, 300px);
+    aspect-ratio: 9 / 19.5;
+    border-radius: 54px;
+    padding: 11px;
+    background: linear-gradient(145deg, #43464c 0%, #1d1f23 36%, #2c2f34 68%, #141619 100%);
+    box-shadow:
+        inset 0 0 0 1.5px rgba(255,255,255,.10),
+        inset 0 1px 2px rgba(255,255,255,.18),
+        0 30px 70px rgba(0,0,0,.55),
+        0 4px 12px rgba(0,0,0,.4);
+}
+.rcs-iphone__btn { position: absolute; width: 3px; border-radius: 3px; background: linear-gradient(90deg, #16181b, #3a3d42); }
+.rcs-iphone__btn--silent { left: -2px; top: 17%; height: 4%; }
+.rcs-iphone__btn--volup  { left: -2px; top: 24%; height: 7.5%; }
+.rcs-iphone__btn--voldn  { left: -2px; top: 34%; height: 7.5%; }
+.rcs-iphone__btn--power  { right: -2px; top: 27%; height: 12%; }
+.rcs-iphone__island {
+    position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+    width: 86px; height: 25px; background: #000; border-radius: 999px; z-index: 6;
+}
+
+/* Screen (was the blakecrosley .rcs-phone; ring shadow dropped — the frame owns the body) */
+.rcs-phone {
+    position: relative; width: 100%; height: 100%;
+    border-radius: 44px; background: #000; overflow: hidden;
+}
+.rcs-phone__stage { position: absolute; inset: 0; background: #000; overflow: hidden; }
+
+.rcs-hero__video {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    opacity: 0; transition: opacity .6s cubic-bezier(0.22,0.61,0.36,1); pointer-events: none;
+}
+.rcs-hero__video::-webkit-media-controls,
+.rcs-hero__video::-webkit-media-controls-panel,
+.rcs-hero__video::-webkit-media-controls-start-playback-button,
+.rcs-hero__video::-webkit-media-controls-play-button,
+.rcs-hero__video::-webkit-media-controls-overlay-play-button { display: none !important; -webkit-appearance: none !important; appearance: none !important; opacity: 0 !important; }
+.rcs-hero__video--active { opacity: 1; }
+.rcs-hero__overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, transparent 40%, transparent 60%, rgba(0,0,0,.55) 100%); }
+
+/* In-screen controls: play center, theme dots bottom-center */
+.rcs-phone__ui { position: absolute; inset: 0; z-index: 4; pointer-events: none; opacity: 1; transition: opacity .25s ease; }
+.rcs-phone__ui > * { pointer-events: auto; }
+.rcs-phone--playing:not(:hover) .rcs-phone__ui { opacity: 0; }
+
+.rcs-phone__play {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 68px; height: 68px; border-radius: 50%;
+    background: rgba(255,255,255,.22); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border: none; color: #fff; cursor: pointer; display: grid; place-items: center;
+    transition: background .15s ease;
+}
+.rcs-phone__play:hover { background: rgba(255,255,255,.32); }
+.rcs-phone__play:active { transform: translate(-50%, -50%) scale(.94); }
+
+.rcs-phone__dots { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; gap: 14px; align-items: center; }
+.rcs-phone__dot { appearance: none; width: 9px; height: 9px; border-radius: 50%; border: none; cursor: pointer; padding: 0; background: rgba(255,255,255,.28); transition: transform .15s ease, background .2s ease; position: relative; }
+.rcs-phone__dot::before { content: ''; position: absolute; inset: -10px; border-radius: 50%; }
+.rcs-phone__dot:hover { background: rgba(255,255,255,.55); transform: scale(1.2); }
+.rcs-phone__dot[aria-pressed="true"] { transform: scale(1.35); }
+.rcs-phone__dot--water[aria-pressed="true"]  { background: var(--theme-water); }
+.rcs-phone__dot--fire[aria-pressed="true"]   { background: var(--theme-fire); }
+.rcs-phone__dot--forest[aria-pressed="true"] { background: var(--theme-forest); }
+
+@media (prefers-reduced-motion: reduce) {
+    .rcs-hero__video { transition: none; }
+}
+

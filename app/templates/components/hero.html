@@ -1,143 +1,132 @@
-<section class="hero" :class="'hero-theme-' + currentTheme" x-data="{
-    currentTheme: 'water',
-    themes: ['water', 'fire', 'forest', 'silence'],
-    loadedVideos: { water: true },
-    audioEnabled: false,
-    audioContext: null,
-    audioBuffers: {},
-    currentSource: null,
-    init() {
-        this.$nextTick(() => {
-            document.querySelectorAll('.hero-video:not([data-theme-video])').forEach(v => {
-                if (v.tagName === 'VIDEO' && v.paused) v.play().catch(() => {});
-            });
-        });
-        this.$watch('currentTheme', (theme) => {
-            this.loadVideo(theme);
-            this.updateAudio(theme);
-            this.$nextTick(() => {
-                const selector = theme === 'water' ? '.hero-video:not([data-theme-video])' : `[data-theme-video='${theme}']`;
-                document.querySelectorAll(selector).forEach(v => { if (v.paused && v.tagName === 'VIDEO') v.play().catch(() => {}); });
-            });
-        });
-        this.$watch('audioEnabled', (enabled) => this.toggleAudio(enabled));
-    },
-    async initAudioContext() { if (this.audioContext) return; this.audioContext = new (window.AudioContext || window.webkitAudioContext)(); },
-    async loadAudioBuffer(theme) {
-        if (this.audioBuffers[theme]) return this.audioBuffers[theme];
-        try {
-            const response = await fetch(`/static/audio/${theme}.mp3`);
-            const arrayBuffer = await response.arrayBuffer();
-            this.audioBuffers[theme] = await this.audioContext.decodeAudioData(arrayBuffer);
-            return this.audioBuffers[theme];
-        } catch (e) { console.error('Failed to load audio:', theme, e); return null; }
-    },
-    playLoop(theme) {
-        if (!this.audioContext || theme === 'silence') return;
-        const buffer = this.audioBuffers[theme];
-        if (!buffer) return;
-        this.stopAudio();
-        this.currentSource = this.audioContext.createBufferSource();
-        this.currentSource.buffer = buffer;
-        this.currentSource.loop = true;
-        this.currentSource.connect(this.audioContext.destination);
-        this.currentSource.start(0);
-    },
-    stopAudio() { if (this.currentSource) { try { this.currentSource.stop(); } catch(e) {} this.currentSource = null; } },
-    loadVideo(theme) {
-        if (this.loadedVideos[theme] || theme === 'silence') return;
-        document.querySelectorAll(`[data-theme-video='${theme}']`).forEach(video => {
-            const sources = video.querySelectorAll('source[data-src]');
-            if (sources.length > 0) {
-                video.autoplay = true; video.preload = 'auto';
-                video.onloadeddata = () => video.play().catch(() => {});
-                sources.forEach(source => { source.src = source.dataset.src; });
-                video.load();
-            }
-        });
-        this.loadedVideos[theme] = true;
-    },
-    nextTheme() { const idx = this.themes.indexOf(this.currentTheme); this.currentTheme = this.themes[(idx + 1) % this.themes.length]; },
-    prevTheme() { const idx = this.themes.indexOf(this.currentTheme); this.currentTheme = this.themes[(idx - 1 + this.themes.length) % this.themes.length]; },
-    async updateAudio(theme) {
-        if (this.audioEnabled && theme !== 'silence') { await this.initAudioContext(); await this.loadAudioBuffer(theme); this.playLoop(theme); }
-        else { this.stopAudio(); }
-    },
-    async toggleAudio(enabled) {
-        if (enabled && this.currentTheme !== 'silence') { await this.initAudioContext(); await this.loadAudioBuffer(this.currentTheme); this.playLoop(this.currentTheme); }
-        else { this.stopAudio(); }
-    }
-}">
-    <!-- soft ambient wash, tinted to the current theme -->
+<section class="hero rcs-scope" :class="'hero-theme-' + currentTheme" x-data="returnCaseStudy()">
     <div class="hero-ambient" aria-hidden="true"></div>
-
     <div class="container hero-container">
         <div class="hero-copy">
-            <h1 class="hero-title">
-                Return to<br>
-                <span class="hero-title-accent">stillness.</span>
-            </h1>
+            <h1 class="hero-title">Return to<br><span class="hero-title-accent" :style="`color: ${themeColor}`">stillness.</span></h1>
             <p class="hero-subtitle">
                 A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV.
-                Breathe to living scenes — water, fire, forest, or pure silence.
+                Breathe to a living scene — water, fire, forest, or pure silence.
             </p>
             <div class="hero-cta">
                 <a href="https://apps.apple.com/app/return/id6756242021" class="app-store-badge" target="_blank" rel="noopener">
                     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="180" height="60">
                 </a>
             </div>
-
-            <!-- Theme controls -->
-            <div class="hero-controls">
-                <button class="theme-nav-btn" @click="prevTheme()" title="Previous theme" aria-label="Previous theme">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                </button>
-                <div class="theme-indicator">
-                    <span class="theme-name" x-text="currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)"></span>
-                    <div class="theme-dots">
-                        <template x-for="t in themes" :key="t"><span class="theme-dot" :class="{ 'active': currentTheme === t }"></span></template>
-                    </div>
-                </div>
-                <button class="theme-nav-btn" @click="nextTheme()" title="Next theme" aria-label="Next theme">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                </button>
-                <button class="audio-toggle" @click="audioEnabled = !audioEnabled" :title="audioEnabled ? 'Mute audio' : 'Play audio'" :aria-label="audioEnabled ? 'Mute audio' : 'Play audio'" :aria-pressed="audioEnabled">
-                    <svg x-show="!audioEnabled" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                    <svg x-show="audioEnabled" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-                </button>
-            </div>
+            <p class="hero-tip" x-show="!isPlaying" x-transition.opacity>Tap play to start the scene and its sound.</p>
         </div>
 
-        <!-- Phone mockup: the living scene plays inside the device -->
         <div class="hero-phone-wrap">
-            <div class="hero-phone">
-                <div class="hero-phone__notch" aria-hidden="true"></div>
-                <div class="hero-phone__screen">
-                    <video class="hero-video" :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
-                           poster="/static/images/posters/water-mobile-poster.jpg" autoplay muted loop playsinline aria-hidden="true">
-                        <source src="/static/videos/water-mobile.webm" type="video/webm">
-                        <source src="/static/videos/water-mobile.mp4" type="video/mp4">
-                    </video>
-                    <video class="hero-video" data-theme-video="fire" :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
-                           poster="/static/images/posters/fire-mobile-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
-                        <source data-src="/static/videos/fire-mobile.webm" type="video/webm">
-                        <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
-                    </video>
-                    <video class="hero-video" data-theme-video="forest" :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
-                           poster="/static/images/posters/forest-mobile-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
-                        <source data-src="/static/videos/forest-mobile.webm" type="video/webm">
-                        <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
-                    </video>
-                    <div class="hero-video silence-scene" :class="currentTheme === 'silence' ? 'video-visible' : 'video-hidden'" aria-hidden="true"></div>
+            <!-- Real iPhone frame -->
+            <div class="rcs-iphone">
+                <span class="rcs-iphone__btn rcs-iphone__btn--silent" aria-hidden="true"></span>
+                <span class="rcs-iphone__btn rcs-iphone__btn--volup" aria-hidden="true"></span>
+                <span class="rcs-iphone__btn rcs-iphone__btn--voldn" aria-hidden="true"></span>
+                <span class="rcs-iphone__btn rcs-iphone__btn--power" aria-hidden="true"></span>
+                <div class="rcs-phone" :class="{ 'rcs-phone--playing': isPlaying }">
+                    <div class="rcs-iphone__island" aria-hidden="true"></div>
+                    <div class="rcs-phone__stage">
+                        <video class="rcs-hero__video" :class="{ 'rcs-hero__video--active': currentTheme === 'water' }"
+                               poster="/static/images/posters/water-mobile-poster.jpg" loop playsinline disablepictureinpicture
+                               preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" x-ref="videoWater">
+                            <source src="/static/videos/water-mobile.webm" type="video/webm">
+                            <source src="/static/videos/water-mobile.mp4" type="video/mp4">
+                        </video>
+                        <video class="rcs-hero__video" :class="{ 'rcs-hero__video--active': currentTheme === 'fire' }"
+                               poster="/static/images/posters/fire-mobile-poster.jpg" loop playsinline disablepictureinpicture
+                               preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" x-ref="videoFire">
+                            <source src="/static/videos/fire-mobile.webm" type="video/webm">
+                            <source src="/static/videos/fire-mobile.mp4" type="video/mp4">
+                        </video>
+                        <video class="rcs-hero__video" :class="{ 'rcs-hero__video--active': currentTheme === 'forest' }"
+                               poster="/static/images/posters/forest-mobile-poster.jpg" loop playsinline disablepictureinpicture
+                               preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" x-ref="videoForest">
+                            <source src="/static/videos/forest-mobile.webm" type="video/webm">
+                            <source src="/static/videos/forest-mobile.mp4" type="video/mp4">
+                        </video>
+                        <div class="rcs-hero__overlay"></div>
+                    </div>
 
-                    <!-- in-app timer overlay, so the screen reads as the real app -->
-                    <div class="phone-timer" aria-hidden="true">
-                        <div class="phone-timer__ring"></div>
-                        <div class="phone-timer__time">12:00</div>
-                        <div class="phone-timer__label" x-text="currentTheme === 'silence' ? 'Silence' : currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)"></div>
+                    <div class="rcs-phone__ui">
+                        <button class="rcs-phone__play" @click="togglePlayOnly()" :aria-label="isPlaying ? 'Pause' : 'Play'">
+                            <svg x-show="!isPlaying" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+                            <svg x-show="isPlaying" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+                        </button>
+                        <div class="rcs-phone__dots" role="group" aria-label="Choose a scene">
+                            <button class="rcs-phone__dot rcs-phone__dot--water" @click="selectTheme('water')" :aria-pressed="currentTheme === 'water'" aria-label="Water"></button>
+                            <button class="rcs-phone__dot rcs-phone__dot--fire" @click="selectTheme('fire')" :aria-pressed="currentTheme === 'fire'" aria-label="Fire"></button>
+                            <button class="rcs-phone__dot rcs-phone__dot--forest" @click="selectTheme('forest')" :aria-pressed="currentTheme === 'forest'" aria-label="Forest"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+function returnCaseStudy() {
+  return {
+    currentTheme: 'water',
+    themes: ['water', 'fire', 'forest'],
+    themeColors: { water: '#59B2CC', fire: '#FF8033', forest: '#66C059' },
+    get themeColor() { return this.themeColors[this.currentTheme] || '#59B2CC'; },
+    isPlaying: false,
+    audioContext: null,
+    audioEnabled: false,
+    audioBuffers: {},
+    currentSource: null,
+    currentVideo() {
+      const ref = 'video' + this.currentTheme.charAt(0).toUpperCase() + this.currentTheme.slice(1);
+      return this.$refs[ref] || null;
+    },
+    async selectTheme(theme) {
+      if (theme === this.currentTheme) return;
+      const wasPlaying = this.isPlaying;
+      const prev = this.currentVideo();
+      if (prev && !prev.paused) prev.pause();
+      this.currentTheme = theme;
+      if (wasPlaying) {
+        const next = this.currentVideo();
+        if (next) { try { next.currentTime = 0; } catch (e) {} next.play().catch(() => {}); }
+        if (this.audioContext && this.audioEnabled) { await this.playAmbient(theme); }
+      }
+    },
+    async togglePlayOnly() {
+      const v = this.currentVideo();
+      if (!v) return;
+      if (v.paused) {
+        if (!this.audioContext) { this.audioContext = new (window.AudioContext || window.webkitAudioContext)(); }
+        if (this.audioContext.state === 'suspended') { await this.audioContext.resume(); }
+        this.audioEnabled = true;
+        await this.playAmbient(this.currentTheme);
+        v.play().catch(() => {});
+        this.isPlaying = true;
+      } else {
+        v.pause();
+        this.stopAmbient();
+        this.isPlaying = false;
+      }
+    },
+    async playAmbient(theme) {
+      if (!this.audioContext || !this.audioEnabled) return;
+      this.stopAmbient();
+      if (!this.audioBuffers[theme]) {
+        try {
+          const res = await fetch('/static/audio/' + theme + '.mp3');
+          const arr = await res.arrayBuffer();
+          this.audioBuffers[theme] = await this.audioContext.decodeAudioData(arr);
+        } catch (e) { console.warn('audio load failed', e); return; }
+      }
+      const source = this.audioContext.createBufferSource();
+      source.buffer = this.audioBuffers[theme];
+      source.loop = true;
+      source.connect(this.audioContext.destination);
+      source.start(0);
+      this.currentSource = source;
+    },
+    stopAmbient() {
+      if (this.currentSource) { try { this.currentSource.stop(); } catch (e) {} this.currentSource = null; }
+    },
+  };
+}
+</script>
