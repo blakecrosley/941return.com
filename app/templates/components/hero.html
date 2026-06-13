@@ -1,39 +1,28 @@
-<section class="hero" x-data="{
+<section class="hero" :class="'hero-theme-' + currentTheme" x-data="{
     currentTheme: 'water',
     themes: ['water', 'fire', 'forest', 'silence'],
-    loadedVideos: { water: true }, /* Only water loaded initially */
+    loadedVideos: { water: true },
     audioEnabled: false,
-    /* Web Audio API seamless looping */
     audioContext: null,
     audioBuffers: {},
     currentSource: null,
     init() {
-        /* Ensure water video plays on init (Safari fix) */
         this.$nextTick(() => {
-            const waterVideos = document.querySelectorAll('.hero-video:not([data-theme-video])');
-            waterVideos.forEach(v => {
-                if (v.paused) v.play().catch(() => {});
+            document.querySelectorAll('.hero-video:not([data-theme-video])').forEach(v => {
+                if (v.tagName === 'VIDEO' && v.paused) v.play().catch(() => {});
             });
         });
         this.$watch('currentTheme', (theme) => {
             this.loadVideo(theme);
             this.updateAudio(theme);
-            /* Ensure visible video plays (Safari fix) */
             this.$nextTick(() => {
-                const selector = theme === 'water'
-                    ? '.hero-video:not([data-theme-video])'
-                    : `[data-theme-video='${theme}']`;
-                document.querySelectorAll(selector).forEach(v => {
-                    if (v.paused && v.tagName === 'VIDEO') v.play().catch(() => {});
-                });
+                const selector = theme === 'water' ? '.hero-video:not([data-theme-video])' : `[data-theme-video='${theme}']`;
+                document.querySelectorAll(selector).forEach(v => { if (v.paused && v.tagName === 'VIDEO') v.play().catch(() => {}); });
             });
         });
         this.$watch('audioEnabled', (enabled) => this.toggleAudio(enabled));
     },
-    async initAudioContext() {
-        if (this.audioContext) return;
-        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    },
+    async initAudioContext() { if (this.audioContext) return; this.audioContext = new (window.AudioContext || window.webkitAudioContext)(); },
     async loadAudioBuffer(theme) {
         if (this.audioBuffers[theme]) return this.audioBuffers[theme];
         try {
@@ -41,232 +30,114 @@
             const arrayBuffer = await response.arrayBuffer();
             this.audioBuffers[theme] = await this.audioContext.decodeAudioData(arrayBuffer);
             return this.audioBuffers[theme];
-        } catch (e) {
-            console.error('Failed to load audio:', theme, e);
-            return null;
-        }
+        } catch (e) { console.error('Failed to load audio:', theme, e); return null; }
     },
     playLoop(theme) {
         if (!this.audioContext || theme === 'silence') return;
         const buffer = this.audioBuffers[theme];
         if (!buffer) return;
-
         this.stopAudio();
-
-        /* Create source with native loop - truly gapless */
         this.currentSource = this.audioContext.createBufferSource();
         this.currentSource.buffer = buffer;
         this.currentSource.loop = true;
         this.currentSource.connect(this.audioContext.destination);
         this.currentSource.start(0);
     },
-    stopAudio() {
-        if (this.currentSource) {
-            try { this.currentSource.stop(); } catch(e) {}
-            this.currentSource = null;
-        }
-    },
+    stopAudio() { if (this.currentSource) { try { this.currentSource.stop(); } catch(e) {} this.currentSource = null; } },
     loadVideo(theme) {
-        /* Lazy load video when theme is first selected */
         if (this.loadedVideos[theme] || theme === 'silence') return;
-
-        const videos = document.querySelectorAll(`[data-theme-video='${theme}']`);
-        videos.forEach(video => {
-            /* Skip videos that are display:none (mobile/desktop responsive) */
-            const style = window.getComputedStyle(video);
-            if (style.display === 'none') return;
-
+        document.querySelectorAll(`[data-theme-video='${theme}']`).forEach(video => {
             const sources = video.querySelectorAll('source[data-src]');
             if (sources.length > 0) {
-                /* Safari requires autoplay attribute for programmatic play */
-                video.autoplay = true;
-                video.preload = 'auto';
+                video.autoplay = true; video.preload = 'auto';
                 video.onloadeddata = () => video.play().catch(() => {});
-                /* Set src on each source element, then load */
-                sources.forEach(source => {
-                    source.src = source.dataset.src;
-                });
+                sources.forEach(source => { source.src = source.dataset.src; });
                 video.load();
             }
         });
         this.loadedVideos[theme] = true;
     },
-    nextTheme() {
-        const idx = this.themes.indexOf(this.currentTheme);
-        this.currentTheme = this.themes[(idx + 1) % this.themes.length];
-    },
-    prevTheme() {
-        const idx = this.themes.indexOf(this.currentTheme);
-        this.currentTheme = this.themes[(idx - 1 + this.themes.length) % this.themes.length];
-    },
+    nextTheme() { const idx = this.themes.indexOf(this.currentTheme); this.currentTheme = this.themes[(idx + 1) % this.themes.length]; },
+    prevTheme() { const idx = this.themes.indexOf(this.currentTheme); this.currentTheme = this.themes[(idx - 1 + this.themes.length) % this.themes.length]; },
     async updateAudio(theme) {
-        if (this.audioEnabled && theme !== 'silence') {
-            await this.initAudioContext();
-            await this.loadAudioBuffer(theme);
-            this.playLoop(theme);
-        } else {
-            this.stopAudio();
-        }
+        if (this.audioEnabled && theme !== 'silence') { await this.initAudioContext(); await this.loadAudioBuffer(theme); this.playLoop(theme); }
+        else { this.stopAudio(); }
     },
     async toggleAudio(enabled) {
-        if (enabled && this.currentTheme !== 'silence') {
-            await this.initAudioContext();
-            await this.loadAudioBuffer(this.currentTheme);
-            this.playLoop(this.currentTheme);
-        } else {
-            this.stopAudio();
-        }
+        if (enabled && this.currentTheme !== 'silence') { await this.initAudioContext(); await this.loadAudioBuffer(this.currentTheme); this.playLoop(this.currentTheme); }
+        else { this.stopAudio(); }
     }
 }">
-    <!-- Video backgrounds for each theme -->
-    <div class="hero-video-container">
-        <!-- Water theme (loaded immediately - default) -->
-        <video class="hero-video hero-video-desktop"
-               :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
-               style="opacity: 1;"
-               poster="/static/images/posters/water-desktop-poster.jpg"
-               autoplay muted loop playsinline
-               aria-hidden="true">
-            <source src="/static/videos/water-desktop.webm" type="video/webm">
-            <source src="/static/videos/water-desktop.mp4" type="video/mp4">
-        </video>
-        <video class="hero-video hero-video-mobile"
-               :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
-               style="opacity: 1;"
-               poster="/static/images/posters/water-mobile-poster.jpg"
-               autoplay muted loop playsinline
-               aria-hidden="true">
-            <source src="/static/videos/water-mobile.webm" type="video/webm">
-            <source src="/static/videos/water-mobile.mp4" type="video/mp4">
-        </video>
-
-        <!-- Fire theme (lazy loaded) -->
-        <video class="hero-video hero-video-desktop"
-               data-theme-video="fire"
-               :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
-               style="opacity: 0;"
-               poster="/static/images/posters/fire-desktop-poster.jpg"
-               muted loop playsinline preload="none"
-               aria-hidden="true">
-            <source data-src="/static/videos/fire-desktop.webm" type="video/webm">
-            <source data-src="/static/videos/fire-desktop.mp4" type="video/mp4">
-        </video>
-        <video class="hero-video hero-video-mobile"
-               data-theme-video="fire"
-               :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
-               style="opacity: 0;"
-               poster="/static/images/posters/fire-mobile-poster.jpg"
-               muted loop playsinline preload="none"
-               aria-hidden="true">
-            <source data-src="/static/videos/fire-mobile.webm" type="video/webm">
-            <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
-        </video>
-
-        <!-- Forest theme (lazy loaded) -->
-        <video class="hero-video hero-video-desktop"
-               data-theme-video="forest"
-               :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
-               style="opacity: 0;"
-               poster="/static/images/posters/forest-desktop-poster.jpg"
-               muted loop playsinline preload="none"
-               aria-hidden="true">
-            <source data-src="/static/videos/forest-desktop.webm" type="video/webm">
-            <source data-src="/static/videos/forest-desktop.mp4" type="video/mp4">
-        </video>
-        <video class="hero-video hero-video-mobile"
-               data-theme-video="forest"
-               :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
-               style="opacity: 0;"
-               poster="/static/images/posters/forest-mobile-poster.jpg"
-               muted loop playsinline preload="none"
-               aria-hidden="true">
-            <source data-src="/static/videos/forest-mobile.webm" type="video/webm">
-            <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
-        </video>
-
-        <!-- Silence theme (dark background, no video) -->
-        <div class="hero-video silence-bg"
-             :class="currentTheme === 'silence' ? 'video-visible' : 'video-hidden'"
-             style="opacity: 0;"
-             aria-hidden="true"></div>
-
-        <div class="hero-video-overlay" :class="'overlay-' + currentTheme"></div>
-    </div>
-
-    <!-- Audio handled via Web Audio API for seamless crossfade looping -->
+    <!-- soft ambient wash, tinted to the current theme -->
+    <div class="hero-ambient" aria-hidden="true"></div>
 
     <div class="container hero-container">
-        <div class="hero-left">
+        <div class="hero-copy">
             <h1 class="hero-title">
                 Return to<br>
-                <span class="hero-title-accent" :style="{ color: currentTheme === 'fire' ? '#FF8033' : currentTheme === 'forest' ? '#66C059' : currentTheme === 'silence' ? '#8B8B9E' : '#59B2CC' }">stillness.</span>
+                <span class="hero-title-accent">stillness.</span>
             </h1>
-        </div>
-
-        <div class="hero-right">
             <p class="hero-subtitle">
                 A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV.
+                Breathe to living scenes — water, fire, forest, or pure silence.
             </p>
             <div class="hero-cta">
                 <a href="https://apps.apple.com/app/return/id6756242021" class="app-store-badge" target="_blank" rel="noopener">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                         alt="Download on the App Store"
-                         width="180"
-                         height="60">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="180" height="60">
                 </a>
             </div>
-        </div>
-    </div>
 
-    <!-- Bottom controls wrapper -->
-    <div class="hero-bottom">
-        <!-- Mobile CTA (above theme controls) -->
-        <div class="hero-cta-mobile">
-            <a href="https://apps.apple.com/app/return/id6756242021" class="app-store-badge" target="_blank" rel="noopener">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                     alt="Download on the App Store"
-                     width="180"
-                     height="60">
-            </a>
-        </div>
-
-        <!-- Theme controls -->
-        <div class="hero-controls">
-        <button class="theme-nav-btn" @click="prevTheme()" title="Previous theme" aria-label="Previous theme">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-        </button>
-
-        <div class="theme-indicator">
-            <span class="theme-name" x-text="currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)"></span>
-            <div class="theme-dots">
-                <template x-for="t in themes" :key="t">
-                    <span class="theme-dot" :class="{ 'active': currentTheme === t }"></span>
-                </template>
+            <!-- Theme controls -->
+            <div class="hero-controls">
+                <button class="theme-nav-btn" @click="prevTheme()" title="Previous theme" aria-label="Previous theme">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="theme-indicator">
+                    <span class="theme-name" x-text="currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)"></span>
+                    <div class="theme-dots">
+                        <template x-for="t in themes" :key="t"><span class="theme-dot" :class="{ 'active': currentTheme === t }"></span></template>
+                    </div>
+                </div>
+                <button class="theme-nav-btn" @click="nextTheme()" title="Next theme" aria-label="Next theme">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <button class="audio-toggle" @click="audioEnabled = !audioEnabled" :title="audioEnabled ? 'Mute audio' : 'Play audio'" :aria-label="audioEnabled ? 'Mute audio' : 'Play audio'" :aria-pressed="audioEnabled">
+                    <svg x-show="!audioEnabled" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg x-show="audioEnabled" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                </button>
             </div>
         </div>
 
-        <button class="theme-nav-btn" @click="nextTheme()" title="Next theme" aria-label="Next theme">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-        </button>
+        <!-- Phone mockup: the living scene plays inside the device -->
+        <div class="hero-phone-wrap">
+            <div class="hero-phone">
+                <div class="hero-phone__notch" aria-hidden="true"></div>
+                <div class="hero-phone__screen">
+                    <video class="hero-video" :class="currentTheme === 'water' ? 'video-visible' : 'video-hidden'"
+                           poster="/static/images/posters/water-mobile-poster.jpg" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="/static/videos/water-mobile.webm" type="video/webm">
+                        <source src="/static/videos/water-mobile.mp4" type="video/mp4">
+                    </video>
+                    <video class="hero-video" data-theme-video="fire" :class="currentTheme === 'fire' ? 'video-visible' : 'video-hidden'"
+                           poster="/static/images/posters/fire-mobile-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
+                        <source data-src="/static/videos/fire-mobile.webm" type="video/webm">
+                        <source data-src="/static/videos/fire-mobile.mp4" type="video/mp4">
+                    </video>
+                    <video class="hero-video" data-theme-video="forest" :class="currentTheme === 'forest' ? 'video-visible' : 'video-hidden'"
+                           poster="/static/images/posters/forest-mobile-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
+                        <source data-src="/static/videos/forest-mobile.webm" type="video/webm">
+                        <source data-src="/static/videos/forest-mobile.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-video silence-scene" :class="currentTheme === 'silence' ? 'video-visible' : 'video-hidden'" aria-hidden="true"></div>
 
-        <button class="audio-toggle" @click="audioEnabled = !audioEnabled" :title="audioEnabled ? 'Mute audio' : 'Play audio'" :aria-label="audioEnabled ? 'Mute audio' : 'Play audio'" :aria-pressed="audioEnabled">
-            <svg x-show="!audioEnabled" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <line x1="23" y1="9" x2="17" y2="15"></line>
-                <line x1="17" y1="9" x2="23" y2="15"></line>
-            </svg>
-            <svg x-show="audioEnabled" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-            </svg>
-        </button>
+                    <!-- in-app timer overlay, so the screen reads as the real app -->
+                    <div class="phone-timer" aria-hidden="true">
+                        <div class="phone-timer__ring"></div>
+                        <div class="phone-timer__time">12:00</div>
+                        <div class="phone-timer__label" x-text="currentTheme === 'silence' ? 'Silence' : currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Subtle gradient overlay at bottom -->
-    <div class="hero-fade"></div>
 </section>

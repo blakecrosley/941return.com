@@ -2801,3 +2801,135 @@ body:has(.hero) .theme-toggle:focus-visible {
     font-weight: 600;
 }
 .post-topic-link:hover { text-decoration: underline; }
+
+/* ============================================================
+   HERO REDESIGN — phone-framed living scene (overrides full-bleed)
+   The ambient video plays inside a device, sharp at phone size and
+   consistent with the 941 fleet's device-framed hero set pieces.
+   ============================================================ */
+
+.navbar-brand .brand-img {
+    width: 28px; height: 28px; border-radius: 7px; object-fit: cover;
+    vertical-align: -7px; margin-right: .55rem;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+}
+
+.hero {
+    position: relative; overflow: hidden;
+    min-height: auto; height: auto;
+    padding: 7rem 0 5rem;
+    display: flex; align-items: center;
+    background: var(--return-background);
+    color: var(--return-text-primary);
+}
+
+/* theme-tinted ambient wash behind everything */
+.hero-ambient {
+    position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background:
+        radial-gradient(60% 55% at 78% 35%, var(--hero-tint, rgba(89,178,204,.22)), transparent 70%),
+        radial-gradient(50% 50% at 12% 80%, var(--hero-tint-2, rgba(89,178,204,.12)), transparent 70%);
+    transition: background .8s ease;
+}
+.hero-theme-water   { --hero-tint: rgba(89,178,204,.26); --hero-tint-2: rgba(123,196,216,.14); }
+.hero-theme-fire    { --hero-tint: rgba(255,128,51,.24);  --hero-tint-2: rgba(255,107,60,.13); }
+.hero-theme-forest  { --hero-tint: rgba(102,192,89,.24);  --hero-tint-2: rgba(80,160,70,.13); }
+.hero-theme-silence { --hero-tint: rgba(139,139,158,.22); --hero-tint-2: rgba(120,120,140,.12); }
+
+.hero-container {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr auto; gap: 4rem; align-items: center;
+}
+
+.hero-copy { max-width: 33rem; }
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 6vw, 4.6rem); font-weight: 600; line-height: 1.05;
+    letter-spacing: -0.01em; margin: 0 0 1.2rem; color: var(--return-text-primary);
+}
+.hero-title-accent { color: var(--theme-water); transition: color .6s ease; }
+.hero-theme-fire    .hero-title-accent { color: var(--theme-fire); }
+.hero-theme-forest  .hero-title-accent { color: var(--theme-forest); }
+.hero-theme-silence .hero-title-accent { color: var(--theme-silence); }
+
+.hero-subtitle {
+    font-size: 1.18rem; line-height: 1.6; color: var(--return-text-secondary);
+    max-width: 32rem; margin: 0 0 1.8rem;
+}
+.hero-cta { margin-bottom: 2rem; }
+.app-store-badge img { display: block; }
+
+/* Theme controls, now under the copy */
+.hero-controls {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: var(--return-surface-elevated); border: 1px solid var(--return-border);
+    border-radius: 999px; padding: .45rem .6rem;
+    box-shadow: 0 6px 20px rgba(26,43,60,.06);
+}
+.theme-nav-btn, .audio-toggle {
+    background: transparent; border: none; color: var(--return-text-secondary);
+    width: 34px; height: 34px; border-radius: 50%; display: inline-flex;
+    align-items: center; justify-content: center; cursor: pointer; transition: all .15s ease;
+}
+.theme-nav-btn:hover, .audio-toggle:hover { background: var(--return-surface); color: var(--return-text-primary); }
+.theme-indicator { display: flex; flex-direction: column; align-items: center; min-width: 84px; }
+.theme-name { font-size: .82rem; font-weight: 600; color: var(--return-text-primary); }
+.theme-dots { display: flex; gap: 5px; margin-top: 4px; }
+.theme-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--return-border); transition: background .2s ease; }
+.theme-dot.active { background: var(--theme-water); }
+.hero-theme-fire .theme-dot.active { background: var(--theme-fire); }
+.hero-theme-forest .theme-dot.active { background: var(--theme-forest); }
+.hero-theme-silence .theme-dot.active { background: var(--theme-silence); }
+.audio-toggle { margin-left: .2rem; border-left: 1px solid var(--return-border); border-radius: 0 999px 999px 0; }
+
+/* The phone */
+.hero-phone-wrap { display: flex; justify-content: center; }
+.hero-phone {
+    position: relative; width: 300px; height: 612px;
+    background: #0b0e11; border-radius: 46px;
+    padding: 12px;
+    box-shadow: 0 30px 80px rgba(26,43,60,.32), inset 0 0 0 2px rgba(255,255,255,.06);
+}
+.hero-phone__notch {
+    position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 26px; background: #0b0e11; border-radius: 0 0 16px 16px; z-index: 3;
+}
+.hero-phone__screen {
+    position: relative; width: 100%; height: 100%; border-radius: 36px; overflow: hidden; background: #000;
+}
+.hero-phone__screen .hero-video {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: opacity .8s ease;
+}
+.hero-phone__screen .video-visible { opacity: 1; z-index: 1; }
+.hero-phone__screen .video-hidden  { opacity: 0; z-index: 0; }
+.silence-scene { background: radial-gradient(circle at 50% 40%, #2a2a38, #14141c); }
+
+/* in-app timer overlay */
+.phone-timer {
+    position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: .35rem; color: #fff;
+    text-shadow: 0 2px 18px rgba(0,0,0,.4); pointer-events: none;
+}
+.phone-timer__ring {
+    width: 150px; height: 150px; border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.55);
+    box-shadow: 0 0 0 8px rgba(255,255,255,.08); position: absolute;
+    animation: ring-breathe 8s ease-in-out infinite;
+}
+@keyframes ring-breathe { 0%,100% { transform: scale(.92); opacity: .8; } 50% { transform: scale(1.04); opacity: 1; } }
+.phone-timer__time { font-family: var(--font-display); font-size: 2.5rem; font-weight: 500; letter-spacing: .02em; }
+.phone-timer__label { font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; opacity: .85; }
+@media (prefers-reduced-motion: reduce) { .phone-timer__ring { animation: none; } }
+
+/* Hide leftovers from the old full-bleed hero if any markup lingers */
+.hero-video-container, .hero-bottom, .hero-fade, .hero-cta-mobile { display: none !important; }
+
+@media (max-width: 900px) {
+    .hero { padding: 5.5rem 0 3.5rem; }
+    .hero-container { grid-template-columns: 1fr; gap: 2.5rem; justify-items: center; text-align: center; }
+    .hero-copy { max-width: 36rem; }
+    .hero-subtitle { margin-left: auto; margin-right: auto; }
+    .hero-phone { width: 260px; height: 530px; }
+}
+
