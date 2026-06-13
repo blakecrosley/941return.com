@@ -18,12 +18,7 @@
         <div class="hero-phone-wrap">
             <!-- Real iPhone frame -->
             <div class="rcs-iphone">
-                <span class="rcs-iphone__btn rcs-iphone__btn--silent" aria-hidden="true"></span>
-                <span class="rcs-iphone__btn rcs-iphone__btn--volup" aria-hidden="true"></span>
-                <span class="rcs-iphone__btn rcs-iphone__btn--voldn" aria-hidden="true"></span>
-                <span class="rcs-iphone__btn rcs-iphone__btn--power" aria-hidden="true"></span>
                 <div class="rcs-phone" :class="{ 'rcs-phone--playing': isPlaying }">
-                    <div class="rcs-iphone__island" aria-hidden="true"></div>
                     <div class="rcs-phone__stage">
                         <video class="rcs-hero__video" :class="{ 'rcs-hero__video--active': currentTheme === 'water' }"
                                poster="/static/images/posters/water-mobile-poster.jpg" loop playsinline disablepictureinpicture
@@ -58,6 +53,7 @@
                         </div>
                     </div>
                 </div>
+                <img class="rcs-iphone__frame" src="/static/images/iphone-frame.png" alt="" aria-hidden="true">
             </div>
         </div>
     </div>
