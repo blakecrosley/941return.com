@@ -50,23 +50,15 @@
 <script>
 (function () {
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var scrolly = document.querySelector('.how-scrolly');
-    document.querySelectorAll('[data-how-reveal]').forEach(function (el) {
-        if (reduced || !('IntersectionObserver' in window)) { el.classList.add('in-view'); }
-    });
-    if ('IntersectionObserver' in window) {
-        var rio = new IntersectionObserver(function (es) {
-            es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in-view'); rio.unobserve(e.target); } });
-        }, { threshold: 0.2 });
-        document.querySelectorAll('[data-how-reveal]').forEach(function (el) { rio.observe(el); });
-        if (scrolly) {
-            var steps = scrolly.querySelectorAll('.how-step');
-            var sio = new IntersectionObserver(function (es) {
-                es.forEach(function (e) { if (e.isIntersecting) scrolly.setAttribute('data-step', e.target.dataset.index); });
-            }, { rootMargin: '-45% 0px -45% 0px' });
-            steps.forEach(function (s) { sio.observe(s); });
-        }
+    var els = document.querySelectorAll('[data-how-reveal]');
+    if (reduced || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in-view'); });
+        return;
     }
+    var rio = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in-view'); rio.unobserve(e.target); } });
+    }, { threshold: 0.2 });
+    els.forEach(function (el) { rio.observe(el); });
 })();
 </script>
 {% endblock %}
