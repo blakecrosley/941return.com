@@ -694,7 +694,7 @@ body:has(.hero) .theme-toggle:hover {
 .blog-preview-card {
     display: block;
     padding: var(--space-xl);
-    background: var(--return-bg);
+    background: var(--return-background);
     border: 1px solid var(--return-border);
     border-radius: var(--radius-lg);
     text-decoration: none;
@@ -1730,7 +1730,7 @@ body:has(.hero) .theme-toggle:focus-visible {
     padding: 0.5rem;
     border: 1px solid var(--return-border);
     border-radius: var(--radius-sm);
-    background: var(--return-bg);
+    background: var(--return-background);
     color: var(--return-text-primary);
 }
 
