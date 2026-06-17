@@ -2958,6 +2958,28 @@ body:has(.hero) .theme-toggle:focus-visible {
 .rcs-phone__dot--fire[aria-pressed="true"]   { background: var(--theme-fire); }
 .rcs-phone__dot--forest[aria-pressed="true"] { background: var(--theme-forest); }
 
+/* ============================================================
+   Contrast (a11y) — white text on brand teal
+   --return-primary (#59B2CC) carries white at only ~2.4:1, and the
+   teal is shared by both themes, so the button/CTA/active-pill
+   fills failed in light AND dark. Use a deeper teal for FILLS
+   (white → 5.6:1); keep --return-primary for text-accent-on-dark
+   (links, kickers) where it already passes 7–8:1.
+   ============================================================ */
+:root { --return-primary-strong: #1E6F86; }
+.email-submit,
+.btn-primary,
+.btn-support,
+.btn-small,
+.device-tab.active,
+.pagination-current,
+.skip-link { background: var(--return-primary-strong); }
+.email-submit:hover,
+.btn-primary:hover,
+.btn-small:hover,
+.btn-support:hover,
+.blog-topic-chip:hover { background: var(--return-primary-strong); }
+
 @media (prefers-reduced-motion: reduce) {
     .rcs-hero__video { transition: none; }
 }
