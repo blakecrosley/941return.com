@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Return... - Zen Meditation Timer{% endblock %}</title>
-    <meta name="description" content="{% block description %}A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV. Beautiful ambient themes, session tracking, and Apple Health integration. No subscriptions.{% endblock %}">
+    <title>{% block title %}Return... Meditation Timer{% endblock %}</title>
+    <meta name="description" content="{% block description %}A meditation timer with nothing in the way: one tap, a room, a bell. Five rooms, an album in Spatial Audio. iPhone, iPhone Duo, iPad, Watch, Mac, TV. $9.99 once.{% endblock %}">
     <meta name="theme-color" content="#0A0D12">
 
     <!-- Preconnect to CDNs for faster loading -->
@@ -17,8 +17,8 @@
     <link rel="canonical" href="https://941return.com{% block canonical_url %}{{ request.url.path }}{% endblock %}">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="{% block og_title %}Return... - Zen Meditation Timer{% endblock %}">
-    <meta property="og:description" content="{% block og_description %}A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV.{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}Return... Meditation Timer{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}A meditation timer with nothing in the way. Five rooms, an original album in Spatial Audio. iPhone, iPhone Duo, iPad, Apple Watch, Mac, and Apple TV.{% endblock %}">
     <meta property="og:url" content="https://941return.com{% block og_url %}/{% endblock %}">
     <meta property="og:type" content="{% block og_type %}website{% endblock %}">
     <meta property="og:site_name" content="Return...">
@@ -27,8 +27,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% block twitter_title %}Return... - Zen Meditation Timer{% endblock %}">
-    <meta name="twitter:description" content="{% block twitter_description %}A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV.{% endblock %}">
+    <meta name="twitter:title" content="{% block twitter_title %}Return... Meditation Timer{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}A meditation timer with nothing in the way. Five rooms, an original album in Spatial Audio. iPhone, iPhone Duo, iPad, Apple Watch, Mac, and Apple TV.{% endblock %}">
     <meta name="twitter:image" content="{% block twitter_image %}https://941return.com/static/images/og-default.png{% endblock %}">
 
     <!-- Favicon -->
@@ -89,23 +89,24 @@
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Return",
-        "alternateName": "Return Meditation Timer",
-        "description": "A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV. No subscriptions, no guided content—just a beautiful timer for people who know how to meditate.",
+        "@id": "https://941return.com/#app",
+        "name": "Return... Meditation Timer",
+        "alternateName": [
+            "Return...",
+            "Return Meditation Timer"
+        ],
+        "description": "A meditation timer with nothing in the way: one tap, a room to sit in, a bell when it is time. No guided voices, no account, no subscription. Five rooms, including Still Rooms, an original album in Spatial Audio.",
         "applicationCategory": "HealthApplication",
-        "operatingSystem": "iOS, watchOS, macOS, tvOS",
+        "applicationSubCategory": "Meditation timer",
+        "operatingSystem": "iOS, iPadOS, watchOS, macOS, tvOS",
+        "softwareVersion": "1.2.0",
+        "dateModified": "2026-10-16",
         "offers": {
             "@type": "Offer",
-            "price": "0",
+            "price": "9.99",
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "ratingCount": "1",
-            "bestRating": "5",
-            "worstRating": "1"
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/app/id6756242021"
         },
         "author": {
             "@id": "https://941apps.com/#organization"
@@ -118,16 +119,99 @@
         },
         "url": "https://941return.com",
         "downloadUrl": "https://apps.apple.com/app/id6756242021",
-        "screenshot": "https://941return.com/static/images/og-default.png",
-        "featureList": [
-            "Meditation timer with customizable durations",
-            "Four ambient themes: Water, Fire, Forest, and Silence",
-            "Session history and streak tracking",
-            "Apple Health integration",
-            "Works on iPhone, Apple Watch, Mac, and Apple TV",
-            "One-time purchase, no subscription"
+        "installUrl": "https://apps.apple.com/app/id6756242021",
+        "screenshot": [
+            "https://941return.com/static/images/devices/duo-music-en.webp",
+            "https://941return.com/static/images/devices/iphone-fire-en.webp"
         ],
-        "keywords": "meditation, timer, mindfulness, zen, health, wellness, breathing, relaxation"
+        "image": "https://941return.com/static/images/og-default.png",
+        "featureList": [
+            "Five rooms: Water, Fire, Forest, Silence, and Music",
+            "Still Rooms, an original ten-piece album in 5.1, Spatial Audio on AirPods, paired headphones on Apple Watch",
+            "5 to 60 minutes; Singing Bowl, Temple Bell or Soft Chime, rung once, twice or three times",
+            "Repeat once, a set number of times, until a time of day, or until you stop",
+            "Mindful Minutes logged to Apple Health; settings and history across devices through iCloud",
+            "Widget and Live Activity for the sit in progress",
+            "Choice of app icon: the album's glass cube, the water drop, fire or forest",
+            "iPhone, iPhone Duo, iPad, Apple Watch, Mac, and Apple TV; 27 languages",
+            "No account, no ads, no subscription; anonymous diagnostics you can switch off"
+        ],
+        "keywords": "meditation timer, zen, zazen, unguided meditation, mindfulness bell, singing bowl, silent meditation timer, Apple Watch, iPhone Duo",
+        "subjectOf": {
+            "@id": "https://941return.com/#still-rooms"
+        }
+    }
+    </script>
+    <!-- MusicAlbum Schema: Still Rooms, the Music room's album -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "@id": "https://941return.com/#still-rooms",
+        "name": "Still Rooms",
+        "byArtist": {
+            "@type": "MusicGroup",
+            "name": "Dream of Electric"
+        },
+        "albumProductionType": "https://schema.org/StudioAlbum",
+        "numTracks": 10,
+        "image": "https://941return.com/static/images/still-rooms/cover-1200.webp",
+        "description": "Ten pieces written and recorded for the Return meditation timer, played in order while you sit. Mixed in 5.1 for Spatial Audio.",
+        "track": [
+            {
+                "@type": "MusicRecording",
+                "position": 1,
+                "name": "Paper Boat"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 2,
+                "name": "Morning Glass"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 3,
+                "name": "Low Tide"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 4,
+                "name": "Cloud Copy"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 5,
+                "name": "Snow Street"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 6,
+                "name": "Night Train"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 7,
+                "name": "Blue Hour"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 8,
+                "name": "Afternoon Shade"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 9,
+                "name": "Rain Window"
+            },
+            {
+                "@type": "MusicRecording",
+                "position": 10,
+                "name": "Returning"
+            }
+        ],
+        "isPartOf": {
+            "@id": "https://941return.com/#app"
+        }
     }
     </script>
 

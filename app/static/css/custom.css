@@ -2984,3 +2984,59 @@ body:has(.hero) .theme-toggle:focus-visible {
     .rcs-hero__video { transition: none; }
 }
 
+
+/* -----------------------------------------------------------------------------
+   Still Rooms and iPhone Duo sections (1.2.0, October 2026)
+   ----------------------------------------------------------------------------- */
+.hero-note { margin: .9rem 0 0; color: var(--return-text-secondary); font-size: .98rem; line-height: 1.55; }
+.hero-note a { color: var(--return-primary); text-decoration: underline; text-underline-offset: 3px; }
+
+.sr-section { padding: 6rem 0; background: var(--return-surface); border-top: 1px solid var(--return-border); border-bottom: 1px solid var(--return-border); }
+.sr-grid { display: grid; grid-template-columns: minmax(0, 480px) minmax(0, 1fr) minmax(0, 150px); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; }
+.sr-cover { margin: 0; }
+.sr-cover img { width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35); display: block; }
+.sr-cover figcaption, .sr-watch figcaption { margin-top: .7rem; font-size: .82rem; color: var(--return-text-secondary); text-align: center; letter-spacing: .02em; }
+.sr-copy .how-kicker, .sr-copy .how-title, .duo-copy .how-kicker, .duo-copy .how-title { text-align: left; }
+.sr-title, .duo-title { text-wrap: balance; }
+.sr-lead, .duo-lead { color: var(--return-text-secondary); font-size: 1.08rem; line-height: 1.65; max-width: 40rem; margin: 0 0 1.4rem; }
+.sr-player { display: flex; flex-direction: column; gap: .4rem; margin: 0 0 1.4rem; max-width: 28rem; }
+.sr-player audio { width: 100%; border-radius: var(--radius-full); }
+.sr-player__label { font-size: .82rem; color: var(--return-text-secondary); }
+.sr-tracks { columns: 2; column-gap: 2rem; margin: 0; padding-left: 1.4rem; max-width: 28rem; color: var(--return-text-primary); font-size: .95rem; line-height: 1.7; font-variant-numeric: tabular-nums; }
+.sr-tracks li { break-inside: avoid; padding-left: .2rem; }
+.sr-watch { margin: 0; justify-self: center; }
+.sr-watch img { width: 100%; max-width: 150px; height: auto; display: block; border-radius: 22%; box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32); }
+
+.duo-section { padding: 6rem 0; background: var(--return-background); }
+.duo-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.duo-points { display: grid; gap: 1rem; margin: 0; max-width: 40rem; }
+.duo-points div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1rem; padding: 1rem 0 0; border-top: 1px solid var(--return-border); }
+.duo-points dt { font-family: var(--font-body); font-weight: 700; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--theme-water); padding-top: .15rem; }
+.hero-theme-fire .duo-points dt { color: var(--theme-fire); }
+.hero-theme-forest .duo-points dt { color: var(--theme-forest); }
+.duo-points dd { margin: 0; color: var(--return-text-secondary); line-height: 1.6; }
+.duo-device { margin: 0; justify-self: center; filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35)); }
+.duo-device img { width: 100%; max-width: 420px; height: auto; display: block; }
+
+.rcs-device--duo .rcs-mockup { width: clamp(150px, 19vw, 215px); }
+.feature-icon--row { display: flex; gap: .45rem; justify-content: center; align-items: center; }
+.feature-icon--row img { width: 44px; height: 44px; border-radius: 22%; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
+
+@media (max-width: 992px) {
+    .sr-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .sr-cover { grid-column: 1; }
+    .sr-watch { grid-column: 2; grid-row: 1; }
+    .sr-copy { grid-column: 1 / -1; }
+    .duo-grid { grid-template-columns: 1fr; }
+    .duo-device { order: -1; }
+    .duo-device img { max-width: 320px; }
+}
+@media (max-width: 576px) {
+    .sr-section, .duo-section { padding: 4rem 0; }
+    .sr-grid { grid-template-columns: 1fr; }
+    .sr-cover, .sr-watch, .sr-copy { grid-column: 1; grid-row: auto; }
+    .sr-cover { max-width: 320px; margin: 0 auto; }
+    .sr-watch { display: none; }
+    .sr-tracks { columns: 1; }
+    .duo-points div { grid-template-columns: 1fr; gap: .3rem; }
+}

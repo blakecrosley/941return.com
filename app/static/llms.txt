@@ -1,32 +1,44 @@
-# Return by 941 Apps
+# Return... Meditation Timer by 941 Apps
 
-> A minimal, zen-like meditation timer for iPhone, Apple Watch, Mac, and Apple TV. No subscriptions, no guided content — just a beautiful timer for people who know how to meditate.
+> A meditation timer with nothing in the way: one tap, a room to sit in, a bell when it is time. No guided voices, no account, no subscription. For iPhone, iPhone Duo, iPad, Apple Watch, Mac, and Apple TV.
 
 For comprehensive information, see: [llms-full.txt](https://941return.com/llms-full.txt)
 
 ## About
 
-Return is a deliberately minimal meditation timer. Set your interval, choose an ambient theme, and sit — no streaks to maintain, no social feed, no subscription, and no guided narration. It is built for experienced practitioners who want a clean, calm timer rather than a content library. Available on iPhone, Apple Watch, Mac, and Apple TV.
+Return... (the store name is "Return... Meditation Timer") is a deliberately minimal meditation timer for people who already know how to sit. You choose a length, a room and a bell, and the app gets out of the way. There are five rooms: Water, Fire, Forest, Silence, and Music. The Music room plays Still Rooms, an original album of ten pieces written and recorded for the app by Dream of Electric; every piece is a 5.1 mix, so on AirPods with Spatial Audio the music sits around the listener, and on Apple Watch it plays through paired headphones. One purchase, $9.99, no subscription.
 
 ## Key Features
 
-- Clean interval timer with optional interval and ending bells
-- Ambient themes for a calm, focused session
-- Session tracking and history across Apple devices
-- Apple Watch, Mac, and Apple TV apps alongside iPhone
-- No subscriptions, no ads, no guided content
+- 5 to 60 minutes; three bells (Singing Bowl, Temple Bell, Soft Chime) rung once, twice or three times
+- Repeat once, a set number of times, until a time of day, or until you stop
+- Five rooms with a background sound for each, or none
+- Still Rooms: ten pieces in order while you sit, Spatial Audio on AirPods
+- Mindful Minutes logged to Apple Health; settings and session history across devices through iCloud
+- Widget and Live Activity for the sit in progress
+- Choice of app icon: the album's glass cube, the water drop, fire or forest
+- Made for iPhone Duo: one immersive canvas, two compositions (closed and open), the fold confines the pieces rather than adding a layout
+- 27 languages, including Arabic and Hebrew with mirrored layouts
+- No account, no ads, nothing sold; anonymous crash reports and usage counts that can be switched off in Settings
 
 ## App Details
 
-- Platforms: iOS, watchOS, macOS, tvOS
-- Developer: 941 Apps
+- Platforms: iOS, iPadOS, watchOS, macOS, tvOS (iPhone, iPhone Duo, iPad, Apple Watch, Mac, Apple TV)
+- Current version: 1.2.0 (October 2026)
+- Price: $9.99, one purchase
+- Developer: 941 Apps (Blake Crosley)
 - App Store: https://apps.apple.com/app/return/id6756242021
 - Website: https://941return.com
+
+## Still Rooms (album)
+
+Still Rooms, by Dream of Electric. Tracks: Paper Boat, Morning Glass, Low Tide, Cloud Copy, Snow Street, Night Train, Blue Hour, Afternoon Shade, Rain Window, Returning. A thirty-second stereo clip of Paper Boat is on the home page.
 
 ## Blog — Meditation & Mental Training
 
 A library of 250+ research-backed articles on meditation, mental training, and athletic recovery for experienced practitioners. Browse by topic:
 
+- [Guided vs Unguided Meditation](https://941return.com/blog/guided-vs-unguided-meditation)
 - [All topics](https://941return.com/blog/topics)
 - [The Science](https://941return.com/blog/topics/science)
 - [Meditation by Sport](https://941return.com/blog/topics/by-sport)
@@ -45,4 +57,4 @@ A library of 250+ research-backed articles on meditation, mental training, and a
 
 - Support: https://941return.com/support
 
-Last updated: 2026-06-03
+Last updated: 2026-10-16

@@ -144,7 +144,7 @@ Built with FastAPI, HTMX, Alpine.js
 Meditation timer for people who know what they're doing
 
 /* SITE */
-Last update: 2026/01
+Last update: 2026/10
 Language: English
 Standards: HTML5, CSS3, ES6+
 Components: FastAPI, Jinja2, Bootstrap 5, HTMX, Alpine.js
