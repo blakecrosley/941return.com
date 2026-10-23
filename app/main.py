@@ -114,7 +114,13 @@ app.add_middleware(GZipMiddleware, minimum_size=500)
 # Security logging (registered last so it runs first on request, last on response)
 app.add_middleware(SecurityLogMiddleware, site_name="941return.com")
 # Outermost: rejects direct-to-Railway requests before anything else runs (SEC: origin auth)
-app.add_middleware(OriginAuthMiddleware)
+app.add_middleware(OriginAuthMiddleware, bypass_paths=("/health",))  # /health is the Railway health check
+
+
+@app.get("/health", include_in_schema=False)
+async def health():
+    """Railway health check (bypasses origin auth; no data)."""
+    return {"status": "ok"}
 
 # Video route with proper range request support for Safari
 @app.get("/static/videos/{filename}")
