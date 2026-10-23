@@ -120,7 +120,12 @@ async def serve_video(filename: str, range_header: Optional[str] = Header(None, 
     # Security: Sanitize filename to prevent path traversal
     # Only allow the basename (no directories) and validate extension
     safe_filename = os.path.basename(filename)
-    if not safe_filename or safe_filename != filename:
+    if (
+        not safe_filename
+        or safe_filename != filename
+        or safe_filename in (".", "..")
+        or any(sep in filename for sep in ("/", "\\", "\x00"))
+    ):
         return Response(status_code=404)
 
     # Only allow specific video extensions
@@ -131,8 +136,8 @@ async def serve_video(filename: str, range_header: Optional[str] = Header(None, 
     videos_dir = (APP_DIR / "static" / "videos").resolve()
     video_path = (videos_dir / safe_filename).resolve()
 
-    # Security: Ensure the resolved path is within videos directory
-    if not str(video_path).startswith(str(videos_dir)):
+    # Security: the resolved path must be a direct child of the videos directory
+    if not video_path.is_relative_to(videos_dir) or video_path.parent != videos_dir:
         return Response(status_code=404)
 
     if not video_path.exists():

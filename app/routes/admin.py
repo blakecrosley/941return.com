@@ -258,7 +258,7 @@ async def admin_publish_post(post_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Post not found")
 
     posts_service.publish_post(db, post)
-    return RedirectResponse(f"/admin/posts/{post_id}/edit", status_code=303)
+    return RedirectResponse(f"/admin/posts/{post.id}/edit", status_code=303)
 
 
 @router.post("/posts/{post_id}/unpublish", dependencies=[Depends(require_admin)])
@@ -269,7 +269,7 @@ async def admin_unpublish_post(post_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Post not found")
 
     posts_service.unpublish_post(db, post)
-    return RedirectResponse(f"/admin/posts/{post_id}/edit", status_code=303)
+    return RedirectResponse(f"/admin/posts/{post.id}/edit", status_code=303)
 
 
 @router.post("/posts/{post_id}/schedule", dependencies=[Depends(require_admin)])
@@ -286,7 +286,7 @@ async def admin_schedule_post(
     # Parse the datetime from the form
     schedule_datetime = datetime.fromisoformat(scheduled_at)
     posts_service.schedule_post(db, post, schedule_datetime)
-    return RedirectResponse(f"/admin/posts/{post_id}/edit", status_code=303)
+    return RedirectResponse(f"/admin/posts/{post.id}/edit", status_code=303)
 
 
 @router.post("/posts/{post_id}/delete", dependencies=[Depends(require_admin)])
