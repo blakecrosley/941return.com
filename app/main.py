@@ -17,6 +17,7 @@ from app.db.database import init_db
 from app.security.headers import SecurityHeadersMiddleware
 from app.security.logging import SecurityLogMiddleware
 from app.security.rate_limit import RateLimitMiddleware
+from app.security.origin_auth import OriginAuthMiddleware
 
 # Analytics (optional - only loads if configured)
 analytics = None
@@ -112,6 +113,8 @@ app.add_middleware(GZipMiddleware, minimum_size=500)
 
 # Security logging (registered last so it runs first on request, last on response)
 app.add_middleware(SecurityLogMiddleware, site_name="941return.com")
+# Outermost: rejects direct-to-Railway requests before anything else runs (SEC: origin auth)
+app.add_middleware(OriginAuthMiddleware)
 
 # Video route with proper range request support for Safari
 @app.get("/static/videos/{filename}")
