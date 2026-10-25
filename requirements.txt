@@ -1,12 +1,12 @@
 fastapi==0.115.6
 uvicorn==0.34.0
-jinja2==3.1.4
-python-multipart==0.0.17
+jinja2==3.1.6  # GHSA-cpwx-vrp4-4pq7 and prior sandbox escapes
+python-multipart==0.0.32  # GHSA-5rvq-cxj2-64vf and prior (multipart DoS) fixed by 0.0.31
 
 # Blog system
 sqlalchemy==2.0.25
 python-frontmatter==1.1.0
-markdown==3.5.2
+markdown==3.11.2  # GHSA-5wmx-573v-2qwq fixed in 3.8.1
 nh3>=0.2.14  # HTML sanitization to prevent XSS
 
 # Email
